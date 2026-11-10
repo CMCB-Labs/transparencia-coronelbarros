@@ -1,0 +1,5445 @@
+{
+  "metadata": {
+    "ente": "Câmara Municipal de Coronel Barros - RS",
+    "cod_ibge": 4305871,
+    "municipio": "Coronel Barros",
+    "uf": "RS",
+    "fonte": "Secretaria do Tesouro Nacional - SICONFI / API Data Lake",
+    "data_sincronizacao": "2026-11-10T22:07:36Z",
+    "total_periodos": 11,
+    "exercicios_disponiveis": [
+      2026,
+      2025,
+      2024,
+      2023,
+      2022,
+      2021
+    ]
+  },
+  "periodos": [
+    {
+      "exercicio": 2026,
+      "periodo": 1,
+      "periodicidade": "S",
+      "periodo_rotulo": "1º Semestre de 2026",
+      "status_relatorio": "HO",
+      "data_status": "2026-07-30T13:24:23Z",
+      "populacao": 2896,
+      "lrf": {
+        "rcl": 37482963.45,
+        "rcl_ajustada": 36551277.45,
+        "dtp_valor": 769596.68,
+        "dtp_percentual": 2.11,
+        "limite_maximo_valor": 2193076.65,
+        "limite_maximo_percentual": 6.0,
+        "limite_prudencial_valor": 2083422.82,
+        "limite_prudencial_percentual": 5.7,
+        "limite_alerta_valor": 1973768.99,
+        "limite_alerta_percentual": 5.4,
+        "margem_prudencial_valor": 1313826.14,
+        "margem_maxima_valor": 1423479.97,
+        "situacao": "Conforme (Abaixo dos Limites)",
+        "situacao_classe": "status-regular"
+      },
+      "detalhamento_pessoal": [
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-11>",
+          "valor": 55808.34
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-10>",
+          "valor": 56051.28
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-9>",
+          "valor": 57281.6
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-8>",
+          "valor": 60619.69
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-7>",
+          "valor": 59799.57
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-6>",
+          "valor": 97340.7
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-5>",
+          "valor": 61495.23
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-4>",
+          "valor": 61210.48
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-3>",
+          "valor": 68446.15
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-2>",
+          "valor": 63701.13
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-1>",
+          "valor": 71514.21
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR>",
+          "valor": 63701.13
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 776969.51
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-11>",
+          "valor": 55808.34
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-10>",
+          "valor": 56051.28
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-9>",
+          "valor": 57281.6
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-8>",
+          "valor": 60619.69
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-7>",
+          "valor": 59799.57
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-6>",
+          "valor": 97340.7
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-5>",
+          "valor": 61495.23
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-4>",
+          "valor": 61210.48
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-3>",
+          "valor": 68446.15
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-2>",
+          "valor": 63701.13
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-1>",
+          "valor": 71514.21
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR>",
+          "valor": 63701.13
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 776969.51
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-11>",
+          "valor": 49605.86
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-10>",
+          "valor": 49214.53
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-9>",
+          "valor": 50494.16
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-8>",
+          "valor": 53639.07
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-7>",
+          "valor": 52785.11
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-6>",
+          "valor": 83975.33
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-5>",
+          "valor": 52528.14
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-4>",
+          "valor": 52284.77
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-3>",
+          "valor": 58520.2
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-2>",
+          "valor": 54246.02
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-1>",
+          "valor": 62080.85
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR>",
+          "valor": 54246.02
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 673620.06
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-11>",
+          "valor": 6202.48
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-10>",
+          "valor": 6836.75
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-9>",
+          "valor": 6787.44
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-8>",
+          "valor": 6980.62
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-7>",
+          "valor": 7014.46
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-6>",
+          "valor": 13365.37
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-5>",
+          "valor": 8967.09
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-4>",
+          "valor": 8925.71
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-3>",
+          "valor": 9925.95
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-2>",
+          "valor": 9455.11
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-1>",
+          "valor": 9433.36
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR>",
+          "valor": 9455.11
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 103349.45
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "<MR-6>",
+          "valor": 7372.83
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 7372.83
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária",
+          "coluna": "<MR-6>",
+          "valor": 7372.83
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 7372.83
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-11>",
+          "valor": 55808.34
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-10>",
+          "valor": 56051.28
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-9>",
+          "valor": 57281.6
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-8>",
+          "valor": 60619.69
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-7>",
+          "valor": 59799.57
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-6>",
+          "valor": 89967.87
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-5>",
+          "valor": 61495.23
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-4>",
+          "valor": 61210.48
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-3>",
+          "valor": 68446.15
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-2>",
+          "valor": 63701.13
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-1>",
+          "valor": 71514.21
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR>",
+          "valor": 63701.13
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 769596.68
+        },
+        {
+          "conta": "RECEITA CORRENTE LIQUIDA - RCL (IV)",
+          "coluna": "Valor",
+          "valor": 37482963.45
+        },
+        {
+          "conta": "(-) Transferências Obrigatórias da União relativas às Emendas Individuais (art. 166-A, §1º, da CF)",
+          "coluna": "Valor",
+          "valor": 650000.0
+        },
+        {
+          "conta": "(-) Transferências da União relativas à remuneração dos agentes comunitários de saúde e de combate às endemias (CF, art. 198, §11)",
+          "coluna": "Valor",
+          "valor": 281686.0
+        },
+        {
+          "conta": "= RECEITA CORRENTE LÍQUIDA AJUSTADA PARA CÁLCULO DOS LIMITES DA DESPESA COM PESSOAL (V)",
+          "coluna": "Valor",
+          "valor": 36551277.45
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VI) = (III a + III b)",
+          "coluna": "Valor",
+          "valor": 769596.68
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VI) = (III a + III b)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 2.11
+        },
+        {
+          "conta": "LIMITE MÁXIMO (VII) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "Valor",
+          "valor": 2193076.65
+        },
+        {
+          "conta": "LIMITE MÁXIMO (VII) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 6.0
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (VIII) = (0,95 x VII) (parágrafo único do art. 22 da LRF)",
+          "coluna": "Valor",
+          "valor": 2083422.82
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (VIII) = (0,95 x VII) (parágrafo único do art. 22 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.7
+        },
+        {
+          "conta": "LIMITE DE ALERTA (IX) = (0,90 x VII) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "Valor",
+          "valor": 1973768.99
+        },
+        {
+          "conta": "LIMITE DE ALERTA (IX) = (0,90 x VII) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.4
+        }
+      ],
+      "disponibilidade_caixa": [],
+      "simplificado": []
+    },
+    {
+      "exercicio": 2025,
+      "periodo": 2,
+      "periodicidade": "S",
+      "periodo_rotulo": "2º Semestre de 2025",
+      "status_relatorio": "HO",
+      "data_status": "2026-01-28T07:48:22Z",
+      "populacao": 2819,
+      "lrf": {
+        "rcl": 35522774.99,
+        "rcl_ajustada": 34961678.99,
+        "dtp_valor": 749074.7,
+        "dtp_percentual": 2.14,
+        "limite_maximo_valor": 2097700.74,
+        "limite_maximo_percentual": 6.0,
+        "limite_prudencial_valor": 1992815.7,
+        "limite_prudencial_percentual": 5.7,
+        "limite_alerta_valor": 1887930.67,
+        "limite_alerta_percentual": 5.4,
+        "margem_prudencial_valor": 1243741.0,
+        "margem_maxima_valor": 1348626.04,
+        "situacao": "Conforme (Abaixo dos Limites)",
+        "situacao_classe": "status-regular"
+      },
+      "detalhamento_pessoal": [
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-11>",
+          "valor": 59122.81
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-10>",
+          "valor": 58571.64
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-9>",
+          "valor": 59963.78
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-8>",
+          "valor": 57467.16
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-7>",
+          "valor": 57580.72
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-6>",
+          "valor": 80356.8
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-5>",
+          "valor": 55808.34
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-4>",
+          "valor": 56051.28
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-3>",
+          "valor": 57281.6
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-2>",
+          "valor": 60619.69
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-1>",
+          "valor": 59799.57
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR>",
+          "valor": 97340.7
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 759964.09
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-11>",
+          "valor": 59122.81
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-10>",
+          "valor": 58571.64
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-9>",
+          "valor": 59963.78
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-8>",
+          "valor": 57467.16
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-7>",
+          "valor": 57580.72
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-6>",
+          "valor": 80356.8
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-5>",
+          "valor": 55808.34
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-4>",
+          "valor": 56051.28
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-3>",
+          "valor": 57281.6
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-2>",
+          "valor": 60619.69
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-1>",
+          "valor": 59799.57
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR>",
+          "valor": 97340.7
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 759964.09
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-11>",
+          "valor": 53623.41
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-10>",
+          "valor": 50157.82
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-9>",
+          "valor": 53409.36
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-8>",
+          "valor": 50678.48
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-7>",
+          "valor": 50678.48
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-6>",
+          "valor": 73605.2
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-5>",
+          "valor": 49605.86
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-4>",
+          "valor": 49214.53
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-3>",
+          "valor": 50494.16
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-2>",
+          "valor": 53639.07
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-1>",
+          "valor": 52785.11
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR>",
+          "valor": 83975.33
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 671866.81
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-11>",
+          "valor": 5499.4
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-10>",
+          "valor": 8413.82
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-9>",
+          "valor": 6554.42
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-8>",
+          "valor": 6788.68
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-7>",
+          "valor": 6902.24
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-6>",
+          "valor": 6751.6
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-5>",
+          "valor": 6202.48
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-4>",
+          "valor": 6836.75
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-3>",
+          "valor": 6787.44
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-2>",
+          "valor": 6980.62
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-1>",
+          "valor": 7014.46
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR>",
+          "valor": 13365.37
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 88097.28
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "<MR-11>",
+          "valor": 3516.56
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "<MR>",
+          "valor": 7372.83
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 10889.39
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária",
+          "coluna": "<MR-11>",
+          "valor": 3516.56
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária",
+          "coluna": "<MR>",
+          "valor": 7372.83
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 10889.39
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-11>",
+          "valor": 55606.25
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-10>",
+          "valor": 58571.64
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-9>",
+          "valor": 59963.78
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-8>",
+          "valor": 57467.16
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-7>",
+          "valor": 57580.72
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-6>",
+          "valor": 80356.8
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-5>",
+          "valor": 55808.34
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-4>",
+          "valor": 56051.28
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-3>",
+          "valor": 57281.6
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-2>",
+          "valor": 60619.69
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-1>",
+          "valor": 59799.57
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR>",
+          "valor": 89967.87
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 749074.7
+        },
+        {
+          "conta": "RECEITA CORRENTE LIQUIDA - RCL (IV)",
+          "coluna": "Valor",
+          "valor": 35522774.99
+        },
+        {
+          "conta": "(-) Transferências Obrigatórias da União relativas às Emendas Individuais (art. 166-A, §1º, da CF)",
+          "coluna": "Valor",
+          "valor": 300000.0
+        },
+        {
+          "conta": "(-) Transferências da União relativas à remuneração dos agentes comunitários de saúde e de combate às endemias (CF, art. 198, §11)",
+          "coluna": "Valor",
+          "valor": 261096.0
+        },
+        {
+          "conta": "= RECEITA CORRENTE LÍQUIDA AJUSTADA PARA CÁLCULO DOS LIMITES DA DESPESA COM PESSOAL (V)",
+          "coluna": "Valor",
+          "valor": 34961678.99
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VI) = (III a + III b)",
+          "coluna": "Valor",
+          "valor": 749074.7
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VI) = (III a + III b)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 2.14
+        },
+        {
+          "conta": "LIMITE MÁXIMO (VII) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "Valor",
+          "valor": 2097700.74
+        },
+        {
+          "conta": "LIMITE MÁXIMO (VII) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 6.0
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (VIII) = (0,95 x VII) (parágrafo único do art. 22 da LRF)",
+          "coluna": "Valor",
+          "valor": 1992815.7
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (VIII) = (0,95 x VII) (parágrafo único do art. 22 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.7
+        },
+        {
+          "conta": "LIMITE DE ALERTA (IX) = (0,90 x VII) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "Valor",
+          "valor": 1887930.67
+        },
+        {
+          "conta": "LIMITE DE ALERTA (IX) = (0,90 x VII) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.4
+        }
+      ],
+      "disponibilidade_caixa": [
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "DISPONIBILIDADE DE CAIXA BRUTA (a)",
+          "valor": 7145.91
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS VINCULADOS (II)",
+          "coluna": "DISPONIBILIDADE DE CAIXA BRUTA (a)",
+          "valor": 7546.2
+        },
+        {
+          "conta": "Outros Recursos Extraorçamentários",
+          "coluna": "DISPONIBILIDADE DE CAIXA BRUTA (a)",
+          "valor": 7546.2
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "DISPONIBILIDADE DE CAIXA BRUTA (a)",
+          "valor": 14692.11
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "Do Exercício (c)",
+          "valor": 6087.86
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "Do Exercício (c)",
+          "valor": 6087.86
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS VINCULADOS (II)",
+          "coluna": "Demais Obrigações Financeiras (e)",
+          "valor": 7546.2
+        },
+        {
+          "conta": "Outros Recursos Extraorçamentários",
+          "coluna": "Demais Obrigações Financeiras (e)",
+          "valor": 7546.2
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "Demais Obrigações Financeiras (e)",
+          "valor": 7546.2
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (ANTES DA INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (f)=(a-(b+c+d+e))",
+          "valor": 1058.05
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (ANTES DA INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (f)=(a-(b+c+d+e))",
+          "valor": 1058.05
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (h) = (f - g)",
+          "valor": 1058.05
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (h) = (f - g)",
+          "valor": 1058.05
+        }
+      ],
+      "simplificado": [
+        {
+          "conta": "Receita Corrente Líquida",
+          "coluna": "Valor Até o Semestre",
+          "valor": 35522774.99
+        },
+        {
+          "conta": "Receita Corrente Líquida Ajustada para Cálculo dos Limites da Despesa com Pessoal",
+          "coluna": "Valor Até o Semestre",
+          "valor": 34961678.99
+        },
+        {
+          "conta": "Despesa Total com Pessoal - DTP",
+          "coluna": "VALOR",
+          "valor": 749074.7
+        },
+        {
+          "conta": "Despesa Total com Pessoal - DTP",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 2.14
+        },
+        {
+          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
+          "coluna": "VALOR",
+          "valor": 2097700.74
+        },
+        {
+          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 6.0
+        },
+        {
+          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
+          "coluna": "VALOR",
+          "valor": 1992815.7
+        },
+        {
+          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 5.7
+        },
+        {
+          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
+          "coluna": "VALOR",
+          "valor": 1887930.67
+        },
+        {
+          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 5.4
+        },
+        {
+          "conta": "Valor Total",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO)",
+          "valor": 1058.05
+        }
+      ]
+    },
+    {
+      "exercicio": 2025,
+      "periodo": 1,
+      "periodicidade": "S",
+      "periodo_rotulo": "1º Semestre de 2025",
+      "status_relatorio": "HO",
+      "data_status": "2025-07-30T10:57:40Z",
+      "populacao": 2819,
+      "lrf": {
+        "rcl": 34121283.25,
+        "rcl_ajustada": 33871017.46,
+        "dtp_valor": 681183.22,
+        "dtp_percentual": 2.01,
+        "limite_maximo_valor": 2032261.05,
+        "limite_maximo_percentual": 6.0,
+        "limite_prudencial_valor": 1930648.0,
+        "limite_prudencial_percentual": 5.7,
+        "limite_alerta_valor": 1829034.95,
+        "limite_alerta_percentual": 5.4,
+        "margem_prudencial_valor": 1249464.78,
+        "margem_maxima_valor": 1351077.83,
+        "situacao": "Conforme (Abaixo dos Limites)",
+        "situacao_classe": "status-regular"
+      },
+      "detalhamento_pessoal": [
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-11>",
+          "valor": 70258.56
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-10>",
+          "valor": 46808.35
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-9>",
+          "valor": 46699.35
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-8>",
+          "valor": 45228.28
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-7>",
+          "valor": 49082.98
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-6>",
+          "valor": 71142.16
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-5>",
+          "valor": 59122.81
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-4>",
+          "valor": 58571.64
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-3>",
+          "valor": 59963.78
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-2>",
+          "valor": 57467.16
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-1>",
+          "valor": 57580.72
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR>",
+          "valor": 80356.8
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 702282.59
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-11>",
+          "valor": 52675.75
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-10>",
+          "valor": 46808.35
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-9>",
+          "valor": 46699.35
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-8>",
+          "valor": 45228.28
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-7>",
+          "valor": 49082.98
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-6>",
+          "valor": 71142.16
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-5>",
+          "valor": 59122.81
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-4>",
+          "valor": 58571.64
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-3>",
+          "valor": 59963.78
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-2>",
+          "valor": 57467.16
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-1>",
+          "valor": 57580.72
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR>",
+          "valor": 80356.8
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 684699.78
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-11>",
+          "valor": 47798.43
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-10>",
+          "valor": 42633.25
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-9>",
+          "valor": 42533.25
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-8>",
+          "valor": 41183.64
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-7>",
+          "valor": 44720.07
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-6>",
+          "valor": 63497.05
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-5>",
+          "valor": 53623.41
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-4>",
+          "valor": 50157.82
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-3>",
+          "valor": 53409.36
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-2>",
+          "valor": 50678.48
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-1>",
+          "valor": 50678.48
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR>",
+          "valor": 73605.2
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 614518.44
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-11>",
+          "valor": 4877.32
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-10>",
+          "valor": 4175.1
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-9>",
+          "valor": 4166.1
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-8>",
+          "valor": 4044.64
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-7>",
+          "valor": 4362.91
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-6>",
+          "valor": 7645.11
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-5>",
+          "valor": 5499.4
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-4>",
+          "valor": 8413.82
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-3>",
+          "valor": 6554.42
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-2>",
+          "valor": 6788.68
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-1>",
+          "valor": 6902.24
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR>",
+          "valor": 6751.6
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 70181.34
+        },
+        {
+          "conta": "Pessoal Inativo e Pensionistas",
+          "coluna": "<MR-11>",
+          "valor": 17582.81
+        },
+        {
+          "conta": "Pessoal Inativo e Pensionistas",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 17582.81
+        },
+        {
+          "conta": "Aposentadorias, Reserva e Reformas",
+          "coluna": "<MR-11>",
+          "valor": 17582.81
+        },
+        {
+          "conta": "Aposentadorias, Reserva e Reformas",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 17582.81
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "<MR-11>",
+          "valor": 17582.81
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "<MR-5>",
+          "valor": 3516.56
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 21099.37
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária",
+          "coluna": "<MR-11>",
+          "valor": 17582.81
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária",
+          "coluna": "<MR-5>",
+          "valor": 3516.56
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 21099.37
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-11>",
+          "valor": 52675.75
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-10>",
+          "valor": 46808.35
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-9>",
+          "valor": 46699.35
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-8>",
+          "valor": 45228.28
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-7>",
+          "valor": 49082.98
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-6>",
+          "valor": 71142.16
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-5>",
+          "valor": 55606.25
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-4>",
+          "valor": 58571.64
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-3>",
+          "valor": 59963.78
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-2>",
+          "valor": 57467.16
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-1>",
+          "valor": 57580.72
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR>",
+          "valor": 80356.8
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 681183.22
+        },
+        {
+          "conta": "RECEITA CORRENTE LIQUIDA - RCL (IV)",
+          "coluna": "Valor",
+          "valor": 34121283.25
+        },
+        {
+          "conta": "(-) Transferências da União relativas à remuneração dos agentes comunitários de saúde e de combate às endemias (CF, art. 198, §11)",
+          "coluna": "Valor",
+          "valor": 250265.79
+        },
+        {
+          "conta": "= RECEITA CORRENTE LÍQUIDA AJUSTADA PARA CÁLCULO DOS LIMITES DA DESPESA COM PESSOAL (V)",
+          "coluna": "Valor",
+          "valor": 33871017.46
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VI) = (III a + III b)",
+          "coluna": "Valor",
+          "valor": 681183.22
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VI) = (III a + III b)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 2.01
+        },
+        {
+          "conta": "LIMITE MÁXIMO (VII) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "Valor",
+          "valor": 2032261.05
+        },
+        {
+          "conta": "LIMITE MÁXIMO (VII) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 6.0
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (VIII) = (0,95 x VII) (parágrafo único do art. 22 da LRF)",
+          "coluna": "Valor",
+          "valor": 1930648.0
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (VIII) = (0,95 x VII) (parágrafo único do art. 22 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.7
+        },
+        {
+          "conta": "LIMITE DE ALERTA (IX) = (0,90 x VII) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "Valor",
+          "valor": 1829034.95
+        },
+        {
+          "conta": "LIMITE DE ALERTA (IX) = (0,90 x VII) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.4
+        }
+      ],
+      "disponibilidade_caixa": [],
+      "simplificado": []
+    },
+    {
+      "exercicio": 2024,
+      "periodo": 2,
+      "periodicidade": "S",
+      "periodo_rotulo": "2º Semestre de 2024",
+      "status_relatorio": "HO",
+      "data_status": "2025-01-29T12:07:32Z",
+      "populacao": 2819,
+      "lrf": {
+        "rcl": 33756882.59,
+        "rcl_ajustada": 33067916.8,
+        "dtp_valor": 598443.11,
+        "dtp_percentual": 1.81,
+        "limite_maximo_valor": 1984075.01,
+        "limite_maximo_percentual": 6.0,
+        "limite_prudencial_valor": 1884871.26,
+        "limite_prudencial_percentual": 5.7,
+        "limite_alerta_valor": 1785667.51,
+        "limite_alerta_percentual": 5.4,
+        "margem_prudencial_valor": 1286428.15,
+        "margem_maxima_valor": 1385631.9,
+        "situacao": "Conforme (Abaixo dos Limites)",
+        "situacao_classe": "status-regular"
+      },
+      "detalhamento_pessoal": [
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-11>",
+          "valor": 46006.51
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-10>",
+          "valor": 49259.87
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-9>",
+          "valor": 37645.05
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-8>",
+          "valor": 66352.32
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-7>",
+          "valor": 45327.62
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-6>",
+          "valor": 42214.87
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-5>",
+          "valor": 70258.56
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-4>",
+          "valor": 46808.35
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-3>",
+          "valor": 46699.35
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-2>",
+          "valor": 45228.28
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-1>",
+          "valor": 49082.98
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR>",
+          "valor": 71142.16
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 616025.92
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-11>",
+          "valor": 46006.51
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-10>",
+          "valor": 49259.87
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-9>",
+          "valor": 37645.05
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-8>",
+          "valor": 66352.32
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-7>",
+          "valor": 45327.62
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-6>",
+          "valor": 42214.87
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-5>",
+          "valor": 52675.75
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-4>",
+          "valor": 46808.35
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-3>",
+          "valor": 46699.35
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-2>",
+          "valor": 45228.28
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-1>",
+          "valor": 49082.98
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR>",
+          "valor": 71142.16
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 598443.11
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-11>",
+          "valor": 38021.92
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-10>",
+          "valor": 40818.87
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-9>",
+          "valor": 38961.92
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-8>",
+          "valor": 58182.53
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-7>",
+          "valor": 41335.21
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-6>",
+          "valor": 38292.9
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-5>",
+          "valor": 47798.43
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-4>",
+          "valor": 42633.25
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-3>",
+          "valor": 42533.25
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-2>",
+          "valor": 41183.64
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-1>",
+          "valor": 44720.07
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR>",
+          "valor": 63497.05
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 537979.04
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-11>",
+          "valor": 7984.59
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-10>",
+          "valor": 8441.0
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-9>",
+          "valor": -1316.87
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-8>",
+          "valor": 8169.79
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-7>",
+          "valor": 3992.41
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-6>",
+          "valor": 3921.97
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-5>",
+          "valor": 4877.32
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-4>",
+          "valor": 4175.1
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-3>",
+          "valor": 4166.1
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-2>",
+          "valor": 4044.64
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-1>",
+          "valor": 4362.91
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR>",
+          "valor": 7645.11
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 60464.07
+        },
+        {
+          "conta": "Pessoal Inativo e Pensionistas",
+          "coluna": "<MR-5>",
+          "valor": 17582.81
+        },
+        {
+          "conta": "Pessoal Inativo e Pensionistas",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 17582.81
+        },
+        {
+          "conta": "Aposentadorias, Reserva e Reformas",
+          "coluna": "<MR-5>",
+          "valor": 17582.81
+        },
+        {
+          "conta": "Aposentadorias, Reserva e Reformas",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 17582.81
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "<MR-5>",
+          "valor": 17582.81
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 17582.81
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária",
+          "coluna": "<MR-5>",
+          "valor": 17582.81
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 17582.81
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-11>",
+          "valor": 46006.51
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-10>",
+          "valor": 49259.87
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-9>",
+          "valor": 37645.05
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-8>",
+          "valor": 66352.32
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-7>",
+          "valor": 45327.62
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-6>",
+          "valor": 42214.87
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-5>",
+          "valor": 52675.75
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-4>",
+          "valor": 46808.35
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-3>",
+          "valor": 46699.35
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-2>",
+          "valor": 45228.28
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-1>",
+          "valor": 49082.98
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR>",
+          "valor": 71142.16
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 598443.11
+        },
+        {
+          "conta": "RECEITA CORRENTE LIQUIDA - RCL (IV)",
+          "coluna": "Valor",
+          "valor": 33756882.59
+        },
+        {
+          "conta": "(-) Transferências Obrigatórias da União relativas às Emendas Individuais (art. 166-A, §1º, da CF) (V)",
+          "coluna": "Valor",
+          "valor": 450000.0
+        },
+        {
+          "conta": "(-) Transferências da União relativas à remuneração dos agentes comunitários de saúde e de combate às endemias (CF, art. 198, §11) (VII)",
+          "coluna": "Valor",
+          "valor": 238965.79
+        },
+        {
+          "conta": "= RECEITA CORRENTE LÍQUIDA AJUSTADA PARA CÁLCULO DOS LIMITES DA DESPESA COM PESSOAL (VII) = (IV - V - VI)",
+          "coluna": "Valor",
+          "valor": 33067916.8
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VIII) = (III a + III b)",
+          "coluna": "Valor",
+          "valor": 598443.11
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VIII) = (III a + III b)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 1.81
+        },
+        {
+          "conta": "LIMITE MÁXIMO (IX) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "Valor",
+          "valor": 1984075.01
+        },
+        {
+          "conta": "LIMITE MÁXIMO (IX) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 6.0
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (X) = (0,95 x IX) (parágrafo único do art. 22 da LRF)",
+          "coluna": "Valor",
+          "valor": 1884871.26
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (X) = (0,95 x IX) (parágrafo único do art. 22 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.7
+        },
+        {
+          "conta": "LIMITE DE ALERTA (XI) = (0,90 x IX) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "Valor",
+          "valor": 1785667.51
+        },
+        {
+          "conta": "LIMITE DE ALERTA (XI) = (0,90 x IX) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.4
+        }
+      ],
+      "disponibilidade_caixa": [
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "DISPONIBILIDADE DE CAIXA BRUTA (a)",
+          "valor": 4320.29
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS VINCULADOS (II)",
+          "coluna": "DISPONIBILIDADE DE CAIXA BRUTA (a)",
+          "valor": 8418.15
+        },
+        {
+          "conta": "Outros Recursos Extraorçamentários",
+          "coluna": "DISPONIBILIDADE DE CAIXA BRUTA (a)",
+          "valor": 8418.15
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "DISPONIBILIDADE DE CAIXA BRUTA (a)",
+          "valor": 12738.44
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "Do Exercício (c)",
+          "valor": 4166.1
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "Do Exercício (c)",
+          "valor": 4166.1
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS VINCULADOS (II)",
+          "coluna": "Demais Obrigações Financeiras (e)",
+          "valor": 8418.15
+        },
+        {
+          "conta": "Outros Recursos Extraorçamentários",
+          "coluna": "Demais Obrigações Financeiras (e)",
+          "valor": 8418.15
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "Demais Obrigações Financeiras (e)",
+          "valor": 8418.15
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (ANTES DA INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (f)=(a-(b+c+d+e))",
+          "valor": 154.19
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (ANTES DA INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (f)=(a-(b+c+d+e))",
+          "valor": 154.19
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (h) = (f - g)",
+          "valor": 154.19
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (h) = (f - g)",
+          "valor": 154.19
+        }
+      ],
+      "simplificado": [
+        {
+          "conta": "Receita Corrente Líquida",
+          "coluna": "Valor Até o Semestre",
+          "valor": 33756882.59
+        },
+        {
+          "conta": "Receita Corrente Líquida Ajustada para Cálculo dos Limites da Despesa com Pessoal",
+          "coluna": "Valor Até o Semestre",
+          "valor": 33067916.8
+        },
+        {
+          "conta": "Despesa Total com Pessoal - DTP",
+          "coluna": "VALOR",
+          "valor": 598443.11
+        },
+        {
+          "conta": "Despesa Total com Pessoal - DTP",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 1.81
+        },
+        {
+          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
+          "coluna": "VALOR",
+          "valor": 1984075.01
+        },
+        {
+          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 6.0
+        },
+        {
+          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
+          "coluna": "VALOR",
+          "valor": 1884871.26
+        },
+        {
+          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 5.7
+        },
+        {
+          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
+          "coluna": "VALOR",
+          "valor": 1785667.51
+        },
+        {
+          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 5.4
+        },
+        {
+          "conta": "Valor Total",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO)",
+          "valor": 154.19
+        }
+      ]
+    },
+    {
+      "exercicio": 2024,
+      "periodo": 1,
+      "periodicidade": "S",
+      "periodo_rotulo": "1º Semestre de 2024",
+      "status_relatorio": "HO",
+      "data_status": "2024-07-26T10:25:41Z",
+      "populacao": 2819,
+      "lrf": {
+        "rcl": 32554920.56,
+        "rcl_ajustada": 31811224.56,
+        "dtp_valor": 558286.18,
+        "dtp_percentual": 1.75,
+        "limite_maximo_valor": 1908673.47,
+        "limite_maximo_percentual": 6.0,
+        "limite_prudencial_valor": 1813239.8,
+        "limite_prudencial_percentual": 5.7,
+        "limite_alerta_valor": 1717806.12,
+        "limite_alerta_percentual": 5.4,
+        "margem_prudencial_valor": 1254953.62,
+        "margem_maxima_valor": 1350387.29,
+        "situacao": "Conforme (Abaixo dos Limites)",
+        "situacao_classe": "status-regular"
+      },
+      "detalhamento_pessoal": [
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-11>",
+          "valor": 43968.58
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-10>",
+          "valor": 45079.11
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-9>",
+          "valor": 45146.2
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-8>",
+          "valor": 44536.87
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-7>",
+          "valor": 44536.87
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-6>",
+          "valor": 48212.31
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-5>",
+          "valor": 46006.51
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-4>",
+          "valor": 49259.87
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-3>",
+          "valor": 37645.05
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-2>",
+          "valor": 66352.32
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-1>",
+          "valor": 45327.62
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR>",
+          "valor": 42214.87
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 558286.18
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-11>",
+          "valor": 43968.58
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-10>",
+          "valor": 45079.11
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-9>",
+          "valor": 45146.2
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-8>",
+          "valor": 44536.87
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-7>",
+          "valor": 44536.87
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-6>",
+          "valor": 48212.31
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-5>",
+          "valor": 46006.51
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-4>",
+          "valor": 49259.87
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-3>",
+          "valor": 37645.05
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-2>",
+          "valor": 66352.32
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-1>",
+          "valor": 45327.62
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR>",
+          "valor": 42214.87
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 558286.18
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-11>",
+          "valor": 36137.95
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-10>",
+          "valor": 37039.54
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-9>",
+          "valor": 37570.03
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-8>",
+          "valor": 36807.34
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-7>",
+          "valor": 36807.34
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-6>",
+          "valor": 41549.69
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-5>",
+          "valor": 38021.92
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-4>",
+          "valor": 40818.87
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-3>",
+          "valor": 38961.92
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-2>",
+          "valor": 58182.53
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-1>",
+          "valor": 41335.21
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR>",
+          "valor": 38292.9
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 481525.24
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-11>",
+          "valor": 7830.63
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-10>",
+          "valor": 8039.57
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-9>",
+          "valor": 7576.17
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-8>",
+          "valor": 7729.53
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-7>",
+          "valor": 7729.53
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-6>",
+          "valor": 6662.62
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-5>",
+          "valor": 7984.59
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-4>",
+          "valor": 8441.0
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-3>",
+          "valor": -1316.87
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-2>",
+          "valor": 8169.79
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-1>",
+          "valor": 3992.41
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR>",
+          "valor": 3921.97
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 76760.94
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-11>",
+          "valor": 43968.58
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-10>",
+          "valor": 45079.11
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-9>",
+          "valor": 45146.2
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-8>",
+          "valor": 44536.87
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-7>",
+          "valor": 44536.87
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-6>",
+          "valor": 48212.31
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-5>",
+          "valor": 46006.51
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-4>",
+          "valor": 49259.87
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-3>",
+          "valor": 37645.05
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-2>",
+          "valor": 66352.32
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-1>",
+          "valor": 45327.62
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR>",
+          "valor": 42214.87
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 558286.18
+        },
+        {
+          "conta": "RECEITA CORRENTE LIQUIDA - RCL (IV)",
+          "coluna": "Valor",
+          "valor": 32554920.56
+        },
+        {
+          "conta": "(-) Transferências Obrigatórias da União relativas às Emendas Individuais (art. 166-A, §1º, da CF) (V)",
+          "coluna": "Valor",
+          "valor": 550000.0
+        },
+        {
+          "conta": "(-) Transferências obrigatórias da União relativas às emendas de bancada (art. 166, § 16, da CF) (VI)",
+          "coluna": "Valor",
+          "valor": 92664.0
+        },
+        {
+          "conta": "(-) Transferências da União relativas à remuneração dos agentes comunitários de saúde e de combate às endemias (CF, art. 198, §11) (VII)",
+          "coluna": "Valor",
+          "valor": 101032.0
+        },
+        {
+          "conta": "= RECEITA CORRENTE LÍQUIDA AJUSTADA PARA CÁLCULO DOS LIMITES DA DESPESA COM PESSOAL (VII) = (IV - V - VI)",
+          "coluna": "Valor",
+          "valor": 31811224.56
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VIII) = (III a + III b)",
+          "coluna": "Valor",
+          "valor": 558286.18
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VIII) = (III a + III b)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 1.75
+        },
+        {
+          "conta": "LIMITE MÁXIMO (IX) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "Valor",
+          "valor": 1908673.47
+        },
+        {
+          "conta": "LIMITE MÁXIMO (IX) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 6.0
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (X) = (0,95 x IX) (parágrafo único do art. 22 da LRF)",
+          "coluna": "Valor",
+          "valor": 1813239.8
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (X) = (0,95 x IX) (parágrafo único do art. 22 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.7
+        },
+        {
+          "conta": "LIMITE DE ALERTA (XI) = (0,90 x IX) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "Valor",
+          "valor": 1717806.12
+        },
+        {
+          "conta": "LIMITE DE ALERTA (XI) = (0,90 x IX) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.4
+        }
+      ],
+      "disponibilidade_caixa": [],
+      "simplificado": []
+    },
+    {
+      "exercicio": 2023,
+      "periodo": 2,
+      "periodicidade": "S",
+      "periodo_rotulo": "2º Semestre de 2023",
+      "status_relatorio": "RE",
+      "data_status": "2024-01-30T09:31:06Z",
+      "populacao": 2521,
+      "lrf": {
+        "rcl": 29849384.26,
+        "rcl_ajustada": 29478240.26,
+        "dtp_valor": 570243.45,
+        "dtp_percentual": 1.93,
+        "limite_maximo_valor": 1768694.42,
+        "limite_maximo_percentual": 6.0,
+        "limite_prudencial_valor": 1680259.7,
+        "limite_prudencial_percentual": 5.7,
+        "limite_alerta_valor": 1591824.98,
+        "limite_alerta_percentual": 5.4,
+        "margem_prudencial_valor": 1110016.25,
+        "margem_maxima_valor": 1198450.97,
+        "situacao": "Conforme (Abaixo dos Limites)",
+        "situacao_classe": "status-regular"
+      },
+      "detalhamento_pessoal": [
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-11>",
+          "valor": 68126.45
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-10>",
+          "valor": 45424.69
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-9>",
+          "valor": 47580.42
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-8>",
+          "valor": 48826.67
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-7>",
+          "valor": 63665.96
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-6>",
+          "valor": 44336.67
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-5>",
+          "valor": 43968.58
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-4>",
+          "valor": 45079.11
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-3>",
+          "valor": 45146.2
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-2>",
+          "valor": 44536.87
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-1>",
+          "valor": 44536.87
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR>",
+          "valor": 48212.31
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 589440.8
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-11>",
+          "valor": 68126.45
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-10>",
+          "valor": 45424.69
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-9>",
+          "valor": 47580.42
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-8>",
+          "valor": 48826.67
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-7>",
+          "valor": 63665.96
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-6>",
+          "valor": 44336.67
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-5>",
+          "valor": 43968.58
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-4>",
+          "valor": 45079.11
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-3>",
+          "valor": 45146.2
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-2>",
+          "valor": 44536.87
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-1>",
+          "valor": 44536.87
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR>",
+          "valor": 48212.31
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 589440.8
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-11>",
+          "valor": 60031.6
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-10>",
+          "valor": 37541.07
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-9>",
+          "valor": 39322.67
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-8>",
+          "valor": 39257.93
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-7>",
+          "valor": 55344.11
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-6>",
+          "valor": 36641.87
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-5>",
+          "valor": 36137.95
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-4>",
+          "valor": 37039.54
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-3>",
+          "valor": 37570.03
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-2>",
+          "valor": 36807.34
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-1>",
+          "valor": 36807.34
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR>",
+          "valor": 41549.69
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 494051.14
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-11>",
+          "valor": 8094.85
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-10>",
+          "valor": 7883.62
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-9>",
+          "valor": 8257.75
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-8>",
+          "valor": 9568.74
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-7>",
+          "valor": 8321.85
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-6>",
+          "valor": 7694.8
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-5>",
+          "valor": 7830.63
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-4>",
+          "valor": 8039.57
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-3>",
+          "valor": 7576.17
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-2>",
+          "valor": 7729.53
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-1>",
+          "valor": 7729.53
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR>",
+          "valor": 6662.62
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 95389.66
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "<MR-11>",
+          "valor": 19197.35
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 19197.35
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária e Deduções Constitucionais",
+          "coluna": "<MR-11>",
+          "valor": 19197.35
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária e Deduções Constitucionais",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 19197.35
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-11>",
+          "valor": 48929.1
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-10>",
+          "valor": 45424.69
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-9>",
+          "valor": 47580.42
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-8>",
+          "valor": 48826.67
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-7>",
+          "valor": 63665.96
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-6>",
+          "valor": 44336.67
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-5>",
+          "valor": 43968.58
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-4>",
+          "valor": 45079.11
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-3>",
+          "valor": 45146.2
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-2>",
+          "valor": 44536.87
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-1>",
+          "valor": 44536.87
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR>",
+          "valor": 48212.31
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 570243.45
+        },
+        {
+          "conta": "RECEITA CORRENTE LIQUIDA - RCL (IV)",
+          "coluna": "Valor",
+          "valor": 29849384.26
+        },
+        {
+          "conta": "(-) Transferências Obrigatórias da União relativas às Emendas Individuais (art. 166-A, §1º, da CF) (V)",
+          "coluna": "Valor",
+          "valor": 200000.0
+        },
+        {
+          "conta": "(-) Transferências obrigatórias da União relativas às emendas de bancada (art. 166, § 16, da CF) e ao vencimento dos agentes comunitários de saúde e de combate às endemias (CF, art. 198, §11) (VI)",
+          "coluna": "Valor",
+          "valor": 171144.0
+        },
+        {
+          "conta": "= RECEITA CORRENTE LÍQUIDA AJUSTADA PARA CÁLCULO DOS LIMITES DA DESPESA COM PESSOAL (VII) = (IV - V - VI)",
+          "coluna": "Valor",
+          "valor": 29478240.26
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VIII) = (III a + III b)",
+          "coluna": "Valor",
+          "valor": 570243.45
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VIII) = (III a + III b)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 1.93
+        },
+        {
+          "conta": "LIMITE MÁXIMO (IX) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "Valor",
+          "valor": 1768694.42
+        },
+        {
+          "conta": "LIMITE MÁXIMO (IX) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 6.0
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (X) = (0,95 x IX) (parágrafo único do art. 22 da LRF)",
+          "coluna": "Valor",
+          "valor": 1680259.7
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (X) = (0,95 x IX) (parágrafo único do art. 22 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.7
+        },
+        {
+          "conta": "LIMITE DE ALERTA (XI) = (0,90 x IX) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "Valor",
+          "valor": 1591824.98
+        },
+        {
+          "conta": "LIMITE DE ALERTA (XI) = (0,90 x IX) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.4
+        }
+      ],
+      "disponibilidade_caixa": [
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "DISPONIBILIDADE DE CAIXA BRUTA (a)",
+          "valor": 11554.44
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS VINCULADOS (II)",
+          "coluna": "DISPONIBILIDADE DE CAIXA BRUTA (a)",
+          "valor": 6794.63
+        },
+        {
+          "conta": "Outros Recursos Extraorçamentários",
+          "coluna": "DISPONIBILIDADE DE CAIXA BRUTA (a)",
+          "valor": 6794.63
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "DISPONIBILIDADE DE CAIXA BRUTA (a)",
+          "valor": 18349.07
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "Do Exercício (c)",
+          "valor": 10374.13
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "Do Exercício (c)",
+          "valor": 10374.13
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS VINCULADOS (II)",
+          "coluna": "Demais Obrigações Financeiras (e)",
+          "valor": 6794.63
+        },
+        {
+          "conta": "Outros Recursos Extraorçamentários",
+          "coluna": "Demais Obrigações Financeiras (e)",
+          "valor": 6794.63
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "Demais Obrigações Financeiras (e)",
+          "valor": 6794.63
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (ANTES DA INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (f)=(a-(b+c+d+e))",
+          "valor": 1180.31
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (ANTES DA INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (f)=(a-(b+c+d+e))",
+          "valor": 1180.31
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "RESTOS A PAGAR EMPENHADOS E NÃO LIQUIDADOS DO EXERCÍCIO (g)",
+          "valor": 1072.26
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "RESTOS A PAGAR EMPENHADOS E NÃO LIQUIDADOS DO EXERCÍCIO (g)",
+          "valor": 1072.26
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (h) = (f - g)",
+          "valor": 108.05
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (h) = (f - g)",
+          "valor": 108.05
+        }
+      ],
+      "simplificado": [
+        {
+          "conta": "Receita Corrente Líquida",
+          "coluna": "Valor Até o Semestre",
+          "valor": 29849384.26
+        },
+        {
+          "conta": "Receita Corrente Líquida Ajustada para Cálculo dos Limites da Despesa com Pessoal",
+          "coluna": "Valor Até o Semestre",
+          "valor": 29478240.26
+        },
+        {
+          "conta": "Despesa Total com Pessoal - DTP",
+          "coluna": "VALOR",
+          "valor": 570243.45
+        },
+        {
+          "conta": "Despesa Total com Pessoal - DTP",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 1.93
+        },
+        {
+          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
+          "coluna": "VALOR",
+          "valor": 1773403.22
+        },
+        {
+          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 6.0
+        },
+        {
+          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
+          "coluna": "VALOR",
+          "valor": 1684733.06
+        },
+        {
+          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 5.7
+        },
+        {
+          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
+          "coluna": "VALOR",
+          "valor": 1596062.9
+        },
+        {
+          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 5.4
+        },
+        {
+          "conta": "Valor Total",
+          "coluna": "RESTOS A PAGAR EMPENHADOS E NÃO LIQUIDADOS DO EXERCÍCIO",
+          "valor": 1072.26
+        },
+        {
+          "conta": "Valor Total",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO)",
+          "valor": 108.05
+        }
+      ]
+    },
+    {
+      "exercicio": 2023,
+      "periodo": 1,
+      "periodicidade": "S",
+      "periodo_rotulo": "1º Semestre de 2023",
+      "status_relatorio": "HO",
+      "data_status": "2023-07-28T13:42:29Z",
+      "populacao": 2521,
+      "lrf": {
+        "rcl": 27364823.11,
+        "rcl_ajustada": 27264823.11,
+        "dtp_valor": 639462.83,
+        "dtp_percentual": 2.35,
+        "limite_maximo_valor": 1635889.39,
+        "limite_maximo_percentual": 6.0,
+        "limite_prudencial_valor": 1554094.92,
+        "limite_prudencial_percentual": 5.7,
+        "limite_alerta_valor": 1472300.45,
+        "limite_alerta_percentual": 5.4,
+        "margem_prudencial_valor": 914632.09,
+        "margem_maxima_valor": 996426.56,
+        "situacao": "Conforme (Abaixo dos Limites)",
+        "situacao_classe": "status-regular"
+      },
+      "detalhamento_pessoal": [
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-11>",
+          "valor": 45325.06
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-10>",
+          "valor": 64168.32
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-9>",
+          "valor": 40124.19
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-8>",
+          "valor": 46094.43
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-7>",
+          "valor": 40742.18
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-6>",
+          "valor": 104535.34
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-5>",
+          "valor": 68126.45
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-4>",
+          "valor": 45424.69
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-3>",
+          "valor": 47580.42
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-2>",
+          "valor": 48826.67
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-1>",
+          "valor": 63665.96
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR>",
+          "valor": 44336.67
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 658950.38
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-11>",
+          "valor": 45325.06
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-10>",
+          "valor": 64168.32
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-9>",
+          "valor": 40124.19
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-8>",
+          "valor": 46094.43
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-7>",
+          "valor": 40742.18
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-6>",
+          "valor": 104535.34
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-5>",
+          "valor": 68126.45
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-4>",
+          "valor": 45424.69
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-3>",
+          "valor": 47580.42
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-2>",
+          "valor": 48826.67
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-1>",
+          "valor": 63665.96
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR>",
+          "valor": 44336.67
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 658950.38
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-11>",
+          "valor": 38488.51
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-10>",
+          "valor": 56644.37
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-9>",
+          "valor": 39488.46
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-8>",
+          "valor": 39071.49
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-7>",
+          "valor": 40106.45
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-6>",
+          "valor": 75267.37
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-5>",
+          "valor": 60031.6
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-4>",
+          "valor": 37541.07
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-3>",
+          "valor": 39322.67
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-2>",
+          "valor": 39257.93
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-1>",
+          "valor": 55344.11
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR>",
+          "valor": 36641.87
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 557205.9
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-11>",
+          "valor": 6836.55
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-10>",
+          "valor": 7523.95
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-9>",
+          "valor": 635.73
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-8>",
+          "valor": 7022.94
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-7>",
+          "valor": 635.73
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-6>",
+          "valor": 29267.97
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-5>",
+          "valor": 8094.85
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-4>",
+          "valor": 7883.62
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-3>",
+          "valor": 8257.75
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-2>",
+          "valor": 9568.74
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-1>",
+          "valor": 8321.85
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR>",
+          "valor": 7694.8
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 101744.48
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "<MR-9>",
+          "valor": 290.2
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "<MR-5>",
+          "valor": 19197.35
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 19487.55
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária e Deduções Constitucionais",
+          "coluna": "<MR-9>",
+          "valor": 290.2
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária e Deduções Constitucionais",
+          "coluna": "<MR-5>",
+          "valor": 19197.35
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária e Deduções Constitucionais",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 19487.55
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-11>",
+          "valor": 45325.06
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-10>",
+          "valor": 64168.32
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-9>",
+          "valor": 39833.99
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-8>",
+          "valor": 46094.43
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-7>",
+          "valor": 40742.18
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-6>",
+          "valor": 104535.34
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-5>",
+          "valor": 48929.1
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-4>",
+          "valor": 45424.69
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-3>",
+          "valor": 47580.42
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-2>",
+          "valor": 48826.67
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-1>",
+          "valor": 63665.96
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR>",
+          "valor": 44336.67
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 639462.83
+        },
+        {
+          "conta": "RECEITA CORRENTE LIQUIDA - RCL (IV)",
+          "coluna": "Valor",
+          "valor": 27364823.11
+        },
+        {
+          "conta": "(-) Transferências Obrigatórias da União relativas às Emendas Individuais (art. 166-A, §1º, da CF) (V)",
+          "coluna": "Valor",
+          "valor": 100000.0
+        },
+        {
+          "conta": "= RECEITA CORRENTE LÍQUIDA AJUSTADA PARA CÁLCULO DOS LIMITES DA DESPESA COM PESSOAL (VII) = (IV - V - VI)",
+          "coluna": "Valor",
+          "valor": 27264823.11
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VIII) = (III a + III b)",
+          "coluna": "Valor",
+          "valor": 639462.83
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VIII) = (III a + III b)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 2.35
+        },
+        {
+          "conta": "LIMITE MÁXIMO (IX) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "Valor",
+          "valor": 1635889.39
+        },
+        {
+          "conta": "LIMITE MÁXIMO (IX) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 6.0
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (X) = (0,95 x IX) (parágrafo único do art. 22 da LRF)",
+          "coluna": "Valor",
+          "valor": 1554094.92
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (X) = (0,95 x IX) (parágrafo único do art. 22 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.7
+        },
+        {
+          "conta": "LIMITE DE ALERTA (XI) = (0,90 x IX) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "Valor",
+          "valor": 1472300.45
+        },
+        {
+          "conta": "LIMITE DE ALERTA (XI) = (0,90 x IX) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.4
+        }
+      ],
+      "disponibilidade_caixa": [],
+      "simplificado": []
+    },
+    {
+      "exercicio": 2022,
+      "periodo": 2,
+      "periodicidade": "S",
+      "periodo_rotulo": "2º Semestre de 2022",
+      "status_relatorio": "HO",
+      "data_status": "2023-01-30T13:52:00Z",
+      "populacao": 2521,
+      "lrf": {
+        "rcl": 26514331.48,
+        "rcl_ajustada": 26364331.48,
+        "dtp_valor": 601325.49,
+        "dtp_percentual": 2.28,
+        "limite_maximo_valor": 1581859.89,
+        "limite_maximo_percentual": 6.0,
+        "limite_prudencial_valor": 1502766.9,
+        "limite_prudencial_percentual": 5.7,
+        "limite_alerta_valor": 1423673.9,
+        "limite_alerta_percentual": 5.4,
+        "margem_prudencial_valor": 901441.41,
+        "margem_maxima_valor": 980534.4,
+        "situacao": "Conforme (Abaixo dos Limites)",
+        "situacao_classe": "status-regular"
+      },
+      "detalhamento_pessoal": [
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-11>",
+          "valor": 45611.13
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-10>",
+          "valor": 43460.3
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-9>",
+          "valor": 42357.98
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-8>",
+          "valor": 42630.84
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-7>",
+          "valor": 43170.86
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-6>",
+          "valor": 43395.06
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-5>",
+          "valor": 45325.06
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-4>",
+          "valor": 64168.32
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-3>",
+          "valor": 40124.19
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-2>",
+          "valor": 46094.43
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-1>",
+          "valor": 40742.18
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR>",
+          "valor": 104535.34
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 601615.69
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-11>",
+          "valor": 45611.13
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-10>",
+          "valor": 43460.3
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-9>",
+          "valor": 42357.98
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-8>",
+          "valor": 42630.84
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-7>",
+          "valor": 43170.86
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-6>",
+          "valor": 43395.06
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-5>",
+          "valor": 45325.06
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-4>",
+          "valor": 64168.32
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-3>",
+          "valor": 40124.19
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-2>",
+          "valor": 46094.43
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-1>",
+          "valor": 40742.18
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR>",
+          "valor": 104535.34
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 601615.69
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-11>",
+          "valor": 38377.7
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-10>",
+          "valor": 36917.26
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-9>",
+          "valor": 35542.62
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-8>",
+          "valor": 36013.06
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-7>",
+          "valor": 36297.13
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-6>",
+          "valor": 36119.48
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-5>",
+          "valor": 38488.51
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-4>",
+          "valor": 56644.37
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-3>",
+          "valor": 39488.46
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-2>",
+          "valor": 39071.49
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-1>",
+          "valor": 40106.45
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR>",
+          "valor": 75267.37
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 508333.9
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-11>",
+          "valor": 7233.43
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-10>",
+          "valor": 6543.04
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-9>",
+          "valor": 6815.36
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-8>",
+          "valor": 6617.78
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-7>",
+          "valor": 6873.73
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-6>",
+          "valor": 7275.58
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-5>",
+          "valor": 6836.55
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-4>",
+          "valor": 7523.95
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-3>",
+          "valor": 635.73
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-2>",
+          "valor": 7022.94
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-1>",
+          "valor": 635.73
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR>",
+          "valor": 29267.97
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 93281.79
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "<MR-3>",
+          "valor": 290.2
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 290.2
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária",
+          "coluna": "<MR-3>",
+          "valor": 290.2
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 290.2
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-11>",
+          "valor": 45611.13
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-10>",
+          "valor": 43460.3
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-9>",
+          "valor": 42357.98
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-8>",
+          "valor": 42630.84
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-7>",
+          "valor": 43170.86
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-6>",
+          "valor": 43395.06
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-5>",
+          "valor": 45325.06
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-4>",
+          "valor": 64168.32
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-3>",
+          "valor": 39833.99
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-2>",
+          "valor": 46094.43
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-1>",
+          "valor": 40742.18
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR>",
+          "valor": 104535.34
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 601325.49
+        },
+        {
+          "conta": "RECEITA CORRENTE LIQUIDA - RCL (IV)",
+          "coluna": "Valor",
+          "valor": 26514331.48
+        },
+        {
+          "conta": "(-) Transferências Obrigatórias da União relativas às Emendas Individuais (art. 166-A, §1º, da CF) (V)",
+          "coluna": "Valor",
+          "valor": 150000.0
+        },
+        {
+          "conta": "= RECEITA CORRENTE LÍQUIDA AJUSTADA PARA CÁLCULO DOS LIMITES DA DESPESA COM PESSOAL (VII) = (IV - V - VI)",
+          "coluna": "Valor",
+          "valor": 26364331.48
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VIII) = (III a + III b)",
+          "coluna": "Valor",
+          "valor": 601325.49
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VIII) = (III a + III b)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 2.28
+        },
+        {
+          "conta": "LIMITE MÁXIMO (IX) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "Valor",
+          "valor": 1581859.89
+        },
+        {
+          "conta": "LIMITE MÁXIMO (IX) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 6.0
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (X) = (0,95 x IX) (parágrafo único do art. 22 da LRF)",
+          "coluna": "Valor",
+          "valor": 1502766.9
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (X) = (0,95 x IX) (parágrafo único do art. 22 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.7
+        },
+        {
+          "conta": "LIMITE DE ALERTA (XI) = (0,90 x IX) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "Valor",
+          "valor": 1423673.9
+        },
+        {
+          "conta": "LIMITE DE ALERTA (XI) = (0,90 x IX) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.4
+        }
+      ],
+      "disponibilidade_caixa": [
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "DISPONIBILIDADE DE CAIXA BRUTA (a)",
+          "valor": 10477.34
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS VINCULADOS (II)",
+          "coluna": "DISPONIBILIDADE DE CAIXA BRUTA (a)",
+          "valor": 9225.32
+        },
+        {
+          "conta": "Outros Recursos Extraorçamentários",
+          "coluna": "DISPONIBILIDADE DE CAIXA BRUTA (a)",
+          "valor": 9225.32
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "DISPONIBILIDADE DE CAIXA BRUTA (a)",
+          "valor": 19702.66
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "De Exercícios Anteriores (b)",
+          "valor": 650.0
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "De Exercícios Anteriores (b)",
+          "valor": 650.0
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "Do Exercício (c)",
+          "valor": 8701.54
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "Do Exercício (c)",
+          "valor": 8701.54
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS VINCULADOS (II)",
+          "coluna": "Demais Obrigações Financeiras (e)",
+          "valor": 9225.32
+        },
+        {
+          "conta": "Outros Recursos Extraorçamentários",
+          "coluna": "Demais Obrigações Financeiras (e)",
+          "valor": 9225.32
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "Demais Obrigações Financeiras (e)",
+          "valor": 9225.32
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (ANTES DA INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (f)=(a-(b+c+d+e))",
+          "valor": 1125.8
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (ANTES DA INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (f)=(a-(b+c+d+e))",
+          "valor": 1125.8
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (h) = (f - g)",
+          "valor": 1125.8
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (h) = (f - g)",
+          "valor": 1125.8
+        }
+      ],
+      "simplificado": [
+        {
+          "conta": "Receita Corrente Líquida",
+          "coluna": "Valor Até o Semestre",
+          "valor": 26514331.48
+        },
+        {
+          "conta": "Receita Corrente Líquida Ajustada para Cálculo dos Limites da Despesa com Pessoal",
+          "coluna": "Valor Até o Semestre",
+          "valor": 26364331.48
+        },
+        {
+          "conta": "Despesa Total com Pessoal - DTP",
+          "coluna": "VALOR",
+          "valor": 601325.49
+        },
+        {
+          "conta": "Despesa Total com Pessoal - DTP",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 2.28
+        },
+        {
+          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
+          "coluna": "VALOR",
+          "valor": 1581859.89
+        },
+        {
+          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 6.0
+        },
+        {
+          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
+          "coluna": "VALOR",
+          "valor": 1502766.9
+        },
+        {
+          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 5.7
+        },
+        {
+          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
+          "coluna": "VALOR",
+          "valor": 1423673.9
+        },
+        {
+          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 5.4
+        },
+        {
+          "conta": "Valor Total",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO)",
+          "valor": 1125.8
+        }
+      ]
+    },
+    {
+      "exercicio": 2022,
+      "periodo": 1,
+      "periodicidade": "S",
+      "periodo_rotulo": "1º Semestre de 2022",
+      "status_relatorio": "HO",
+      "data_status": "2022-07-29T16:01:44Z",
+      "populacao": 2521,
+      "lrf": {
+        "rcl": 25139289.64,
+        "rcl_ajustada": 24689289.64,
+        "dtp_valor": 512699.31,
+        "dtp_percentual": 2.08,
+        "limite_maximo_valor": 1481357.38,
+        "limite_maximo_percentual": 6.0,
+        "limite_prudencial_valor": 1407289.51,
+        "limite_prudencial_percentual": 5.7,
+        "limite_alerta_valor": 1333221.64,
+        "limite_alerta_percentual": 5.4,
+        "margem_prudencial_valor": 894590.2,
+        "margem_maxima_valor": 968658.07,
+        "situacao": "Conforme (Abaixo dos Limites)",
+        "situacao_classe": "status-regular"
+      },
+      "detalhamento_pessoal": [
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-11>",
+          "valor": 38288.84
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-10>",
+          "valor": 38270.67
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-9>",
+          "valor": 38288.76
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-8>",
+          "valor": 38909.39
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-7>",
+          "valor": 38288.76
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-6>",
+          "valor": 60026.72
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-5>",
+          "valor": 45611.13
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-4>",
+          "valor": 43460.3
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-3>",
+          "valor": 42357.98
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-2>",
+          "valor": 42630.84
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-1>",
+          "valor": 43170.86
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR>",
+          "valor": 43395.06
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 512699.31
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-11>",
+          "valor": 38288.84
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-10>",
+          "valor": 38270.67
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-9>",
+          "valor": 38288.76
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-8>",
+          "valor": 38909.39
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-7>",
+          "valor": 38288.76
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-6>",
+          "valor": 60026.72
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-5>",
+          "valor": 45611.13
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-4>",
+          "valor": 43460.3
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-3>",
+          "valor": 42357.98
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-2>",
+          "valor": 42630.84
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-1>",
+          "valor": 43170.86
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR>",
+          "valor": 43395.06
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 512699.31
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-11>",
+          "valor": 32119.41
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-10>",
+          "valor": 32119.41
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-9>",
+          "valor": 32119.41
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-8>",
+          "valor": 32632.32
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-7>",
+          "valor": 32119.41
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-6>",
+          "valor": 47908.57
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-5>",
+          "valor": 38377.7
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-4>",
+          "valor": 36917.26
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-3>",
+          "valor": 35542.62
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-2>",
+          "valor": 36013.06
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-1>",
+          "valor": 36297.13
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR>",
+          "valor": 36119.48
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 428285.78
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-11>",
+          "valor": 6169.43
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-10>",
+          "valor": 6151.26
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-9>",
+          "valor": 6169.35
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-8>",
+          "valor": 6277.07
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-7>",
+          "valor": 6169.35
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-6>",
+          "valor": 12118.15
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-5>",
+          "valor": 7233.43
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-4>",
+          "valor": 6543.04
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-3>",
+          "valor": 6815.36
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-2>",
+          "valor": 6617.78
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-1>",
+          "valor": 6873.73
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR>",
+          "valor": 7275.58
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 84413.53
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-11>",
+          "valor": 38288.84
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-10>",
+          "valor": 38270.67
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-9>",
+          "valor": 38288.76
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-8>",
+          "valor": 38909.39
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-7>",
+          "valor": 38288.76
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-6>",
+          "valor": 60026.72
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-5>",
+          "valor": 45611.13
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-4>",
+          "valor": 43460.3
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-3>",
+          "valor": 42357.98
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-2>",
+          "valor": 42630.84
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-1>",
+          "valor": 43170.86
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR>",
+          "valor": 43395.06
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 512699.31
+        },
+        {
+          "conta": "RECEITA CORRENTE LIQUIDA - RCL (IV)",
+          "coluna": "Valor",
+          "valor": 25139289.64
+        },
+        {
+          "conta": "(-) Transferências Obrigatórias da União relativas às Emendas Individuais (art. 166-A, §1º, da CF) (V)",
+          "coluna": "Valor",
+          "valor": 450000.0
+        },
+        {
+          "conta": "= RECEITA CORRENTE LÍQUIDA AJUSTADA PARA CÁLCULO DOS LIMITES DA DESPESA COM PESSOAL (VII) = (IV - V - VI)",
+          "coluna": "Valor",
+          "valor": 24689289.64
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VIII) = (III a + III b)",
+          "coluna": "Valor",
+          "valor": 512699.31
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VIII) = (III a + III b)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 2.08
+        },
+        {
+          "conta": "LIMITE MÁXIMO (IX) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "Valor",
+          "valor": 1481357.38
+        },
+        {
+          "conta": "LIMITE MÁXIMO (IX) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 6.0
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (X) = (0,95 x IX) (parágrafo único do art. 22 da LRF)",
+          "coluna": "Valor",
+          "valor": 1407289.51
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (X) = (0,95 x IX) (parágrafo único do art. 22 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.7
+        },
+        {
+          "conta": "LIMITE DE ALERTA (XI) = (0,90 x IX) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "Valor",
+          "valor": 1333221.64
+        },
+        {
+          "conta": "LIMITE DE ALERTA (XI) = (0,90 x IX) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.4
+        }
+      ],
+      "disponibilidade_caixa": [],
+      "simplificado": []
+    },
+    {
+      "exercicio": 2021,
+      "periodo": 2,
+      "periodicidade": "S",
+      "periodo_rotulo": "2º Semestre de 2021",
+      "status_relatorio": "HO",
+      "data_status": "2022-01-28T14:00:34Z",
+      "populacao": 2520,
+      "lrf": {
+        "rcl": 22414513.92,
+        "rcl_ajustada": 22114513.92,
+        "dtp_valor": 497321.53,
+        "dtp_percentual": 2.25,
+        "limite_maximo_valor": 1326870.84,
+        "limite_maximo_percentual": 6.0,
+        "limite_prudencial_valor": 1260527.3,
+        "limite_prudencial_percentual": 5.7,
+        "limite_alerta_valor": 1194183.76,
+        "limite_alerta_percentual": 5.4,
+        "margem_prudencial_valor": 763205.77,
+        "margem_maxima_valor": 829549.31,
+        "situacao": "Conforme (Abaixo dos Limites)",
+        "situacao_classe": "status-regular"
+      },
+      "detalhamento_pessoal": [
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-11>",
+          "valor": 42772.64
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-10>",
+          "valor": 41058.83
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-9>",
+          "valor": 37398.41
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-8>",
+          "valor": 56998.18
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-7>",
+          "valor": 33954.7
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-6>",
+          "valor": 38817.45
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-5>",
+          "valor": 38288.84
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-4>",
+          "valor": 38270.67
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-3>",
+          "valor": 38288.76
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-2>",
+          "valor": 38909.39
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-1>",
+          "valor": 38288.76
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR>",
+          "valor": 60026.72
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 503073.35
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-11>",
+          "valor": 42772.64
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-10>",
+          "valor": 41058.83
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-9>",
+          "valor": 37398.41
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-8>",
+          "valor": 56998.18
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-7>",
+          "valor": 33954.7
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-6>",
+          "valor": 38817.45
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-5>",
+          "valor": 38288.84
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-4>",
+          "valor": 38270.67
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-3>",
+          "valor": 38288.76
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-2>",
+          "valor": 38909.39
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-1>",
+          "valor": 38288.76
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR>",
+          "valor": 60026.72
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 503073.35
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-11>",
+          "valor": 36772.42
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-10>",
+          "valor": 34840.04
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-9>",
+          "valor": 31291.78
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-8>",
+          "valor": 50231.29
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-7>",
+          "valor": 28445.76
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-6>",
+          "valor": 32648.02
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-5>",
+          "valor": 32119.41
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-4>",
+          "valor": 32119.41
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-3>",
+          "valor": 32119.41
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-2>",
+          "valor": 32632.32
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-1>",
+          "valor": 32119.41
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR>",
+          "valor": 47908.57
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 423247.84
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-11>",
+          "valor": 6000.22
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-10>",
+          "valor": 6218.79
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-9>",
+          "valor": 6106.63
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-8>",
+          "valor": 6766.89
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-7>",
+          "valor": 5508.94
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-6>",
+          "valor": 6169.43
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-5>",
+          "valor": 6169.43
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-4>",
+          "valor": 6151.26
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-3>",
+          "valor": 6169.35
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-2>",
+          "valor": 6277.07
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-1>",
+          "valor": 6169.35
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR>",
+          "valor": 12118.15
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 79825.51
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "<MR-11>",
+          "valor": 5751.82
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 5751.82
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária",
+          "coluna": "<MR-11>",
+          "valor": 5751.82
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 5751.82
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-11>",
+          "valor": 37020.82
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-10>",
+          "valor": 41058.83
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-9>",
+          "valor": 37398.41
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-8>",
+          "valor": 56998.18
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-7>",
+          "valor": 33954.7
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-6>",
+          "valor": 38817.45
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-5>",
+          "valor": 38288.84
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-4>",
+          "valor": 38270.67
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-3>",
+          "valor": 38288.76
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-2>",
+          "valor": 38909.39
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-1>",
+          "valor": 38288.76
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR>",
+          "valor": 60026.72
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 497321.53
+        },
+        {
+          "conta": "RECEITA CORRENTE LIQUIDA - RCL (IV)",
+          "coluna": "Valor",
+          "valor": 22414513.92
+        },
+        {
+          "conta": "(-) Transferências Obrigatórias da União relativas às Emendas Individuais (art. 166-A, §1º, da CF) (V)",
+          "coluna": "Valor",
+          "valor": 300000.0
+        },
+        {
+          "conta": "= RECEITA CORRENTE LÍQUIDA AJUSTADA PARA CÁLCULO DOS LIMITES DA DESPESA COM PESSOAL (VII) = (IV - V - VI)",
+          "coluna": "Valor",
+          "valor": 22114513.92
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VIII) = (III a + III b)",
+          "coluna": "Valor",
+          "valor": 497321.53
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VIII) = (III a + III b)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 2.25
+        },
+        {
+          "conta": "LIMITE MÁXIMO (IX) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "Valor",
+          "valor": 1326870.84
+        },
+        {
+          "conta": "LIMITE MÁXIMO (IX) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 6.0
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (X) = (0,95 x IX) (parágrafo único do art. 22 da LRF)",
+          "coluna": "Valor",
+          "valor": 1260527.3
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (X) = (0,95 x IX) (parágrafo único do art. 22 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.7
+        },
+        {
+          "conta": "LIMITE DE ALERTA (XI) = (0,90 x IX) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "Valor",
+          "valor": 1194183.76
+        },
+        {
+          "conta": "LIMITE DE ALERTA (XI) = (0,90 x IX) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.4
+        }
+      ],
+      "disponibilidade_caixa": [
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "DISPONIBILIDADE DE CAIXA BRUTA (a)",
+          "valor": 17863.12
+        },
+        {
+          "conta": "Recursos Ordinários",
+          "coluna": "DISPONIBILIDADE DE CAIXA BRUTA (a)",
+          "valor": 17863.12
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "DISPONIBILIDADE DE CAIXA BRUTA (a)",
+          "valor": 17863.12
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "Do Exercício (c)",
+          "valor": 10019.99
+        },
+        {
+          "conta": "Recursos Ordinários",
+          "coluna": "Do Exercício (c)",
+          "valor": 10019.99
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "Do Exercício (c)",
+          "valor": 10019.99
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "Demais Obrigações Financeiras (e)",
+          "valor": 7800.85
+        },
+        {
+          "conta": "Recursos Ordinários",
+          "coluna": "Demais Obrigações Financeiras (e)",
+          "valor": 7800.85
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "Demais Obrigações Financeiras (e)",
+          "valor": 7800.85
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (ANTES DA INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (f)=(a-(b+c+d+e))",
+          "valor": 42.28
+        },
+        {
+          "conta": "Recursos Ordinários",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (ANTES DA INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (f)=(a-(b+c+d+e))",
+          "valor": 42.28
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (ANTES DA INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (f)=(a-(b+c+d+e))",
+          "valor": 42.28
+        },
+        {
+          "conta": "TOTAL DOS RECURSOS NÃO VINCULADOS (I)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (h) = (f - g)",
+          "valor": 42.28
+        },
+        {
+          "conta": "Recursos Ordinários",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (h) = (f - g)",
+          "valor": 42.28
+        },
+        {
+          "conta": "TOTAL (III) = (I + II)",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO) (h) = (f - g)",
+          "valor": 42.28
+        }
+      ],
+      "simplificado": [
+        {
+          "conta": "Receita Corrente Líquida",
+          "coluna": "Valor Até o Semestre",
+          "valor": 22414513.92
+        },
+        {
+          "conta": "Receita Corrente Líquida Ajustada para Cálculo dos Limites de Endividamento",
+          "coluna": "Valor Até o Semestre",
+          "valor": 22114513.92
+        },
+        {
+          "conta": "Receita Corrente Líquida Ajustada para Cálculo dos Limites da Despesa com Pessoal",
+          "coluna": "Valor Até o Semestre",
+          "valor": 22114513.92
+        },
+        {
+          "conta": "Despesa Total com Pessoal - DTP",
+          "coluna": "VALOR",
+          "valor": 497321.53
+        },
+        {
+          "conta": "Despesa Total com Pessoal - DTP",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 2.25
+        },
+        {
+          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
+          "coluna": "VALOR",
+          "valor": 1326870.84
+        },
+        {
+          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 6.0
+        },
+        {
+          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
+          "coluna": "VALOR",
+          "valor": 1260527.3
+        },
+        {
+          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 5.7
+        },
+        {
+          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
+          "coluna": "VALOR",
+          "valor": 1194183.76
+        },
+        {
+          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
+          "coluna": "% SOBRE A RCL AJUSTADA",
+          "valor": 5.4
+        },
+        {
+          "conta": "Valor Total",
+          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO)",
+          "valor": 42.28
+        }
+      ]
+    },
+    {
+      "exercicio": 2021,
+      "periodo": 1,
+      "periodicidade": "S",
+      "periodo_rotulo": "1º Semestre de 2021",
+      "status_relatorio": "HO",
+      "data_status": "2021-07-30T08:56:57Z",
+      "populacao": 2520,
+      "lrf": {
+        "rcl": 20858525.0,
+        "rcl_ajustada": 20858525.0,
+        "dtp_valor": 487688.98,
+        "dtp_percentual": 2.34,
+        "limite_maximo_valor": 1251511.5,
+        "limite_maximo_percentual": 6.0,
+        "limite_prudencial_valor": 1188935.93,
+        "limite_prudencial_percentual": 5.7,
+        "limite_alerta_valor": 1126360.35,
+        "limite_alerta_percentual": 5.4,
+        "margem_prudencial_valor": 701246.95,
+        "margem_maxima_valor": 763822.52,
+        "situacao": "Conforme (Abaixo dos Limites)",
+        "situacao_classe": "status-regular"
+      },
+      "detalhamento_pessoal": [
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-11>",
+          "valor": 35699.16
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-10>",
+          "valor": 37690.25
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-9>",
+          "valor": 33584.11
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-8>",
+          "valor": 35819.1
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-7>",
+          "valor": 35819.1
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-6>",
+          "valor": 63828.87
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-5>",
+          "valor": 42772.64
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-4>",
+          "valor": 41058.83
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-3>",
+          "valor": 37398.41
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-2>",
+          "valor": 56998.18
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR-1>",
+          "valor": 33954.7
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "<MR>",
+          "valor": 38817.45
+        },
+        {
+          "conta": "DESPESA BRUTA COM PESSOAL (I)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 493440.8
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-11>",
+          "valor": 35699.16
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-10>",
+          "valor": 37690.25
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-9>",
+          "valor": 33584.11
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-8>",
+          "valor": 35819.1
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-7>",
+          "valor": 35819.1
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-6>",
+          "valor": 63828.87
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-5>",
+          "valor": 42772.64
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-4>",
+          "valor": 41058.83
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-3>",
+          "valor": 37398.41
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-2>",
+          "valor": 56998.18
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR-1>",
+          "valor": 33954.7
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "<MR>",
+          "valor": 38817.45
+        },
+        {
+          "conta": "Pessoal Ativo",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 493440.8
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-11>",
+          "valor": 29550.77
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-10>",
+          "valor": 31520.8
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-9>",
+          "valor": 27414.66
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-8>",
+          "valor": 29649.65
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-7>",
+          "valor": 29649.65
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-6>",
+          "valor": 48943.8
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-5>",
+          "valor": 36772.42
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-4>",
+          "valor": 34840.04
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-3>",
+          "valor": 31291.78
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-2>",
+          "valor": 50231.29
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR-1>",
+          "valor": 28445.76
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "<MR>",
+          "valor": 32648.02
+        },
+        {
+          "conta": "Vencimentos, Vantagens e Outras Despesas Variáveis",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 410958.64
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-11>",
+          "valor": 6148.39
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-10>",
+          "valor": 6169.45
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-9>",
+          "valor": 6169.45
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-8>",
+          "valor": 6169.45
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-7>",
+          "valor": 6169.45
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-6>",
+          "valor": 14885.07
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-5>",
+          "valor": 6000.22
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-4>",
+          "valor": 6218.79
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-3>",
+          "valor": 6106.63
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-2>",
+          "valor": 6766.89
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR-1>",
+          "valor": 5508.94
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "<MR>",
+          "valor": 6169.43
+        },
+        {
+          "conta": "Obrigações Patronais",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 82482.16
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "<MR-5>",
+          "valor": 5751.82
+        },
+        {
+          "conta": "DESPESAS NÃO COMPUTADAS (§ 1º do art. 19 da LRF) (II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 5751.82
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária",
+          "coluna": "<MR-5>",
+          "valor": 5751.82
+        },
+        {
+          "conta": "Indenizações por Demissão e Incentivos à Demissão Voluntária",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 5751.82
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-11>",
+          "valor": 35699.16
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-10>",
+          "valor": 37690.25
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-9>",
+          "valor": 33584.11
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-8>",
+          "valor": 35819.1
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-7>",
+          "valor": 35819.1
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-6>",
+          "valor": 63828.87
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-5>",
+          "valor": 37020.82
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-4>",
+          "valor": 41058.83
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-3>",
+          "valor": 37398.41
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-2>",
+          "valor": 56998.18
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR-1>",
+          "valor": 33954.7
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "<MR>",
+          "valor": 38817.45
+        },
+        {
+          "conta": "DESPESA LÍQUIDA COM PESSOAL (III) = (I - II)",
+          "coluna": "TOTAL (ÚLTIMOS 12 MESES) (a)",
+          "valor": 487688.98
+        },
+        {
+          "conta": "RECEITA CORRENTE LIQUIDA - RCL (IV)",
+          "coluna": "Valor",
+          "valor": 20858525.0
+        },
+        {
+          "conta": "= RECEITA CORRENTE LÍQUIDA AJUSTADA PARA CÁLCULO DOS LIMITES DA DESPESA COM PESSOAL (VII) = (IV - V - VI)",
+          "coluna": "Valor",
+          "valor": 20858525.0
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VIII) = (III a + III b)",
+          "coluna": "Valor",
+          "valor": 487688.98
+        },
+        {
+          "conta": "DESPESA TOTAL COM PESSOAL - DTP (VIII) = (III a + III b)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 2.34
+        },
+        {
+          "conta": "LIMITE MÁXIMO (IX) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "Valor",
+          "valor": 1251511.5
+        },
+        {
+          "conta": "LIMITE MÁXIMO (IX) (incisos I, II e III, art. 20 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 6.0
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (X) = (0,95 x IX) (parágrafo único do art. 22 da LRF)",
+          "coluna": "Valor",
+          "valor": 1188935.93
+        },
+        {
+          "conta": "LIMITE PRUDENCIAL (X) = (0,95 x IX) (parágrafo único do art. 22 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.7
+        },
+        {
+          "conta": "LIMITE DE ALERTA (XI) = (0,90 x IX) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "Valor",
+          "valor": 1126360.35
+        },
+        {
+          "conta": "LIMITE DE ALERTA (XI) = (0,90 x IX) (inciso II do §1º do art. 59 da LRF)",
+          "coluna": "% sobre a RCL Ajustada",
+          "valor": 5.4
+        }
+      ],
+      "disponibilidade_caixa": [],
+      "simplificado": []
+    }
+  ]
+}

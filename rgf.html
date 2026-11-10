@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatório de Gestão Fiscal (RGF) - Câmara Municipal de Coronel Barros</title>
+  
+  <!-- Tipografia Oficial Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       RESET E CONFIGURAÇÃO DE EMBED TRANSPARENTE
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      background-color: transparent !important;
+      background: transparent !important;
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #334155;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    /* ==========================================================================
+       VARIÁVEIS DE IDENTIDADE VISUAL - CÂMARA DE CORONEL BARROS
+       ========================================================================== */
+    :root {
+      --cb-green-primary: #006838;
+      --cb-green-hover: #004d29;
+      --cb-green-action: #009739;
+      --cb-green-soft: #EAF6EE;
+      --cb-yellow-gold: #FFCC00;
+      --cb-yellow-soft: #FFFBEB;
+      --cb-gray-bg: #F8FAFC;
+      --cb-gray-border: #E2E8F0;
+      --cb-text-dark: #1E293B;
+      --cb-text-body: #334155;
+      --cb-text-muted: #64748B;
+      --cb-white: #FFFFFF;
+
+      /* Cores de Alerta LRF */
+      --lrf-ok-bg: #EAF6EE;
+      --lrf-ok-text: #006838;
+      --lrf-ok-border: #A7F3D0;
+      --lrf-alerta-bg: #FEF3C7;
+      --lrf-alerta-text: #92400E;
+      --lrf-alerta-border: #FCD34D;
+      --lrf-prud-bg: #FFEDD5;
+      --lrf-prud-text: #9A3412;
+      --lrf-prud-border: #FDBA74;
+      --lrf-danger-bg: #FEE2E2;
+      --lrf-danger-text: #991B1B;
+      --lrf-danger-border: #FCA5A5;
+
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+      --shadow-lg: 0 10px 24px rgba(0, 104, 56, 0.08);
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .cb-rgf-widget {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 4px;
+    }
+
+    /* ==========================================================================
+       BARRA DE CONTROLES E CABEÇALHO DO EMBED (SEM LINKS EXTERNOS)
+       ========================================================================== */
+    .cb-topbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-lg);
+      padding: 16px 20px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 20px;
+    }
+
+    .cb-topbar-title {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .cb-badge-lrf {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--cb-green-soft);
+      color: var(--cb-green-primary);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 9999px;
+      width: fit-content;
+      border: 1px solid rgba(0, 104, 56, 0.15);
+    }
+
+    .cb-badge-lrf::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--cb-green-action);
+    }
+
+    .cb-heading {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .cb-subheading {
+      font-size: 0.82rem;
+      color: var(--cb-text-muted);
+      font-weight: 500;
+    }
+
+    .cb-filters {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cb-select-group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cb-select-group label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--cb-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .cb-select {
+      background-color: var(--cb-gray-bg);
+      border: 1px solid var(--cb-gray-border);
+      color: var(--cb-text-dark);
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 7px 12px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .cb-select:focus, .cb-select:hover {
+      border-color: var(--cb-green-primary);
+      background-color: var(--cb-white);
+    }
+
+    .cb-btn-tool {
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      color: var(--cb-text-body);
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 7px 12px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+    }
+
+    .cb-btn-tool:hover {
+      border-color: var(--cb-green-primary);
+      color: var(--cb-green-primary);
+      background: var(--cb-green-soft);
+    }
+
+    .cb-btn-tool svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* ==========================================================================
+       BANNER DE STATUS DA LRF
+       ========================================================================== */
+    .cb-status-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 14px 18px;
+      border-radius: var(--radius-md);
+      margin-bottom: 20px;
+      border: 1px solid transparent;
+      transition: var(--transition);
+    }
+
+    .status-regular {
+      background-color: var(--lrf-ok-bg);
+      border-color: var(--lrf-ok-border);
+      color: var(--lrf-ok-text);
+    }
+
+    .status-alerta {
+      background-color: var(--lrf-alerta-bg);
+      border-color: var(--lrf-alerta-border);
+      color: var(--lrf-alerta-text);
+    }
+
+    .status-prudencial {
+      background-color: var(--lrf-prud-bg);
+      border-color: var(--lrf-prud-border);
+      color: var(--lrf-prud-text);
+    }
+
+    .status-perigo {
+      background-color: var(--lrf-danger-bg);
+      border-color: var(--lrf-danger-border);
+      color: var(--lrf-danger-text);
+    }
+
+    .cb-status-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cb-status-icon {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+
+    .cb-status-text {
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    .cb-status-desc {
+      font-size: 0.8rem;
+      font-weight: 500;
+      opacity: 0.9;
+    }
+
+    /* ==========================================================================
+       CARDS DE INDICADORES PRINCIPAIS (GRID 4 COLUNAS)
+       ========================================================================== */
+    .cb-metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .cb-metric-card {
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+
+    .cb-metric-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+      border-color: #CBD5E1;
+    }
+
+    .cb-metric-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--cb-gray-border);
+    }
+
+    .cb-metric-card.card-primary::before {
+      background: var(--cb-green-primary);
+    }
+    .cb-metric-card.card-percent::before {
+      background: var(--cb-yellow-gold);
+    }
+    .cb-metric-card.card-limit::before {
+      background: #0284C7;
+    }
+    .cb-metric-card.card-margin::before {
+      background: var(--cb-green-action);
+    }
+
+    .cb-metric-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .cb-metric-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--cb-text-muted);
+    }
+
+    .cb-metric-value {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: -0.03em;
+      margin-bottom: 4px;
+    }
+
+    .cb-metric-sub {
+      font-size: 0.78rem;
+      color: var(--cb-text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cb-pill {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 9999px;
+      line-height: 1.3;
+    }
+
+    .cb-pill-ok {
+      background: var(--cb-green-soft);
+      color: var(--cb-green-primary);
+    }
+
+    /* ==========================================================================
+       TERMÔMETRO VISUAL DA LRF (RÉGUA COMPARATIVA)
+       ========================================================================== */
+    .cb-thermometer-section {
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+    }
+
+    .cb-thermometer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .cb-thermometer-title {
+      font-size: 0.96rem;
+      font-weight: 700;
+      color: var(--cb-text-dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cb-thermometer-title::before {
+      content: '';
+      width: 4px;
+      height: 18px;
+      background: var(--cb-green-primary);
+      border-radius: 2px;
+    }
+
+    .cb-thermometer-track-wrap {
+      position: relative;
+      padding-top: 36px;
+      padding-bottom: 48px;
+      margin: 0 10px;
+    }
+
+    .cb-thermometer-track {
+      height: 18px;
+      border-radius: 9999px;
+      background: #E2E8F0;
+      position: relative;
+      display: flex;
+      overflow: hidden;
+    }
+
+    /* Zonas do termômetro */
+    .track-zone-safe {
+      width: 83.07%; /* 5.4 / 6.5 * 100 */
+      background: linear-gradient(90deg, #10B981, #059669);
+    }
+
+    .track-zone-alerta {
+      width: 4.61%; /* (5.7 - 5.4) / 6.5 * 100 */
+      background: #FBBF24;
+    }
+
+    .track-zone-prudencial {
+      width: 4.61%; /* (6.0 - 5.7) / 6.5 * 100 */
+      background: #F97316;
+    }
+
+    .track-zone-excesso {
+      width: 7.71%; /* restante até 6.5% */
+      background: #EF4444;
+    }
+
+    /* Ponteiro da Câmara */
+    .cb-pointer {
+      position: absolute;
+      top: 0;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: left 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+      z-index: 10;
+    }
+
+    .cb-pointer-tag {
+      background: var(--cb-text-dark);
+      color: var(--cb-white);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      border: 1px solid var(--cb-yellow-gold);
+    }
+
+    .cb-pointer-needle {
+      width: 2px;
+      height: 28px;
+      background: var(--cb-text-dark);
+      margin-top: 2px;
+    }
+
+    .cb-pointer-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--cb-yellow-gold);
+      border: 2px solid var(--cb-text-dark);
+      margin-top: -5px;
+    }
+
+    /* Marcadores da Régua */
+    .cb-marker {
+      position: absolute;
+      top: 58px;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .cb-marker-line {
+      width: 1px;
+      height: 8px;
+      background: #94A3B8;
+      margin-bottom: 4px;
+    }
+
+    .cb-marker-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--cb-text-dark);
+      line-height: 1.1;
+    }
+
+    .cb-marker-pct {
+      font-size: 0.68rem;
+      color: var(--cb-text-muted);
+      font-weight: 600;
+    }
+
+    /* ==========================================================================
+       ABAS DE NAVEGAÇÃO INTERNA (SEM LINKS EXTERNOS)
+       ========================================================================== */
+    .cb-tabs {
+      display: flex;
+      gap: 6px;
+      border-bottom: 2px solid var(--cb-gray-border);
+      margin-bottom: 18px;
+      overflow-x: auto;
+      padding-bottom: 2px;
+    }
+
+    .cb-tab-btn {
+      background: transparent;
+      border: none;
+      outline: none;
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--cb-text-muted);
+      padding: 8px 14px;
+      cursor: pointer;
+      position: relative;
+      border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+      white-space: nowrap;
+      transition: var(--transition);
+    }
+
+    .cb-tab-btn:hover {
+      color: var(--cb-green-primary);
+      background: var(--cb-green-soft);
+    }
+
+    .cb-tab-btn.active {
+      color: var(--cb-green-primary);
+      font-weight: 700;
+    }
+
+    .cb-tab-btn.active::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--cb-green-primary);
+      border-radius: 2px;
+    }
+
+    .cb-tab-content {
+      display: none;
+    }
+
+    .cb-tab-content.active {
+      display: block;
+      animation: fadeIn 0.25s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ==========================================================================
+       TABELA ANALÍTICA DE TRANSPARÊNCIA
+       ========================================================================== */
+    .cb-table-wrap {
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .cb-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    .cb-table th {
+      background: var(--cb-green-primary);
+      color: var(--cb-white);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 12px 16px;
+    }
+
+    .cb-table td {
+      padding: 12px 16px;
+      font-size: 0.86rem;
+      border-bottom: 1px solid var(--cb-gray-border);
+      color: var(--cb-text-dark);
+    }
+
+    .cb-table tbody tr:nth-child(even) {
+      background-color: var(--cb-gray-bg);
+    }
+
+    .cb-table tbody tr:hover {
+      background-color: var(--cb-green-soft);
+    }
+
+    .cb-table td.col-num {
+      text-align: right;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .cb-table tr.row-total {
+      background-color: #F1F5F9 !important;
+      font-weight: 700;
+    }
+
+    .cb-table tr.row-total td {
+      color: var(--cb-green-primary);
+      border-top: 2px solid var(--cb-green-primary);
+      border-bottom: 2px solid var(--cb-green-primary);
+    }
+
+    /* ==========================================================================
+       RODAPÉ TÉCNICO DE TRANSPARÊNCIA E HOMOLOGAÇÃO
+       ========================================================================== */
+    .cb-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 24px;
+      padding: 14px 18px;
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      font-size: 0.78rem;
+      color: var(--cb-text-muted);
+    }
+
+    .cb-footer-source {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cb-footer-source strong {
+      color: var(--cb-text-dark);
+    }
+
+    .cb-footer-sync {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ==========================================================================
+       RESPONSIVIDADE (MOBILE FIRST & EMBED)
+       ========================================================================== */
+    @media (max-width: 768px) {
+      .cb-topbar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .cb-filters {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .cb-select-group {
+        justify-content: space-between;
+      }
+      .cb-select {
+        flex-grow: 1;
+      }
+      .cb-thermometer-track-wrap {
+        padding-bottom: 60px;
+      }
+      .cb-marker-label {
+        font-size: 0.65rem;
+      }
+      .cb-footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff !important;
+      }
+      .cb-filters, .cb-tabs, .cb-btn-tool {
+        display: none !important;
+      }
+      .cb-tab-content {
+        display: block !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cb-rgf-widget" id="app">
+    
+    <!-- BARRA DE CABEÇALHO DO EMBED -->
+    <header class="cb-topbar">
+      <div class="cb-topbar-title">
+        <span class="cb-badge-lrf">LRF • Art. 48 e 54 • Lei Complementar 101/2000</span>
+        <h1 class="cb-heading">Relatório de Gestão Fiscal (RGF)</h1>
+        <p class="cb-subheading">Demonstrativo da Despesa com Pessoal e Limites Legais • Poder Legislativo</p>
+      </div>
+
+      <div class="cb-filters">
+        <div class="cb-select-group">
+          <label for="select-exercicio">Ano:</label>
+          <select id="select-exercicio" class="cb-select" aria-label="Selecione o ano"></select>
+        </div>
+
+        <div class="cb-select-group">
+          <label for="select-periodo">Período:</label>
+          <select id="select-periodo" class="cb-select" aria-label="Selecione o período"></select>
+        </div>
+
+        <button type="button" class="cb-btn-tool" id="btn-export-csv" title="Exportar dados deste período em formato CSV">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Exportar CSV
+        </button>
+
+        <button type="button" class="cb-btn-tool" id="btn-imprimir" title="Imprimir demonstrativo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          Imprimir
+        </button>
+      </div>
+    </header>
+
+    <!-- BANNER DE STATUS DA LRF -->
+    <div id="status-banner" class="cb-status-banner status-regular">
+      <div class="cb-status-info">
+        <svg class="cb-status-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <div>
+          <div id="status-titulo" class="cb-status-text">Situação Fiscal: Regular</div>
+          <div id="status-desc" class="cb-status-desc">Os gastos com pessoal da Câmara estão plenamente confortáveis e dentro do limite da LRF.</div>
+        </div>
+      </div>
+      <div id="status-tag" class="cb-pill cb-pill-ok">Em Conformidade</div>
+    </div>
+
+    <!-- CARDS DE MÉTRICAS PRINCIPAIS -->
+    <section class="cb-metrics-grid">
+      <!-- Card 1: DTP -->
+      <article class="cb-metric-card card-primary">
+        <div class="cb-metric-header">
+          <span class="cb-metric-label">Despesa Total com Pessoal (DTP)</span>
+          <span class="cb-pill cb-pill-ok" id="badge-dtp-pct">2,11%</span>
+        </div>
+        <div class="cb-metric-value" id="val-dtp">R$ 0,00</div>
+        <div class="cb-metric-sub">
+          Acumulado dos últimos 12 meses
+        </div>
+      </article>
+
+      <!-- Card 2: RCL Ajustada -->
+      <article class="cb-metric-card card-percent">
+        <div class="cb-metric-header">
+          <span class="cb-metric-label">RCL Ajustada do Município</span>
+          <span class="cb-pill" style="background:#FEF3C7; color:#92400E;">Base de Cálculo</span>
+        </div>
+        <div class="cb-metric-value" id="val-rcl">R$ 0,00</div>
+        <div class="cb-metric-sub">
+          Receita Corrente Líquida consolidada
+        </div>
+      </article>
+
+      <!-- Card 3: Limite Máximo LRF -->
+      <article class="cb-metric-card card-limit">
+        <div class="cb-metric-header">
+          <span class="cb-metric-label">Limite Máximo (6,00%)</span>
+          <span class="cb-pill" style="background:#E0F2FE; color:#0369A1;">Teto Constitucional</span>
+        </div>
+        <div class="cb-metric-value" id="val-limite-max">R$ 0,00</div>
+        <div class="cb-metric-sub">
+          Art. 20, III, "a" da LRF
+        </div>
+      </article>
+
+      <!-- Card 4: Margem Disponível -->
+      <article class="cb-metric-card card-margin">
+        <div class="cb-metric-header">
+          <span class="cb-metric-label">Folga até o Limite Máximo</span>
+          <span class="cb-pill cb-pill-ok" id="badge-folga-pct">3,89%</span>
+        </div>
+        <div class="cb-metric-value" id="val-folga">R$ 0,00</div>
+        <div class="cb-metric-sub">
+          Margem para expansão orçamentária
+        </div>
+      </article>
+    </section>
+
+    <!-- TERMÔMETRO VISUAL DA LRF -->
+    <section class="cb-thermometer-section">
+      <div class="cb-thermometer-header">
+        <h2 class="cb-thermometer-title">Termômetro dos Limites Legais da Despesa com Pessoal (LRF)</h2>
+        <span style="font-size:0.75rem; color:var(--cb-text-muted);">Escala de 0,00% a 6,50% sobre a RCL Ajustada</span>
+      </div>
+
+      <div class="cb-thermometer-track-wrap">
+        <!-- Barra de Progresso com as Zonas -->
+        <div class="cb-thermometer-track">
+          <div class="track-zone-safe" title="Faixa Regular: 0% a 5,40%"></div>
+          <div class="track-zone-alerta" title="Faixa de Alerta: 5,40% a 5,70%"></div>
+          <div class="track-zone-prudencial" title="Faixa Prudencial: 5,70% a 6,00%"></div>
+          <div class="track-zone-excesso" title="Acima do Limite Legal: > 6,00%"></div>
+        </div>
+
+        <!-- Ponteiro Indicador da Câmara de Coronel Barros -->
+        <div class="cb-pointer" id="thermo-pointer" style="left: 32%;">
+          <div class="cb-pointer-tag" id="thermo-pointer-label">Câmara: 2,11%</div>
+          <div class="cb-pointer-needle"></div>
+          <div class="cb-pointer-dot"></div>
+        </div>
+
+        <!-- Marcadores de Linha -->
+        <!-- 0% -->
+        <div class="cb-marker" style="left: 0%;">
+          <div class="cb-marker-line"></div>
+          <div class="cb-marker-label">0%</div>
+        </div>
+
+        <!-- 5.4% Limite de Alerta (83.07%) -->
+        <div class="cb-marker" style="left: 83.07%;">
+          <div class="cb-marker-line"></div>
+          <div class="cb-marker-label" style="color:#D97706;">Alerta</div>
+          <div class="cb-marker-pct">5,40%</div>
+        </div>
+
+        <!-- 5.7% Limite Prudencial (87.69%) -->
+        <div class="cb-marker" style="left: 87.69%;">
+          <div class="cb-marker-line"></div>
+          <div class="cb-marker-label" style="color:#EA580C;">Prudencial</div>
+          <div class="cb-marker-pct">5,70%</div>
+        </div>
+
+        <!-- 6.0% Limite Máximo (92.30%) -->
+        <div class="cb-marker" style="left: 92.30%;">
+          <div class="cb-marker-line"></div>
+          <div class="cb-marker-label" style="color:#DC2626;">Máximo</div>
+          <div class="cb-marker-pct">6,00%</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABAS DO DEMONSTRATIVO -->
+    <nav class="cb-tabs" aria-label="Navegação do relatório">
+      <button type="button" class="cb-tab-btn active" data-tab="tab-lrf">1. Demonstrativo dos Limites da LRF</button>
+      <button type="button" class="cb-tab-btn" data-tab="tab-detalhes">2. Detalhamento da Despesa com Pessoal</button>
+      <button type="button" class="cb-tab-btn" id="btn-tab-caixa" data-tab="tab-caixa" style="display:none;">3. Disponibilidade de Caixa e Restos a Pagar</button>
+    </nav>
+
+    <!-- CONTEÚDO DAS ABAS -->
+    
+    <!-- ABA 1: LIMITES DA LRF -->
+    <div id="tab-lrf" class="cb-tab-content active">
+      <div class="cb-table-wrap">
+        <table class="cb-table">
+          <thead>
+            <tr>
+              <th>Demonstrativo da Despesa com Pessoal e Limites Legais</th>
+              <th style="text-align:right;">Valor Realizado (R$)</th>
+              <th style="text-align:right;">% sobre a RCL Ajustada</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-lrf">
+            <!-- Inserido dinamicamente via JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ABA 2: DETALHAMENTO DE PESSOAL -->
+    <div id="tab-detalhes" class="cb-tab-content">
+      <div class="cb-table-wrap">
+        <table class="cb-table">
+          <thead>
+            <tr>
+              <th>Conta / Rubrica Orçamentária (RGF - Anexo 01)</th>
+              <th style="text-align:right;">Coluna / Período</th>
+              <th style="text-align:right;">Valor Apurado (R$)</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-detalhes">
+            <!-- Inserido dinamicamente via JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ABA 3: DISPONIBILIDADE DE CAIXA (2º SEMESTRE) -->
+    <div id="tab-caixa" class="cb-tab-content">
+      <div class="cb-table-wrap">
+        <table class="cb-table">
+          <thead>
+            <tr>
+              <th>Fluxo de Caixa e Obrigações (RGF - Anexo 05)</th>
+              <th style="text-align:right;">Especificação</th>
+              <th style="text-align:right;">Valor (R$)</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-caixa">
+            <!-- Inserido dinamicamente via JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- RODAPÉ DE TRANSPARÊNCIA E AUDITORIA -->
+    <footer class="cb-footer">
+      <div class="cb-footer-source">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+        <span>Fonte Oficial: <strong>Secretaria do Tesouro Nacional (Siconfi / STN)</strong> • IBGE: <strong>4305871</strong></span>
+      </div>
+      <div class="cb-footer-sync">
+        <span>Última homologação detectada: <strong id="lbl-data-homologacao">--</strong></span>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- SCRIPT DE PROCESSAMENTO E INTERAÇÃO -->
+  <script>
+    (function () {
+      let dadosGlobais = null;
+      let periodoSelecionado = null;
+
+      // Elementos do DOM
+      const selectExercicio = document.getElementById('select-exercicio');
+      const selectPeriodo = document.getElementById('select-periodo');
+      const statusBanner = document.getElementById('status-banner');
+      const statusTitulo = document.getElementById('status-titulo');
+      const statusDesc = document.getElementById('status-desc');
+      const statusTag = document.getElementById('status-tag');
+      const valDtp = document.getElementById('val-dtp');
+      const badgeDtpPct = document.getElementById('badge-dtp-pct');
+      const valRcl = document.getElementById('val-rcl');
+      const valLimiteMax = document.getElementById('val-limite-max');
+      const valFolga = document.getElementById('val-folga');
+      const badgeFolgaPct = document.getElementById('badge-folga-pct');
+      const thermoPointer = document.getElementById('thermo-pointer');
+      const thermoPointerLabel = document.getElementById('thermo-pointer-label');
+      const tbodyLrf = document.getElementById('tbody-lrf');
+      const tbodyDetalhes = document.getElementById('tbody-detalhes');
+      const tbodyCaixa = document.getElementById('tbody-caixa');
+      const btnTabCaixa = document.getElementById('btn-tab-caixa');
+      const lblDataHomologacao = document.getElementById('lbl-data-homologacao');
+
+      // Formatação Monetária BR
+      function formatMoney(value) {
+        if (value === null || value === undefined || isNaN(value)) return 'R$ 0,00';
+        return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      }
+
+      function formatPct(value) {
+        if (value === null || value === undefined || isNaN(value)) return '0,00%';
+        return value.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '%';
+      }
+
+      function formatDate(isoStr) {
+        if (!isoStr) return 'Data não informada';
+        try {
+          const d = new Date(isoStr);
+          return d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+        } catch {
+          return isoStr;
+        }
+      }
+
+      // Notificar altura ao iframe pai (postMessage padrão para embeds)
+      function notificarAltura() {
+        const height = document.documentElement.scrollHeight || document.body.scrollHeight;
+        if (window.parent && window.parent !== window) {
+          window.parent.postMessage({ type: 'cb-resize', height: height + 20 }, '*');
+        }
+      }
+
+      window.addEventListener('resize', notificarAltura);
+
+      // Carregar os dados
+      async function carregarDados() {
+        try {
+          const resp = await fetch('./data/rgf.json?t=' + Date.now());
+          if (!resp.ok) throw new Error('Não foi possível ler o arquivo rgf.json');
+          dadosGlobais = await resp.json();
+          inicializarInterface();
+        } catch (err) {
+          console.error('Erro ao carregar dados:', err);
+          statusBanner.className = 'cb-status-banner status-alerta';
+          statusTitulo.textContent = 'Carregando dados fiscais...';
+          statusDesc.textContent = 'Aguarde um momento ou recarregue a página.';
+        }
+      }
+
+      function inicializarInterface() {
+        if (!dadosGlobais || !dadosGlobais.periodos || dadosGlobais.periodos.length === 0) return;
+
+        // Popula os Anos
+        const anos = dadosGlobais.metadata.exercicios_disponiveis || [];
+        selectExercicio.innerHTML = '';
+        anos.forEach(ano => {
+          const opt = document.createElement('option');
+          opt.value = ano;
+          opt.textContent = ano;
+          selectExercicio.appendChild(opt);
+        });
+
+        // Eventos
+        selectExercicio.addEventListener('change', () => atualizarOpcoesPeriodo());
+        selectPeriodo.addEventListener('change', () => renderizarPeriodo());
+
+        atualizarOpcoesPeriodo();
+      }
+
+      function atualizarOpcoesPeriodo() {
+        const ano = parseInt(selectExercicio.value, 10);
+        const periodosAno = dadosGlobais.periodos.filter(p => p.exercicio === ano);
+
+        selectPeriodo.innerHTML = '';
+        periodosAno.forEach(p => {
+          const opt = document.createElement('option');
+          opt.value = p.periodo;
+          opt.textContent = `${p.periodo}º Semestre`;
+          selectPeriodo.appendChild(opt);
+        });
+
+        renderizarPeriodo();
+      }
+
+      function renderizarPeriodo() {
+        const ano = parseInt(selectExercicio.value, 10);
+        const periodo = parseInt(selectPeriodo.value, 10);
+        const registro = dadosGlobais.periodos.find(p => p.exercicio === ano && p.periodo === periodo);
+
+        if (!registro) return;
+        periodoSelecionado = registro;
+
+        const lrf = registro.lrf;
+
+        // 1. Atualizar Métricas Centrais
+        valDtp.textContent = formatMoney(lrf.dtp_valor);
+        badgeDtpPct.textContent = formatPct(lrf.dtp_percentual);
+
+        valRcl.textContent = formatMoney(lrf.rcl_ajustada || lrf.rcl);
+        valLimiteMax.textContent = formatMoney(lrf.limite_maximo_valor);
+
+        valFolga.textContent = formatMoney(lrf.margem_maxima_valor);
+        const folgaPct = Math.max(0, 6.00 - lrf.dtp_percentual);
+        badgeFolgaPct.textContent = formatPct(folgaPct);
+
+        // 2. Banner de Situação
+        statusBanner.className = 'cb-status-banner ' + lrf.situacao_classe;
+        statusTitulo.textContent = `Situação Fiscal: ${lrf.situacao}`;
+        
+        if (lrf.dtp_percentual <= 5.40) {
+          statusDesc.textContent = `O Poder Legislativo utilizou apenas ${formatPct(lrf.dtp_percentual)} da receita, restando folga orçamentária expressiva de ${formatPct(folgaPct)} até o teto legal.`;
+          statusTag.className = 'cb-pill cb-pill-ok';
+          statusTag.textContent = 'Em Conformidade';
+        } else if (lrf.dtp_percentual <= 5.70) {
+          statusDesc.textContent = `Atenção: A despesa ultrapassou o Limite de Alerta (5,40%). Recomenda-se acompanhamento prudente.`;
+          statusTag.className = 'cb-pill';
+          statusTag.style.cssText = 'background:#FEF3C7; color:#92400E;';
+          statusTag.textContent = 'Alerta LRF';
+        } else if (lrf.dtp_percentual <= 6.00) {
+          statusDesc.textContent = `Aviso: A despesa ultrapassou o Limite Prudencial (5,70%). Vedações do art. 22 da LRF são aplicáveis.`;
+          statusTag.className = 'cb-pill';
+          statusTag.style.cssText = 'background:#FFEDD5; color:#9A3412;';
+          statusTag.textContent = 'Limite Prudencial';
+        } else {
+          statusDesc.textContent = `Crítico: A despesa superou o Limite Máximo da LRF (6,00%). Medidas do art. 23 da LRF devem ser adotadas.`;
+          statusTag.className = 'cb-pill';
+          statusTag.style.cssText = 'background:#FEE2E2; color:#991B1B;';
+          statusTag.textContent = 'Limite Ultrapassado';
+        }
+
+        // 3. Atualizar Termômetro
+        // Escala: 0 a 6.50%
+        const maxEscala = 6.50;
+        let posPct = (lrf.dtp_percentual / maxEscala) * 100;
+        posPct = Math.min(Math.max(posPct, 2), 98); // limites visuais
+        thermoPointer.style.left = posPct + '%';
+        thermoPointerLabel.textContent = `Câmara: ${formatPct(lrf.dtp_percentual)}`;
+
+        // 4. Preencher Tabela 1: Limites da LRF
+        tbodyLrf.innerHTML = `
+          <tr>
+            <td><strong>Receita Corrente Líquida - RCL</strong></td>
+            <td class="col-num">${formatMoney(lrf.rcl)}</td>
+            <td class="col-num">-</td>
+          </tr>
+          <tr>
+            <td><strong>Receita Corrente Líquida Ajustada</strong> (Base de Cálculo para Pessoal)</td>
+            <td class="col-num"><strong>${formatMoney(lrf.rcl_ajustada || lrf.rcl)}</strong></td>
+            <td class="col-num"><strong>100,00%</strong></td>
+          </tr>
+          <tr class="row-total">
+            <td><strong>DESPESA TOTAL COM PESSOAL - DTP</strong></td>
+            <td class="col-num"><strong>${formatMoney(lrf.dtp_valor)}</strong></td>
+            <td class="col-num"><strong>${formatPct(lrf.dtp_percentual)}</strong></td>
+          </tr>
+          <tr>
+            <td>Limite de Alerta (inciso II do §1º do art. 59 da LRF) - 90%</td>
+            <td class="col-num">${formatMoney(lrf.limite_alerta_valor)}</td>
+            <td class="col-num">5,40%</td>
+          </tr>
+          <tr>
+            <td>Limite Prudencial (parágrafo único do art. 22 da LRF) - 95%</td>
+            <td class="col-num">${formatMoney(lrf.limite_prudencial_valor)}</td>
+            <td class="col-num">5,70%</td>
+          </tr>
+          <tr style="background:#F0FDF4; font-weight:600;">
+            <td>Limite Máximo (incisos I, II e III do art. 20 da LRF) - 100%</td>
+            <td class="col-num">${formatMoney(lrf.limite_maximo_valor)}</td>
+            <td class="col-num">6,00%</td>
+          </tr>
+          <tr>
+            <td>Folga Orçamentária até o Limite Máximo</td>
+            <td class="col-num" style="color:var(--cb-green-primary);">${formatMoney(lrf.margem_maxima_valor)}</td>
+            <td class="col-num" style="color:var(--cb-green-primary);">${formatPct(folgaPct)}</td>
+          </tr>
+        `;
+
+        // 5. Preencher Tabela 2: Detalhamento de Pessoal
+        if (registro.detalhamento_pessoal && registro.detalhamento_pessoal.length > 0) {
+          tbodyDetalhes.innerHTML = registro.detalhamento_pessoal
+            .filter(item => item.coluna === 'Valor' || !item.coluna)
+            .map(item => `
+              <tr>
+                <td>${item.conta}</td>
+                <td class="col-num" style="font-size:0.78rem; color:var(--cb-text-muted);">${item.coluna || 'Valor'}</td>
+                <td class="col-num">${formatMoney(item.valor)}</td>
+              </tr>
+            `).join('');
+        } else {
+          tbodyDetalhes.innerHTML = '<tr><td colspan="3" style="text-align:center; padding:20px;">Nenhum detalhamento disponível para este período.</td></tr>';
+        }
+
+        // 6. Preencher Tabela 3: Disponibilidade de Caixa (se houver)
+        if (registro.disponibilidade_caixa && registro.disponibilidade_caixa.length > 0) {
+          btnTabCaixa.style.display = 'inline-block';
+          tbodyCaixa.innerHTML = registro.disponibilidade_caixa.map(item => `
+            <tr>
+              <td>${item.conta}</td>
+              <td class="col-num" style="font-size:0.78rem; color:var(--cb-text-muted);">${item.coluna || '-'}</td>
+              <td class="col-num">${formatMoney(item.valor)}</td>
+            </tr>
+          `).join('');
+        } else {
+          btnTabCaixa.style.display = 'none';
+        }
+
+        // 7. Rodapé de Homologação
+        lblDataHomologacao.textContent = formatDate(registro.data_status);
+
+        // Notificar altura
+        setTimeout(notificarAltura, 100);
+      }
+
+      // Abas
+      document.querySelectorAll('.cb-tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.cb-tab-btn').forEach(b => b.classList.remove('active'));
+          document.querySelectorAll('.cb-tab-content').forEach(c => c.classList.remove('active'));
+
+          btn.classList.add('active');
+          const target = document.getElementById(btn.dataset.tab);
+          if (target) target.classList.add('active');
+          notificarAltura();
+        });
+      });
+
+      // Exportar CSV
+      document.getElementById('btn-export-csv').addEventListener('click', () => {
+        if (!periodoSelecionado) return;
+        const lrf = periodoSelecionado.lrf;
+        const linhas = [
+          ['Demonstrativo da Despesa com Pessoal (RGF) - Câmara Municipal de Coronel Barros'],
+          ['Período:', periodoSelecionado.periodo_rotulo],
+          ['Data de Homologação:', formatDate(periodoSelecionado.data_status)],
+          [''],
+          ['Rubrica', 'Valor (R$)', '% RCL Ajustada'],
+          ['Receita Corrente Líquida (RCL)', lrf.rcl, ''],
+          ['Receita Corrente Líquida Ajustada', lrf.rcl_ajustada, '100%'],
+          ['Despesa Total com Pessoal (DTP)', lrf.dtp_valor, `${lrf.dtp_percentual}%`],
+          ['Limite de Alerta (5,40%)', lrf.limite_alerta_valor, '5.40%'],
+          ['Limite Prudencial (5,70%)', lrf.limite_prudencial_valor, '5.70%'],
+          ['Limite Máximo (6,00%)', lrf.limite_maximo_valor, '6.00%'],
+          ['Margem até Limite Máximo', lrf.margem_maxima_valor, `${Math.max(0, 6 - lrf.dtp_percentual).toFixed(2)}%`],
+          ['Situação:', lrf.situacao]
+        ];
+
+        const csvContent = '\uFEFF' + linhas.map(e => e.map(val => `"${val}"`).join(';')).join('\n');
+        const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.setAttribute('href', url);
+        link.setAttribute('download', `RGF_Camara_Coronel_Barros_${periodoSelecionado.exercicio}_S${periodoSelecionado.periodo}.csv`);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      });
+
+      // Imprimir
+      document.getElementById('btn-imprimir').addEventListener('click', () => {
+        window.print();
+      });
+
+      // Inicia
+      carregarDados();
+    })();
+  </script>
+</body>
+</html>
