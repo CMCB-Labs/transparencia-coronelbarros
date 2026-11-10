@@ -64,26 +64,32 @@ Como a página foi desenhada com **fundo transparente** e **sem menus ou cabeça
 ### Código para colar no TinyMCE (Visualização de Código HTML) ou Tile de Conteúdo:
 
 ```html
-<div style="width: 100%; max-width: 1180px; margin: 0 auto; overflow: hidden;">
+<div style="width: 100%; max-width: 1180px; margin: 0 auto; overflow: hidden; background: transparent;">
   <iframe 
-    id="iframe-rgf-coronel-barros"
+    id="cb-iframe-rgf"
     src="https://cmcb-labs.github.io/transparencia-coronelbarros/rgf.html" 
-    style="width: 100%; border: none; min-height: 980px; background-color: transparent;" 
+    style="width: 100%; border: none; min-height: 800px; background: transparent; overflow: hidden; display: block;" 
     title="Relatório de Gestão Fiscal - Câmara Municipal de Coronel Barros"
+    scrolling="no"
     loading="lazy">
   </iframe>
 </div>
 
 <script>
-  // Ajuste automático de altura via postMessage
-  window.addEventListener('message', function(event) {
-    if (event.data && event.data.type === 'cb-resize') {
-      var iframe = document.getElementById('iframe-rgf-coronel-barros');
-      if (iframe) {
-        iframe.style.height = event.data.height + 'px';
+  // Ajuste automático de altura seguro contra loops infinitos
+  (function() {
+    var lastReceivedHeight = 0;
+    window.addEventListener('message', function(e) {
+      if (e.data && e.data.type === 'cb-resize' && typeof e.data.height === 'number') {
+        var iframe = document.getElementById('cb-iframe-rgf');
+        var newH = Math.ceil(e.data.height);
+        if (iframe && Math.abs(newH - lastReceivedHeight) > 4) {
+          lastReceivedHeight = newH;
+          iframe.style.height = newH + 'px';
+        }
       }
-    }
-  });
+    });
+  })();
 </script>
 ```
 

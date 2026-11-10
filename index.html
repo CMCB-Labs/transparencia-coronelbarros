@@ -29,7 +29,9 @@
       color: #334155;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      overflow-x: hidden;
+      height: auto !important;
+      min-height: 0 !important;
+      overflow: hidden !important;
     }
 
     /* ==========================================================================
@@ -1005,15 +1007,38 @@
         }
       }
 
-      // Notificar altura ao iframe pai (postMessage padrão para embeds)
+      // Notificar altura ao iframe pai com proteção estrita contra loop de redimensionamento
+      let lastSentHeight = 0;
+      let resizeDebounceTimer = null;
+
       function notificarAltura() {
-        const height = document.documentElement.scrollHeight || document.body.scrollHeight;
-        if (window.parent && window.parent !== window) {
-          window.parent.postMessage({ type: 'cb-resize', height: height + 20 }, '*');
-        }
+        clearTimeout(resizeDebounceTimer);
+        resizeDebounceTimer = setTimeout(() => {
+          const app = document.getElementById('app');
+          if (!app) return;
+
+          // Mede o elemento container #app especificamente, nunca o body/documentElement
+          const rect = app.getBoundingClientRect();
+          const height = Math.ceil(rect.height);
+
+          // Corta loops infinitos: só dispara se a diferença real for maior que 4 pixels
+          if (Math.abs(height - lastSentHeight) > 4) {
+            lastSentHeight = height;
+            if (window.parent && window.parent !== window) {
+              window.parent.postMessage({ type: 'cb-resize', height: height }, '*');
+            }
+          }
+        }, 50);
       }
 
-      window.addEventListener('resize', notificarAltura);
+      // Observador de mutações no container de conteúdo (só dispara quando o conteúdo muda)
+      if (window.ResizeObserver) {
+        const ro = new ResizeObserver(() => notificarAltura());
+        const appElem = document.getElementById('app');
+        if (appElem) ro.observe(appElem);
+      } else {
+        window.addEventListener('resize', notificarAltura);
+      }
 
       // Carregar os dados
       async function carregarDados() {
