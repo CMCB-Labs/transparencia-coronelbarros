@@ -47,11 +47,13 @@ transparencia-coronelbarros/
 │       └── atualizar_dados.yml    # Workflow agendado (mensal)
 ├── data/
 │   ├── rgf.json                   # Base de dados estruturada do RGF (Gestão Fiscal)
-│   └── balancos.json              # Base de dados estruturada dos Balanços (DCA)
+│   ├── balancos.json              # Base de dados estruturada dos Balanços (DCA)
+│   └── rreo.json                  # Base de dados estruturada do RREO (Bimestral)
 ├── scripts/
-│   └── atualizar_siconfi.py       # Robô coletor em Python (RGF + DCA)
+│   └── atualizar_siconfi.py       # Robô coletor em Python (RGF + DCA + RREO)
 ├── rgf.html                       # Página do RGF para EMBED (fundo transparente)
 ├── balancos.html                  # Página dos Balanços Anuais para EMBED
+├── rreo.html                      # Página da Execução Orçamentária Bimestral para EMBED
 ├── index.html                     # Entrada padrão no GitHub Pages
 ├── .gitignore
 └── README.md                      # Manual técnico de incorporação

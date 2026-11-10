@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatório Resumido da Execução Orçamentária (RREO) - Câmara e Município de Coronel Barros</title>
+  
+  <!-- Tipografia Oficial Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       RESET E EMBED COM FUNDO TRANSPARENTE
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      background-color: transparent !important;
+      background: transparent !important;
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #334155;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      height: auto !important;
+      min-height: 0 !important;
+      overflow: hidden !important;
+    }
+
+    /* ==========================================================================
+       VARIÁVEIS DE IDENTIDADE VISUAL - CÂMARA DE CORONEL BARROS
+       ========================================================================== */
+    :root {
+      --cb-green-primary: #006838;
+      --cb-green-hover: #004d29;
+      --cb-green-action: #009739;
+      --cb-green-soft: #EAF6EE;
+      --cb-yellow-gold: #FFCC00;
+      --cb-yellow-soft: #FFFBEB;
+      --cb-gray-bg: #F8FAFC;
+      --cb-gray-border: #E2E8F0;
+      --cb-text-dark: #1E293B;
+      --cb-text-body: #334155;
+      --cb-text-muted: #64748B;
+      --cb-white: #FFFFFF;
+
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .cb-widget {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 4px;
+    }
+
+    /* ==========================================================================
+       BARRA DE CABEÇALHO DO EMBED (SEM LINKS EXTERNOS)
+       ========================================================================== */
+    .cb-topbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-lg);
+      padding: 16px 20px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 20px;
+    }
+
+    .cb-topbar-title {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .cb-badge-law {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--cb-green-soft);
+      color: var(--cb-green-primary);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 9999px;
+      width: fit-content;
+      border: 1px solid rgba(0, 104, 56, 0.15);
+    }
+
+    .cb-badge-law::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--cb-green-action);
+    }
+
+    .cb-heading {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .cb-subheading {
+      font-size: 0.82rem;
+      color: var(--cb-text-muted);
+      font-weight: 500;
+    }
+
+    .cb-controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cb-select-group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cb-select-group label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--cb-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .cb-select {
+      background-color: var(--cb-gray-bg);
+      border: 1px solid var(--cb-gray-border);
+      color: var(--cb-text-dark);
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 7px 12px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .cb-select:focus, .cb-select:hover {
+      border-color: var(--cb-green-primary);
+      background-color: var(--cb-white);
+    }
+
+    .cb-btn-tool {
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      color: var(--cb-text-body);
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 7px 12px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+    }
+
+    .cb-btn-tool:hover {
+      border-color: var(--cb-green-primary);
+      color: var(--cb-green-primary);
+      background: var(--cb-green-soft);
+    }
+
+    .cb-btn-tool svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* ==========================================================================
+       CARDS DE RESUMO DO BIMESTRE
+       ========================================================================== */
+    .cb-metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .cb-metric-card {
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+
+    .cb-metric-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+      border-color: #CBD5E1;
+    }
+
+    .cb-metric-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--cb-gray-border);
+    }
+
+    .cb-metric-card.card-rec::before { background: var(--cb-green-primary); }
+    .cb-metric-card.card-desp::before { background: #0284C7; }
+    .cb-metric-card.card-res::before { background: var(--cb-yellow-gold); }
+    .cb-metric-card.card-cam::before { background: var(--cb-green-action); }
+
+    .cb-metric-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .cb-metric-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--cb-text-muted);
+    }
+
+    .cb-metric-value {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: -0.02em;
+      margin-bottom: 4px;
+    }
+
+    .cb-metric-sub {
+      font-size: 0.78rem;
+      color: var(--cb-text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cb-pill {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 9999px;
+      line-height: 1.3;
+    }
+
+    .cb-pill-ok {
+      background: var(--cb-green-soft);
+      color: var(--cb-green-primary);
+    }
+
+    /* ==========================================================================
+       ABAS DE NAVEGAÇÃO INTERNA
+       ========================================================================== */
+    .cb-tabs-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-bottom: 2px solid var(--cb-gray-border);
+      margin-bottom: 18px;
+    }
+
+    .cb-tabs {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding-bottom: 2px;
+    }
+
+    .cb-tab-btn {
+      background: transparent;
+      border: none;
+      outline: none;
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--cb-text-muted);
+      padding: 10px 16px;
+      cursor: pointer;
+      position: relative;
+      border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+      white-space: nowrap;
+      transition: var(--transition);
+    }
+
+    .cb-tab-btn:hover {
+      color: var(--cb-green-primary);
+      background: var(--cb-green-soft);
+    }
+
+    .cb-tab-btn.active {
+      color: var(--cb-green-primary);
+      font-weight: 700;
+    }
+
+    .cb-tab-btn.active::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--cb-green-primary);
+      border-radius: 2px;
+    }
+
+    .cb-search-input {
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      color: var(--cb-text-dark);
+      font-family: inherit;
+      font-size: 0.84rem;
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      outline: none;
+      width: 220px;
+      transition: var(--transition);
+      margin-bottom: 4px;
+    }
+
+    .cb-search-input:focus {
+      border-color: var(--cb-green-primary);
+    }
+
+    .cb-tab-content {
+      display: none;
+    }
+
+    .cb-tab-content.active {
+      display: block;
+      animation: fadeIn 0.25s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ==========================================================================
+       TABELAS CONTÁBEIS
+       ========================================================================== */
+    .cb-table-wrap {
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      overflow-x: auto;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .cb-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    .cb-table th {
+      background: var(--cb-green-primary);
+      color: var(--cb-white);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 12px 16px;
+    }
+
+    .cb-table td {
+      padding: 11px 16px;
+      font-size: 0.86rem;
+      border-bottom: 1px solid var(--cb-gray-border);
+      color: var(--cb-text-dark);
+    }
+
+    .cb-table tbody tr:nth-child(even) {
+      background-color: var(--cb-gray-bg);
+    }
+
+    .cb-table tbody tr:hover {
+      background-color: var(--cb-green-soft);
+    }
+
+    .cb-table td.col-num {
+      text-align: right;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .cb-table tr.row-highlight {
+      background-color: #F0FDF4 !important;
+      font-weight: 700;
+    }
+
+    .cb-table tr.row-highlight td {
+      color: var(--cb-green-primary);
+      border-left: 4px solid var(--cb-green-primary);
+    }
+
+    .cb-table tr.row-total {
+      background-color: #F1F5F9 !important;
+      font-weight: 700;
+    }
+
+    .cb-table tr.row-total td {
+      border-top: 2px solid var(--cb-green-primary);
+      border-bottom: 2px solid var(--cb-green-primary);
+      color: var(--cb-green-primary);
+    }
+
+    /* ==========================================================================
+       RODAPÉ TÉCNICO
+       ========================================================================== */
+    .cb-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 24px;
+      padding: 14px 18px;
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      font-size: 0.78rem;
+      color: var(--cb-text-muted);
+    }
+
+    .cb-footer-source {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cb-footer-source strong {
+      color: var(--cb-text-dark);
+    }
+
+    @media (max-width: 768px) {
+      .cb-topbar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .cb-controls {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .cb-select-group {
+        justify-content: space-between;
+      }
+      .cb-select {
+        flex-grow: 1;
+      }
+      .cb-search-input {
+        width: 100%;
+      }
+      .cb-footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media print {
+      body { background: #fff !important; }
+      .cb-controls, .cb-tabs-wrap, .cb-btn-tool { display: none !important; }
+      .cb-tab-content { display: block !important; margin-bottom: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cb-widget" id="app">
+    
+    <!-- BARRA SUPERIOR DO EMBED -->
+    <header class="cb-topbar">
+      <div class="cb-topbar-title">
+        <span class="cb-badge-law">LRF • Art. 52 e 53 • Siconfi / STN</span>
+        <h1 class="cb-heading">Execução Orçamentária Bimestral (RREO)</h1>
+        <p class="cb-subheading">Acompanhamento Bimestral das Receitas e Despesas • Poder Legislativo e Executivo</p>
+      </div>
+
+      <div class="cb-controls">
+        <div class="cb-select-group">
+          <label for="select-ano">Ano:</label>
+          <select id="select-ano" class="cb-select" aria-label="Selecione o ano"></select>
+        </div>
+
+        <div class="cb-select-group">
+          <label for="select-bimestre">Bimestre:</label>
+          <select id="select-bimestre" class="cb-select" aria-label="Selecione o bimestre"></select>
+        </div>
+
+        <button type="button" class="cb-btn-tool" id="btn-export-csv" title="Exportar dados deste bimestre em CSV">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Exportar CSV
+        </button>
+
+        <button type="button" class="cb-btn-tool" id="btn-imprimir" title="Imprimir demonstrativo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          Imprimir
+        </button>
+      </div>
+    </header>
+
+    <!-- CARDS DE MÉTRICAS PRINCIPAIS DO BIMESTRE -->
+    <section class="cb-metrics-grid">
+      <!-- Card 1: Receitas Realizadas -->
+      <article class="cb-metric-card card-rec">
+        <div class="cb-metric-header">
+          <span class="cb-metric-label">Receitas Realizadas (Acumulado)</span>
+          <span class="cb-pill cb-pill-ok" id="badge-rec-pct">0,00%</span>
+        </div>
+        <div class="cb-metric-value" id="val-rec-ate">R$ 0,00</div>
+        <div class="cb-metric-sub" id="sub-rec-bim">
+          No bimestre: R$ 0,00
+        </div>
+      </article>
+
+      <!-- Card 2: Despesas Liquidadas -->
+      <article class="cb-metric-card card-desp">
+        <div class="cb-metric-header">
+          <span class="cb-metric-label">Despesas Liquidadas (Acumulado)</span>
+          <span class="cb-pill" style="background:#E0F2FE; color:#0369A1;">Executadas</span>
+        </div>
+        <div class="cb-metric-value" id="val-desp-liq">R$ 0,00</div>
+        <div class="cb-metric-sub" id="sub-desp-bim">
+          No bimestre: R$ 0,00
+        </div>
+      </article>
+
+      <!-- Card 3: Resultado Orçamentário -->
+      <article class="cb-metric-card card-res">
+        <div class="cb-metric-header">
+          <span class="cb-metric-label">Resultado Orçamentário</span>
+          <span class="cb-pill" id="badge-resultado">Superávit</span>
+        </div>
+        <div class="cb-metric-value" id="val-resultado">R$ 0,00</div>
+        <div class="cb-metric-sub">
+          Saldo financeiro acumulado
+        </div>
+      </article>
+
+      <!-- Card 4: Câmara Municipal -->
+      <article class="cb-metric-card card-cam">
+        <div class="cb-metric-header">
+          <span class="cb-metric-label">Poder Legislativo (Câmara)</span>
+          <span class="cb-pill cb-pill-ok">Ação Legislativa</span>
+        </div>
+        <div class="cb-metric-value" id="val-camara">R$ 0,00</div>
+        <div class="cb-metric-sub" id="sub-camara-saldo">
+          Saldo orçamentário: R$ 0,00
+        </div>
+      </article>
+    </section>
+
+    <!-- NAVEGAÇÃO DE ABAS E BUSCA -->
+    <div class="cb-tabs-wrap">
+      <nav class="cb-tabs" aria-label="Navegação do RREO">
+        <button type="button" class="cb-tab-btn active" data-tab="tab-orcamentario">1. Balanço Orçamentário (Anexo 01)</button>
+        <button type="button" class="cb-tab-btn" data-tab="tab-funcoes">2. Despesas por Função / Áreas (Anexo 02)</button>
+        <button type="button" class="cb-tab-btn" data-tab="tab-restos">3. Restos a Pagar por Poder (Anexo 07)</button>
+      </nav>
+
+      <input type="text" id="input-filtro" class="cb-search-input" placeholder="Filtrar contas / rubricas..." aria-label="Filtrar contas">
+    </div>
+
+    <!-- CONTEÚDO DAS ABAS -->
+
+    <!-- ABA 1: BALANÇO ORÇAMENTÁRIO (ANEXO 01) -->
+    <div id="tab-orcamentario" class="cb-tab-content active">
+      <div class="cb-table-wrap">
+        <table class="cb-table">
+          <thead>
+            <tr>
+              <th>Rubrica Orçamentária (Receitas e Despesas - RREO Anexo 01)</th>
+              <th style="text-align:right;">Coluna / Estágio</th>
+              <th style="text-align:right;">Valor Realizado (R$)</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-orcamentario"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ABA 2: DESPESAS POR FUNÇÃO (ANEXO 02) -->
+    <div id="tab-funcoes" class="cb-tab-content">
+      <div class="cb-table-wrap">
+        <table class="cb-table">
+          <thead>
+            <tr>
+              <th>Função / Área de Governo (RREO Anexo 02)</th>
+              <th style="text-align:right;">Dotação Atualizada (R$)</th>
+              <th style="text-align:right;">Empenhadas até Bimestre (R$)</th>
+              <th style="text-align:right;">Liquidadas até Bimestre (R$)</th>
+              <th style="text-align:right;">Saldo Disponível (R$)</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-funcoes"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ABA 3: RESTOS A PAGAR (ANEXO 07) -->
+    <div id="tab-restos" class="cb-tab-content">
+      <div class="cb-table-wrap">
+        <table class="cb-table">
+          <thead>
+            <tr>
+              <th>Poder / Órgão (RREO Anexo 07)</th>
+              <th style="text-align:right;">Estágio</th>
+              <th style="text-align:right;">Valor (R$)</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-restos"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- RODAPÉ TÉCNICO -->
+    <footer class="cb-footer">
+      <div class="cb-footer-source">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+        <span>Fonte Oficial: <strong>Secretaria do Tesouro Nacional (Siconfi / RREO)</strong> • IBGE: <strong>4305871</strong></span>
+      </div>
+      <div class="cb-footer-sync">
+        <span>Homologação no Tesouro: <strong id="lbl-homologacao">--</strong></span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    (function () {
+      let dadosGlobais = null;
+      let periodoSelecionado = null;
+
+      const selectAno = document.getElementById('select-ano');
+      const selectBimestre = document.getElementById('select-bimestre');
+      const valRecAte = document.getElementById('val-rec-ate');
+      const badgeRecPct = document.getElementById('badge-rec-pct');
+      const subRecBim = document.getElementById('sub-rec-bim');
+      const valDespLiq = document.getElementById('val-desp-liq');
+      const subDespBim = document.getElementById('sub-desp-bim');
+      const valResultado = document.getElementById('val-resultado');
+      const badgeResultado = document.getElementById('badge-resultado');
+      const valCamara = document.getElementById('val-camara');
+      const subCamaraSaldo = document.getElementById('sub-camara-saldo');
+      const tbodyOrcamentario = document.getElementById('tbody-orcamentario');
+      const tbodyFuncoes = document.getElementById('tbody-funcoes');
+      const tbodyRestos = document.getElementById('tbody-restos');
+      const inputFiltro = document.getElementById('input-filtro');
+      const lblHomologacao = document.getElementById('lbl-homologacao');
+
+      function formatMoney(val) {
+        if (val === null || val === undefined || isNaN(val)) return 'R$ 0,00';
+        return val.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      }
+
+      function formatDate(isoStr) {
+        if (!isoStr) return '--';
+        try {
+          const d = new Date(isoStr);
+          return d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+        } catch { return isoStr; }
+      }
+
+      // Notificar altura ao iframe pai com medição rigorosa de #app e corte de loop
+      let lastSentHeight = 0;
+      let resizeDebounceTimer = null;
+
+      function notificarAltura() {
+        clearTimeout(resizeDebounceTimer);
+        resizeDebounceTimer = setTimeout(() => {
+          const app = document.getElementById('app');
+          if (!app) return;
+
+          const rect = app.getBoundingClientRect();
+          const height = Math.ceil(rect.height);
+
+          if (Math.abs(height - lastSentHeight) > 4) {
+            lastSentHeight = height;
+            if (window.parent && window.parent !== window) {
+              window.parent.postMessage({ type: 'cb-resize', height: height }, '*');
+            }
+          }
+        }, 50);
+      }
+
+      if (window.ResizeObserver) {
+        const ro = new ResizeObserver(() => notificarAltura());
+        const appElem = document.getElementById('app');
+        if (appElem) ro.observe(appElem);
+      } else {
+        window.addEventListener('resize', notificarAltura);
+      }
+
+      async function carregarDados() {
+        try {
+          const resp = await fetch('./data/rreo.json?t=' + Date.now());
+          if (!resp.ok) throw new Error('Erro ao carregar rreo.json');
+          dadosGlobais = await resp.json();
+          inicializar();
+        } catch (e) {
+          console.error(e);
+        }
+      }
+
+      function inicializar() {
+        if (!dadosGlobais || !dadosGlobais.periodos || dadosGlobais.periodos.length === 0) return;
+
+        selectAno.innerHTML = '';
+        dadosGlobais.metadata.exercicios_disponiveis.forEach(ano => {
+          const opt = document.createElement('option');
+          opt.value = ano;
+          opt.textContent = ano;
+          selectAno.appendChild(opt);
+        });
+
+        selectAno.addEventListener('change', () => atualizarOpcoesBimestre());
+        selectBimestre.addEventListener('change', () => renderizar());
+        inputFiltro.addEventListener('input', () => filtrarTabelas());
+
+        atualizarOpcoesBimestre();
+      }
+
+      function atualizarOpcoesBimestre() {
+        const ano = parseInt(selectAno.value, 10);
+        const periodosAno = dadosGlobais.periodos.filter(p => p.exercicio === ano);
+
+        selectBimestre.innerHTML = '';
+        periodosAno.forEach(p => {
+          const opt = document.createElement('option');
+          opt.value = p.periodo;
+          opt.textContent = p.periodo_rotulo;
+          selectBimestre.appendChild(opt);
+        });
+
+        renderizar();
+      }
+
+      function renderizar() {
+        const ano = parseInt(selectAno.value, 10);
+        const bimestre = parseInt(selectBimestre.value, 10);
+        const dado = dadosGlobais.periodos.find(p => p.exercicio === ano && p.periodo === bimestre);
+        if (!dado) return;
+        periodoSelecionado = dado;
+
+        const res = dado.resumo;
+
+        // 1. Cards
+        valRecAte.textContent = formatMoney(res.receita_realizada_ate_bimestre);
+        badgeRecPct.textContent = res.receita_realizada_pct ? `${res.receita_realizada_pct}% da Meta` : 'Acumulado';
+        subRecBim.textContent = `No bimestre: ${formatMoney(res.receita_realizada_no_bimestre)}`;
+
+        valDespLiq.textContent = formatMoney(res.despesa_liquidada_ate_bimestre);
+        subDespBim.textContent = `No bimestre: ${formatMoney(res.despesa_liquidada_no_bimestre)}`;
+
+        valResultado.textContent = formatMoney(Math.abs(res.resultado_orcamentario_bimestre));
+        if (res.resultado_orcamentario_bimestre >= 0) {
+          badgeResultado.className = 'cb-pill cb-pill-ok';
+          badgeResultado.textContent = 'Superávit no Bimestre';
+        } else {
+          badgeResultado.className = 'cb-pill';
+          badgeResultado.style.cssText = 'background:#FEE2E2; color:#991B1B;';
+          badgeResultado.textContent = 'Déficit no Bimestre';
+        }
+
+        valCamara.textContent = formatMoney(res.camara_despesa_liquidada || res.camara_despesa_empenhada);
+        subCamaraSaldo.textContent = `Saldo restante: ${formatMoney(res.camara_saldo)}`;
+
+        // 2. Tabela 1: Balanço Orçamentário
+        tbodyOrcamentario.innerHTML = dado.balanco_orcamentario.map(item => `
+          <tr>
+            <td>${item.conta}</td>
+            <td class="col-num" style="font-size:0.78rem; color:var(--cb-text-muted);">${item.coluna}</td>
+            <td class="col-num">${formatMoney(item.valor)}</td>
+          </tr>
+        `).join('');
+
+        // 3. Tabela 2: Despesas por Função
+        tbodyFuncoes.innerHTML = dado.despesas_funcao.map(f => {
+          const isCamara = f.conta.toLowerCase().includes('legislativa');
+          return `
+            <tr class="${isCamara ? 'row-highlight' : ''}">
+              <td>${isCamara ? '<strong>' + f.conta + ' (Câmara de Vereadores)</strong>' : f.conta}</td>
+              <td class="col-num">${formatMoney(f.dotacao_atualizada)}</td>
+              <td class="col-num">${formatMoney(f.empenhada_ate)}</td>
+              <td class="col-num">${formatMoney(f.liquidada_ate)}</td>
+              <td class="col-num" style="color:var(--cb-green-primary);">${formatMoney(f.saldo)}</td>
+            </tr>
+          `;
+        }).join('');
+
+        // 4. Tabela 3: Restos a Pagar
+        if (dado.restos_a_pagar && dado.restos_a_pagar.length > 0) {
+          tbodyRestos.innerHTML = dado.restos_a_pagar.map(item => `
+            <tr>
+              <td>${item.conta}</td>
+              <td class="col-num" style="font-size:0.78rem; color:var(--cb-text-muted);">${item.coluna}</td>
+              <td class="col-num">${formatMoney(item.valor)}</td>
+            </tr>
+          `).join('');
+        } else {
+          tbodyRestos.innerHTML = '<tr><td colspan="3" style="text-align:center; padding:20px;">Sem movimentações de restos a pagar detalhadas para este bimestre.</td></tr>';
+        }
+
+        lblHomologacao.textContent = formatDate(dado.data_status);
+        notificarAltura();
+      }
+
+      document.querySelectorAll('.cb-tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.cb-tab-btn').forEach(b => b.classList.remove('active'));
+          document.querySelectorAll('.cb-tab-content').forEach(c => c.classList.remove('active'));
+
+          btn.classList.add('active');
+          const target = document.getElementById(btn.dataset.tab);
+          if (target) target.classList.add('active');
+          notificarAltura();
+        });
+      });
+
+      function filtrarTabelas() {
+        const query = inputFiltro.value.toLowerCase().trim();
+        const activeTab = document.querySelector('.cb-tab-content.active');
+        if (!activeTab) return;
+
+        const rows = activeTab.querySelectorAll('tbody tr');
+        rows.forEach(row => {
+          const text = row.textContent.toLowerCase();
+          row.style.display = text.includes(query) ? '' : 'none';
+        });
+        notificarAltura();
+      }
+
+      // Exportar CSV
+      document.getElementById('btn-export-csv').addEventListener('click', () => {
+        if (!periodoSelecionado) return;
+        const res = periodoSelecionado.resumo;
+        const linhas = [
+          ['Relatório Resumido da Execução Orçamentária (RREO) - Município e Câmara de Coronel Barros'],
+          ['Exercício / Período:', `${periodoSelecionado.exercicio} - ${periodoSelecionado.periodo_rotulo}`],
+          ['Data de Homologação:', formatDate(periodoSelecionado.data_status)],
+          ['Fonte:', 'Siconfi / Secretaria do Tesouro Nacional'],
+          [''],
+          ['Indicador Geral', 'Valor (R$)'],
+          ['Receitas Realizadas até o Bimestre', res.receita_realizada_ate_bimestre],
+          ['Receitas no Bimestre', res.receita_realizada_no_bimestre],
+          ['Despesas Liquidadas até o Bimestre', res.despesa_liquidada_ate_bimestre],
+          ['Despesas Liquidadas no Bimestre', res.despesa_liquidada_no_bimestre],
+          ['Resultado Orçamentário Acumulado', res.resultado_orcamentario_bimestre],
+          ['Câmara Municipal (Dotação Atualizada)', res.camara_dotacao_atualizada],
+          ['Câmara Municipal (Liquidada até o Bimestre)', res.camara_despesa_liquidada],
+          ['Câmara Municipal (Saldo Restante)', res.camara_saldo]
+        ];
+
+        const csvContent = '\uFEFF' + linhas.map(e => e.map(val => `"${val}"`).join(';')).join('\n');
+        const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.setAttribute('href', url);
+        link.setAttribute('download', `RREO_Coronel_Barros_${periodoSelecionado.exercicio}_B${periodoSelecionado.periodo}.csv`);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      });
+
+      // Imprimir
+      document.getElementById('btn-imprimir').addEventListener('click', () => {
+        window.print();
+      });
+
+      carregarDados();
+    })();
+  </script>
+</body>
+</html>

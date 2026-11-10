@@ -5,7 +5,7 @@
     "municipio": "Coronel Barros",
     "uf": "RS",
     "fonte": "Secretaria do Tesouro Nacional - SICONFI / API Data Lake",
-    "data_sincronizacao": "2026-11-10T22:32:52Z",
+    "data_sincronizacao": "2026-11-10T22:42:26Z",
     "total_periodos": 11,
     "exercicios_disponiveis": [
       2026,
@@ -959,63 +959,7 @@
           "valor": 1058.05
         }
       ],
-      "simplificado": [
-        {
-          "conta": "Receita Corrente Líquida",
-          "coluna": "Valor Até o Semestre",
-          "valor": 35522774.99
-        },
-        {
-          "conta": "Receita Corrente Líquida Ajustada para Cálculo dos Limites da Despesa com Pessoal",
-          "coluna": "Valor Até o Semestre",
-          "valor": 34961678.99
-        },
-        {
-          "conta": "Despesa Total com Pessoal - DTP",
-          "coluna": "VALOR",
-          "valor": 749074.7
-        },
-        {
-          "conta": "Despesa Total com Pessoal - DTP",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 2.14
-        },
-        {
-          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
-          "coluna": "VALOR",
-          "valor": 2097700.74
-        },
-        {
-          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 6.0
-        },
-        {
-          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
-          "coluna": "VALOR",
-          "valor": 1992815.7
-        },
-        {
-          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 5.7
-        },
-        {
-          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
-          "coluna": "VALOR",
-          "valor": 1887930.67
-        },
-        {
-          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 5.4
-        },
-        {
-          "conta": "Valor Total",
-          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO)",
-          "valor": 1058.05
-        }
-      ]
+      "simplificado": []
     },
     {
       "exercicio": 2025,
@@ -1994,63 +1938,7 @@
           "valor": 154.19
         }
       ],
-      "simplificado": [
-        {
-          "conta": "Receita Corrente Líquida",
-          "coluna": "Valor Até o Semestre",
-          "valor": 33756882.59
-        },
-        {
-          "conta": "Receita Corrente Líquida Ajustada para Cálculo dos Limites da Despesa com Pessoal",
-          "coluna": "Valor Até o Semestre",
-          "valor": 33067916.8
-        },
-        {
-          "conta": "Despesa Total com Pessoal - DTP",
-          "coluna": "VALOR",
-          "valor": 598443.11
-        },
-        {
-          "conta": "Despesa Total com Pessoal - DTP",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 1.81
-        },
-        {
-          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
-          "coluna": "VALOR",
-          "valor": 1984075.01
-        },
-        {
-          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 6.0
-        },
-        {
-          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
-          "coluna": "VALOR",
-          "valor": 1884871.26
-        },
-        {
-          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 5.7
-        },
-        {
-          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
-          "coluna": "VALOR",
-          "valor": 1785667.51
-        },
-        {
-          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 5.4
-        },
-        {
-          "conta": "Valor Total",
-          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO)",
-          "valor": 154.19
-        }
-      ]
+      "simplificado": []
     },
     {
       "exercicio": 2024,
@@ -2979,68 +2867,7 @@
           "valor": 108.05
         }
       ],
-      "simplificado": [
-        {
-          "conta": "Receita Corrente Líquida",
-          "coluna": "Valor Até o Semestre",
-          "valor": 29849384.26
-        },
-        {
-          "conta": "Receita Corrente Líquida Ajustada para Cálculo dos Limites da Despesa com Pessoal",
-          "coluna": "Valor Até o Semestre",
-          "valor": 29478240.26
-        },
-        {
-          "conta": "Despesa Total com Pessoal - DTP",
-          "coluna": "VALOR",
-          "valor": 570243.45
-        },
-        {
-          "conta": "Despesa Total com Pessoal - DTP",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 1.93
-        },
-        {
-          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
-          "coluna": "VALOR",
-          "valor": 1773403.22
-        },
-        {
-          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 6.0
-        },
-        {
-          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
-          "coluna": "VALOR",
-          "valor": 1684733.06
-        },
-        {
-          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 5.7
-        },
-        {
-          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
-          "coluna": "VALOR",
-          "valor": 1596062.9
-        },
-        {
-          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 5.4
-        },
-        {
-          "conta": "Valor Total",
-          "coluna": "RESTOS A PAGAR EMPENHADOS E NÃO LIQUIDADOS DO EXERCÍCIO",
-          "valor": 1072.26
-        },
-        {
-          "conta": "Valor Total",
-          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO)",
-          "valor": 108.05
-        }
-      ]
+      "simplificado": []
     },
     {
       "exercicio": 2023,
@@ -3984,63 +3811,7 @@
           "valor": 1125.8
         }
       ],
-      "simplificado": [
-        {
-          "conta": "Receita Corrente Líquida",
-          "coluna": "Valor Até o Semestre",
-          "valor": 26514331.48
-        },
-        {
-          "conta": "Receita Corrente Líquida Ajustada para Cálculo dos Limites da Despesa com Pessoal",
-          "coluna": "Valor Até o Semestre",
-          "valor": 26364331.48
-        },
-        {
-          "conta": "Despesa Total com Pessoal - DTP",
-          "coluna": "VALOR",
-          "valor": 601325.49
-        },
-        {
-          "conta": "Despesa Total com Pessoal - DTP",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 2.28
-        },
-        {
-          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
-          "coluna": "VALOR",
-          "valor": 1581859.89
-        },
-        {
-          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 6.0
-        },
-        {
-          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
-          "coluna": "VALOR",
-          "valor": 1502766.9
-        },
-        {
-          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 5.7
-        },
-        {
-          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
-          "coluna": "VALOR",
-          "valor": 1423673.9
-        },
-        {
-          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 5.4
-        },
-        {
-          "conta": "Valor Total",
-          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO)",
-          "valor": 1125.8
-        }
-      ]
+      "simplificado": []
     },
     {
       "exercicio": 2022,
@@ -4954,68 +4725,7 @@
           "valor": 42.28
         }
       ],
-      "simplificado": [
-        {
-          "conta": "Receita Corrente Líquida",
-          "coluna": "Valor Até o Semestre",
-          "valor": 22414513.92
-        },
-        {
-          "conta": "Receita Corrente Líquida Ajustada para Cálculo dos Limites de Endividamento",
-          "coluna": "Valor Até o Semestre",
-          "valor": 22114513.92
-        },
-        {
-          "conta": "Receita Corrente Líquida Ajustada para Cálculo dos Limites da Despesa com Pessoal",
-          "coluna": "Valor Até o Semestre",
-          "valor": 22114513.92
-        },
-        {
-          "conta": "Despesa Total com Pessoal - DTP",
-          "coluna": "VALOR",
-          "valor": 497321.53
-        },
-        {
-          "conta": "Despesa Total com Pessoal - DTP",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 2.25
-        },
-        {
-          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
-          "coluna": "VALOR",
-          "valor": 1326870.84
-        },
-        {
-          "conta": "Limite Máximo (incisos I, II e III do art. 20 da LRF) - <%>",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 6.0
-        },
-        {
-          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
-          "coluna": "VALOR",
-          "valor": 1260527.3
-        },
-        {
-          "conta": "Limite Prudencial (parágrafo único art. 22 da LRF) - <%>",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 5.7
-        },
-        {
-          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
-          "coluna": "VALOR",
-          "valor": 1194183.76
-        },
-        {
-          "conta": "Limite de Alerta (inciso II do §1º do art. 59 da LRF) - <%>",
-          "coluna": "% SOBRE A RCL AJUSTADA",
-          "valor": 5.4
-        },
-        {
-          "conta": "Valor Total",
-          "coluna": "DISPONIBILIDADE DE CAIXA LÍQUIDA (APÓS A INSCRIÇÃO EM RESTOS A PAGAR NÃO PROCESSADOS DO EXERCÍCIO)",
-          "valor": 42.28
-        }
-      ]
+      "simplificado": []
     },
     {
       "exercicio": 2021,
