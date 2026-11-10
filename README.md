@@ -67,7 +67,7 @@ Como a página foi desenhada com **fundo transparente** e **sem menus ou cabeça
 <div style="width: 100%; max-width: 1180px; margin: 0 auto; overflow: hidden;">
   <iframe 
     id="iframe-rgf-coronel-barros"
-    src="https://ttreter.github.io/transparencia-coronelbarros/rgf.html" 
+    src="https://cmcb-labs.github.io/transparencia-coronelbarros/rgf.html" 
     style="width: 100%; border: none; min-height: 980px; background-color: transparent;" 
     title="Relatório de Gestão Fiscal - Câmara Municipal de Coronel Barros"
     loading="lazy">
