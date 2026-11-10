@@ -46,10 +46,12 @@ transparencia-coronelbarros/
 │   └── workflows/
 │       └── atualizar_dados.yml    # Workflow agendado (mensal)
 ├── data/
-│   └── rgf.json                   # Base de dados estruturada da LRF
+│   ├── rgf.json                   # Base de dados estruturada do RGF (Gestão Fiscal)
+│   └── balancos.json              # Base de dados estruturada dos Balanços (DCA)
 ├── scripts/
-│   └── atualizar_siconfi.py       # Robô coletor em Python
+│   └── atualizar_siconfi.py       # Robô coletor em Python (RGF + DCA)
 ├── rgf.html                       # Página do RGF para EMBED (fundo transparente)
+├── balancos.html                  # Página dos Balanços Anuais para EMBED
 ├── index.html                     # Entrada padrão no GitHub Pages
 ├── .gitignore
 └── README.md                      # Manual técnico de incorporação

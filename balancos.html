@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balanços e Contas Anuais - Município e Câmara de Coronel Barros</title>
+  
+  <!-- Tipografia Oficial Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       RESET E EMBED COM FUNDO TRANSPARENTE
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      background-color: transparent !important;
+      background: transparent !important;
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #334155;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      height: auto !important;
+      min-height: 0 !important;
+      overflow: hidden !important;
+    }
+
+    /* ==========================================================================
+       VARIÁVEIS DE IDENTIDADE VISUAL - CÂMARA DE CORONEL BARROS
+       ========================================================================== */
+    :root {
+      --cb-green-primary: #006838;
+      --cb-green-hover: #004d29;
+      --cb-green-action: #009739;
+      --cb-green-soft: #EAF6EE;
+      --cb-yellow-gold: #FFCC00;
+      --cb-yellow-soft: #FFFBEB;
+      --cb-gray-bg: #F8FAFC;
+      --cb-gray-border: #E2E8F0;
+      --cb-text-dark: #1E293B;
+      --cb-text-body: #334155;
+      --cb-text-muted: #64748B;
+      --cb-white: #FFFFFF;
+
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .cb-widget {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 4px;
+    }
+
+    /* ==========================================================================
+       BARRA DE CABEÇALHO DO EMBED (SEM LINKS EXTERNOS)
+       ========================================================================== */
+    .cb-topbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-lg);
+      padding: 16px 20px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 20px;
+    }
+
+    .cb-topbar-title {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .cb-badge-law {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--cb-green-soft);
+      color: var(--cb-green-primary);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 9999px;
+      width: fit-content;
+      border: 1px solid rgba(0, 104, 56, 0.15);
+    }
+
+    .cb-badge-law::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--cb-green-action);
+    }
+
+    .cb-heading {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .cb-subheading {
+      font-size: 0.82rem;
+      color: var(--cb-text-muted);
+      font-weight: 500;
+    }
+
+    .cb-controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cb-select-group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cb-select-group label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--cb-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .cb-select {
+      background-color: var(--cb-gray-bg);
+      border: 1px solid var(--cb-gray-border);
+      color: var(--cb-text-dark);
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 7px 12px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .cb-select:focus, .cb-select:hover {
+      border-color: var(--cb-green-primary);
+      background-color: var(--cb-white);
+    }
+
+    .cb-btn-tool {
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      color: var(--cb-text-body);
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 7px 12px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+    }
+
+    .cb-btn-tool:hover {
+      border-color: var(--cb-green-primary);
+      color: var(--cb-green-primary);
+      background: var(--cb-green-soft);
+    }
+
+    .cb-btn-tool svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* ==========================================================================
+       CARDS DE RESUMO (GRID 4 COLUNAS)
+       ========================================================================== */
+    .cb-metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .cb-metric-card {
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+
+    .cb-metric-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+      border-color: #CBD5E1;
+    }
+
+    .cb-metric-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--cb-gray-border);
+    }
+
+    .cb-metric-card.card-ativo::before { background: var(--cb-green-primary); }
+    .cb-metric-card.card-patrimonio::before { background: var(--cb-yellow-gold); }
+    .cb-metric-card.card-orcamento::before { background: #0284C7; }
+    .cb-metric-card.card-camara::before { background: var(--cb-green-action); }
+
+    .cb-metric-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .cb-metric-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--cb-text-muted);
+    }
+
+    .cb-metric-value {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: -0.02em;
+      margin-bottom: 4px;
+    }
+
+    .cb-metric-sub {
+      font-size: 0.78rem;
+      color: var(--cb-text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cb-pill {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 9999px;
+      line-height: 1.3;
+    }
+
+    .cb-pill-ok {
+      background: var(--cb-green-soft);
+      color: var(--cb-green-primary);
+    }
+
+    /* ==========================================================================
+       ABAS DE NAVEGAÇÃO INTERNA
+       ========================================================================== */
+    .cb-tabs-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-bottom: 2px solid var(--cb-gray-border);
+      margin-bottom: 18px;
+    }
+
+    .cb-tabs {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding-bottom: 2px;
+    }
+
+    .cb-tab-btn {
+      background: transparent;
+      border: none;
+      outline: none;
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--cb-text-muted);
+      padding: 10px 16px;
+      cursor: pointer;
+      position: relative;
+      border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+      white-space: nowrap;
+      transition: var(--transition);
+    }
+
+    .cb-tab-btn:hover {
+      color: var(--cb-green-primary);
+      background: var(--cb-green-soft);
+    }
+
+    .cb-tab-btn.active {
+      color: var(--cb-green-primary);
+      font-weight: 700;
+    }
+
+    .cb-tab-btn.active::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--cb-green-primary);
+      border-radius: 2px;
+    }
+
+    .cb-search-input {
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      color: var(--cb-text-dark);
+      font-family: inherit;
+      font-size: 0.84rem;
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      outline: none;
+      width: 220px;
+      transition: var(--transition);
+      margin-bottom: 4px;
+    }
+
+    .cb-search-input:focus {
+      border-color: var(--cb-green-primary);
+    }
+
+    .cb-tab-content {
+      display: none;
+    }
+
+    .cb-tab-content.active {
+      display: block;
+      animation: fadeIn 0.25s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ==========================================================================
+       TABELAS CONTÁBEIS ANALÍTICAS
+       ========================================================================== */
+    .cb-table-wrap {
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      overflow-x: auto;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .cb-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    .cb-table th {
+      background: var(--cb-green-primary);
+      color: var(--cb-white);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 12px 16px;
+    }
+
+    .cb-table td {
+      padding: 11px 16px;
+      font-size: 0.86rem;
+      border-bottom: 1px solid var(--cb-gray-border);
+      color: var(--cb-text-dark);
+    }
+
+    .cb-table tbody tr:nth-child(even) {
+      background-color: var(--cb-gray-bg);
+    }
+
+    .cb-table tbody tr:hover {
+      background-color: var(--cb-green-soft);
+    }
+
+    .cb-table td.col-num {
+      text-align: right;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .cb-table tr.row-highlight {
+      background-color: #F0FDF4 !important;
+      font-weight: 700;
+    }
+
+    .cb-table tr.row-highlight td {
+      color: var(--cb-green-primary);
+      border-left: 4px solid var(--cb-green-primary);
+    }
+
+    .cb-table tr.row-total {
+      background-color: #F1F5F9 !important;
+      font-weight: 700;
+    }
+
+    .cb-table tr.row-total td {
+      border-top: 2px solid var(--cb-green-primary);
+      border-bottom: 2px solid var(--cb-green-primary);
+      color: var(--cb-green-primary);
+    }
+
+    /* ==========================================================================
+       RODAPÉ TÉCNICO
+       ========================================================================== */
+    .cb-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 24px;
+      padding: 14px 18px;
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      font-size: 0.78rem;
+      color: var(--cb-text-muted);
+    }
+
+    .cb-footer-source {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cb-footer-source strong {
+      color: var(--cb-text-dark);
+    }
+
+    @media (max-width: 768px) {
+      .cb-topbar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .cb-controls {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .cb-select-group {
+        justify-content: space-between;
+      }
+      .cb-select {
+        flex-grow: 1;
+      }
+      .cb-search-input {
+        width: 100%;
+      }
+      .cb-footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media print {
+      body { background: #fff !important; }
+      .cb-controls, .cb-tabs-wrap, .cb-btn-tool { display: none !important; }
+      .cb-tab-content { display: block !important; margin-bottom: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cb-widget" id="app">
+    
+    <!-- BARRA SUPERIOR DO EMBED -->
+    <header class="cb-topbar">
+      <div class="cb-topbar-title">
+        <span class="cb-badge-law">Lei 4.320/1964 • NBC TSP • Siconfi / STN</span>
+        <h1 class="cb-heading">Balanços e Contas Anuais (DCA)</h1>
+        <p class="cb-subheading">Demonstrações Contábeis Consolidadas do Município e Poder Legislativo</p>
+      </div>
+
+      <div class="cb-controls">
+        <div class="cb-select-group">
+          <label for="select-ano">Exercício:</label>
+          <select id="select-ano" class="cb-select" aria-label="Selecione o exercício financeiro"></select>
+        </div>
+
+        <button type="button" class="cb-btn-tool" id="btn-export-csv" title="Exportar dados deste exercício em CSV">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Exportar CSV
+        </button>
+
+        <button type="button" class="cb-btn-tool" id="btn-imprimir" title="Imprimir demonstrativo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          Imprimir
+        </button>
+      </div>
+    </header>
+
+    <!-- CARDS DE MÉTRICAS PRINCIPAIS DO EXERCÍCIO -->
+    <section class="cb-metrics-grid">
+      <!-- Card 1: Ativo Total -->
+      <article class="cb-metric-card card-ativo">
+        <div class="cb-metric-header">
+          <span class="cb-metric-label">Ativo Total Consolidado</span>
+          <span class="cb-pill cb-pill-ok">Bens e Direitos</span>
+        </div>
+        <div class="cb-metric-value" id="val-ativo">R$ 0,00</div>
+        <div class="cb-metric-sub">
+          Circulante + Permanente (31/12)
+        </div>
+      </article>
+
+      <!-- Card 2: Patrimônio Líquido -->
+      <article class="cb-metric-card card-patrimonio">
+        <div class="cb-metric-header">
+          <span class="cb-metric-label">Patrimônio Líquido</span>
+          <span class="cb-pill" style="background:#FEF3C7; color:#92400E;">Saldo Patrimonial</span>
+        </div>
+        <div class="cb-metric-value" id="val-patrimonio">R$ 0,00</div>
+        <div class="cb-metric-sub">
+          Ativo deduzido do Passivo
+        </div>
+      </article>
+
+      <!-- Card 3: Execução Orçamentária -->
+      <article class="cb-metric-card card-orcamento">
+        <div class="cb-metric-header">
+          <span class="cb-metric-label">Resultado Orçamentário</span>
+          <span class="cb-pill" id="badge-resultado">Superávit</span>
+        </div>
+        <div class="cb-metric-value" id="val-resultado">R$ 0,00</div>
+        <div class="cb-metric-sub" id="sub-resultado">
+          Receitas Líquidas vs. Despesas
+        </div>
+      </article>
+
+      <!-- Card 4: Câmara Municipal -->
+      <article class="cb-metric-card card-camara">
+        <div class="cb-metric-header">
+          <span class="cb-metric-label">Poder Legislativo (Câmara)</span>
+          <span class="cb-pill cb-pill-ok">Ação Legislativa</span>
+        </div>
+        <div class="cb-metric-value" id="val-camara">R$ 0,00</div>
+        <div class="cb-metric-sub">
+          Despesa Executada (Função 01)
+        </div>
+      </article>
+    </section>
+
+    <!-- NAVEGAÇÃO DE ABAS E BUSCA -->
+    <div class="cb-tabs-wrap">
+      <nav class="cb-tabs" aria-label="Navegação dos balanços">
+        <button type="button" class="cb-tab-btn active" data-tab="tab-patrimonial">1. Balanço Patrimonial</button>
+        <button type="button" class="cb-tab-btn" data-tab="tab-orcamentario">2. Balanço Orçamentário</button>
+        <button type="button" class="cb-tab-btn" data-tab="tab-funcoes">3. Despesas por Função (Áreas)</button>
+        <button type="button" class="cb-tab-btn" data-tab="tab-dvp">4. Variações Patrimoniais (DVP)</button>
+      </nav>
+
+      <input type="text" id="input-filtro" class="cb-search-input" placeholder="Filtrar contas / rubricas..." aria-label="Filtrar contas">
+    </div>
+
+    <!-- CONTEÚDO DAS ABAS -->
+
+    <!-- ABA 1: BALANÇO PATRIMONIAL -->
+    <div id="tab-patrimonial" class="cb-tab-content active">
+      <div class="cb-table-wrap">
+        <table class="cb-table">
+          <thead>
+            <tr>
+              <th>Estrutura Patrimonial (Ativo, Passivo e Patrimônio Líquido - Anexo I-AB)</th>
+              <th style="text-align:right;">Posição em 31/12 (R$)</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-patrimonial"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ABA 2: BALANÇO ORÇAMENTÁRIO -->
+    <div id="tab-orcamentario" class="cb-tab-content">
+      <div class="cb-table-wrap">
+        <table class="cb-table">
+          <thead>
+            <tr>
+              <th>Rubrica Orçamentária (Receitas e Despesas - Anexo I-C / I-D)</th>
+              <th style="text-align:right;">Estágio / Coluna</th>
+              <th style="text-align:right;">Valor Realizado (R$)</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-orcamentario"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ABA 3: DESPESAS POR FUNÇÃO DE GOVERNO -->
+    <div id="tab-funcoes" class="cb-tab-content">
+      <div class="cb-table-wrap">
+        <table class="cb-table">
+          <thead>
+            <tr>
+              <th>Função / Área de Governo (Anexo I-E)</th>
+              <th style="text-align:right;">Empenhadas (R$)</th>
+              <th style="text-align:right;">Liquidadas (R$)</th>
+              <th style="text-align:right;">Pagas (R$)</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-funcoes"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ABA 4: DVP -->
+    <div id="tab-dvp" class="cb-tab-content">
+      <div class="cb-table-wrap">
+        <table class="cb-table">
+          <thead>
+            <tr>
+              <th>Demonstração das Variações Patrimoniais (Anexo I-HI)</th>
+              <th style="text-align:right;">Valor Apurado (R$)</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-dvp"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- RODAPÉ DE TRANSPARÊNCIA -->
+    <footer class="cb-footer">
+      <div class="cb-footer-source">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+        <span>Fonte Oficial: <strong>Secretaria do Tesouro Nacional (Siconfi / DCA)</strong> • IBGE: <strong>4305871</strong></span>
+      </div>
+      <div class="cb-footer-sync">
+        <span>Última sincronização: <strong id="lbl-sincronizacao">--</strong></span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    (function () {
+      let dadosGlobais = null;
+      let anoSelecionado = null;
+
+      // Elementos
+      const selectAno = document.getElementById('select-ano');
+      const valAtivo = document.getElementById('val-ativo');
+      const valPatrimonio = document.getElementById('val-patrimonio');
+      const valResultado = document.getElementById('val-resultado');
+      const badgeResultado = document.getElementById('badge-resultado');
+      const subResultado = document.getElementById('sub-resultado');
+      const valCamara = document.getElementById('val-camara');
+      const tbodyPatrimonial = document.getElementById('tbody-patrimonial');
+      const tbodyOrcamentario = document.getElementById('tbody-orcamentario');
+      const tbodyFuncoes = document.getElementById('tbody-funcoes');
+      const tbodyDvp = document.getElementById('tbody-dvp');
+      const inputFiltro = document.getElementById('input-filtro');
+      const lblSincronizacao = document.getElementById('lbl-sincronizacao');
+
+      function formatMoney(val) {
+        if (val === null || val === undefined || isNaN(val)) return 'R$ 0,00';
+        return val.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      }
+
+      function formatDate(isoStr) {
+        if (!isoStr) return '--';
+        try {
+          const d = new Date(isoStr);
+          return d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+        } catch { return isoStr; }
+      }
+
+      // Notificar altura ao iframe pai com medição rigorosa de #app e corte de loop
+      let lastSentHeight = 0;
+      let resizeDebounceTimer = null;
+
+      function notificarAltura() {
+        clearTimeout(resizeDebounceTimer);
+        resizeDebounceTimer = setTimeout(() => {
+          const app = document.getElementById('app');
+          if (!app) return;
+
+          const rect = app.getBoundingClientRect();
+          const height = Math.ceil(rect.height);
+
+          // Corta loops infinitos: só dispara se a diferença real for maior que 4 pixels
+          if (Math.abs(height - lastSentHeight) > 4) {
+            lastSentHeight = height;
+            if (window.parent && window.parent !== window) {
+              window.parent.postMessage({ type: 'cb-resize', height: height }, '*');
+            }
+          }
+        }, 50);
+      }
+
+      if (window.ResizeObserver) {
+        const ro = new ResizeObserver(() => notificarAltura());
+        const appElem = document.getElementById('app');
+        if (appElem) ro.observe(appElem);
+      } else {
+        window.addEventListener('resize', notificarAltura);
+      }
+
+      // Carregar os dados
+      async function carregarDados() {
+        try {
+          const resp = await fetch('./data/balancos.json?t=' + Date.now());
+          if (!resp.ok) throw new Error('Erro ao carregar balancos.json');
+          dadosGlobais = await resp.json();
+          inicializar();
+        } catch (e) {
+          console.error(e);
+        }
+      }
+
+      function inicializar() {
+        if (!dadosGlobais || !dadosGlobais.exercicios || dadosGlobais.exercicios.length === 0) return;
+
+        selectAno.innerHTML = '';
+        dadosGlobais.metadata.exercicios_disponiveis.forEach(ano => {
+          const opt = document.createElement('option');
+          opt.value = ano;
+          opt.textContent = ano;
+          selectAno.appendChild(opt);
+        });
+
+        selectAno.addEventListener('change', () => renderizar());
+        inputFiltro.addEventListener('input', () => filtrarTabelas());
+
+        lblSincronizacao.textContent = formatDate(dadosGlobais.metadata.data_sincronizacao);
+        renderizar();
+      }
+
+      function renderizar() {
+        const ano = parseInt(selectAno.value, 10);
+        const dado = dadosGlobais.exercicios.find(x => x.exercicio === ano);
+        if (!dado) return;
+        anoSelecionado = dado;
+
+        const res = dado.resumo;
+
+        // 1. Cards Principais
+        valAtivo.textContent = formatMoney(res.ativo_total);
+        valPatrimonio.textContent = formatMoney(res.patrimonio_liquido);
+
+        valResultado.textContent = formatMoney(Math.abs(res.resultado_orcamentario));
+        if (res.resultado_orcamentario >= 0) {
+          badgeResultado.className = 'cb-pill cb-pill-ok';
+          badgeResultado.textContent = 'Superávit Orçamentário';
+          subResultado.textContent = `Receita: ${formatMoney(res.receita_liquida)} | Despesa: ${formatMoney(res.despesa_liquidada)}`;
+        } else {
+          badgeResultado.className = 'cb-pill';
+          badgeResultado.style.cssText = 'background:#FEE2E2; color:#991B1B;';
+          badgeResultado.textContent = 'Déficit Orçamentário';
+          subResultado.textContent = `Receita: ${formatMoney(res.receita_liquida)} | Despesa: ${formatMoney(res.despesa_liquidada)}`;
+        }
+
+        valCamara.textContent = formatMoney(res.camara_despesa_liquidada || res.camara_despesa_empenhada);
+
+        // 2. Tabela 1: Balanço Patrimonial
+        tbodyPatrimonial.innerHTML = dado.balanco_patrimonial.map(item => {
+          const isTotal = item.conta.includes('1.0.0.0.0.00.00') || item.conta.includes('2.0.0.0.0.00.00') || item.conta.includes('2.3.0.0.0.00.00');
+          return `
+            <tr class="${isTotal ? 'row-total' : ''}">
+              <td>${item.conta}</td>
+              <td class="col-num">${formatMoney(item.valor)}</td>
+            </tr>
+          `;
+        }).join('');
+
+        // 3. Tabela 2: Balanço Orçamentário
+        const orcItens = [
+          ...dado.balanco_orcamentario_receitas.map(x => ({ ...x, tipo: 'Receita' })),
+          ...dado.balanco_orcamentario_despesas.map(x => ({ ...x, tipo: 'Despesa' }))
+        ];
+        tbodyOrcamentario.innerHTML = orcItens.map(item => `
+          <tr>
+            <td>${item.conta}</td>
+            <td class="col-num" style="font-size:0.78rem; color:var(--cb-text-muted);">${item.coluna}</td>
+            <td class="col-num">${formatMoney(item.valor)}</td>
+          </tr>
+        `).join('');
+
+        // 4. Tabela 3: Despesas por Função
+        // Agrupa por função
+        const funcoesMap = {};
+        dado.despesas_funcao.forEach(item => {
+          if (!funcoesMap[item.conta]) {
+            funcoesMap[item.conta] = { empenhadas: 0, liquidadas: 0, pagas: 0 };
+          }
+          if (item.coluna === 'Despesas Empenhadas') funcoesMap[item.conta].empenhadas = item.valor;
+          else if (item.coluna === 'Despesas Liquidadas') funcoesMap[item.conta].liquidadas = item.valor;
+          else if (item.coluna === 'Despesas Pagas') funcoesMap[item.conta].pagas = item.valor;
+        });
+
+        tbodyFuncoes.innerHTML = Object.keys(funcoesMap).map(funcao => {
+          const isCamara = funcao.includes('01 - Legislativa');
+          const f = funcoesMap[funcao];
+          return `
+            <tr class="${isCamara ? 'row-highlight' : ''}">
+              <td>${isCamara ? '<strong>' + funcao + ' (Câmara de Vereadores)</strong>' : funcao}</td>
+              <td class="col-num">${formatMoney(f.empenhadas)}</td>
+              <td class="col-num">${formatMoney(f.liquidadas)}</td>
+              <td class="col-num">${formatMoney(f.pagas)}</td>
+            </tr>
+          `;
+        }).join('');
+
+        // 5. Tabela 4: DVP
+        if (dado.dvp && dado.dvp.length > 0) {
+          tbodyDvp.innerHTML = dado.dvp.map(item => `
+            <tr>
+              <td>${item.conta}</td>
+              <td class="col-num">${formatMoney(item.valor)}</td>
+            </tr>
+          `).join('');
+        } else {
+          tbodyDvp.innerHTML = '<tr><td colspan="2" style="text-align:center; padding:20px;">DVP não reportada neste formato para este exercício.</td></tr>';
+        }
+
+        notificarAltura();
+      }
+
+      // Abas
+      document.querySelectorAll('.cb-tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.cb-tab-btn').forEach(b => b.classList.remove('active'));
+          document.querySelectorAll('.cb-tab-content').forEach(c => c.classList.remove('active'));
+
+          btn.classList.add('active');
+          const target = document.getElementById(btn.dataset.tab);
+          if (target) target.classList.add('active');
+          notificarAltura();
+        });
+      });
+
+      // Busca / Filtro em tabelas ativas
+      function filtrarTabelas() {
+        const query = inputFiltro.value.toLowerCase().trim();
+        const activeTab = document.querySelector('.cb-tab-content.active');
+        if (!activeTab) return;
+
+        const rows = activeTab.querySelectorAll('tbody tr');
+        rows.forEach(row => {
+          const text = row.textContent.toLowerCase();
+          row.style.display = text.includes(query) ? '' : 'none';
+        });
+        notificarAltura();
+      }
+
+      // Exportar CSV
+      document.getElementById('btn-export-csv').addEventListener('click', () => {
+        if (!anoSelecionado) return;
+        const res = anoSelecionado.resumo;
+        const linhas = [
+          ['Balanço e Contas Anuais - Município e Câmara de Coronel Barros - RS'],
+          ['Exercício Financeiro:', anoSelecionado.exercicio],
+          ['Fonte:', 'Siconfi / Secretaria do Tesouro Nacional'],
+          [''],
+          ['Indicador Geral', 'Valor (R$)'],
+          ['Ativo Total Consolidado', res.ativo_total],
+          ['Passivo Total', res.passivo_total],
+          ['Patrimônio Líquido', res.patrimonio_liquido],
+          ['Receitas Líquidas Realizadas', res.receita_liquida],
+          ['Despesas Liquidadas', res.despesa_liquidada],
+          ['Resultado Orçamentário', res.resultado_orcamentario],
+          ['Despesa da Câmara de Vereadores (Executada)', res.camara_despesa_liquidada || res.camara_despesa_empenhada]
+        ];
+
+        const csvContent = '\uFEFF' + linhas.map(e => e.map(val => `"${val}"`).join(';')).join('\n');
+        const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.setAttribute('href', url);
+        link.setAttribute('download', `Balanco_Anual_Coronel_Barros_${anoSelecionado.exercicio}.csv`);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      });
+
+      // Imprimir
+      document.getElementById('btn-imprimir').addEventListener('click', () => {
+        window.print();
+      });
+
+      carregarDados();
+    })();
+  </script>
+</body>
+</html>
