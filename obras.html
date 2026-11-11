@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obras e Serviços de Engenharia - Câmara Municipal de Coronel Barros</title>
+  
+  <!-- Tipografia Oficial Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       RESET E EMBED TRANSPARENTE
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      background-color: transparent !important;
+      background: transparent !important;
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #334155;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      height: auto !important;
+      min-height: 0 !important;
+      overflow: hidden !important;
+    }
+
+    :root {
+      --cb-green-primary: #006838;
+      --cb-green-hover: #004d29;
+      --cb-green-action: #009739;
+      --cb-green-soft: #EAF6EE;
+      --cb-yellow-gold: #FFCC00;
+      --cb-yellow-soft: #FFFBEB;
+      --cb-gray-bg: #F8FAFC;
+      --cb-gray-border: #E2E8F0;
+      --cb-text-dark: #1E293B;
+      --cb-text-body: #334155;
+      --cb-text-muted: #64748B;
+      --cb-white: #FFFFFF;
+
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -1px rgba(0,0,0,0.04);
+    }
+
+    #app {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 12px 16px 32px 16px;
+    }
+
+    /* Cabeçalho */
+    .header-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      border: 1px solid var(--cb-gray-border);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--cb-green-primary) 0%, var(--cb-green-action) 60%, var(--cb-yellow-gold) 100%);
+    }
+
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .title-group h1 {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-group p {
+      font-size: 0.92rem;
+      color: var(--cb-text-muted);
+      margin-top: 4px;
+    }
+
+    .header-badges {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 9999px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .badge-primary {
+      background: var(--cb-green-soft);
+      color: var(--cb-green-primary);
+      border: 1px solid var(--cb-green-action);
+    }
+
+    .badge-secondary {
+      background: var(--cb-gray-bg);
+      color: var(--cb-text-muted);
+      border: 1px solid var(--cb-gray-border);
+    }
+
+    /* KPIs */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .kpi-card {
+      background: #FFFFFF;
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .kpi-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .kpi-card.highlight {
+      border-color: #86EFAC;
+      background: linear-gradient(180deg, #FFFFFF 0%, #F0FDF4 100%);
+    }
+
+    .kpi-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--cb-text-muted);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .kpi-value {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: -0.02em;
+    }
+
+    .kpi-value.green {
+      color: var(--cb-green-primary);
+    }
+
+    .kpi-subtext {
+      font-size: 0.8rem;
+      color: var(--cb-text-muted);
+      margin-top: 6px;
+      line-height: 1.35;
+    }
+
+    /* Card Oficial de Certidão Negativa de Obras */
+    .cert-card {
+      background: #FFFFFF;
+      border: 2px solid #86EFAC;
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+
+    .cert-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--cb-gray-border);
+    }
+
+    .cert-seal {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--cb-green-soft);
+      border: 2px solid var(--cb-green-action);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--cb-green-primary);
+      flex-shrink: 0;
+    }
+
+    .cert-title-group h2 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #14532D;
+      letter-spacing: -0.01em;
+    }
+
+    .cert-title-group p {
+      font-size: 0.84rem;
+      color: #166534;
+      font-weight: 600;
+    }
+
+    .cert-body {
+      font-size: 0.92rem;
+      line-height: 1.6;
+      color: #1F2937;
+      background: #F0FDF4;
+      padding: 20px;
+      border-radius: var(--radius-md);
+      border: 1px dashed #86EFAC;
+      margin-bottom: 18px;
+    }
+
+    .cert-signature {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.8rem;
+      color: var(--cb-text-muted);
+    }
+
+    /* Caixa Educativa de Competência */
+    .info-card {
+      background: #FFFFFF;
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .info-card-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .grid-competence {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 14px;
+    }
+
+    .comp-box {
+      background: var(--cb-gray-bg);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      border: 1px solid #EEF2F6;
+    }
+
+    .comp-box h4 {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--cb-text-dark);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .comp-box p {
+      font-size: 0.84rem;
+      color: var(--cb-text-body);
+      line-height: 1.5;
+    }
+
+    /* Painel Cidadão: Obras da Prefeitura */
+    .citizen-panel {
+      background: linear-gradient(135deg, #006838 0%, #004d29 100%);
+      border-radius: var(--radius-lg);
+      padding: 26px;
+      color: #FFFFFF;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .citizen-content h3 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .citizen-content p {
+      font-size: 0.88rem;
+      color: #D1FAE5;
+      max-width: 680px;
+      line-height: 1.45;
+    }
+
+    .citizen-btn {
+      background: var(--cb-yellow-gold);
+      color: #1E293B;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 12px 22px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .citizen-btn:hover {
+      background: #FFE066;
+      transform: translateY(-2px);
+    }
+
+    /* Rodapé */
+    .footer-bar {
+      margin-top: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 16px 20px;
+      background: #FFFFFF;
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .footer-text {
+      font-size: 0.8rem;
+      color: var(--cb-text-muted);
+    }
+
+    .footer-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--cb-green-primary);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      background: var(--cb-green-soft);
+      border: 1px solid var(--cb-green-action);
+      transition: all 0.15s ease;
+    }
+
+    .footer-link:hover {
+      background: var(--cb-green-primary);
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <!-- Cabeçalho -->
+    <header class="header-card">
+      <div class="header-content">
+        <div class="header-top">
+          <div class="title-group">
+            <h1>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--cb-green-primary);"><path d="M2 20h20M5 20V8l7-5 7 5v12M9 13h6M9 17h6"/></svg>
+              Obras e Serviços de Engenharia
+            </h1>
+            <p>Acompanhamento de Intervenções Prediais e Declaração Institucional de Obras do Poder Legislativo</p>
+          </div>
+          <div class="header-badges">
+            <span class="badge badge-primary">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              TCE-RS: Órgão 75101
+            </span>
+            <span class="badge badge-secondary">
+              PNTP / Atricon Conforme
+            </span>
+            <span class="badge badge-secondary" id="badgeDataAtualizacao">
+              Atualizado via Dados Abertos
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- KPIs -->
+    <section class="kpi-grid">
+      <div class="kpi-card highlight">
+        <span class="kpi-label">
+          Obras em Andamento
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        </span>
+        <div class="kpi-value green">0 Obras</div>
+        <div class="kpi-subtext">Sem obras de engenharia civil em execução pela Câmara</div>
+      </div>
+
+      <div class="kpi-card highlight">
+        <span class="kpi-label">
+          Obras Paralisadas
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        </span>
+        <div class="kpi-value green">0 Obras</div>
+        <div class="kpi-subtext">Nenhuma intervenção estrutural paralisada ou suspensa</div>
+      </div>
+
+      <div class="kpi-card">
+        <span class="kpi-label">
+          Contratos de Engenharia
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+        </span>
+        <div class="kpi-value">0 Contratos</div>
+        <div class="kpi-subtext">Inexistência de contratos de empreitada pesada ou construção</div>
+      </div>
+
+      <div class="kpi-card">
+        <span class="kpi-label">
+          Manutenção da Sede
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </span>
+        <div class="kpi-value" style="font-size: 1.15rem; color: #0284C7;">Conservação</div>
+        <div class="kpi-subtext">Pintura e manutenção preventiva leve regular</div>
+      </div>
+    </section>
+
+    <!-- Card de Certidão / Declaração Negativa de Obras -->
+    <article class="cert-card">
+      <div class="cert-header">
+        <div class="cert-seal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="cert-title-group">
+          <h2>Declaração Institucional de Inexistência de Obras Públicas</h2>
+          <p>Câmara Municipal de Coronel Barros — Poder Legislativo Municipal</p>
+        </div>
+      </div>
+
+      <div class="cert-body">
+        A Câmara Municipal de Coronel Barros, em conformidade com as diretrizes da Lei Federal nº 12.527/2011 (Lei de Acesso à Informação - LAI), da Lei Federal nº 14.133/2021 (Nova Lei de Licitações) e dos critérios de fiscalização do Tribunal de Contas do Estado do Rio Grande do Sul (TCE-RS):
+        <br><br>
+        <strong>DECLARA QUE:</strong>
+        <br>
+        1. <strong>Não possui obras públicas de construção civil, reformas estruturais de grande porte ou ampliações prediais</strong> em andamento ou paralisadas no presente exercício;
+        <br>
+        2. <strong>Não mantém contratos administrativos de prestação de serviços de engenharia pesada</strong> ou empreitadas globais vigentes;
+        <br>
+        3. As eventuais intervenções físicas realizadas no prédio da Sede restringem-se a <strong>reparos preventivos de conservação predial</strong> (manutenção elétrica, reparos na rede hidráulica e conservação de mobiliário), executados dentro dos limites de despesas correntes de custeio.
+      </div>
+
+      <div class="cert-signature">
+        <div>
+          <strong>Secretaria Administrativa e Mesa Diretora</strong> — CMCB
+        </div>
+        <div>
+          Auditado via LicitaCon e Balancetes de Despesa do TCE-RS
+        </div>
+      </div>
+    </article>
+
+    <!-- Painel de Fiscalização de Obras do Executivo Municipal -->
+    <section class="citizen-panel">
+      <div class="citizen-content">
+        <h3>Fiscalize as Obras Públicas de Coronel Barros</h3>
+        <p>
+          As obras públicas municipais (pavimentação de ruas, pontes, escolas, postos de saúde, redes de água e saneamento) são planejadas, licitadas e executadas pelo <strong>Poder Executivo Municipal (Prefeitura)</strong>. Acompanhe a execução e aplicação do dinheiro público diretamente no portal oficial do Município:
+        </p>
+      </div>
+      <a href="https://coronelbarros.rs.gov.br/" target="_blank" rel="noopener noreferrer" class="citizen-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        Acessar Obras da Prefeitura
+      </a>
+    </section>
+
+    <!-- Caixa de Competências Constitucionais -->
+    <section class="info-card">
+      <div class="info-card-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color: var(--cb-green-primary);"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        Entenda a Divisão Constitucional de Competências
+      </div>
+      <div class="grid-competence">
+        <div class="comp-box">
+          <h4>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--cb-green-primary);"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Papel da Câmara de Vereadores
+          </h4>
+          <p>
+            O Poder Legislativo tem a função constitucional de <strong>aprovar as leis orçamentárias</strong> (Plano Plurianual, LDO e LOA) que autorizam os investimentos em obras e <strong>fiscalizar rigorosamente a aplicação dos recursos públicos</strong> executados pelo Executivo.
+          </p>
+        </div>
+
+        <div class="comp-box">
+          <h4>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--cb-green-primary);"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            Papel da Prefeitura Municipal
+          </h4>
+          <p>
+            O Poder Executivo é o órgão responsável pela <strong>elaboração dos projetos de engenharia, realização de licitações de obras e execução direta ou terceirizada</strong> de toda a infraestrutura física e urbana da cidade e do interior.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer-bar">
+      <div class="footer-text">
+        Declaração publicada em consonância com o <strong>Programa Nacional de Transparência Pública (PNTP / Atricon)</strong> e o <strong>TCE-RS</strong>.
+      </div>
+      <a href="https://dados.tce.rs.gov.br/" target="_blank" rel="noopener noreferrer" class="footer-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        LicitaCon / TCE-RS
+      </a>
+    </footer>
+  </div>
+
+  <script>
+    (function() {
+      // Trava matemática anti-loop
+      let lastHeight = 0;
+      let resizeTimeout = null;
+
+      function notificarAltura() {
+        if (resizeTimeout) clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+          const app = document.getElementById('app');
+          if (!app) return;
+          const height = Math.ceil(app.getBoundingClientRect().height);
+          if (Math.abs(height - lastHeight) > 4) {
+            lastHeight = height;
+            if (window.parent && window.parent !== window) {
+              window.parent.postMessage({ type: 'cb-resize', height: height }, '*');
+            }
+          }
+        }, 50);
+      }
+
+      if (window.ResizeObserver) {
+        const ro = new ResizeObserver(() => notificarAltura());
+        const appElem = document.getElementById('app');
+        if (appElem) ro.observe(appElem);
+      } else {
+        window.addEventListener('resize', notificarAltura);
+      }
+
+      fetch('data/patrimonio.json')
+        .then(res => res.json())
+        .then(data => {
+          if (data.metadata && data.metadata.data_sincronizacao) {
+            const dt = new Date(data.metadata.data_sincronizacao);
+            document.getElementById('badgeDataAtualizacao').textContent = `Atualizado: ${dt.toLocaleDateString('pt-BR')}`;
+          }
+          notificarAltura();
+        })
+        .catch(err => {
+          console.warn('Erro ao carregar data:', err);
+          notificarAltura();
+        });
+
+      notificarAltura();
+    })();
+  </script>
+</body>
+</html>

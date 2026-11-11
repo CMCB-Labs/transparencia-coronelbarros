@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frota Oficial de Veículos - Câmara Municipal de Coronel Barros</title>
+  
+  <!-- Tipografia Oficial Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       RESET E EMBED TRANSPARENTE
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      background-color: transparent !important;
+      background: transparent !important;
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #334155;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      height: auto !important;
+      min-height: 0 !important;
+      overflow: hidden !important;
+    }
+
+    :root {
+      --cb-green-primary: #006838;
+      --cb-green-hover: #004d29;
+      --cb-green-action: #009739;
+      --cb-green-soft: #EAF6EE;
+      --cb-yellow-gold: #FFCC00;
+      --cb-yellow-soft: #FFFBEB;
+      --cb-gray-bg: #F8FAFC;
+      --cb-gray-border: #E2E8F0;
+      --cb-text-dark: #1E293B;
+      --cb-text-body: #334155;
+      --cb-text-muted: #64748B;
+      --cb-white: #FFFFFF;
+
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -1px rgba(0,0,0,0.04);
+    }
+
+    #app {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 12px 16px 32px 16px;
+    }
+
+    /* Cabeçalho */
+    .header-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      border: 1px solid var(--cb-gray-border);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--cb-green-primary) 0%, var(--cb-green-action) 60%, var(--cb-yellow-gold) 100%);
+    }
+
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .title-group h1 {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-group p {
+      font-size: 0.92rem;
+      color: var(--cb-text-muted);
+      margin-top: 4px;
+    }
+
+    .header-badges {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 9999px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .badge-primary {
+      background: var(--cb-green-soft);
+      color: var(--cb-green-primary);
+      border: 1px solid var(--cb-green-action);
+    }
+
+    .badge-secondary {
+      background: var(--cb-gray-bg);
+      color: var(--cb-text-muted);
+      border: 1px solid var(--cb-gray-border);
+    }
+
+    /* KPIs */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .kpi-card {
+      background: #FFFFFF;
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .kpi-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .kpi-card.highlight {
+      border-color: #86EFAC;
+      background: linear-gradient(180deg, #FFFFFF 0%, #F0FDF4 100%);
+    }
+
+    .kpi-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--cb-text-muted);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .kpi-value {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: -0.02em;
+    }
+
+    .kpi-value.green {
+      color: var(--cb-green-primary);
+    }
+
+    .kpi-subtext {
+      font-size: 0.8rem;
+      color: var(--cb-text-muted);
+      margin-top: 6px;
+      line-height: 1.35;
+    }
+
+    /* Card Oficial de Certidão Negativa */
+    .cert-card {
+      background: #FFFFFF;
+      border: 2px solid #86EFAC;
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+
+    .cert-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--cb-gray-border);
+    }
+
+    .cert-seal {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--cb-green-soft);
+      border: 2px solid var(--cb-green-action);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--cb-green-primary);
+      flex-shrink: 0;
+    }
+
+    .cert-title-group h2 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #14532D;
+      letter-spacing: -0.01em;
+    }
+
+    .cert-title-group p {
+      font-size: 0.84rem;
+      color: #166534;
+      font-weight: 600;
+    }
+
+    .cert-body {
+      font-size: 0.92rem;
+      line-height: 1.6;
+      color: #1F2937;
+      background: #F0FDF4;
+      padding: 20px;
+      border-radius: var(--radius-md);
+      border: 1px dashed #86EFAC;
+      margin-bottom: 18px;
+    }
+
+    .cert-signature {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.8rem;
+      color: var(--cb-text-muted);
+    }
+
+    /* Caixa Pedagógica de Economicidade */
+    .info-card {
+      background: #FFFFFF;
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .info-card-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .grid-benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .benefit-box {
+      background: var(--cb-gray-bg);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      border: 1px solid #EEF2F6;
+    }
+
+    .benefit-box h4 {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--cb-text-dark);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .benefit-box p {
+      font-size: 0.82rem;
+      color: var(--cb-text-body);
+      line-height: 1.45;
+    }
+
+    /* Rodapé */
+    .footer-bar {
+      margin-top: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 16px 20px;
+      background: #FFFFFF;
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .footer-text {
+      font-size: 0.8rem;
+      color: var(--cb-text-muted);
+    }
+
+    .footer-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--cb-green-primary);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      background: var(--cb-green-soft);
+      border: 1px solid var(--cb-green-action);
+      transition: all 0.15s ease;
+    }
+
+    .footer-link:hover {
+      background: var(--cb-green-primary);
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <!-- Cabeçalho -->
+    <header class="header-card">
+      <div class="header-content">
+        <div class="header-top">
+          <div class="title-group">
+            <h1>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--cb-green-primary);"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+              Frota Oficial de Veículos
+            </h1>
+            <p>Demonstrativo Patrimonial e Declaração Institucional de Frota do Poder Legislativo</p>
+          </div>
+          <div class="header-badges">
+            <span class="badge badge-primary">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              TCE-RS: Órgão 75101
+            </span>
+            <span class="badge badge-secondary">
+              PNTP / Atricon Conforme
+            </span>
+            <span class="badge badge-secondary" id="badgeDataAtualizacao">
+              Atualizado via Dados Abertos
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- KPIs de Frota Zero -->
+    <section class="kpi-grid">
+      <div class="kpi-card highlight">
+        <span class="kpi-label">
+          Veículos Próprios
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        </span>
+        <div class="kpi-value green">0 Veículos</div>
+        <div class="kpi-subtext"><strong>Frota Zero:</strong> Inexistência de frota automotiva própria</div>
+      </div>
+
+      <div class="kpi-card highlight">
+        <span class="kpi-label">
+          Veículos Locados
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        </span>
+        <div class="kpi-value green">0 Locações</div>
+        <div class="kpi-subtext">Nenhum veículo alugado ou terceirizado</div>
+      </div>
+
+      <div class="kpi-card">
+        <span class="kpi-label">
+          Despesas de Manutenção / Seguro
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </span>
+        <div class="kpi-value">R$ 0,00</div>
+        <div class="kpi-subtext">Zero gastos com mecânica, peças ou seguros veiculares</div>
+      </div>
+
+      <div class="kpi-card">
+        <span class="kpi-label">
+          Gasto com Combustíveis
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </span>
+        <div class="kpi-value">R$ 0,00</div>
+        <div class="kpi-subtext">Sem compras de gasolina, diesel ou lubrificantes</div>
+      </div>
+    </section>
+
+    <!-- Card de Certidão / Declaração Negativa -->
+    <article class="cert-card">
+      <div class="cert-header">
+        <div class="cert-seal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="cert-title-group">
+          <h2>Declaração Institucional de Inexistência de Frota de Veículos</h2>
+          <p>Câmara Municipal de Coronel Barros — Poder Legislativo Municipal</p>
+        </div>
+      </div>
+
+      <div class="cert-body">
+        A Câmara Municipal de Coronel Barros, no uso de suas atribuições legais e em cumprimento aos princípios da transparência pública, da publicidade e da estrita economicidade (art. 37 da Constituição Federal e Resoluções do Tribunal de Contas do Estado do Rio Grande do Sul - TCE-RS):
+        <br><br>
+        <strong>CERTIFICA QUE:</strong>
+        <br>
+        1. <strong>Não possui veículos automotores próprios</strong> integrados ao seu Ativo Imobilizado (Conta PCASP <code>1.2.3.1.1.04.00.00.00 - Veículos em Geral: Saldo R$ 0,00</code>);
+        <br>
+        2. <strong>Não mantém contratos de locação, comodato ou terceirização de veículos</strong> em vigor;
+        <br>
+        3. <strong>Não realiza despesas com aquisição de combustíveis, lubrificantes, seguros veiculares ou manutenção mecânica</strong> de frota oficial.
+      </div>
+
+      <div class="cert-signature">
+        <div>
+          <strong>Secretaria Administrativa e Financeira</strong> — CMCB
+        </div>
+        <div>
+          Auditado via Balancetes de Verificação do TCE-RS (PCASP)
+        </div>
+      </div>
+    </article>
+
+    <!-- Por que a Câmara não possui frota própria? -->
+    <section class="info-card">
+      <div class="info-card-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color: var(--cb-green-primary);"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        Por que a Câmara opta por não manter frota oficial de veículos?
+      </div>
+      <p style="font-size: 0.88rem; color: #334155; line-height: 1.5;">
+        A opção por não adquirir veículos próprios é uma decisão administrativa baseada na <strong>responsabilidade fiscal e economicidade</strong> para com o dinheiro do contribuinte de Coronel Barros:
+      </p>
+
+      <div class="grid-benefits">
+        <div class="benefit-box">
+          <h4>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--cb-green-primary);"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            Eliminação de Custos Fixos
+          </h4>
+          <p>
+            Evita gastos milionários com aquisição de viaturas, IPVA/seguro obrigatório, depreciação acelerada e custos contínuos de oficina.
+          </p>
+        </div>
+
+        <div class="benefit-box">
+          <h4>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--cb-green-primary);"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a8.38 8.38 0 0 1 13 0"/></svg>
+            Sem Folha de Pagamento com Motorista
+          </h4>
+          <p>
+            Não onera o erário com a contratação de motoristas exclusivos de gabinete, mantendo a folha de pagamento enxuta e dentro dos limites da LRF.
+          </p>
+        </div>
+
+        <div class="benefit-box">
+          <h4>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--cb-green-primary);"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Como ocorrem os deslocamentos?
+          </h4>
+          <p>
+            Viagens essenciais a serviço do Poder Legislativo utilizam diárias oficiais regulamentadas por lei, com prestações de contas públicas no Portal da Transparência.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer-bar">
+      <div class="footer-text">
+        Declaração em conformidade com o <strong>Programa Nacional de Transparência Pública (PNTP / Atricon)</strong> e Resoluções do <strong>TCE-RS</strong>.
+      </div>
+      <a href="https://dados.tce.rs.gov.br/" target="_blank" rel="noopener noreferrer" class="footer-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        Balancetes Oficiais TCE-RS
+      </a>
+    </footer>
+  </div>
+
+  <script>
+    (function() {
+      // Trava matemática anti-loop
+      let lastHeight = 0;
+      let resizeTimeout = null;
+
+      function notificarAltura() {
+        if (resizeTimeout) clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+          const app = document.getElementById('app');
+          if (!app) return;
+          const height = Math.ceil(app.getBoundingClientRect().height);
+          if (Math.abs(height - lastHeight) > 4) {
+            lastHeight = height;
+            if (window.parent && window.parent !== window) {
+              window.parent.postMessage({ type: 'cb-resize', height: height }, '*');
+            }
+          }
+        }, 50);
+      }
+
+      if (window.ResizeObserver) {
+        const ro = new ResizeObserver(() => notificarAltura());
+        const appElem = document.getElementById('app');
+        if (appElem) ro.observe(appElem);
+      } else {
+        window.addEventListener('resize', notificarAltura);
+      }
+
+      // Atualizar data de sincronização se houver
+      fetch('data/patrimonio.json')
+        .then(res => res.json())
+        .then(data => {
+          if (data.metadata && data.metadata.data_sincronizacao) {
+            const dt = new Date(data.metadata.data_sincronizacao);
+            document.getElementById('badgeDataAtualizacao').textContent = `Atualizado: ${dt.toLocaleDateString('pt-BR')}`;
+          }
+          notificarAltura();
+        })
+        .catch(err => {
+          console.warn('Erro ao carregar data:', err);
+          notificarAltura();
+        });
+
+      notificarAltura();
+    })();
+  </script>
+</body>
+</html>

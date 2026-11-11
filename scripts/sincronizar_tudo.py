@@ -50,6 +50,9 @@ def main():
     # 6. Receitas e Repasses do Duodécimo (TCE-RS)
     run_script("atualizar_receitas.py")
 
+    # 7. Patrimônio: Imóveis, Veículos e Obras (TCE-RS & Inventário)
+    run_script("atualizar_patrimonio.py")
+
     print("\n" + "=" * 70)
     print("TODOS OS DADOS FORAM ATUALIZADOS!")
     print("=" * 70)
