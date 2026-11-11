@@ -47,6 +47,9 @@ def main():
     # 5. Sanções e Inidoneidade (CEIS / CNEP / Câmara)
     run_script("atualizar_sancoes.py")
 
+    # 6. Receitas e Repasses do Duodécimo (TCE-RS)
+    run_script("atualizar_receitas.py")
+
     print("\n" + "=" * 70)
     print("TODOS OS DADOS FORAM ATUALIZADOS!")
     print("=" * 70)

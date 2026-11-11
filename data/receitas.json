@@ -1,0 +1,749 @@
+{
+  "metadata": {
+    "orgao": "Câmara Municipal de Coronel Barros",
+    "cnpj": "13.847.938/0001-93",
+    "codigo_tce": "75101",
+    "municipio": "Coronel Barros - RS",
+    "fonte": "Tribunal de Contas do Estado do Rio Grande do Sul (TCE-RS) - Balancetes de Verificação PCASP",
+    "url_fonte": "https://dados.tce.rs.gov.br/",
+    "base_legal": "Constituição Federal (Art. 29-A e Art. 168) e Lei Orgânica Municipal",
+    "data_sincronizacao": "2026-11-10T21:35:33.928686"
+  },
+  "kpis_gerais": {
+    "total_duodecimo_acumulado": 8709584.87,
+    "total_devolvido_acumulado": 3784067.66,
+    "total_liquido_acumulado": 4925517.21,
+    "percentual_medio_devolvido": 43.4,
+    "anos_analisados": 6,
+    "ano_inicio": 2021,
+    "ano_fim": 2026
+  },
+  "nota_pedagogica": {
+    "titulo": "Como funciona o Orçamento e as Receitas da Câmara Municipal?",
+    "topicos": [
+      {
+        "item": "Ausência de Arrecadação Própria",
+        "explicacao": "As Câmaras de Vereadores não possuem competência tributária para arrecadar impostos ou taxas. Todos os tributos municipais (como IPTU, ISSQN e ITBI) são arrecadados pelo Poder Executivo (Prefeitura Municipal)."
+      },
+      {
+        "item": "Repasse do Duodécimo (Art. 168 da CF/88)",
+        "explicacao": "Os recursos para o funcionamento do Poder Legislativo são repassados mensalmente pela Prefeitura até o dia 20 de cada mês, na proporção de 1/12 (um doze avos) do orçamento fixado pela Lei Orçamentária Anual (LOA)."
+      },
+      {
+        "item": "Limite Constitucional de Gastos (Art. 29-A da CF/88)",
+        "explicacao": "O total das despesas do Poder Legislativo não pode ultrapassar 7,0% do somatório da receita tributária e das transferências constitucionais do Município realizadas no ano anterior."
+      },
+      {
+        "item": "Devolução de Sobras ao Tesouro Municipal",
+        "explicacao": "Ao final de cada exercício (ou durante o ano), os recursos financeiros não utilizados pela Câmara são devolvidos à Prefeitura Municipal, sendo investidos diretamente em saúde, educação, infraestrutura e melhorias para a comunidade."
+      }
+    ]
+  },
+  "exercicios": [
+    {
+      "ano": 2026,
+      "mes_referencia": 9,
+      "status_exercicio": "Em Andamento (Acumulado até Mês 09)",
+      "is_encerrado": false,
+      "duodecimo_bruto": 1733724.8,
+      "devolucao_executivo": 600000.0,
+      "repasse_liquido": 1133724.8,
+      "percentual_devolvido": 34.6,
+      "valores_diferidos": 1058.05,
+      "outros_ganhos": 0.0,
+      "total_ingressos": 1734782.85,
+      "media_mensal_repasse": 192636.09,
+      "limite_constitucional_art29a": {
+        "percentual_maximo": 7.0,
+        "descricao": "7% da Receita Tributária e Transferências Constitucionais do Município (Municípios de até 100 mil hab.)",
+        "enquadramento": "Totalmente Conforme (Despesas e duodécimo dentro do teto constitucional)"
+      },
+      "contas_detalhe": [
+        {
+          "codigo": "351120900000000",
+          "descricao": "DEVOLUCAO DE TRANSFERENCIAS RECEBIDAS",
+          "tipo": "Devolução de Sobras ao Executivo",
+          "natureza": "Débito",
+          "valor": 600000.0
+        },
+        {
+          "codigo": "451120201010000",
+          "descricao": "TRANSFERENCIA DE COTA FINANCEIRA RECEBIDA DE OUTRA ENTIDADE - LEGISLATIVO",
+          "tipo": "Repasse do Duodécimo (Art. 168 CF)",
+          "natureza": "Crédito",
+          "valor": 1733724.8
+        }
+      ],
+      "cronograma_mensal": [
+        {
+          "mes_numero": 1,
+          "mes_nome": "Janeiro",
+          "valor_previsto": 192636.09,
+          "data_limite_repasse": "20/01/2026",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 2,
+          "mes_nome": "Fevereiro",
+          "valor_previsto": 192636.09,
+          "data_limite_repasse": "20/02/2026",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 3,
+          "mes_nome": "Março",
+          "valor_previsto": 192636.09,
+          "data_limite_repasse": "20/03/2026",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 4,
+          "mes_nome": "Abril",
+          "valor_previsto": 192636.09,
+          "data_limite_repasse": "20/04/2026",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 5,
+          "mes_nome": "Maio",
+          "valor_previsto": 192636.09,
+          "data_limite_repasse": "20/05/2026",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 6,
+          "mes_nome": "Junho",
+          "valor_previsto": 192636.09,
+          "data_limite_repasse": "20/06/2026",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 7,
+          "mes_nome": "Julho",
+          "valor_previsto": 192636.09,
+          "data_limite_repasse": "20/07/2026",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 8,
+          "mes_nome": "Agosto",
+          "valor_previsto": 192636.09,
+          "data_limite_repasse": "20/08/2026",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 9,
+          "mes_nome": "Setembro",
+          "valor_previsto": 192636.09,
+          "data_limite_repasse": "20/09/2026",
+          "status": "Repassado"
+        }
+      ]
+    },
+    {
+      "ano": 2025,
+      "mes_referencia": 12,
+      "status_exercicio": "Exercício Encerrado",
+      "is_encerrado": true,
+      "duodecimo_bruto": 2178420.14,
+      "devolucao_executivo": 1283209.17,
+      "repasse_liquido": 895210.97,
+      "percentual_devolvido": 58.9,
+      "valores_diferidos": 154.19,
+      "outros_ganhos": 0.0,
+      "total_ingressos": 2178574.33,
+      "media_mensal_repasse": 181535.01,
+      "limite_constitucional_art29a": {
+        "percentual_maximo": 7.0,
+        "descricao": "7% da Receita Tributária e Transferências Constitucionais do Município (Municípios de até 100 mil hab.)",
+        "enquadramento": "Totalmente Conforme (Despesas e duodécimo dentro do teto constitucional)"
+      },
+      "contas_detalhe": [
+        {
+          "codigo": "351120900000000",
+          "descricao": "DEVOLUCAO DE TRANSFERENCIAS RECEBIDAS",
+          "tipo": "Devolução de Sobras ao Executivo",
+          "natureza": "Débito",
+          "valor": 1283209.17
+        },
+        {
+          "codigo": "451120201010000",
+          "descricao": "TRANSFERENCIA DE COTA FINANCEIRA RECEBIDA DE OUTRA ENTIDADE - LEGISLATIVO",
+          "tipo": "Repasse do Duodécimo (Art. 168 CF)",
+          "natureza": "Crédito",
+          "valor": 2178420.14
+        }
+      ],
+      "cronograma_mensal": [
+        {
+          "mes_numero": 1,
+          "mes_nome": "Janeiro",
+          "valor_previsto": 181535.01,
+          "data_limite_repasse": "20/01/2025",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 2,
+          "mes_nome": "Fevereiro",
+          "valor_previsto": 181535.01,
+          "data_limite_repasse": "20/02/2025",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 3,
+          "mes_nome": "Março",
+          "valor_previsto": 181535.01,
+          "data_limite_repasse": "20/03/2025",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 4,
+          "mes_nome": "Abril",
+          "valor_previsto": 181535.01,
+          "data_limite_repasse": "20/04/2025",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 5,
+          "mes_nome": "Maio",
+          "valor_previsto": 181535.01,
+          "data_limite_repasse": "20/05/2025",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 6,
+          "mes_nome": "Junho",
+          "valor_previsto": 181535.01,
+          "data_limite_repasse": "20/06/2025",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 7,
+          "mes_nome": "Julho",
+          "valor_previsto": 181535.01,
+          "data_limite_repasse": "20/07/2025",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 8,
+          "mes_nome": "Agosto",
+          "valor_previsto": 181535.01,
+          "data_limite_repasse": "20/08/2025",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 9,
+          "mes_nome": "Setembro",
+          "valor_previsto": 181535.01,
+          "data_limite_repasse": "20/09/2025",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 10,
+          "mes_nome": "Outubro",
+          "valor_previsto": 181535.01,
+          "data_limite_repasse": "20/10/2025",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 11,
+          "mes_nome": "Novembro",
+          "valor_previsto": 181535.01,
+          "data_limite_repasse": "20/11/2025",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 12,
+          "mes_nome": "Dezembro",
+          "valor_previsto": 181535.01,
+          "data_limite_repasse": "20/12/2025",
+          "status": "Repassado"
+        }
+      ]
+    },
+    {
+      "ano": 2024,
+      "mes_referencia": 12,
+      "status_exercicio": "Exercício Encerrado",
+      "is_encerrado": true,
+      "duodecimo_bruto": 1866781.31,
+      "devolucao_executivo": 1085284.79,
+      "repasse_liquido": 781496.52,
+      "percentual_devolvido": 58.1,
+      "valores_diferidos": 108.05,
+      "outros_ganhos": 0.0,
+      "total_ingressos": 1866889.36,
+      "media_mensal_repasse": 155565.11,
+      "limite_constitucional_art29a": {
+        "percentual_maximo": 7.0,
+        "descricao": "7% da Receita Tributária e Transferências Constitucionais do Município (Municípios de até 100 mil hab.)",
+        "enquadramento": "Totalmente Conforme (Despesas e duodécimo dentro do teto constitucional)"
+      },
+      "contas_detalhe": [
+        {
+          "codigo": "351120900000000",
+          "descricao": "DEVOLUCAO DE TRANSFERENCIAS RECEBIDAS",
+          "tipo": "Devolução de Sobras ao Executivo",
+          "natureza": "Débito",
+          "valor": 1085284.79
+        },
+        {
+          "codigo": "451120201010000",
+          "descricao": "TRANSFERENCIA DE COTA FINANCEIRA RECEBIDA DE OUTRA ENTIDADE - LEGISLATIVO",
+          "tipo": "Repasse do Duodécimo (Art. 168 CF)",
+          "natureza": "Crédito",
+          "valor": 1866781.31
+        }
+      ],
+      "cronograma_mensal": [
+        {
+          "mes_numero": 1,
+          "mes_nome": "Janeiro",
+          "valor_previsto": 155565.11,
+          "data_limite_repasse": "20/01/2024",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 2,
+          "mes_nome": "Fevereiro",
+          "valor_previsto": 155565.11,
+          "data_limite_repasse": "20/02/2024",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 3,
+          "mes_nome": "Março",
+          "valor_previsto": 155565.11,
+          "data_limite_repasse": "20/03/2024",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 4,
+          "mes_nome": "Abril",
+          "valor_previsto": 155565.11,
+          "data_limite_repasse": "20/04/2024",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 5,
+          "mes_nome": "Maio",
+          "valor_previsto": 155565.11,
+          "data_limite_repasse": "20/05/2024",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 6,
+          "mes_nome": "Junho",
+          "valor_previsto": 155565.11,
+          "data_limite_repasse": "20/06/2024",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 7,
+          "mes_nome": "Julho",
+          "valor_previsto": 155565.11,
+          "data_limite_repasse": "20/07/2024",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 8,
+          "mes_nome": "Agosto",
+          "valor_previsto": 155565.11,
+          "data_limite_repasse": "20/08/2024",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 9,
+          "mes_nome": "Setembro",
+          "valor_previsto": 155565.11,
+          "data_limite_repasse": "20/09/2024",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 10,
+          "mes_nome": "Outubro",
+          "valor_previsto": 155565.11,
+          "data_limite_repasse": "20/10/2024",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 11,
+          "mes_nome": "Novembro",
+          "valor_previsto": 155565.11,
+          "data_limite_repasse": "20/11/2024",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 12,
+          "mes_nome": "Dezembro",
+          "valor_previsto": 155565.11,
+          "data_limite_repasse": "20/12/2024",
+          "status": "Repassado"
+        }
+      ]
+    },
+    {
+      "ano": 2023,
+      "mes_referencia": 12,
+      "status_exercicio": "Exercício Encerrado",
+      "is_encerrado": true,
+      "duodecimo_bruto": 1395066.86,
+      "devolucao_executivo": 640182.95,
+      "repasse_liquido": 754883.91,
+      "percentual_devolvido": 45.9,
+      "valores_diferidos": 1125.8,
+      "outros_ganhos": 650.0,
+      "total_ingressos": 1396842.66,
+      "media_mensal_repasse": 116255.57,
+      "limite_constitucional_art29a": {
+        "percentual_maximo": 7.0,
+        "descricao": "7% da Receita Tributária e Transferências Constitucionais do Município (Municípios de até 100 mil hab.)",
+        "enquadramento": "Totalmente Conforme (Despesas e duodécimo dentro do teto constitucional)"
+      },
+      "contas_detalhe": [
+        {
+          "codigo": "351120900000000",
+          "descricao": "DEVOLUCAO DE TRANSFERENCIAS RECEBIDAS",
+          "tipo": "Devolução de Sobras ao Executivo",
+          "natureza": "Débito",
+          "valor": 640182.95
+        },
+        {
+          "codigo": "451120201010000",
+          "descricao": "TRANSFERENCIA DE COTA FINANCEIRA RECEBIDA DE OUTRA ENTIDADE - LEGISLATIVO",
+          "tipo": "Repasse do Duodécimo (Art. 168 CF)",
+          "natureza": "Crédito",
+          "valor": 1395066.86
+        }
+      ],
+      "cronograma_mensal": [
+        {
+          "mes_numero": 1,
+          "mes_nome": "Janeiro",
+          "valor_previsto": 116255.57,
+          "data_limite_repasse": "20/01/2023",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 2,
+          "mes_nome": "Fevereiro",
+          "valor_previsto": 116255.57,
+          "data_limite_repasse": "20/02/2023",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 3,
+          "mes_nome": "Março",
+          "valor_previsto": 116255.57,
+          "data_limite_repasse": "20/03/2023",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 4,
+          "mes_nome": "Abril",
+          "valor_previsto": 116255.57,
+          "data_limite_repasse": "20/04/2023",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 5,
+          "mes_nome": "Maio",
+          "valor_previsto": 116255.57,
+          "data_limite_repasse": "20/05/2023",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 6,
+          "mes_nome": "Junho",
+          "valor_previsto": 116255.57,
+          "data_limite_repasse": "20/06/2023",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 7,
+          "mes_nome": "Julho",
+          "valor_previsto": 116255.57,
+          "data_limite_repasse": "20/07/2023",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 8,
+          "mes_nome": "Agosto",
+          "valor_previsto": 116255.57,
+          "data_limite_repasse": "20/08/2023",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 9,
+          "mes_nome": "Setembro",
+          "valor_previsto": 116255.57,
+          "data_limite_repasse": "20/09/2023",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 10,
+          "mes_nome": "Outubro",
+          "valor_previsto": 116255.57,
+          "data_limite_repasse": "20/10/2023",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 11,
+          "mes_nome": "Novembro",
+          "valor_previsto": 116255.57,
+          "data_limite_repasse": "20/11/2023",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 12,
+          "mes_nome": "Dezembro",
+          "valor_previsto": 116255.57,
+          "data_limite_repasse": "20/12/2023",
+          "status": "Repassado"
+        }
+      ]
+    },
+    {
+      "ano": 2022,
+      "mes_referencia": 12,
+      "status_exercicio": "Exercício Encerrado",
+      "is_encerrado": true,
+      "duodecimo_bruto": 829190.0,
+      "devolucao_executivo": 60613.36,
+      "repasse_liquido": 768576.64,
+      "percentual_devolvido": 7.3,
+      "valores_diferidos": 0.0,
+      "outros_ganhos": 0.0,
+      "total_ingressos": 829190.0,
+      "media_mensal_repasse": 69099.17,
+      "limite_constitucional_art29a": {
+        "percentual_maximo": 7.0,
+        "descricao": "7% da Receita Tributária e Transferências Constitucionais do Município (Municípios de até 100 mil hab.)",
+        "enquadramento": "Totalmente Conforme (Despesas e duodécimo dentro do teto constitucional)"
+      },
+      "contas_detalhe": [
+        {
+          "codigo": "351120900000000",
+          "descricao": "DEVOLUCAO DE TRANSFERENCIAS RECEBIDAS",
+          "tipo": "Devolução de Sobras ao Executivo",
+          "natureza": "Débito",
+          "valor": 60613.36
+        },
+        {
+          "codigo": "451120201010000",
+          "descricao": "TRANSFERENCIA DE COTA FINANCEIRA RECEBIDA DE OUTRA ENTIDADE - LEGISLATIVO",
+          "tipo": "Repasse do Duodécimo (Art. 168 CF)",
+          "natureza": "Crédito",
+          "valor": 829190.0
+        }
+      ],
+      "cronograma_mensal": [
+        {
+          "mes_numero": 1,
+          "mes_nome": "Janeiro",
+          "valor_previsto": 69099.17,
+          "data_limite_repasse": "20/01/2022",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 2,
+          "mes_nome": "Fevereiro",
+          "valor_previsto": 69099.17,
+          "data_limite_repasse": "20/02/2022",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 3,
+          "mes_nome": "Março",
+          "valor_previsto": 69099.17,
+          "data_limite_repasse": "20/03/2022",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 4,
+          "mes_nome": "Abril",
+          "valor_previsto": 69099.17,
+          "data_limite_repasse": "20/04/2022",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 5,
+          "mes_nome": "Maio",
+          "valor_previsto": 69099.17,
+          "data_limite_repasse": "20/05/2022",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 6,
+          "mes_nome": "Junho",
+          "valor_previsto": 69099.17,
+          "data_limite_repasse": "20/06/2022",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 7,
+          "mes_nome": "Julho",
+          "valor_previsto": 69099.17,
+          "data_limite_repasse": "20/07/2022",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 8,
+          "mes_nome": "Agosto",
+          "valor_previsto": 69099.17,
+          "data_limite_repasse": "20/08/2022",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 9,
+          "mes_nome": "Setembro",
+          "valor_previsto": 69099.17,
+          "data_limite_repasse": "20/09/2022",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 10,
+          "mes_nome": "Outubro",
+          "valor_previsto": 69099.17,
+          "data_limite_repasse": "20/10/2022",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 11,
+          "mes_nome": "Novembro",
+          "valor_previsto": 69099.17,
+          "data_limite_repasse": "20/11/2022",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 12,
+          "mes_nome": "Dezembro",
+          "valor_previsto": 69099.17,
+          "data_limite_repasse": "20/12/2022",
+          "status": "Repassado"
+        }
+      ]
+    },
+    {
+      "ano": 2021,
+      "mes_referencia": 12,
+      "status_exercicio": "Exercício Encerrado",
+      "is_encerrado": true,
+      "duodecimo_bruto": 706401.76,
+      "devolucao_executivo": 114777.39,
+      "repasse_liquido": 591624.37,
+      "percentual_devolvido": 16.2,
+      "valores_diferidos": 6153.51,
+      "outros_ganhos": 38884.11,
+      "total_ingressos": 751439.38,
+      "media_mensal_repasse": 58866.81,
+      "limite_constitucional_art29a": {
+        "percentual_maximo": 7.0,
+        "descricao": "7% da Receita Tributária e Transferências Constitucionais do Município (Municípios de até 100 mil hab.)",
+        "enquadramento": "Totalmente Conforme (Despesas e duodécimo dentro do teto constitucional)"
+      },
+      "contas_detalhe": [
+        {
+          "codigo": "351120900000000",
+          "descricao": "DEVOLUCAO DE TRANSFERENCIAS RECEBIDAS",
+          "tipo": "Devolução de Sobras ao Executivo",
+          "natureza": "Débito",
+          "valor": 114777.39
+        },
+        {
+          "codigo": "451120201010000",
+          "descricao": "TRANSFERENCIA DE COTA FINANCEIRA RECEBIDA DE OUTRA ENTIDADE - LEGISLATIVO",
+          "tipo": "Repasse do Duodécimo (Art. 168 CF)",
+          "natureza": "Crédito",
+          "valor": 706401.76
+        }
+      ],
+      "cronograma_mensal": [
+        {
+          "mes_numero": 1,
+          "mes_nome": "Janeiro",
+          "valor_previsto": 58866.81,
+          "data_limite_repasse": "20/01/2021",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 2,
+          "mes_nome": "Fevereiro",
+          "valor_previsto": 58866.81,
+          "data_limite_repasse": "20/02/2021",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 3,
+          "mes_nome": "Março",
+          "valor_previsto": 58866.81,
+          "data_limite_repasse": "20/03/2021",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 4,
+          "mes_nome": "Abril",
+          "valor_previsto": 58866.81,
+          "data_limite_repasse": "20/04/2021",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 5,
+          "mes_nome": "Maio",
+          "valor_previsto": 58866.81,
+          "data_limite_repasse": "20/05/2021",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 6,
+          "mes_nome": "Junho",
+          "valor_previsto": 58866.81,
+          "data_limite_repasse": "20/06/2021",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 7,
+          "mes_nome": "Julho",
+          "valor_previsto": 58866.81,
+          "data_limite_repasse": "20/07/2021",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 8,
+          "mes_nome": "Agosto",
+          "valor_previsto": 58866.81,
+          "data_limite_repasse": "20/08/2021",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 9,
+          "mes_nome": "Setembro",
+          "valor_previsto": 58866.81,
+          "data_limite_repasse": "20/09/2021",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 10,
+          "mes_nome": "Outubro",
+          "valor_previsto": 58866.81,
+          "data_limite_repasse": "20/10/2021",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 11,
+          "mes_nome": "Novembro",
+          "valor_previsto": 58866.81,
+          "data_limite_repasse": "20/11/2021",
+          "status": "Repassado"
+        },
+        {
+          "mes_numero": 12,
+          "mes_nome": "Dezembro",
+          "valor_previsto": 58866.81,
+          "data_limite_repasse": "20/12/2021",
+          "status": "Repassado"
+        }
+      ]
+    }
+  ]
+}

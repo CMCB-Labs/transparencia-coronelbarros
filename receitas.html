@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas e Repasses do Duodécimo - Câmara Municipal de Coronel Barros</title>
+  
+  <!-- Tipografia Oficial Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       RESET E EMBED TRANSPARENTE
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      background-color: transparent !important;
+      background: transparent !important;
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #334155;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      height: auto !important;
+      min-height: 0 !important;
+      overflow: hidden !important;
+    }
+
+    :root {
+      --cb-green-primary: #006838;
+      --cb-green-hover: #004d29;
+      --cb-green-action: #009739;
+      --cb-green-soft: #EAF6EE;
+      --cb-yellow-gold: #FFCC00;
+      --cb-yellow-soft: #FFFBEB;
+      --cb-gray-bg: #F8FAFC;
+      --cb-gray-border: #E2E8F0;
+      --cb-text-dark: #1E293B;
+      --cb-text-body: #334155;
+      --cb-text-muted: #64748B;
+      --cb-white: #FFFFFF;
+
+      --status-ok-bg: #EAF6EE;
+      --status-ok-text: #006838;
+      --status-ok-border: #A7F3D0;
+      
+      --status-warn-bg: #FEF3C7;
+      --status-warn-text: #92400E;
+      --status-warn-border: #FCD34D;
+
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -1px rgba(0,0,0,0.04);
+    }
+
+    #app {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 12px 16px 32px 16px;
+    }
+
+    /* ==========================================================================
+       CABEÇALHO INSTITUCIONAL
+       ========================================================================== */
+    .header-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      border: 1px solid var(--cb-gray-border);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--cb-green-primary) 0%, var(--cb-green-action) 60%, var(--cb-yellow-gold) 100%);
+    }
+
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .title-group h1 {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-group p {
+      font-size: 0.92rem;
+      color: var(--cb-text-muted);
+      margin-top: 4px;
+    }
+
+    .header-badges {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 9999px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .badge-primary {
+      background: var(--cb-green-soft);
+      color: var(--cb-green-primary);
+      border: 1px solid var(--cb-green-action);
+    }
+
+    .badge-secondary {
+      background: var(--cb-gray-bg);
+      color: var(--cb-text-muted);
+      border: 1px solid var(--cb-gray-border);
+    }
+
+    /* ==========================================================================
+       KPIS CARDS GERAIS
+       ========================================================================== */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .kpi-card {
+      background: #FFFFFF;
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .kpi-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .kpi-card.highlight {
+      border-color: #86EFAC;
+      background: linear-gradient(180deg, #FFFFFF 0%, #F0FDF4 100%);
+    }
+
+    .kpi-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--cb-text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+
+    .kpi-value {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: -0.02em;
+    }
+
+    .kpi-value.green {
+      color: var(--cb-green-primary);
+    }
+
+    .kpi-subtext {
+      font-size: 0.8rem;
+      color: var(--cb-text-muted);
+      margin-top: 6px;
+      line-height: 1.35;
+    }
+
+    /* ==========================================================================
+       NOTA PEDAGÓGICA (COMO FUNCIONA O ORÇAMENTO DA CÂMARA)
+       ========================================================================== */
+    .pedagogic-box {
+      background: #FFFFFF;
+      border: 1px solid #BAE6FD;
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+
+    .pedagogic-box::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 5px;
+      background: #0284C7;
+      border-top-left-radius: var(--radius-lg);
+      border-bottom-left-radius: var(--radius-lg);
+    }
+
+    .pedagogic-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #0369A1;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .pedagogic-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .pedagogic-item {
+      background: #F0F9FF;
+      border-radius: var(--radius-md);
+      padding: 14px;
+      border: 1px solid #E0F2FE;
+    }
+
+    .pedagogic-item-title {
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: #0C4A6E;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .pedagogic-item-desc {
+      font-size: 0.82rem;
+      color: #334155;
+      line-height: 1.45;
+    }
+
+    /* ==========================================================================
+       SELETOR DE EXERCÍCIO / FILTRO
+       ========================================================================== */
+    .filter-bar {
+      background: #FFFFFF;
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      background: var(--cb-gray-bg);
+      border: 1px solid var(--cb-gray-border);
+      padding: 6px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--cb-text-body);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      font-family: inherit;
+    }
+
+    .filter-btn:hover {
+      background: #EDF2F7;
+      color: var(--cb-text-dark);
+    }
+
+    .filter-btn.active {
+      background: var(--cb-green-primary);
+      border-color: var(--cb-green-primary);
+      color: #FFFFFF;
+    }
+
+    /* ==========================================================================
+       CARDS DE EXERCÍCIOS
+       ========================================================================== */
+    .year-cards-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .year-card {
+      background: #FFFFFF;
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .year-card:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .year-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--cb-gray-border);
+    }
+
+    .year-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .year-badge-lg {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--cb-green-primary);
+      background: var(--cb-green-soft);
+      padding: 4px 14px;
+      border-radius: var(--radius-md);
+      font-family: 'JetBrains Mono', monospace;
+      border: 1px solid var(--cb-green-action);
+    }
+
+    .year-status-badge {
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .status-closed {
+      background: #F1F5F9;
+      color: #475569;
+      border: 1px solid #CBD5E1;
+    }
+
+    .status-active {
+      background: #FEF3C7;
+      color: #92400E;
+      border: 1px solid #FCD34D;
+    }
+
+    /* Barras de Proporção (Duodécimo Utilizado vs Devolvido) */
+    .ratio-container {
+      margin-bottom: 20px;
+    }
+
+    .ratio-bar-wrapper {
+      height: 14px;
+      background: #E2E8F0;
+      border-radius: 9999px;
+      overflow: hidden;
+      display: flex;
+      margin-top: 8px;
+    }
+
+    .ratio-bar-used {
+      background: #3B82F6;
+      height: 100%;
+      transition: width 0.4s ease;
+    }
+
+    .ratio-bar-returned {
+      background: var(--cb-green-action);
+      height: 100%;
+      transition: width 0.4s ease;
+    }
+
+    .ratio-legend {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-top: 6px;
+      color: var(--cb-text-muted);
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .dot-used { background: #3B82F6; }
+    .dot-returned { background: var(--cb-green-action); }
+
+    /* Métricas do Exercício */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .metric-item {
+      background: var(--cb-gray-bg);
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+      border: 1px solid #EEF2F6;
+    }
+
+    .metric-name {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--cb-text-muted);
+      letter-spacing: 0.03em;
+    }
+
+    .metric-val {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--cb-text-dark);
+      font-family: 'JetBrains Mono', monospace;
+      margin-top: 4px;
+    }
+
+    .metric-val.green {
+      color: var(--cb-green-primary);
+    }
+
+    /* Detalhes Contábeis e Cronograma em Abas / Acordeão */
+    .details-toggle {
+      background: none;
+      border: 1px solid var(--cb-gray-border);
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--cb-green-primary);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+      font-family: inherit;
+    }
+
+    .details-toggle:hover {
+      background: var(--cb-green-soft);
+      border-color: var(--cb-green-primary);
+    }
+
+    .details-content {
+      display: none;
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px dashed var(--cb-gray-border);
+    }
+
+    .details-content.open {
+      display: block;
+    }
+
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin-top: 12px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--cb-gray-border);
+    }
+
+    .pcasp-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+      text-align: left;
+    }
+
+    .pcasp-table th {
+      background: var(--cb-gray-bg);
+      padding: 10px 14px;
+      font-weight: 700;
+      color: var(--cb-text-dark);
+      border-bottom: 1px solid var(--cb-gray-border);
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      letter-spacing: 0.04em;
+    }
+
+    .pcasp-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #F1F5F9;
+      color: var(--cb-text-body);
+    }
+
+    .pcasp-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .pcasp-table .code-font {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      color: #0369A1;
+    }
+
+    .pcasp-table .val-col {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+      text-align: right;
+    }
+
+    /* ==========================================================================
+       RODAPÉ E FONTES
+       ========================================================================== */
+    .footer-bar {
+      margin-top: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 16px 20px;
+      background: #FFFFFF;
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .footer-text {
+      font-size: 0.8rem;
+      color: var(--cb-text-muted);
+    }
+
+    .footer-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--cb-green-primary);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      background: var(--cb-green-soft);
+      border: 1px solid var(--cb-green-action);
+      transition: all 0.15s ease;
+    }
+
+    .footer-link:hover {
+      background: var(--cb-green-primary);
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <!-- Cabeçalho -->
+    <header class="header-card">
+      <div class="header-content">
+        <div class="header-top">
+          <div class="title-group">
+            <h1>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--cb-green-primary);"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Receitas e Repasses do Duodécimo
+            </h1>
+            <p>Transferências Financeiras Constitucionais (Arts. 168 e 29-A da CF/88) e Devoluções aos Cofres Municipais</p>
+          </div>
+          <div class="header-badges">
+            <span class="badge badge-primary">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              TCE-RS: Órgão 75101
+            </span>
+            <span class="badge badge-secondary">
+              CNPJ: 13.847.938/0001-93
+            </span>
+            <span class="badge badge-secondary" id="badgeDataAtualizacao">
+              Sincronizado via Dados Abertos
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- KPIs Históricos Globais -->
+    <section class="kpi-grid">
+      <div class="kpi-card">
+        <span class="kpi-label">
+          Total Repassado (2021-2026)
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </span>
+        <div class="kpi-value" id="kpiTotalRepassado">R$ 8.709.584,87</div>
+        <div class="kpi-subtext">Transferências de cota financeira (Duodécimo) recebidas do Executivo</div>
+      </div>
+
+      <div class="kpi-card highlight">
+        <span class="kpi-label">
+          Economizado e Devolvido
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v1"/><path d="M18 8l4 4-4 4"/><path d="M8 12h14"/></svg>
+        </span>
+        <div class="kpi-value green" id="kpiTotalDevolvido">R$ 3.784.067,66</div>
+        <div class="kpi-subtext"><strong id="kpiPctDevolvido">43,4%</strong> do total repassado retornou à Prefeitura para investimentos</div>
+      </div>
+
+      <div class="kpi-card">
+        <span class="kpi-label">
+          Repasse Efetivo Utilizado
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </span>
+        <div class="kpi-value" id="kpiTotalLiquido">R$ 4.925.517,21</div>
+        <div class="kpi-subtext">Valor líquido destinado ao funcionamento e despesas do Legislativo</div>
+      </div>
+
+      <div class="kpi-card">
+        <span class="kpi-label">
+          Teto Constitucional
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </span>
+        <div class="kpi-value" style="color: #0284C7;">7,0% Máximo</div>
+        <div class="kpi-subtext">Art. 29-A, I da CF/88 (Municípios com até 100 mil habitantes) - 100% Conforme</div>
+      </div>
+    </section>
+
+    <!-- Caixa Didática Pedagógica -->
+    <section class="pedagogic-box">
+      <div class="pedagogic-title">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        Entenda o Orçamento e as Receitas da Câmara Municipal
+      </div>
+      <p style="font-size: 0.88rem; color: #334155; line-height: 1.5;">
+        Diferente do Poder Executivo, o Poder Legislativo Municipal não arrecada impostos nem taxas diretamente da população. O custeio das atividades parlamentares e administrativas da Câmara é regido por regras constitucionais rígidas:
+      </p>
+
+      <div class="pedagogic-grid">
+        <div class="pedagogic-item">
+          <div class="pedagogic-item-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+            Sem Arrecadação Própria
+          </div>
+          <div class="pedagogic-item-desc">
+            A Câmara de Vereadores não possui competência tributária. IPTU, ISSQN, ITBI e taxas são arrecadados unicamente pela Prefeitura Municipal.
+          </div>
+        </div>
+
+        <div class="pedagogic-item">
+          <div class="pedagogic-item-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Repasse do Duodécimo (Art. 168 CF)
+          </div>
+          <div class="pedagogic-item-desc">
+            A Prefeitura repassa mensalmente, até o dia 20 de cada mês, 1/12 (um doze avos) da dotação orçamentária aprovada pela Lei Orçamentária Anual (LOA).
+          </div>
+        </div>
+
+        <div class="pedagogic-item">
+          <div class="pedagogic-item-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Teto de Gastos (Art. 29-A CF)
+          </div>
+          <div class="pedagogic-item-desc">
+            O limite máximo do orçamento da Câmara é de 7,0% sobre as receitas tributárias e transferências constitucionais do Município realizadas no ano anterior.
+          </div>
+        </div>
+
+        <div class="pedagogic-item">
+          <div class="pedagogic-item-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v1"/><path d="M18 8l4 4-4 4"/><path d="M8 12h14"/></svg>
+            Devolução aos Cofres Públicos
+          </div>
+          <div class="pedagogic-item-desc">
+            Todos os saldos orçamentários economizados pela Câmara são devolvidos à Prefeitura, viabilizando investimentos prioritários para o cidadão de Coronel Barros.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Barra de Filtros por Exercício -->
+    <div class="filter-bar">
+      <div class="filter-group">
+        <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--cb-text-muted); margin-right: 4px;">
+          Filtrar Exercício:
+        </span>
+        <button class="filter-btn active" data-year="todos">Todos os Anos</button>
+        <button class="filter-btn" data-year="2026">2026</button>
+        <button class="filter-btn" data-year="2025">2025</button>
+        <button class="filter-btn" data-year="2024">2024</button>
+        <button class="filter-btn" data-year="2023">2023</button>
+        <button class="filter-btn" data-year="2022">2022</button>
+        <button class="filter-btn" data-year="2021">2021</button>
+      </div>
+
+      <div style="font-size: 0.82rem; color: var(--cb-text-muted);" id="lblContadorExercicios">
+        Exibindo 6 exercícios
+      </div>
+    </div>
+
+    <!-- Lista de Cards por Exercício -->
+    <main class="year-cards-container" id="listaExercicios">
+      <!-- Inserido dinamicamente via JavaScript -->
+    </main>
+
+    <!-- Rodapé Institucional com Link Oficial -->
+    <footer class="footer-bar">
+      <div class="footer-text">
+        Dados contábeis extraídos dos Balancetes de Verificação Oficiais (PCASP) remetidos ao <strong>Tribunal de Contas do Estado do Rio Grande do Sul (TCE-RS)</strong>.
+      </div>
+      <a href="https://dados.tce.rs.gov.br/" target="_blank" rel="noopener noreferrer" class="footer-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        Portal de Dados Abertos TCE-RS
+      </a>
+    </footer>
+  </div>
+
+  <script>
+    (function() {
+      // Estado da aplicação
+      let dadosReceitas = null;
+      let anoFiltro = 'todos';
+
+      // Elementos DOM
+      const listaContainer = document.getElementById('listaExercicios');
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const lblContador = document.getElementById('lblContadorExercicios');
+      const badgeDataAtualizacao = document.getElementById('badgeDataAtualizacao');
+
+      // Formatar valores monetários BRL
+      function formatBRL(val) {
+        if (typeof val !== 'number') val = parseFloat(val) || 0;
+        return val.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      }
+
+      // Trava matemática anti-loop de redimensionamento
+      let lastHeight = 0;
+      let resizeTimeout = null;
+
+      function notificarAltura() {
+        if (resizeTimeout) clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+          const app = document.getElementById('app');
+          if (!app) return;
+          const height = Math.ceil(app.getBoundingClientRect().height);
+          if (Math.abs(height - lastHeight) > 4) {
+            lastHeight = height;
+            if (window.parent && window.parent !== window) {
+              window.parent.postMessage({ type: 'cb-resize', height: height }, '*');
+            }
+          }
+        }, 50);
+      }
+
+      if (window.ResizeObserver) {
+        const ro = new ResizeObserver(() => notificarAltura());
+        const appElem = document.getElementById('app');
+        if (appElem) ro.observe(appElem);
+      } else {
+        window.addEventListener('resize', notificarAltura);
+      }
+
+      // Renderizar os exercícios
+      function renderizar() {
+        if (!dadosReceitas || !dadosReceitas.exercicios) return;
+
+        let lista = dadosReceitas.exercicios;
+        if (anoFiltro !== 'todos') {
+          lista = lista.filter(item => String(item.ano) === String(anoFiltro));
+        }
+
+        lblContador.textContent = `Exibindo ${lista.length} exercício${lista.length === 1 ? '' : 's'}`;
+
+        if (lista.length === 0) {
+          listaContainer.innerHTML = `
+            <div style="background: #FFFFFF; border: 1px solid var(--cb-gray-border); border-radius: var(--radius-md); padding: 32px; text-align: center; color: var(--cb-text-muted);">
+              Nenhum dado encontrado para o exercício selecionado.
+            </div>
+          `;
+          notificarAltura();
+          return;
+        }
+
+        let html = '';
+
+        lista.forEach(ex => {
+          const pctDev = ex.percentual_devolvido || 0;
+          const pctUtil = Math.max(0, 100 - pctDev);
+
+          html += `
+            <article class="year-card" id="card-${ex.ano}">
+              <div class="year-header">
+                <div class="year-title">
+                  <span class="year-badge-lg">${ex.ano}</span>
+                  <span class="year-status-badge ${ex.is_encerrado ? 'status-closed' : 'status-active'}">
+                    ${ex.status_exercicio}
+                  </span>
+                </div>
+                <div style="font-size: 0.85rem; font-weight: 700; color: ${pctDev > 40 ? 'var(--cb-green-primary)' : 'var(--cb-text-muted)'}; display: flex; align-items: center; gap: 6px;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  ${pctDev > 0 ? `${pctDev.toFixed(1)}% Devolvido ao Município` : 'Sem devolução registrada'}
+                </div>
+              </div>
+
+              <!-- Barra de Distribuição (Utilizado vs Devolvido) -->
+              <div class="ratio-container">
+                <div class="ratio-bar-wrapper">
+                  <div class="ratio-bar-used" style="width: ${pctUtil}%;" title="Utilizado: ${pctUtil.toFixed(1)}%"></div>
+                  <div class="ratio-bar-returned" style="width: ${pctDev}%;" title="Devolvido: ${pctDev.toFixed(1)}%"></div>
+                </div>
+                <div class="ratio-legend">
+                  <div class="legend-item">
+                    <span class="legend-dot dot-used"></span>
+                    <span>Recursos Utilizados: ${pctUtil.toFixed(1)}% (${formatBRL(ex.repasse_liquido)})</span>
+                  </div>
+                  <div class="legend-item">
+                    <span class="legend-dot dot-returned"></span>
+                    <span>Economizado e Devolvido: ${pctDev.toFixed(1)}% (${formatBRL(ex.devolucao_executivo)})</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Grade de Métricas do Exercício -->
+              <div class="metrics-grid">
+                <div class="metric-item">
+                  <div class="metric-name">Duodécimo Recebido (Bruto)</div>
+                  <div class="metric-val">${formatBRL(ex.duodecimo_bruto)}</div>
+                </div>
+
+                <div class="metric-item" style="background: #F0FDF4; border-color: #DCFCE7;">
+                  <div class="metric-name" style="color: var(--cb-green-primary);">(-) Devolução à Prefeitura</div>
+                  <div class="metric-val green">${formatBRL(ex.devolucao_executivo)}</div>
+                </div>
+
+                <div class="metric-item">
+                  <div class="metric-name">(=) Repasse Efetivo Líquido</div>
+                  <div class="metric-val">${formatBRL(ex.repasse_liquido)}</div>
+                </div>
+
+                <div class="metric-item">
+                  <div class="metric-name">Média Mensal Repassada</div>
+                  <div class="metric-val">${formatBRL(ex.media_mensal_repasse)} / mês</div>
+                </div>
+              </div>
+
+              <!-- Botão de Detalhamento Contábil PCASP e Cronograma -->
+              <div>
+                <button class="details-toggle" onclick="toggleDetalhes(${ex.ano})">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                  Ver Contas Contábeis PCASP e Cronograma Mensal
+                </button>
+              </div>
+
+              <!-- Conteúdo Expansível -->
+              <div class="details-content" id="detalhes-${ex.ano}">
+                <h4 style="font-size: 0.88rem; font-weight: 700; color: var(--cb-text-dark); margin-bottom: 8px;">
+                  Contas do Balancete de Verificação (PCASP - TCE-RS)
+                </h4>
+                <div class="table-container">
+                  <table class="pcasp-table">
+                    <thead>
+                      <tr>
+                        <th>Código PCASP</th>
+                        <th>Descrição da Conta Contábil</th>
+                        <th>Classificação</th>
+                        <th style="text-align: right;">Saldo Registrado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      ${ex.contas_detalhe && ex.contas_detalhe.length > 0 ? ex.contas_detalhe.map(c => `
+                        <tr>
+                          <td class="code-font">${c.codigo}</td>
+                          <td><strong>${c.descricao}</strong></td>
+                          <td><span class="badge ${c.natureza === 'Crédito' ? 'badge-primary' : 'badge-secondary'}">${c.tipo}</span></td>
+                          <td class="val-col" style="color: ${c.natureza === 'Crédito' ? '#1E293B' : 'var(--cb-green-primary)'};">
+                            ${c.natureza === 'Débito' ? '-' : '+'} ${formatBRL(c.valor)}
+                          </td>
+                        </tr>
+                      `).join('') : `
+                        <tr>
+                          <td class="code-font">4.5.1.1.2.02.01.01.00</td>
+                          <td>TRANSFERÊNCIA DE COTA FINANCEIRA RECEBIDA DE OUTRA ENTIDADE - LEGISLATIVO</td>
+                          <td><span class="badge badge-primary">Duodécimo</span></td>
+                          <td class="val-col">+ ${formatBRL(ex.duodecimo_bruto)}</td>
+                        </tr>
+                      `}
+                      ${ex.valores_diferidos > 0 ? `
+                        <tr>
+                          <td class="code-font">4.5.1.1.2.05.00.00.00</td>
+                          <td>VALORES DIFERIDOS - BAIXA</td>
+                          <td><span class="badge badge-secondary">Variação Patrimonial</span></td>
+                          <td class="val-col">+ ${formatBRL(ex.valores_diferidos)}</td>
+                        </tr>
+                      ` : ''}
+                    </tbody>
+                  </table>
+                </div>
+
+                <div style="margin-top: 16px;">
+                  <h4 style="font-size: 0.88rem; font-weight: 700; color: var(--cb-text-dark); margin-bottom: 6px;">
+                    Cronograma Constitucional de Repasses (Art. 168 da CF/88)
+                  </h4>
+                  <p style="font-size: 0.8rem; color: var(--cb-text-muted); margin-bottom: 8px;">
+                    Repasses efetuados em duodécimos mensais (1/12 da LOA) pelo Poder Executivo até o dia 20 de cada mês de competência:
+                  </p>
+                  <div class="table-container">
+                    <table class="pcasp-table">
+                      <thead>
+                        <tr>
+                          <th>Mês de Referência</th>
+                          <th>Data Limite Constitucional</th>
+                          <th>Status do Repasse</th>
+                          <th style="text-align: right;">Valor Médio Mensal</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        ${ex.cronograma_mensal.map(cm => `
+                          <tr>
+                            <td><strong>${cm.mes_nome}</strong></td>
+                            <td class="code-font">${cm.data_limite_repasse}</td>
+                            <td>
+                              <span class="badge badge-primary" style="font-size: 0.7rem;">
+                                Repassado (Até dia 20)
+                              </span>
+                            </td>
+                            <td class="val-col">${formatBRL(cm.valor_previsto)}</td>
+                          </tr>
+                        `).join('')}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </article>
+          `;
+        });
+
+        listaContainer.innerHTML = html;
+        notificarAltura();
+      }
+
+      // Expansão/recolhimento de detalhes contábeis
+      window.toggleDetalhes = function(ano) {
+        const el = document.getElementById(`detalhes-${ano}`);
+        if (!el) return;
+        el.classList.toggle('open');
+        notificarAltura();
+      };
+
+      // Gerenciar cliques nos botões de filtro
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          anoFiltro = btn.getAttribute('data-year');
+          renderizar();
+        });
+      });
+
+      // Carregar os dados de data/receitas.json
+      fetch('data/receitas.json')
+        .then(res => {
+          if (!res.ok) throw new Error('Falha ao carregar dados de receitas.');
+          return res.json();
+        })
+        .then(data => {
+          dadosReceitas = data;
+
+          // Atualizar KPIs globais
+          if (data.kpis_gerais) {
+            document.getElementById('kpiTotalRepassado').textContent = formatBRL(data.kpis_gerais.total_duodecimo_acumulado);
+            document.getElementById('kpiTotalDevolvido').textContent = formatBRL(data.kpis_gerais.total_devolvido_acumulado);
+            document.getElementById('kpiTotalLiquido').textContent = formatBRL(data.kpis_gerais.total_liquido_acumulado);
+            document.getElementById('kpiPctDevolvido').textContent = `${data.kpis_gerais.percentual_medio_devolvido}%`;
+          }
+
+          if (data.metadata && data.metadata.data_sincronizacao) {
+            const dt = new Date(data.metadata.data_sincronizacao);
+            badgeDataAtualizacao.textContent = `Atualizado: ${dt.toLocaleDateString('pt-BR')}`;
+          }
+
+          renderizar();
+        })
+        .catch(err => {
+          console.error(err);
+          listaContainer.innerHTML = `
+            <div style="background: #FFF1F2; border: 1px solid #FECDD3; border-radius: var(--radius-md); padding: 24px; text-align: center; color: #9F1239;">
+              <strong>Erro ao carregar dados contábeis:</strong> Não foi possível acessar o arquivo <code>data/receitas.json</code>.
+            </div>
+          `;
+          notificarAltura();
+        });
+
+      notificarAltura();
+    })();
+  </script>
+</body>
+</html>
