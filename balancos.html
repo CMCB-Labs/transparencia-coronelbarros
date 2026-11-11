@@ -31,7 +31,7 @@
       -moz-osx-font-smoothing: grayscale;
       height: auto !important;
       min-height: 0 !important;
-      overflow: hidden !important;
+      /* overflow: auto para permitir rolagem via mouse */
     }
 
     /* ==========================================================================
@@ -722,6 +722,18 @@
       // Notificar altura ao iframe pai com medição rigorosa de #app e corte de loop
       let lastSentHeight = 0;
       let resizeDebounceTimer = null;
+
+      
+      // Encaminhar eventos da roda do mouse para a janela mãe (quando em iframe)
+      window.addEventListener('wheel', function(e) {
+        if (window.parent && window.parent !== window) {
+          window.parent.postMessage({
+            type: 'cb-wheel',
+            deltaX: e.deltaX,
+            deltaY: e.deltaY
+          }, '*');
+        }
+      }, { passive: true });
 
       function notificarAltura() {
         clearTimeout(resizeDebounceTimer);
