@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plano de Contratações Anual (PCA) - Câmara Municipal de Coronel Barros</title>
+  
+  <!-- Tipografia Oficial Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       RESET E EMBED TRANSPARENTE
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      background-color: transparent !important;
+      background: transparent !important;
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #334155;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      height: auto !important;
+      min-height: 0 !important;
+      overflow: hidden !important;
+    }
+
+    :root {
+      --cb-green-primary: #006838;
+      --cb-green-hover: #004d29;
+      --cb-green-action: #009739;
+      --cb-green-soft: #EAF6EE;
+      --cb-yellow-gold: #FFCC00;
+      --cb-yellow-soft: #FFFBEB;
+      --cb-gray-bg: #F8FAFC;
+      --cb-gray-border: #E2E8F0;
+      --cb-text-dark: #1E293B;
+      --cb-text-body: #334155;
+      --cb-text-muted: #64748B;
+      --cb-white: #FFFFFF;
+
+      --status-ok-bg: #EAF6EE;
+      --status-ok-text: #006838;
+      --status-ok-border: #A7F3D0;
+      
+      --status-warn-bg: #FEF3C7;
+      --status-warn-text: #92400E;
+      --status-warn-border: #FCD34D;
+
+      --status-neutral-bg: #F1F5F9;
+      --status-neutral-text: #475569;
+      --status-neutral-border: #CBD5E1;
+
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .cb-widget {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 4px;
+    }
+
+    /* Topbar */
+    .cb-topbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-lg);
+      padding: 18px 22px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 20px;
+    }
+
+    .cb-topbar-title {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .cb-badge-pncp {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--cb-green-soft);
+      color: var(--cb-green-primary);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      width: fit-content;
+      border: 1px solid rgba(0, 104, 56, 0.15);
+    }
+
+    .cb-badge-pncp svg {
+      width: 12px;
+      height: 12px;
+      fill: currentColor;
+    }
+
+    .cb-topbar-heading {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      letter-spacing: -0.01em;
+    }
+
+    .cb-topbar-subtitle {
+      font-size: 0.85rem;
+      color: var(--cb-text-muted);
+    }
+
+    /* Seletor de Exercício (Anos) */
+    .cb-exercicios-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      padding: 12px 18px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 20px;
+    }
+
+    .cb-exercicio-btn {
+      appearance: none;
+      border: 1px solid var(--cb-gray-border);
+      background: var(--cb-gray-bg);
+      color: var(--cb-text-body);
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+    }
+
+    .cb-exercicio-btn:hover {
+      background: #F1F5F9;
+      color: var(--cb-text-dark);
+    }
+
+    .cb-exercicio-btn.active {
+      background: var(--cb-green-primary);
+      color: var(--cb-white);
+      border-color: var(--cb-green-primary);
+    }
+
+    .cb-tag-status-btn {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 2px 6px;
+      border-radius: 4px;
+      letter-spacing: 0.03em;
+    }
+
+    .cb-tag-elaboracao {
+      background: #FEF3C7;
+      color: #92400E;
+    }
+
+    .cb-tag-publicado {
+      background: #EAF6EE;
+      color: #006838;
+    }
+
+    .cb-tag-nao-instituido {
+      background: #E2E8F0;
+      color: #475569;
+    }
+
+    /* Painel Principal do Plano */
+    .cb-pca-card {
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .cb-pca-card-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #F1F5F9;
+    }
+
+    .cb-pca-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+    }
+
+    .cb-pca-title span {
+      color: var(--cb-green-primary);
+    }
+
+    /* Box de Estado "Em Elaboração" */
+    .cb-box-elaboracao {
+      background: #FFFBEB;
+      border: 1px solid #FDE68A;
+      border-left: 5px solid #F59E0B;
+      border-radius: var(--radius-md);
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+
+    .cb-box-elaboracao-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1rem;
+      font-weight: 800;
+      color: #92400E;
+      margin-bottom: 8px;
+    }
+
+    .cb-box-elaboracao-title svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    .cb-box-elaboracao-desc {
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: #78350F;
+    }
+
+    /* Linha do Tempo / Etapas de Elaboração */
+    .cb-timeline-container {
+      margin: 24px 0 16px 0;
+    }
+
+    .cb-timeline-title {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--cb-text-muted);
+      margin-bottom: 14px;
+    }
+
+    .cb-timeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+
+    .cb-timeline-step {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .cb-timeline-step.active {
+      border-color: #F59E0B;
+      background: #FFFDF5;
+      box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.15);
+    }
+
+    .cb-timeline-step.done {
+      border-color: #10B981;
+      background: #F0FDF4;
+    }
+
+    .cb-step-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 9999px;
+      width: fit-content;
+    }
+
+    .cb-step-badge.andamento {
+      background: #FEF3C7;
+      color: #92400E;
+    }
+
+    .cb-step-badge.pendente {
+      background: #F1F5F9;
+      color: #64748B;
+    }
+
+    .cb-step-badge.concluido {
+      background: #D1FAE5;
+      color: #065F46;
+    }
+
+    .cb-step-name {
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: var(--cb-text-dark);
+      line-height: 1.3;
+    }
+
+    /* Box de Estado "Não Instituído" */
+    .cb-box-nao-instituido {
+      background: #F8FAFC;
+      border: 1px dashed var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      padding: 30px 20px;
+      text-align: center;
+      color: var(--cb-text-muted);
+    }
+
+    .cb-box-nao-instituido svg {
+      width: 44px;
+      height: 44px;
+      margin-bottom: 10px;
+      color: #94A3B8;
+    }
+
+    .cb-box-nao-instituido h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--cb-text-dark);
+      margin-bottom: 6px;
+    }
+
+    .cb-box-nao-instituido p {
+      max-width: 650px;
+      margin: 0 auto;
+      font-size: 0.88rem;
+      line-height: 1.6;
+    }
+
+    /* Box Informativo Legal */
+    .cb-info-legal {
+      background: #F8FAFC;
+      border-left: 4px solid var(--cb-green-primary);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 14px 18px;
+      margin-top: 24px;
+      font-size: 0.84rem;
+      color: #475569;
+      line-height: 1.6;
+      border-top: 1px solid #F1F5F9;
+      border-right: 1px solid #F1F5F9;
+      border-bottom: 1px solid #F1F5F9;
+    }
+
+    .cb-info-legal strong {
+      color: var(--cb-text-dark);
+    }
+
+    /* Rodapé */
+    .cb-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 0.78rem;
+      color: var(--cb-text-muted);
+      padding: 14px 18px;
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .cb-footer strong {
+      color: var(--cb-text-dark);
+    }
+
+    @media (max-width: 768px) {
+      .cb-topbar { padding: 14px; }
+      .cb-topbar-heading { font-size: 1.1rem; }
+      .cb-timeline { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="app" class="cb-widget">
+
+    <!-- Topbar Header -->
+    <header class="cb-topbar">
+      <div class="cb-topbar-title">
+        <div class="cb-badge-pncp">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+          PNCP • LEI Nº 14.133/2021 (ART. 12, VII)
+        </div>
+        <h1 class="cb-topbar-heading">Plano de Contratações Anual (PCA)</h1>
+        <p class="cb-topbar-subtitle">
+          Instrumento de governança e planejamento estratégico das compras e serviços da Câmara Municipal de Coronel Barros - RS
+        </p>
+      </div>
+    </header>
+
+    <!-- Barra Dinâmica de Exercícios (Anos) -->
+    <nav class="cb-exercicios-bar" id="exercicios-bar" aria-label="Seleção de Exercício do PCA">
+      <!-- Inserido dinamicamente via JS com virada automática de ano -->
+    </nav>
+
+    <!-- Conteúdo do PCA Selecionado -->
+    <main id="pca-conteudo-container" aria-live="polite">
+      <!-- Inserido dinamicamente via JS -->
+    </main>
+
+    <!-- Fundamentação Legal e Finalidade Institucional -->
+    <section class="cb-info-legal" aria-label="Informações sobre o PCA">
+      <strong>O que é o Plano de Contratações Anual (PCA)?</strong><br>
+      Previsto no art. 12, inciso VII da Nova Lei de Licitações (Lei Federal nº 14.133/2021), o Plano de Contratações Anual é o instrumento que consolida todas as compras e contratações que o órgão planeja realizar ou prorrogar no exercício subsequente. Seu objetivo é promover o alinhamento com a Lei Orçamentária Anual (LOA), racionalizar as contratações, evitar o fracionamento indevido de despesas e garantir ampla transparência e previsibilidade ao mercado fornecedor e à sociedade.
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="cb-footer" style="margin-top: 20px;">
+      <div>
+        <strong>Integração Oficial:</strong> Portal Nacional de Contratações Públicas (PNCP) • CNPJ: 13.847.938/0001-93
+      </div>
+      <div>
+        Atualização automática contínua via GitHub Actions
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    (function() {
+      'use strict';
+
+      // Dados do PCA carregados do JSON
+      let dadosPca = null;
+      let anoSelecionado = null;
+
+      const exerciciosBar = document.getElementById('exercicios-bar');
+      const pcaContainer = document.getElementById('pca-conteudo-container');
+
+      // Notificação de altura anti-loop
+      let lastSentHeight = 0;
+      let resizeDebounceTimer = null;
+
+      function notificarAltura() {
+        clearTimeout(resizeDebounceTimer);
+        resizeDebounceTimer = setTimeout(() => {
+          const app = document.getElementById('app');
+          if (!app) return;
+          const rect = app.getBoundingClientRect();
+          const height = Math.ceil(rect.height);
+          if (Math.abs(height - lastSentHeight) > 4) {
+            lastSentHeight = height;
+            if (window.parent && window.parent !== window) {
+              window.parent.postMessage({ type: 'cb-resize', height: height }, '*');
+            }
+          }
+        }, 50);
+      }
+
+      if (window.ResizeObserver) {
+        const ro = new ResizeObserver(() => notificarAltura());
+        const appElem = document.getElementById('app');
+        if (appElem) ro.observe(appElem);
+      } else {
+        window.addEventListener('resize', notificarAltura);
+      }
+
+      async function carregarDados() {
+        try {
+          const resp = await fetch('./data/pca.json?t=' + Date.now());
+          if (!resp.ok) throw new Error('Falha ao ler pca.json');
+          dadosPca = await resp.json();
+          inicializar();
+        } catch (err) {
+          console.warn('Erro ao carregar pca.json, usando lógica dinâmica:', err);
+          dadosPca = { planos: {} };
+          inicializar();
+        }
+      }
+
+      function inicializar() {
+        // Cálculo dinâmico do ano atual e próximo exercício
+        const anoAtual = new Date().getFullYear();
+        const anoEmElaboracao = anoAtual + 1;
+
+        // Anos a exibir na barra (Próximo ano em elaboração, ano atual, e anos anteriores)
+        const anosLista = [anoEmElaboracao, anoAtual, anoAtual - 1];
+
+        // Definir padrão: seleciona o próximo exercício (em elaboração) ou o ano atual
+        if (!anoSelecionado) {
+          anoSelecionado = anoEmElaboracao;
+        }
+
+        // Renderizar botões da barra de exercícios
+        exerciciosBar.innerHTML = anosLista.map(ano => {
+          const isAtivo = ano === anoSelecionado;
+          const isElaboracao = ano === anoEmElaboracao;
+          const planoObj = dadosPca.planos && dadosPca.planos[ano];
+
+          let tagHtml = '';
+          if (isElaboracao || (planoObj && planoObj.status === 'em_elaboracao')) {
+            tagHtml = `<span class="cb-tag-status-btn cb-tag-elaboracao">Em Elaboração</span>`;
+          } else if (planoObj && planoObj.status === 'publicado') {
+            tagHtml = `<span class="cb-tag-status-btn cb-tag-publicado">Publicado</span>`;
+          } else {
+            tagHtml = `<span class="cb-tag-status-btn cb-tag-nao-instituido">Não Instituído</span>`;
+          }
+
+          return `
+            <button class="cb-exercicio-btn ${isAtivo ? 'active' : ''}" data-ano="${ano}">
+              Exercício ${ano} ${tagHtml}
+            </button>
+          `;
+        }).join('');
+
+        // Eventos dos botões
+        exerciciosBar.querySelectorAll('.cb-exercicio-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            anoSelecionado = parseInt(btn.dataset.ano, 10);
+            inicializar();
+          });
+        });
+
+        renderizarPlano(anoSelecionado, anoAtual, anoEmElaboracao);
+      }
+
+      function renderizarPlano(ano, anoAtual, anoEmElaboracao) {
+        const plano = (dadosPca.planos && dadosPca.planos[ano]) || {};
+        const isElaboracao = (ano === anoEmElaboracao) || (plano.status === 'em_elaboracao');
+        const isPublicado = plano.status === 'publicado';
+
+        if (isPublicado && plano.itens && plano.itens.length > 0) {
+          // 1. Caso A: Plano Publicado com Itens
+          pcaContainer.innerHTML = `
+            <div class="cb-pca-card">
+              <div class="cb-pca-card-header">
+                <div class="cb-pca-title">
+                  Plano de Contratações Anual — Exercício <span>${ano}</span>
+                </div>
+                <span class="cb-tag-status-btn cb-tag-publicado" style="font-size:0.8rem; padding:4px 10px;">
+                  Publicado / Aprovado
+                </span>
+              </div>
+              <p style="margin-bottom:16px;">Plano oficial publicado no PNCP.</p>
+            </div>
+          `;
+        } else if (isElaboracao) {
+          // 2. Caso B: Próximo Exercício em Elaboração (Virada Automática de Ano)
+          pcaContainer.innerHTML = `
+            <div class="cb-pca-card">
+              <div class="cb-pca-card-header">
+                <div>
+                  <div class="cb-pca-title">
+                    Plano de Contratações Anual — Exercício <span>${ano}</span>
+                  </div>
+                  <div style="font-size:0.82rem; color:var(--cb-text-muted); margin-top:3px;">
+                    Ciclo de Planejamento Governamental para o Exercício Financeiro de ${ano}
+                  </div>
+                </div>
+                <span class="cb-tag-status-btn cb-tag-elaboracao" style="font-size:0.8rem; padding:5px 12px; border:1px solid #FCD34D;">
+                  Status: Em Elaboração
+                </span>
+              </div>
+
+              <!-- Banner de Estado Em Elaboração -->
+              <div class="cb-box-elaboracao">
+                <div class="cb-box-elaboracao-title">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                  Plano em Fase de Elaboração e Levantamento Administrativo
+                </div>
+                <div class="cb-box-elaboracao-desc">
+                  O <strong>Plano de Contratações Anual para o exercício de ${ano}</strong> está sendo consolidado pelas unidades administrativas da Câmara Municipal de Coronel Barros, em conformidade com o <strong>art. 12, inciso VII da Lei Federal nº 14.133/2021</strong>.
+                  <br><br>
+                  Durante esta etapa, os setores legislativos e administrativos definem os bens, materiais, serviços técnicos e contratações necessárias para o pleno funcionamento da Casa Legislativa. Assim que concluído e aprovado pela Mesa Diretora, o plano será transmitido ao <strong>Portal Nacional de Contratações Públicas (PNCP)</strong> e disponibilizado para consulta pública nesta página.
+                </div>
+              </div>
+
+              <!-- Linha do Tempo de Etapas -->
+              <div class="cb-timeline-container">
+                <div class="cb-timeline-title">Etapas do Processo de Planejamento (Exercício ${ano}):</div>
+                <div class="cb-timeline">
+                  
+                  <div class="cb-timeline-step active">
+                    <span class="cb-step-badge andamento">1. Em Andamento</span>
+                    <div class="cb-step-name">Levantamento de Demandas Setoriais</div>
+                    <div style="font-size:0.75rem; color:var(--cb-text-muted);">Mapeamento das necessidades de compras e serviços pelas comissões e secretarias.</div>
+                  </div>
+
+                  <div class="cb-timeline-step">
+                    <span class="cb-step-badge pendente">2. Aguardando</span>
+                    <div class="cb-step-name">Consolidação e Estimativa de Custos</div>
+                    <div style="font-size:0.75rem; color:var(--cb-text-muted);">Agrupamento dos pedidos e compatibilização com a dotação orçamentária prévia.</div>
+                  </div>
+
+                  <div class="cb-timeline-step">
+                    <span class="cb-step-badge pendente">3. Aguardando</span>
+                    <div class="cb-step-name">Aprovação pela Presidência / Mesa</div>
+                    <div style="font-size:0.75rem; color:var(--cb-text-muted);">Apreciação final e edição de ato administrativo de homologação.</div>
+                  </div>
+
+                  <div class="cb-timeline-step">
+                    <span class="cb-step-badge pendente">4. Aguardando</span>
+                    <div class="cb-step-name">Integração no PNCP e Publicação</div>
+                    <div style="font-size:0.75rem; color:var(--cb-text-muted);">Transmissão eletrônica ao PNCP e disponibilização integral aos cidadãos.</div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          `;
+        } else {
+          // 3. Caso C: Exercício Anterior sem Plano Instituído (ex: 2026, 2025...)
+          pcaContainer.innerHTML = `
+            <div class="cb-pca-card">
+              <div class="cb-pca-card-header">
+                <div>
+                  <div class="cb-pca-title">
+                    Plano de Contratações Anual — Exercício <span>${ano}</span>
+                  </div>
+                  <div style="font-size:0.82rem; color:var(--cb-text-muted); margin-top:3px;">
+                    Histórico de Gestão e Planejamento
+                  </div>
+                </div>
+                <span class="cb-tag-status-btn cb-tag-nao-instituido" style="font-size:0.8rem; padding:4px 10px;">
+                  Não Instituído
+                </span>
+              </div>
+
+              <div class="cb-box-nao-instituido">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <h3>Sem Plano de Contratações Formalizado em ${ano}</h3>
+                <p>
+                  No exercício de ${ano}, a Câmara Municipal de Coronel Barros não possuía Plano de Contratações Anual formalizado, realizando suas aquisições diretamente por meio dos processos licitatórios e termos de dispensa devidamente registrados no LicitaCon/TCE-RS.
+                  <br><br>
+                  A elaboração formal e a integração com o Portal Nacional de Contratações Públicas (PNCP) foram instituídas no ciclo de planejamento subsequente.
+                </p>
+              </div>
+            </div>
+          `;
+        }
+
+        notificarAltura();
+      }
+
+      carregarDados();
+    })();
+  </script>
+</body>
+</html>

@@ -8,6 +8,7 @@ Executa em sequência:
 1. Siconfi / STN: RGF, DCA (Balanços) e RREO
 2. TCE-RS: Jurisprudência, Pareceres Prévios e Julgamentos de Contas
 3. TCE-RS / LicitaCon: Licitações e Contratos
+4. PNCP / Planejamento: Plano de Contratações Anual (PCA)
 """
 
 import subprocess
@@ -38,6 +39,9 @@ def main():
 
     # 3. TCE-RS / LicitaCon (Licitações e Contratos)
     run_script("atualizar_licitacon.py")
+
+    # 4. PNCP / Planejamento (Plano de Contratações Anual)
+    run_script("atualizar_pca.py")
 
     print("\n" + "=" * 70)
     print("TODOS OS DADOS FORAM ATUALIZADOS!")

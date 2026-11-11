@@ -1,0 +1,65 @@
+{
+  "ente": "Câmara Municipal de Coronel Barros - RS",
+  "cnpj": "13.847.938/0001-93",
+  "orgao_tce": 75101,
+  "fonte": "Portal Nacional de Contratações Públicas (PNCP) / Lei nº 14.133/2021",
+  "base_legal": "Art. 12, inciso VII da Lei Federal nº 14.133/2021",
+  "primeiro_ano_planejamento": 2027,
+  "data_atualizacao": "2026-11-11T00:13:44.263626+00:00",
+  "planos": {
+    "2026": {
+      "ano": 2026,
+      "status": "nao_instituido",
+      "status_label": "Não Instituído",
+      "status_classe": "badge-neutral",
+      "mensagem": "No exercício de 2026, a Câmara Municipal de Coronel Barros não possui Plano de Contratações Anual registrado, passando a adotá-lo formalmente a partir do planejamento para o exercício de 2027, em consonância com a implementação progressiva da Lei nº 14.133/2021.",
+      "valor_total_estimado": 0.0,
+      "total_itens": 0,
+      "itens": []
+    },
+    "2027": {
+      "ano": 2027,
+      "status": "em_elaboracao",
+      "status_label": "Em Elaboração",
+      "status_classe": "badge-warning",
+      "mensagem": "O Plano de Contratações Anual para o exercício de 2027 encontra-se em fase de levantamento de demandas e consolidação administrativa pelas unidades do Poder Legislativo Municipal.",
+      "etapas": [
+        {
+          "ordem": 1,
+          "nome": "Levantamento de Demandas Setoriais",
+          "status": "em_andamento"
+        },
+        {
+          "ordem": 2,
+          "nome": "Consolidação e Estimativa de Preços",
+          "status": "pendente"
+        },
+        {
+          "ordem": 3,
+          "nome": "Aprovação pela Mesa Diretora / Presidência",
+          "status": "pendente"
+        },
+        {
+          "ordem": 4,
+          "nome": "Publicação no PNCP e Portal da Transparência",
+          "status": "pendente"
+        }
+      ],
+      "valor_total_estimado": 0.0,
+      "total_itens": 0,
+      "itens": []
+    },
+    "2025": {
+      "ano": 2025,
+      "status": "nao_instituido",
+      "status_label": "Não Instituído",
+      "status_classe": "badge-neutral",
+      "mensagem": "No exercício de 2025, a Câmara Municipal não instituiu Plano de Contratações Anual, passando a adotá-lo a partir do ciclo de planejamento de 2027.",
+      "valor_total_estimado": 0.0,
+      "total_itens": 0,
+      "itens": []
+    }
+  },
+  "ano_vigente": 2026,
+  "ano_em_elaboracao": 2027
+}
