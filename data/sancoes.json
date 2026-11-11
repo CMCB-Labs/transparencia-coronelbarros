@@ -1,0 +1,59 @@
+{
+  "ente": "Câmara Municipal de Coronel Barros - RS",
+  "cnpj": "13.847.938/0001-93",
+  "orgao_tce": 75101,
+  "data_atualizacao": "2026-11-11T00:20:00.000Z",
+  "total_sancoes_ativas": 0,
+  "declaracao_negativa": {
+    "possui_sancoes": false,
+    "titulo": "Certidão Institucional de Inexistência de Sanções Vigentes",
+    "texto": "Certifica-se que, perante o Poder Legislativo Municipal de Coronel Barros - RS, NÃO CONSTAM penalidades administrativas vigentes aplicadas a fornecedores, licitantes ou prestadores de serviços (tais como impedimento de licitar e contratar, suspensão temporária ou declaração de inidoneidade), com fundamento no art. 156 da Lei Federal nº 14.133/2021.",
+    "base_legal": "Art. 156 e 161 da Lei Federal nº 14.133/2021 e Lei Federal nº 12.846/2013"
+  },
+  "cadastros_oficiais": [
+    {
+      "sigla": "CEIS",
+      "nome": "Cadastro Nacional de Empresas Inidôneas e Suspensas",
+      "orgao": "Controladoria-Geral da União (CGU)",
+      "descricao": "Reúne pessoas físicas e jurídicas impedidas de licitar ou contratar com a Administração Pública em todas as esferas federativas.",
+      "url_base": "https://portaldatransparencia.gov.br/sancoes/consulta?paginacaoSimples=true&tamanhoPagina=15&offset=0&direcaoOrdenacao=asc&cadastro=1",
+      "parametro_busca": "palavraChave",
+      "parametro_doc": "cpfCnpj"
+    },
+    {
+      "sigla": "CNEP",
+      "nome": "Cadastro Nacional de Empresas Punidas",
+      "orgao": "Controladoria-Geral da União (CGU)",
+      "descricao": "Relação de empresas que sofreram penalidades com base na Lei Anticorrupção (Lei Federal nº 12.846/2013).",
+      "url_base": "https://portaldatransparencia.gov.br/sancoes/consulta?paginacaoSimples=true&tamanhoPagina=15&offset=0&direcaoOrdenacao=asc&cadastro=2",
+      "parametro_busca": "palavraChave",
+      "parametro_doc": "cpfCnpj"
+    },
+    {
+      "sigla": "CEPIM",
+      "nome": "Cadastro de Entidades Sem Fins Lucrativos Impedidas",
+      "orgao": "Controladoria-Geral da União (CGU)",
+      "descricao": "Entidades privadas sem fins lucrativos impedidas de celebrar convênios e parcerias com o poder público.",
+      "url_base": "https://portaldatransparencia.gov.br/sancoes/consulta?paginacaoSimples=true&tamanhoPagina=15&offset=0&direcaoOrdenacao=asc&cadastro=3",
+      "parametro_busca": "palavraChave",
+      "parametro_doc": "cpfCnpj"
+    },
+    {
+      "sigla": "TCE-RS",
+      "nome": "Relação de Inidôneos e Inabilitados do RS",
+      "orgao": "Tribunal de Contas do Estado do RS",
+      "descricao": "Relação de administradores e responsáveis declarados inidôneos para o exercício de cargo público ou licitar no RS.",
+      "url_base": "https://portal.tce.rs.gov.br/app/pesquisa/jurisprudencia/",
+      "parametro_busca": "termo"
+    },
+    {
+      "sigla": "TCU",
+      "nome": "Certidão Consolidada de Inidôneos e Inabilitados",
+      "orgao": "Tribunal de Contas da União (TCU)",
+      "descricao": "Emissão de certidão negativa unificada sobre inidoneidade para licitar perante a Administração Pública Federal.",
+      "url_base": "https://contas.tcu.gov.br/ords/f?p=1660:2:::NO:::",
+      "parametro_busca": "p_cpf_cnpj"
+    }
+  ],
+  "sancoes_aplicadas": []
+}

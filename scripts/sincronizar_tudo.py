@@ -9,6 +9,7 @@ Executa em sequência:
 2. TCE-RS: Jurisprudência, Pareceres Prévios e Julgamentos de Contas
 3. TCE-RS / LicitaCon: Licitações e Contratos
 4. PNCP / Planejamento: Plano de Contratações Anual (PCA)
+5. CGU / TCE-RS: Sanções Administrativas e Inidoneidade
 """
 
 import subprocess
@@ -42,6 +43,9 @@ def main():
 
     # 4. PNCP / Planejamento (Plano de Contratações Anual)
     run_script("atualizar_pca.py")
+
+    # 5. Sanções e Inidoneidade (CEIS / CNEP / Câmara)
+    run_script("atualizar_sancoes.py")
 
     print("\n" + "=" * 70)
     print("TODOS OS DADOS FORAM ATUALIZADOS!")

@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanções Administrativas e Inidoneidade - Câmara Municipal de Coronel Barros</title>
+  
+  <!-- Tipografia Oficial Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       RESET E EMBED TRANSPARENTE
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      background-color: transparent !important;
+      background: transparent !important;
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #334155;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      height: auto !important;
+      min-height: 0 !important;
+      overflow: hidden !important;
+    }
+
+    :root {
+      --cb-green-primary: #006838;
+      --cb-green-hover: #004d29;
+      --cb-green-action: #009739;
+      --cb-green-soft: #EAF6EE;
+      --cb-yellow-gold: #FFCC00;
+      --cb-yellow-soft: #FFFBEB;
+      --cb-gray-bg: #F8FAFC;
+      --cb-gray-border: #E2E8F0;
+      --cb-text-dark: #1E293B;
+      --cb-text-body: #334155;
+      --cb-text-muted: #64748B;
+      --cb-white: #FFFFFF;
+
+      --status-ok-bg: #EAF6EE;
+      --status-ok-text: #006838;
+      --status-ok-border: #A7F3D0;
+      
+      --status-warn-bg: #FEF3C7;
+      --status-warn-text: #92400E;
+      --status-warn-border: #FCD34D;
+
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .cb-widget {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 4px;
+    }
+
+    /* Topbar */
+    .cb-topbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-lg);
+      padding: 18px 22px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 20px;
+    }
+
+    .cb-topbar-title {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .cb-badge-cgu {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--cb-green-soft);
+      color: var(--cb-green-primary);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      width: fit-content;
+      border: 1px solid rgba(0, 104, 56, 0.15);
+    }
+
+    .cb-badge-cgu svg {
+      width: 12px;
+      height: 12px;
+      fill: currentColor;
+    }
+
+    .cb-topbar-heading {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      letter-spacing: -0.01em;
+    }
+
+    .cb-topbar-subtitle {
+      font-size: 0.85rem;
+      color: var(--cb-text-muted);
+    }
+
+    /* Card 1: Certidão Negativa Institucional */
+    .cb-certidao-card {
+      background: var(--cb-white);
+      border: 1px solid var(--status-ok-border);
+      border-left: 6px solid var(--cb-green-primary);
+      border-radius: var(--radius-lg);
+      padding: 22px 24px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+    }
+
+    .cb-certidao-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .cb-certidao-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--cb-green-primary);
+    }
+
+    .cb-certidao-title svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+
+    .cb-pill-ok {
+      background: var(--status-ok-bg);
+      color: var(--status-ok-text);
+      border: 1px solid var(--status-ok-border);
+      font-size: 0.74rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .cb-certidao-text {
+      font-size: 0.92rem;
+      line-height: 1.65;
+      color: var(--cb-text-body);
+      margin-bottom: 14px;
+    }
+
+    .cb-certidao-footer {
+      font-size: 0.78rem;
+      color: var(--cb-text-muted);
+      border-top: 1px solid #F1F5F9;
+      padding-top: 10px;
+    }
+
+    /* Card 2: Central de Consulta Integrada */
+    .cb-search-card {
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+    }
+
+    .cb-search-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      margin-bottom: 6px;
+    }
+
+    .cb-search-desc {
+      font-size: 0.85rem;
+      color: var(--cb-text-muted);
+      margin-bottom: 18px;
+    }
+
+    .cb-search-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .cb-input-wrapper {
+      flex: 1 1 320px;
+      position: relative;
+    }
+
+    .cb-input-search {
+      width: 100%;
+      padding: 11px 14px 11px 40px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-sm);
+      outline: none;
+      background: #F8FAFC;
+      color: var(--cb-text-dark);
+      transition: var(--transition);
+    }
+
+    .cb-input-search:focus {
+      background: #FFFFFF;
+      border-color: var(--cb-green-action);
+      box-shadow: 0 0 0 3px rgba(0, 151, 57, 0.12);
+    }
+
+    .cb-search-icon-form {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      color: var(--cb-text-muted);
+      pointer-events: none;
+    }
+
+    /* Botões Rápidos de Consulta */
+    .cb-buttons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+    }
+
+    .cb-btn-consultar {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      background: #FFFFFF;
+      border: 1px solid var(--cb-gray-border);
+      color: var(--cb-text-dark);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .cb-btn-consultar:hover {
+      background: var(--cb-green-soft);
+      border-color: var(--cb-green-action);
+      color: var(--cb-green-primary);
+      transform: translateY(-1px);
+    }
+
+    .cb-btn-consultar svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    .cb-btn-tag {
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: #F1F5F9;
+      color: #475569;
+    }
+
+    /* Card 3: Grade de Cadastros Nacionais */
+    .cb-cadastros-section {
+      margin-bottom: 24px;
+    }
+
+    .cb-section-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .cb-cadastros-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+    }
+
+    .cb-cad-card {
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+      transition: var(--transition);
+    }
+
+    .cb-cad-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: #CBD5E1;
+    }
+
+    .cb-cad-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .cb-cad-sigla {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--cb-green-primary);
+    }
+
+    .cb-cad-orgao {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--cb-text-muted);
+      text-transform: uppercase;
+    }
+
+    .cb-cad-name {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--cb-text-dark);
+      margin-bottom: 4px;
+    }
+
+    .cb-cad-desc {
+      font-size: 0.8rem;
+      color: var(--cb-text-body);
+      line-height: 1.5;
+    }
+
+    .cb-cad-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--cb-green-primary);
+      text-decoration: none;
+      padding-top: 8px;
+      border-top: 1px solid #F1F5F9;
+      transition: var(--transition);
+    }
+
+    .cb-cad-link:hover {
+      color: var(--cb-green-action);
+      text-decoration: underline;
+    }
+
+    .cb-cad-link svg {
+      width: 12px;
+      height: 12px;
+      fill: currentColor;
+    }
+
+    /* Rodapé */
+    .cb-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 0.78rem;
+      color: var(--cb-text-muted);
+      padding: 14px 18px;
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .cb-footer strong {
+      color: var(--cb-text-dark);
+    }
+
+    @media (max-width: 768px) {
+      .cb-topbar { padding: 14px; }
+      .cb-topbar-heading { font-size: 1.1rem; }
+      .cb-buttons-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="app" class="cb-widget">
+
+    <!-- Topbar Header -->
+    <header class="cb-topbar">
+      <div class="cb-topbar-title">
+        <div class="cb-badge-cgu">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+          TRANSPARÊNCIA • LEI Nº 14.133/2021 (ART. 156 E 161)
+        </div>
+        <h1 class="cb-topbar-heading">Sanções Administrativas e Inidoneidade</h1>
+        <p class="cb-topbar-subtitle">
+          Registros de penalidades da Câmara Municipal de Coronel Barros e central de consulta aos cadastros nacionais oficiais
+        </p>
+      </div>
+    </header>
+
+    <!-- Card 1: Certidão Negativa Institucional da Câmara -->
+    <section class="cb-certidao-card" aria-label="Certidão da Câmara">
+      <div class="cb-certidao-header">
+        <div class="cb-certidao-title">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+          Certidão Institucional de Inexistência de Sanções Vigentes
+        </div>
+        <span class="cb-pill-ok">Nenhuma Sanção Ativa</span>
+      </div>
+      <p class="cb-certidao-text">
+        Certifica-se que, perante o <strong>Poder Legislativo Municipal de Coronel Barros - RS</strong> (CNPJ: 13.847.938/0001-93), <strong>NÃO CONSTAM</strong> registros de penalidades administrativas vigentes aplicadas a empresas, fornecedores ou prestadores de serviços, tais como declaração de inidoneidade, suspensão temporária de participação em licitações ou impedimento de contratar, com fundamento no art. 156 da Lei Federal nº 14.133/2021 e na Lei Anticorrupção (Lei nº 12.846/2013).
+      </p>
+      <div class="cb-certidao-footer">
+        <strong>Base Legal:</strong> Arts. 156, 161 da Lei nº 14.133/2021 • Transparência Ativa atestada perante o TCE-RS e Atricon.
+      </div>
+    </section>
+
+    <!-- Card 2: Central de Consulta Integrada aos Cadastros Nacionais -->
+    <section class="cb-search-card" aria-label="Consulta de Sanções">
+      <h2 class="cb-search-title">Consulta de Sanções e Inidoneidade (CGU, TCE-RS e TCU)</h2>
+      <p class="cb-search-desc">
+        Consulte se uma empresa ou pessoa física possui penalidades ativas, impedimentos ou inidoneidade declarada no âmbito federal ou estadual:
+      </p>
+
+      <div class="cb-search-form">
+        <div class="cb-input-wrapper">
+          <svg class="cb-search-icon-form" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="input-termo" class="cb-input-search" placeholder="Digite o CNPJ, CPF ou Razão Social da empresa..." aria-label="CNPJ ou nome para consulta">
+        </div>
+      </div>
+
+      <!-- Botoeira de Consulta com Parâmetros Oficiais -->
+      <div class="cb-buttons-grid">
+        <a id="btn-ceis" href="https://portaldatransparencia.gov.br/sancoes/consulta?cadastro=1" target="_blank" rel="noopener noreferrer" class="cb-btn-consultar" title="Consulta direta ao CEIS">
+          <span>Consultar no <strong>CEIS</strong></span>
+          <span class="cb-btn-tag">CGU</span>
+        </a>
+
+        <a id="btn-cnep" href="https://portaldatransparencia.gov.br/sancoes/consulta?cadastro=2" target="_blank" rel="noopener noreferrer" class="cb-btn-consultar" title="Consulta direta ao CNEP">
+          <span>Consultar no <strong>CNEP</strong></span>
+          <span class="cb-btn-tag">Anticorrupção</span>
+        </a>
+
+        <a id="btn-cepim" href="https://portaldatransparencia.gov.br/sancoes/consulta?cadastro=3" target="_blank" rel="noopener noreferrer" class="cb-btn-consultar" title="Consulta direta ao CEPIM">
+          <span>Consultar no <strong>CEPIM</strong></span>
+          <span class="cb-btn-tag">Entidades</span>
+        </a>
+
+        <a id="btn-tcers" href="https://portal.tce.rs.gov.br/app/pesquisa/jurisprudencia/" target="_blank" rel="noopener noreferrer" class="cb-btn-consultar" title="Consulta no Tribunal de Contas do RS">
+          <span>Inidôneos no <strong>TCE-RS</strong></span>
+          <span class="cb-btn-tag">Estadual</span>
+        </a>
+
+        <a id="btn-tcu" href="https://contas.tcu.gov.br/ords/f?p=1660:2:::NO:::" target="_blank" rel="noopener noreferrer" class="cb-btn-consultar" title="Emissão de Certidão Consolidada do TCU">
+          <span>Certidão no <strong>TCU</strong></span>
+          <span class="cb-btn-tag">Federal</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Card 3: Grade com as 5 Bases Nacionais -->
+    <section class="cb-cadastros-section" aria-label="Cadastros Oficiais">
+      <h2 class="cb-section-title">Bases Oficiais de Cadastro de Sanções</h2>
+
+      <div class="cb-cadastros-grid">
+        
+        <!-- CEIS -->
+        <div class="cb-cad-card">
+          <div>
+            <div class="cb-cad-header">
+              <span class="cb-cad-sigla">CEIS</span>
+              <span class="cb-cad-orgao">CGU / Governo Federal</span>
+            </div>
+            <div class="cb-cad-name">Cadastro de Empresas Inidôneas e Suspensas</div>
+            <p class="cb-cad-desc">
+              Banco de dados nacional que consolida as sanções aplicadas por órgãos públicos de todas as esferas (União, Estados e Municípios) que impeçam pessoas físicas ou jurídicas de participar de licitações.
+            </p>
+          </div>
+          <a href="https://portaldatransparencia.gov.br/sancoes/consulta?cadastro=1" target="_blank" rel="noopener noreferrer" class="cb-cad-link">
+            Acessar Base CEIS no Portal da Transparência
+            <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+          </a>
+        </div>
+
+        <!-- CNEP -->
+        <div class="cb-cad-card">
+          <div>
+            <div class="cb-cad-header">
+              <span class="cb-cad-sigla">CNEP</span>
+              <span class="cb-cad-orgao">CGU / Governo Federal</span>
+            </div>
+            <div class="cb-cad-name">Cadastro Nacional de Empresas Punidas</div>
+            <p class="cb-cad-desc">
+              Reúne as condenações impostas a pessoas jurídicas com fundamento na Lei Anticorrupção (Lei Federal nº 12.846/2013), detalhando penalidades de multa e publicações de decisões punitivas.
+            </p>
+          </div>
+          <a href="https://portaldatransparencia.gov.br/sancoes/consulta?cadastro=2" target="_blank" rel="noopener noreferrer" class="cb-cad-link">
+            Acessar Base CNEP no Portal da Transparência
+            <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+          </a>
+        </div>
+
+        <!-- CEPIM -->
+        <div class="cb-cad-card">
+          <div>
+            <div class="cb-cad-header">
+              <span class="cb-cad-sigla">CEPIM</span>
+              <span class="cb-cad-orgao">CGU / Governo Federal</span>
+            </div>
+            <div class="cb-cad-name">Entidades Sem Fins Lucrativos Impedidas</div>
+            <p class="cb-cad-desc">
+              Cadastro de entidades privadas sem fins lucrativos que estão impedidas de celebrar convênios, contratos de repasse ou termos de parceria com a administração pública.
+            </p>
+          </div>
+          <a href="https://portaldatransparencia.gov.br/sancoes/consulta?cadastro=3" target="_blank" rel="noopener noreferrer" class="cb-cad-link">
+            Acessar Base CEPIM no Portal da Transparência
+            <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+          </a>
+        </div>
+
+        <!-- TCE-RS -->
+        <div class="cb-cad-card">
+          <div>
+            <div class="cb-cad-header">
+              <span class="cb-cad-sigla">TCE-RS</span>
+              <span class="cb-cad-orgao">Tribunal de Contas do RS</span>
+            </div>
+            <div class="cb-cad-name">Relação de Inidôneos e Inabilitados</div>
+            <p class="cb-cad-desc">
+              A relação dos gestores e empresas sancionadas pelo Tribunal de Contas do Estado do Rio Grande do Sul com penalidade de inabilitação para o exercício de cargo em comissão ou função de confiança.
+            </p>
+          </div>
+          <a href="https://portal.tce.rs.gov.br/app/pesquisa/jurisprudencia/" target="_blank" rel="noopener noreferrer" class="cb-cad-link">
+            Consultar Inidôneos no Portal TCE-RS
+            <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="cb-footer">
+      <div>
+        <strong>Fontes Oficiais Integradas:</strong> Portal da Transparência (CGU) • Tribunal de Contas do RS (TCE-RS) • TCU
+      </div>
+      <div>
+        Atualização contínua via GitHub Actions
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    (function() {
+      'use strict';
+
+      const inputTermo = document.getElementById('input-termo');
+      const btnCeis = document.getElementById('btn-ceis');
+      const btnCnep = document.getElementById('btn-cnep');
+      const btnCepim = document.getElementById('btn-cepim');
+      const btnTcers = document.getElementById('btn-tcers');
+      const btnTcu = document.getElementById('btn-tcu');
+
+      // Notificação de altura anti-loop
+      let lastSentHeight = 0;
+      let resizeDebounceTimer = null;
+
+      function notificarAltura() {
+        clearTimeout(resizeDebounceTimer);
+        resizeDebounceTimer = setTimeout(() => {
+          const app = document.getElementById('app');
+          if (!app) return;
+          const rect = app.getBoundingClientRect();
+          const height = Math.ceil(rect.height);
+          if (Math.abs(height - lastSentHeight) > 4) {
+            lastSentHeight = height;
+            if (window.parent && window.parent !== window) {
+              window.parent.postMessage({ type: 'cb-resize', height: height }, '*');
+            }
+          }
+        }, 50);
+      }
+
+      if (window.ResizeObserver) {
+        const ro = new ResizeObserver(() => notificarAltura());
+        const appElem = document.getElementById('app');
+        if (appElem) ro.observe(appElem);
+      } else {
+        window.addEventListener('resize', notificarAltura);
+      }
+
+      // Atualizar URLs dinamicamente conforme o usuário digita
+      function atualizarLinksConsulta() {
+        const termo = (inputTermo.value || '').trim();
+        const termoEncoded = encodeURIComponent(termo);
+
+        if (!termo) {
+          btnCeis.href = 'https://portaldatransparencia.gov.br/sancoes/consulta?cadastro=1';
+          btnCnep.href = 'https://portaldatransparencia.gov.br/sancoes/consulta?cadastro=2';
+          btnCepim.href = 'https://portaldatransparencia.gov.br/sancoes/consulta?cadastro=3';
+          btnTcers.href = 'https://portal.tce.rs.gov.br/app/pesquisa/jurisprudencia/';
+          btnTcu.href = 'https://contas.tcu.gov.br/ords/f?p=1660:2:::NO:::';
+          return;
+        }
+
+        // Verifica se é numérico (CNPJ/CPF) ou nome
+        const cleanDigits = termo.replace(/\D/g, '');
+        const isDoc = cleanDigits.length === 11 || cleanDigits.length === 14;
+
+        if (isDoc) {
+          btnCeis.href = `https://portaldatransparencia.gov.br/sancoes/consulta?paginacaoSimples=true&tamanhoPagina=15&offset=0&direcaoOrdenacao=asc&cadastro=1&cpfCnpj=${cleanDigits}`;
+          btnCnep.href = `https://portaldatransparencia.gov.br/sancoes/consulta?paginacaoSimples=true&tamanhoPagina=15&offset=0&direcaoOrdenacao=asc&cadastro=2&cpfCnpj=${cleanDigits}`;
+          btnCepim.href = `https://portaldatransparencia.gov.br/sancoes/consulta?paginacaoSimples=true&tamanhoPagina=15&offset=0&direcaoOrdenacao=asc&cadastro=3&cpfCnpj=${cleanDigits}`;
+        } else {
+          btnCeis.href = `https://portaldatransparencia.gov.br/sancoes/consulta?paginacaoSimples=true&tamanhoPagina=15&offset=0&direcaoOrdenacao=asc&cadastro=1&palavraChave=${termoEncoded}`;
+          btnCnep.href = `https://portaldatransparencia.gov.br/sancoes/consulta?paginacaoSimples=true&tamanhoPagina=15&offset=0&direcaoOrdenacao=asc&cadastro=2&palavraChave=${termoEncoded}`;
+          btnCepim.href = `https://portaldatransparencia.gov.br/sancoes/consulta?paginacaoSimples=true&tamanhoPagina=15&offset=0&direcaoOrdenacao=asc&cadastro=3&palavraChave=${termoEncoded}`;
+        }
+
+        btnTcers.href = `https://portal.tce.rs.gov.br/app/pesquisa/jurisprudencia/?termo=${termoEncoded}`;
+        btnTcu.href = `https://contas.tcu.gov.br/ords/f?p=1660:2:::NO:::`;
+      }
+
+      inputTermo.addEventListener('input', atualizarLinksConsulta);
+
+      notificarAltura();
+    })();
+  </script>
+</body>
+</html>
