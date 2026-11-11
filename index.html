@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Relatório de Gestão Fiscal (RGF) - Câmara Municipal de Coronel Barros</title>
+  <title>Central de Transparência - Câmara Municipal de Coronel Barros - RS</title>
   
   <!-- Tipografia Oficial Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,7 @@
 
   <style>
     /* ==========================================================================
-       RESET E CONFIGURAÇÃO DE EMBED TRANSPARENTE
+       RESET E CONFIGURAÇÃO TRANSPARENTE
        ========================================================================== */
     *, *::before, *::after {
       box-sizing: border-box;
@@ -29,14 +29,13 @@
       color: #334155;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      height: auto !important;
-      min-height: 0 !important;
-      /* overflow: auto para permitir rolagem via mouse */
+      height: auto;
+      min-height: 0;
+      margin: 0;
+      padding: 0;
+      width: 100%;
     }
 
-    /* ==========================================================================
-       VARIÁVEIS DE IDENTIDADE VISUAL - CÂMARA DE CORONEL BARROS
-       ========================================================================== */
     :root {
       --cb-green-primary: #006838;
       --cb-green-hover: #004d29;
@@ -51,968 +50,917 @@
       --cb-text-muted: #64748B;
       --cb-white: #FFFFFF;
 
-      /* Cores de Alerta LRF */
-      --lrf-ok-bg: #EAF6EE;
-      --lrf-ok-text: #006838;
-      --lrf-ok-border: #A7F3D0;
-      --lrf-alerta-bg: #FEF3C7;
-      --lrf-alerta-text: #92400E;
-      --lrf-alerta-border: #FCD34D;
-      --lrf-prud-bg: #FFEDD5;
-      --lrf-prud-text: #9A3412;
-      --lrf-prud-border: #FDBA74;
-      --lrf-danger-bg: #FEE2E2;
-      --lrf-danger-text: #991B1B;
-      --lrf-danger-border: #FCA5A5;
-
       --radius-sm: 6px;
       --radius-md: 10px;
       --radius-lg: 14px;
-      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
-      --shadow-lg: 0 10px 24px rgba(0, 104, 56, 0.08);
-      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -1px rgba(0,0,0,0.04);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
     }
 
-    .cb-rgf-widget {
+    #app {
       width: 100%;
-      max-width: 1180px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 4px;
+      padding: 12px 16px 36px 16px;
     }
 
-    /* ==========================================================================
-       BARRA DE CONTROLES E CABEÇALHO DO EMBED (SEM LINKS EXTERNOS)
-       ========================================================================== */
-    .cb-topbar {
+    /* Cabeçalho Principal */
+    .hub-header {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      border: 1px solid var(--cb-gray-border);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hub-header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--cb-green-primary) 0%, var(--cb-green-action) 60%, var(--cb-yellow-gold) 100%);
+    }
+
+    .header-top {
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
       gap: 16px;
-      background: var(--cb-white);
-      border: 1px solid var(--cb-gray-border);
-      border-radius: var(--radius-lg);
-      padding: 16px 20px;
-      box-shadow: var(--shadow-sm);
-      margin-bottom: 20px;
     }
 
-    .cb-topbar-title {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .cb-badge-lrf {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: var(--cb-green-soft);
-      color: var(--cb-green-primary);
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      padding: 3px 8px;
-      border-radius: 9999px;
-      width: fit-content;
-      border: 1px solid rgba(0, 104, 56, 0.15);
-    }
-
-    .cb-badge-lrf::before {
-      content: '';
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background-color: var(--cb-green-action);
-    }
-
-    .cb-heading {
-      font-size: 1.25rem;
+    .title-group h1 {
+      font-size: 1.65rem;
       font-weight: 800;
       color: var(--cb-text-dark);
       letter-spacing: -0.02em;
-      line-height: 1.2;
-    }
-
-    .cb-subheading {
-      font-size: 0.82rem;
-      color: var(--cb-text-muted);
-      font-weight: 500;
-    }
-
-    .cb-filters {
+      line-height: 1.25;
       display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .title-group p {
+      font-size: 0.95rem;
+      color: var(--cb-text-muted);
+      margin-top: 6px;
+      max-width: 760px;
+      line-height: 1.5;
+    }
+
+    .header-badges {
+      display: flex;
+      align-items: center;
+      gap: 8px;
       flex-wrap: wrap;
-      align-items: center;
-      gap: 10px;
     }
 
-    .cb-select-group {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .cb-select-group label {
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: var(--cb-text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    .cb-select {
-      background-color: var(--cb-gray-bg);
-      border: 1px solid var(--cb-gray-border);
-      color: var(--cb-text-dark);
-      font-family: inherit;
-      font-size: 0.88rem;
-      font-weight: 600;
-      padding: 7px 12px;
-      border-radius: var(--radius-sm);
-      cursor: pointer;
-      outline: none;
-      transition: var(--transition);
-    }
-
-    .cb-select:focus, .cb-select:hover {
-      border-color: var(--cb-green-primary);
-      background-color: var(--cb-white);
-    }
-
-    .cb-btn-tool {
-      background: var(--cb-white);
-      border: 1px solid var(--cb-gray-border);
-      color: var(--cb-text-body);
-      font-family: inherit;
-      font-size: 0.82rem;
-      font-weight: 600;
-      padding: 7px 12px;
-      border-radius: var(--radius-sm);
-      cursor: pointer;
+    .badge {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      transition: var(--transition);
-    }
-
-    .cb-btn-tool:hover {
-      border-color: var(--cb-green-primary);
-      color: var(--cb-green-primary);
-      background: var(--cb-green-soft);
-    }
-
-    .cb-btn-tool svg {
-      width: 14px;
-      height: 14px;
-    }
-
-    /* ==========================================================================
-       BANNER DE STATUS DA LRF
-       ========================================================================== */
-    .cb-status-banner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
-      padding: 14px 18px;
-      border-radius: var(--radius-md);
-      margin-bottom: 20px;
-      border: 1px solid transparent;
-      transition: var(--transition);
-    }
-
-    .status-regular {
-      background-color: var(--lrf-ok-bg);
-      border-color: var(--lrf-ok-border);
-      color: var(--lrf-ok-text);
-    }
-
-    .status-alerta {
-      background-color: var(--lrf-alerta-bg);
-      border-color: var(--lrf-alerta-border);
-      color: var(--lrf-alerta-text);
-    }
-
-    .status-prudencial {
-      background-color: var(--lrf-prud-bg);
-      border-color: var(--lrf-prud-border);
-      color: var(--lrf-prud-text);
-    }
-
-    .status-perigo {
-      background-color: var(--lrf-danger-bg);
-      border-color: var(--lrf-danger-border);
-      color: var(--lrf-danger-text);
-    }
-
-    .cb-status-info {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .cb-status-icon {
-      width: 22px;
-      height: 22px;
-      flex-shrink: 0;
-    }
-
-    .cb-status-text {
-      font-size: 0.92rem;
+      padding: 5px 12px;
+      border-radius: 9999px;
+      font-size: 0.76rem;
       font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
     }
 
-    .cb-status-desc {
-      font-size: 0.8rem;
-      font-weight: 500;
-      opacity: 0.9;
+    .badge-primary {
+      background: var(--cb-green-soft);
+      color: var(--cb-green-primary);
+      border: 1px solid var(--cb-green-action);
     }
 
-    /* ==========================================================================
-       CARDS DE INDICADORES PRINCIPAIS (GRID 4 COLUNAS)
-       ========================================================================== */
-    .cb-metrics-grid {
+    .badge-secondary {
+      background: var(--cb-gray-bg);
+      color: var(--cb-text-muted);
+      border: 1px solid var(--cb-gray-border);
+    }
+
+    .badge-gold {
+      background: var(--cb-yellow-soft);
+      color: #92400E;
+      border: 1px solid #FCD34D;
+    }
+
+    /* KPIs Globais */
+    .kpi-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 16px;
       margin-bottom: 24px;
     }
 
-    .cb-metric-card {
-      background: var(--cb-white);
+    .kpi-card {
+      background: #FFFFFF;
       border: 1px solid var(--cb-gray-border);
       border-radius: var(--radius-md);
-      padding: 18px;
+      padding: 18px 20px;
       box-shadow: var(--shadow-sm);
-      position: relative;
-      overflow: hidden;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      transition: var(--transition);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
 
-    .cb-metric-card:hover {
-      box-shadow: var(--shadow-md);
+    .kpi-card:hover {
       transform: translateY(-2px);
-      border-color: #CBD5E1;
+      box-shadow: var(--shadow-md);
     }
 
-    .cb-metric-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: var(--cb-gray-border);
-    }
-
-    .cb-metric-card.card-primary::before {
-      background: var(--cb-green-primary);
-    }
-    .cb-metric-card.card-percent::before {
-      background: var(--cb-yellow-gold);
-    }
-    .cb-metric-card.card-limit::before {
-      background: #0284C7;
-    }
-    .cb-metric-card.card-margin::before {
-      background: var(--cb-green-action);
-    }
-
-    .cb-metric-header {
+    .kpi-label {
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--cb-text-muted);
+      margin-bottom: 6px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 8px;
     }
 
-    .cb-metric-label {
-      font-size: 0.78rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      color: var(--cb-text-muted);
-    }
-
-    .cb-metric-value {
+    .kpi-value {
       font-size: 1.55rem;
       font-weight: 800;
       color: var(--cb-text-dark);
-      font-family: 'Montserrat', sans-serif;
-      letter-spacing: -0.03em;
-      margin-bottom: 4px;
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: -0.02em;
     }
 
-    .cb-metric-sub {
-      font-size: 0.78rem;
-      color: var(--cb-text-muted);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .cb-pill {
-      display: inline-block;
-      font-size: 0.7rem;
-      font-weight: 700;
-      padding: 2px 7px;
-      border-radius: 9999px;
-      line-height: 1.3;
-    }
-
-    .cb-pill-ok {
-      background: var(--cb-green-soft);
+    .kpi-value.green {
       color: var(--cb-green-primary);
     }
 
-    /* ==========================================================================
-       TERMÔMETRO VISUAL DA LRF (RÉGUA COMPARATIVA)
-       ========================================================================== */
-    .cb-thermometer-section {
-      background: var(--cb-white);
+    .kpi-subtext {
+      font-size: 0.8rem;
+      color: var(--cb-text-muted);
+      margin-top: 6px;
+      line-height: 1.35;
+    }
+
+    /* Barra de Busca e Filtros */
+    .search-filter-card {
+      background: #FFFFFF;
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .search-input-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    .search-input-wrapper svg {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--cb-text-muted);
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 12px 16px 12px 42px;
+      font-size: 0.92rem;
+      font-family: inherit;
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-sm);
+      color: var(--cb-text-dark);
+      background: var(--cb-gray-bg);
+      transition: all 0.15s ease;
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--cb-green-primary);
+      background: #FFFFFF;
+      box-shadow: 0 0 0 3px rgba(0, 104, 56, 0.12);
+    }
+
+    .filter-pills {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      background: var(--cb-gray-bg);
+      border: 1px solid var(--cb-gray-border);
+      padding: 6px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--cb-text-body);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      font-family: inherit;
+    }
+
+    .filter-btn:hover {
+      background: #EDF2F7;
+      color: var(--cb-text-dark);
+    }
+
+    .filter-btn.active {
+      background: var(--cb-green-primary);
+      border-color: var(--cb-green-primary);
+      color: #FFFFFF;
+    }
+
+    /* Grade dos Módulos */
+    .modules-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .module-card {
+      background: #FFFFFF;
       border: 1px solid var(--cb-gray-border);
       border-radius: var(--radius-lg);
       padding: 22px;
       box-shadow: var(--shadow-sm);
-      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      position: relative;
+      text-decoration: none;
+      color: inherit;
     }
 
-    .cb-thermometer-header {
+    .module-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--cb-green-action);
+    }
+
+    .module-card-top {
+      margin-bottom: 16px;
+    }
+
+    .module-header-row {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 24px;
-      flex-wrap: wrap;
-      gap: 10px;
+      margin-bottom: 12px;
     }
 
-    .cb-thermometer-title {
-      font-size: 0.96rem;
-      font-weight: 700;
-      color: var(--cb-text-dark);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .cb-thermometer-title::before {
-      content: '';
-      width: 4px;
-      height: 18px;
-      background: var(--cb-green-primary);
-      border-radius: 2px;
-    }
-
-    .cb-thermometer-track-wrap {
-      position: relative;
-      padding-top: 36px;
-      padding-bottom: 48px;
-      margin: 0 10px;
-    }
-
-    .cb-thermometer-track {
-      height: 18px;
-      border-radius: 9999px;
-      background: #E2E8F0;
-      position: relative;
-      display: flex;
-      overflow: hidden;
-    }
-
-    /* Zonas do termômetro */
-    .track-zone-safe {
-      width: 83.07%; /* 5.4 / 6.5 * 100 */
-      background: linear-gradient(90deg, #10B981, #059669);
-    }
-
-    .track-zone-alerta {
-      width: 4.61%; /* (5.7 - 5.4) / 6.5 * 100 */
-      background: #FBBF24;
-    }
-
-    .track-zone-prudencial {
-      width: 4.61%; /* (6.0 - 5.7) / 6.5 * 100 */
-      background: #F97316;
-    }
-
-    .track-zone-excesso {
-      width: 7.71%; /* restante até 6.5% */
-      background: #EF4444;
-    }
-
-    /* Ponteiro da Câmara */
-    .cb-pointer {
-      position: absolute;
-      top: 0;
-      transform: translateX(-50%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transition: left 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
-      z-index: 10;
-    }
-
-    .cb-pointer-tag {
-      background: var(--cb-text-dark);
-      color: var(--cb-white);
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 3px 8px;
-      border-radius: 6px;
-      white-space: nowrap;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-      border: 1px solid var(--cb-yellow-gold);
-    }
-
-    .cb-pointer-needle {
-      width: 2px;
-      height: 28px;
-      background: var(--cb-text-dark);
-      margin-top: 2px;
-    }
-
-    .cb-pointer-dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: var(--cb-yellow-gold);
-      border: 2px solid var(--cb-text-dark);
-      margin-top: -5px;
-    }
-
-    /* Marcadores da Régua */
-    .cb-marker {
-      position: absolute;
-      top: 58px;
-      transform: translateX(-50%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .cb-marker-line {
-      width: 1px;
-      height: 8px;
-      background: #94A3B8;
-      margin-bottom: 4px;
-    }
-
-    .cb-marker-label {
-      font-size: 0.72rem;
-      font-weight: 700;
-      color: var(--cb-text-dark);
-      line-height: 1.1;
-    }
-
-    .cb-marker-pct {
-      font-size: 0.68rem;
-      color: var(--cb-text-muted);
-      font-weight: 600;
-    }
-
-    /* ==========================================================================
-       ABAS DE NAVEGAÇÃO INTERNA (SEM LINKS EXTERNOS)
-       ========================================================================== */
-    .cb-tabs {
-      display: flex;
-      gap: 6px;
-      border-bottom: 2px solid var(--cb-gray-border);
-      margin-bottom: 18px;
-      overflow-x: auto;
-      padding-bottom: 2px;
-    }
-
-    .cb-tab-btn {
-      background: transparent;
-      border: none;
-      outline: none;
-      font-family: inherit;
-      font-size: 0.88rem;
-      font-weight: 600;
-      color: var(--cb-text-muted);
-      padding: 8px 14px;
-      cursor: pointer;
-      position: relative;
-      border-radius: var(--radius-sm) var(--radius-sm) 0 0;
-      white-space: nowrap;
-      transition: var(--transition);
-    }
-
-    .cb-tab-btn:hover {
-      color: var(--cb-green-primary);
+    .module-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
       background: var(--cb-green-soft);
-    }
-
-    .cb-tab-btn.active {
-      color: var(--cb-green-primary);
-      font-weight: 700;
-    }
-
-    .cb-tab-btn.active::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: var(--cb-green-primary);
-      border-radius: 2px;
-    }
-
-    .cb-tab-content {
-      display: none;
-    }
-
-    .cb-tab-content.active {
-      display: block;
-      animation: fadeIn 0.25s ease-out;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(4px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* ==========================================================================
-       TABELA ANALÍTICA DE TRANSPARÊNCIA
-       ========================================================================== */
-    .cb-table-wrap {
-      background: var(--cb-white);
-      border: 1px solid var(--cb-gray-border);
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .cb-table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: left;
-    }
-
-    .cb-table th {
-      background: var(--cb-green-primary);
-      color: var(--cb-white);
-      font-size: 0.8rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      padding: 12px 16px;
-    }
-
-    .cb-table td {
-      padding: 12px 16px;
-      font-size: 0.86rem;
-      border-bottom: 1px solid var(--cb-gray-border);
-      color: var(--cb-text-dark);
-    }
-
-    .cb-table tbody tr:nth-child(even) {
-      background-color: var(--cb-gray-bg);
-    }
-
-    .cb-table tbody tr:hover {
-      background-color: var(--cb-green-soft);
-    }
-
-    .cb-table td.col-num {
-      text-align: right;
-      font-family: 'JetBrains Mono', monospace;
-      font-weight: 600;
-      white-space: nowrap;
-    }
-
-    .cb-table tr.row-total {
-      background-color: #F1F5F9 !important;
-      font-weight: 700;
-    }
-
-    .cb-table tr.row-total td {
-      color: var(--cb-green-primary);
-      border-top: 2px solid var(--cb-green-primary);
-      border-bottom: 2px solid var(--cb-green-primary);
-    }
-
-    /* ==========================================================================
-       RODAPÉ TÉCNICO DE TRANSPARÊNCIA E HOMOLOGAÇÃO
-       ========================================================================== */
-    .cb-footer {
+      border: 1px solid var(--cb-green-action);
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      margin-top: 24px;
-      padding: 14px 18px;
-      background: var(--cb-white);
-      border: 1px solid var(--cb-gray-border);
-      border-radius: var(--radius-md);
-      font-size: 0.78rem;
+      justify-content: center;
+      color: var(--cb-green-primary);
+      flex-shrink: 0;
+    }
+
+    .module-category {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.04em;
       color: var(--cb-text-muted);
     }
 
-    .cb-footer-source {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .cb-footer-source strong {
+    .module-title {
+      font-size: 1.15rem;
+      font-weight: 800;
       color: var(--cb-text-dark);
+      line-height: 1.3;
+      margin-bottom: 6px;
     }
 
-    .cb-footer-sync {
+    .module-desc {
+      font-size: 0.86rem;
+      color: var(--cb-text-muted);
+      line-height: 1.5;
+    }
+
+    .module-meta {
+      background: var(--cb-gray-bg);
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
+      font-size: 0.78rem;
+      color: var(--cb-text-body);
+      margin-top: 14px;
+      border: 1px solid #EEF2F6;
       display: flex;
       align-items: center;
       gap: 6px;
+      font-weight: 600;
     }
 
-    /* ==========================================================================
-       RESPONSIVIDADE (MOBILE FIRST & EMBED)
-       ========================================================================== */
-    @media (max-width: 768px) {
-      .cb-topbar {
-        flex-direction: column;
-        align-items: stretch;
-      }
-      .cb-filters {
-        flex-direction: column;
-        align-items: stretch;
-      }
-      .cb-select-group {
-        justify-content: space-between;
-      }
-      .cb-select {
-        flex-grow: 1;
-      }
-      .cb-thermometer-track-wrap {
-        padding-bottom: 60px;
-      }
-      .cb-marker-label {
-        font-size: 0.65rem;
-      }
-      .cb-footer {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+    .module-action {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: var(--cb-green-primary);
+      padding-top: 14px;
+      border-top: 1px solid var(--cb-gray-border);
+      margin-top: 14px;
     }
 
-    @media print {
-      body {
-        background: #fff !important;
-      }
-      .cb-filters, .cb-tabs, .cb-btn-tool {
-        display: none !important;
-      }
-      .cb-tab-content {
-        display: block !important;
-      }
+    .module-action svg {
+      transition: transform 0.2s ease;
+    }
+
+    .module-card:hover .module-action svg {
+      transform: translateX(4px);
+    }
+
+    /* Rodapé Institucional */
+    .hub-footer {
+      background: #FFFFFF;
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-info {
+      font-size: 0.84rem;
+      color: var(--cb-text-muted);
+      line-height: 1.5;
+      max-width: 720px;
+    }
+
+    .footer-links {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .footer-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+
+    .footer-btn-primary {
+      background: var(--cb-green-soft);
+      color: var(--cb-green-primary);
+      border: 1px solid var(--cb-green-action);
+    }
+
+    .footer-btn-primary:hover {
+      background: var(--cb-green-primary);
+      color: #FFFFFF;
     }
   </style>
 </head>
 <body>
-
-  <div class="cb-rgf-widget" id="app">
-    
-    <!-- BARRA DE CABEÇALHO DO EMBED -->
-    <header class="cb-topbar">
-      <div class="cb-topbar-title">
-        <span class="cb-badge-lrf">LRF • Art. 48 e 54 • Lei Complementar 101/2000</span>
-        <h1 class="cb-heading">Relatório de Gestão Fiscal (RGF)</h1>
-        <p class="cb-subheading">Demonstrativo da Despesa com Pessoal e Limites Legais • Poder Legislativo</p>
-      </div>
-
-      <div class="cb-filters">
-        <div class="cb-select-group">
-          <label for="select-exercicio">Ano:</label>
-          <select id="select-exercicio" class="cb-select" aria-label="Selecione o ano"></select>
+  <div id="app">
+    <!-- Cabeçalho -->
+    <header class="hub-header">
+      <div class="header-top">
+        <div class="title-group">
+          <h1>
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--cb-green-primary);"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Central de Transparência e Controle Social
+          </h1>
+          <p>
+            Portal integrado de dados fiscais, contratações, patrimônio e prestação de contas da <strong>Câmara Municipal de Coronel Barros - RS</strong>. Todos os demonstrativos são sincronizados diretamente com os bancos de dados oficiais do TCE-RS, Siconfi/STN e PNCP.
+          </p>
         </div>
-
-        <div class="cb-select-group">
-          <label for="select-periodo">Período:</label>
-          <select id="select-periodo" class="cb-select" aria-label="Selecione o período"></select>
+        <div class="header-badges">
+          <span class="badge badge-primary">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            TCE-RS: Órgão 75101
+          </span>
+          <span class="badge badge-gold">
+            PNTP / Atricon 100%
+          </span>
+          <span class="badge badge-secondary">
+            CNPJ: 13.847.938/0001-93
+          </span>
         </div>
-
-        <button type="button" class="cb-btn-tool" id="btn-export-csv" title="Exportar dados deste período em formato CSV">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-            <polyline points="7 10 12 15 17 10"></polyline>
-            <line x1="12" y1="15" x2="12" y2="3"></line>
-          </svg>
-          Exportar CSV
-        </button>
-
-        <button type="button" class="cb-btn-tool" id="btn-imprimir" title="Imprimir demonstrativo">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="6 9 6 2 18 2 18 9"></polyline>
-            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
-            <rect x="6" y="14" width="12" height="8"></rect>
-          </svg>
-          Imprimir
-        </button>
       </div>
     </header>
 
-    <!-- BANNER DE STATUS DA LRF -->
-    <div id="status-banner" class="cb-status-banner status-regular">
-      <div class="cb-status-info">
-        <svg class="cb-status-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-          <polyline points="22 4 12 14.01 9 11.01"></polyline>
-        </svg>
-        <div>
-          <div id="status-titulo" class="cb-status-text">Situação Fiscal: Regular</div>
-          <div id="status-desc" class="cb-status-desc">Os gastos com pessoal da Câmara estão plenamente confortáveis e dentro do limite da LRF.</div>
-        </div>
-      </div>
-      <div id="status-tag" class="cb-pill cb-pill-ok">Em Conformidade</div>
-    </div>
-
-    <!-- CARDS DE MÉTRICAS PRINCIPAIS -->
-    <section class="cb-metrics-grid">
-      <!-- Card 1: DTP -->
-      <article class="cb-metric-card card-primary">
-        <div class="cb-metric-header">
-          <span class="cb-metric-label">Despesa Total com Pessoal (DTP)</span>
-          <span class="cb-pill cb-pill-ok" id="badge-dtp-pct">2,11%</span>
-        </div>
-        <div class="cb-metric-value" id="val-dtp">R$ 0,00</div>
-        <div class="cb-metric-sub">
-          Acumulado dos últimos 12 meses
-        </div>
-      </article>
-
-      <!-- Card 2: RCL Ajustada -->
-      <article class="cb-metric-card card-percent">
-        <div class="cb-metric-header">
-          <span class="cb-metric-label">RCL Ajustada do Município</span>
-          <span class="cb-pill" style="background:#FEF3C7; color:#92400E;">Base de Cálculo</span>
-        </div>
-        <div class="cb-metric-value" id="val-rcl">R$ 0,00</div>
-        <div class="cb-metric-sub">
-          Receita Corrente Líquida consolidada
-        </div>
-      </article>
-
-      <!-- Card 3: Limite Máximo LRF -->
-      <article class="cb-metric-card card-limit">
-        <div class="cb-metric-header">
-          <span class="cb-metric-label">Limite Máximo (6,00%)</span>
-          <span class="cb-pill" style="background:#E0F2FE; color:#0369A1;">Teto Constitucional</span>
-        </div>
-        <div class="cb-metric-value" id="val-limite-max">R$ 0,00</div>
-        <div class="cb-metric-sub">
-          Art. 20, III, "a" da LRF
-        </div>
-      </article>
-
-      <!-- Card 4: Margem Disponível -->
-      <article class="cb-metric-card card-margin">
-        <div class="cb-metric-header">
-          <span class="cb-metric-label">Folga até o Limite Máximo</span>
-          <span class="cb-pill cb-pill-ok" id="badge-folga-pct">3,89%</span>
-        </div>
-        <div class="cb-metric-value" id="val-folga">R$ 0,00</div>
-        <div class="cb-metric-sub">
-          Margem para expansão orçamentária
-        </div>
-      </article>
-    </section>
-
-    <!-- TERMÔMETRO VISUAL DA LRF -->
-    <section class="cb-thermometer-section">
-      <div class="cb-thermometer-header">
-        <h2 class="cb-thermometer-title">Termômetro dos Limites Legais da Despesa com Pessoal (LRF)</h2>
-        <span style="font-size:0.75rem; color:var(--cb-text-muted);">Escala de 0,00% a 6,50% sobre a RCL Ajustada</span>
+    <!-- KPIs Rápidos da Transparência -->
+    <section class="kpi-grid">
+      <div class="kpi-card">
+        <span class="kpi-label">
+          Módulos Integrados
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </span>
+        <div class="kpi-value green">14 Módulos</div>
+        <div class="kpi-subtext">Acesso livre a relatórios, licitações, despesas e patrimônio</div>
       </div>
 
-      <div class="cb-thermometer-track-wrap">
-        <!-- Barra de Progresso com as Zonas -->
-        <div class="cb-thermometer-track">
-          <div class="track-zone-safe" title="Faixa Regular: 0% a 5,40%"></div>
-          <div class="track-zone-alerta" title="Faixa de Alerta: 5,40% a 5,70%"></div>
-          <div class="track-zone-prudencial" title="Faixa Prudencial: 5,70% a 6,00%"></div>
-          <div class="track-zone-excesso" title="Acima do Limite Legal: > 6,00%"></div>
-        </div>
+      <div class="kpi-card">
+        <span class="kpi-label">
+          Série Histórica
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </span>
+        <div class="kpi-value">2021 a 2026</div>
+        <div class="kpi-subtext">Histórico completo auditado pelo Tribunal de Contas (6 anos)</div>
+      </div>
 
-        <!-- Ponteiro Indicador da Câmara de Coronel Barros -->
-        <div class="cb-pointer" id="thermo-pointer" style="left: 32%;">
-          <div class="cb-pointer-tag" id="thermo-pointer-label">Câmara: 2,11%</div>
-          <div class="cb-pointer-needle"></div>
-          <div class="cb-pointer-dot"></div>
-        </div>
+      <div class="kpi-card">
+        <span class="kpi-label">
+          Economia / Devoluções
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        </span>
+        <div class="kpi-value green">R$ 3,78 Milhões</div>
+        <div class="kpi-subtext">43,4% do orçamento economizado e devolvido à Prefeitura</div>
+      </div>
 
-        <!-- Marcadores de Linha -->
-        <!-- 0% -->
-        <div class="cb-marker" style="left: 0%;">
-          <div class="cb-marker-line"></div>
-          <div class="cb-marker-label">0%</div>
-        </div>
-
-        <!-- 5.4% Limite de Alerta (83.07%) -->
-        <div class="cb-marker" style="left: 83.07%;">
-          <div class="cb-marker-line"></div>
-          <div class="cb-marker-label" style="color:#D97706;">Alerta</div>
-          <div class="cb-marker-pct">5,40%</div>
-        </div>
-
-        <!-- 5.7% Limite Prudencial (87.69%) -->
-        <div class="cb-marker" style="left: 87.69%;">
-          <div class="cb-marker-line"></div>
-          <div class="cb-marker-label" style="color:#EA580C;">Prudencial</div>
-          <div class="cb-marker-pct">5,70%</div>
-        </div>
-
-        <!-- 6.0% Limite Máximo (92.30%) -->
-        <div class="cb-marker" style="left: 92.30%;">
-          <div class="cb-marker-line"></div>
-          <div class="cb-marker-label" style="color:#DC2626;">Máximo</div>
-          <div class="cb-marker-pct">6,00%</div>
-        </div>
+      <div class="kpi-card">
+        <span class="kpi-label">
+          Fontes de Dados
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg>
+        </span>
+        <div class="kpi-value" style="color: #0284C7;">100% Oficiais</div>
+        <div class="kpi-subtext">Siconfi / STN, TCE-RS, LicitaCon e PNCP Federal</div>
       </div>
     </section>
 
-    <!-- ABAS DO DEMONSTRATIVO -->
-    <nav class="cb-tabs" aria-label="Navegação do relatório">
-      <button type="button" class="cb-tab-btn active" data-tab="tab-lrf">1. Demonstrativo dos Limites da LRF</button>
-      <button type="button" class="cb-tab-btn" data-tab="tab-detalhes">2. Detalhamento da Despesa com Pessoal</button>
-      <button type="button" class="cb-tab-btn" id="btn-tab-caixa" data-tab="tab-caixa" style="display:none;">3. Disponibilidade de Caixa e Restos a Pagar</button>
-    </nav>
-
-    <!-- CONTEÚDO DAS ABAS -->
-    
-    <!-- ABA 1: LIMITES DA LRF -->
-    <div id="tab-lrf" class="cb-tab-content active">
-      <div class="cb-table-wrap">
-        <table class="cb-table">
-          <thead>
-            <tr>
-              <th>Demonstrativo da Despesa com Pessoal e Limites Legais</th>
-              <th style="text-align:right;">Valor Realizado (R$)</th>
-              <th style="text-align:right;">% sobre a RCL Ajustada</th>
-            </tr>
-          </thead>
-          <tbody id="tbody-lrf">
-            <!-- Inserido dinamicamente via JS -->
-          </tbody>
-        </table>
+    <!-- Barra de Pesquisa e Filtros de Categoria -->
+    <section class="search-filter-card">
+      <div class="search-input-wrapper">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="inputPesquisa" class="search-input" placeholder="Pesquise por tema: licitações, duodécimo, rgf, contratos, obras, balanços, sanções..." autocomplete="off">
       </div>
-    </div>
 
-    <!-- ABA 2: DETALHAMENTO DE PESSOAL -->
-    <div id="tab-detalhes" class="cb-tab-content">
-      <div class="cb-table-wrap">
-        <table class="cb-table">
-          <thead>
-            <tr>
-              <th>Conta / Rubrica Orçamentária (RGF - Anexo 01)</th>
-              <th style="text-align:right;">Coluna / Período</th>
-              <th style="text-align:right;">Valor Apurado (R$)</th>
-            </tr>
-          </thead>
-          <tbody id="tbody-detalhes">
-            <!-- Inserido dinamicamente via JS -->
-          </tbody>
-        </table>
+      <div class="filter-pills">
+        <span style="font-size: 0.78rem; font-weight: 700; text-transform: uppercase; color: var(--cb-text-muted); margin-right: 4px;">Categorias:</span>
+        <button class="filter-btn active" data-category="todos">Todos (14)</button>
+        <button class="filter-btn" data-category="orcamento">Orçamento & Fiscal</button>
+        <button class="filter-btn" data-category="compras">Licitações & Compras</button>
+        <button class="filter-btn" data-category="contas">Julgamentos de Contas</button>
+        <button class="filter-btn" data-category="patrimonio">Patrimônio & Obras</button>
       </div>
-    </div>
+    </section>
 
-    <!-- ABA 3: DISPONIBILIDADE DE CAIXA (2º SEMESTRE) -->
-    <div id="tab-caixa" class="cb-tab-content">
-      <div class="cb-table-wrap">
-        <table class="cb-table">
-          <thead>
-            <tr>
-              <th>Fluxo de Caixa e Obrigações (RGF - Anexo 05)</th>
-              <th style="text-align:right;">Especificação</th>
-              <th style="text-align:right;">Valor (R$)</th>
-            </tr>
-          </thead>
-          <tbody id="tbody-caixa">
-            <!-- Inserido dinamicamente via JS -->
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <!-- Grade dos 14 Módulos de Transparência -->
+    <main class="modules-grid" id="gridModulos">
 
-    <!-- RODAPÉ DE TRANSPARÊNCIA E AUDITORIA -->
-    <footer class="cb-footer">
-      <div class="cb-footer-source">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="10"></circle>
-          <line x1="12" y1="16" x2="12" y2="12"></line>
-          <line x1="12" y1="8" x2="12.01" y2="8"></line>
-        </svg>
-        <span>Fonte Oficial: <strong>Secretaria do Tesouro Nacional (Siconfi / STN)</strong> • IBGE: <strong>4305871</strong></span>
+      <!-- 1. RGF -->
+      <a href="rgf.html" class="module-card" data-category="orcamento" data-keywords="rgf gestao fiscal lrf pessoal limites">
+        <div class="module-card-top">
+          <div class="module-header-row">
+            <div class="module-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <span class="module-category">LC nº 101/2000 (LRF)</span>
+          </div>
+          <h2 class="module-title">Relatório de Gestão Fiscal (RGF)</h2>
+          <p class="module-desc">
+            Demonstrativo da despesa total com pessoal, limites prudenciais, disponibilidade de caixa e margens fiscais semestrais da Câmara.
+          </p>
+          <div class="module-meta">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Despesa Pessoal: 2,11% (Limite máximo: 6,00%)
+          </div>
+        </div>
+        <div class="module-action">
+          <span>Consultar RGF</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+
+      <!-- 2. Balanços Anuais -->
+      <a href="balancos.html" class="module-card" data-category="orcamento" data-keywords="balancos contas anuais dca siconfi stn orcamentario patrimonial">
+        <div class="module-card-top">
+          <div class="module-header-row">
+            <div class="module-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <span class="module-category">Siconfi / STN</span>
+          </div>
+          <h2 class="module-title">Balanços e Contas Anuais (DCA)</h2>
+          <p class="module-desc">
+            Demonstrações Contábeis Aplicadas ao Setor Público: Balanço Patrimonial, Balanço Orçamentário, DVP e despesas por função.
+          </p>
+          <div class="module-meta">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            Declarações Anuais Homologadas (2021-2025)
+          </div>
+        </div>
+        <div class="module-action">
+          <span>Consultar Balanços</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+
+      <!-- 3. RREO -->
+      <a href="rreo.html" class="module-card" data-category="orcamento" data-keywords="rreo relatorio resumido execucao orcamentaria bimestral">
+        <div class="module-card-top">
+          <div class="module-header-row">
+            <div class="module-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+            </div>
+            <span class="module-category">Bimestral LRF</span>
+          </div>
+          <h2 class="module-title">Execução Orçamentária (RREO)</h2>
+          <p class="module-desc">
+            Relatório Resumido da Execução Orçamentária com a evolução bimestral da dotação, receitas e despesas por função e programa.
+          </p>
+          <div class="module-meta">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Acompanhamento Bimestre a Bimestre
+          </div>
+        </div>
+        <div class="module-action">
+          <span>Consultar RREO</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+
+      <!-- 4. Receitas e Duodécimo -->
+      <a href="receitas.html" class="module-card" data-category="orcamento" data-keywords="receitas duodecimo repasse prefeitura transferencias 29-a 168 devolucao">
+        <div class="module-card-top">
+          <div class="module-header-row">
+            <div class="module-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <span class="module-category">Arts. 168 e 29-A CF</span>
+          </div>
+          <h2 class="module-title">Receitas e Repasses do Duodécimo</h2>
+          <p class="module-desc">
+            Transferências financeiras mensais repassadas pelo Executivo até o dia 20, teto constitucional de 7% e histórico de devoluções.
+          </p>
+          <div class="module-meta">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            R$ 3,78M Devolvidos aos Cofres Públicos (43,4%)
+          </div>
+        </div>
+        <div class="module-action">
+          <span>Consultar Receitas</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+
+      <!-- 5. Licitações -->
+      <a href="licitacoes.html" class="module-card" data-category="compras" data-keywords="licitacoes editais dispensas inexigibilidades licitacon compras compras publicas">
+        <div class="module-card-top">
+          <div class="module-header-row">
+            <div class="module-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <span class="module-category">LicitaCon / TCE-RS</span>
+          </div>
+          <h2 class="module-title">Licitações e Processos de Contratação</h2>
+          <p class="module-desc">
+            Consulta integral aos processos licitatórios, dispensas e inexigibilidades com download direto de editais, atas e homologações.
+          </p>
+          <div class="module-meta">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+            32 Processos Cadastrados com PDFs Oficiais
+          </div>
+        </div>
+        <div class="module-action">
+          <span>Consultar Licitações</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+
+      <!-- 6. Contratos -->
+      <a href="contratos.html" class="module-card" data-category="compras" data-keywords="contratos aditivos vigencia fornecedores contratos administrativos licitacon">
+        <div class="module-card-top">
+          <div class="module-header-row">
+            <div class="module-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <span class="module-category">LicitaCon / TCE-RS</span>
+          </div>
+          <h2 class="module-title">Contratos Administrativos e Aditivos</h2>
+          <p class="module-desc">
+            Instrumentos contratuais celebrados pelo Legislativo, termos aditivos, controle automático de vigência e links aos editais vinculados.
+          </p>
+          <div class="module-meta">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            24 Contratos e Aditivos Monitorados
+          </div>
+        </div>
+        <div class="module-action">
+          <span>Consultar Contratos</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+
+      <!-- 7. Plano de Contratações Anual (PCA) -->
+      <a href="plano_contratacoes.html" class="module-card" data-category="compras" data-keywords="pca plano contratacoes anual pncp planejamento 14133 compras">
+        <div class="module-card-top">
+          <div class="module-header-row">
+            <div class="module-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <span class="module-category">Lei nº 14.133/2021 (NLLC)</span>
+          </div>
+          <h2 class="module-title">Plano de Contratações Anual (PCA)</h2>
+          <p class="module-desc">
+            Instrumento de planejamento e transparência prévia das contratações públicas, com virada automática de exercício e roadmap de etapas.
+          </p>
+          <div class="module-meta">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Plano 2027 em Elaboração • 2026 Não Instituído
+          </div>
+        </div>
+        <div class="module-action">
+          <span>Consultar PCA</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+
+      <!-- 8. Sanções Administrativas -->
+      <a href="sancoes.html" class="module-card" data-category="compras" data-keywords="sancoes inidoneidade ceis cnep cepim cgu tcu punicoes impedimento">
+        <div class="module-card-top">
+          <div class="module-header-row">
+            <div class="module-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <span class="module-category">CGU • TCE-RS • TCU</span>
+          </div>
+          <h2 class="module-title">Sanções e Inidoneidade</h2>
+          <p class="module-desc">
+            Certidão Negativa institucional da Câmara e central de consulta integrada aos 5 cadastros nacionais de empresas punidas e impedidas.
+          </p>
+          <div class="module-meta">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Certidão Negativa Válida • 5 Cadastros Nacionais
+          </div>
+        </div>
+        <div class="module-action">
+          <span>Consultar Sanções</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+
+      <!-- 9. Julgamentos Geral -->
+      <a href="julgamentos.html" class="module-card" data-category="contas" data-keywords="julgamentos contas pareceres previas tce-rs controle externo">
+        <div class="module-card-top">
+          <div class="module-header-row">
+            <div class="module-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <span class="module-category">TCE-RS Geral</span>
+          </div>
+          <h2 class="module-title">Julgamento de Contas (Geral)</h2>
+          <p class="module-desc">
+            Painel consolidado com todas as decisões, pareceres prévios e acórdãos emitidos pelo TCE-RS para o Município de Coronel Barros.
+          </p>
+          <div class="module-meta">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+            Câmara Municipal & Poder Executivo
+          </div>
+        </div>
+        <div class="module-action">
+          <span>Consultar Todas as Decisões</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+
+      <!-- 10. Contas da Câmara -->
+      <a href="julgamentos_camara.html" class="module-card" data-category="contas" data-keywords="contas camara presidente legislativo julgamento regulares tce-rs">
+        <div class="module-card-top">
+          <div class="module-header-row">
+            <div class="module-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span class="module-category">Legislativo Municipal</span>
+          </div>
+          <h2 class="module-title">Contas da Câmara Municipal</h2>
+          <p class="module-desc">
+            Julgamentos das contas anuais dos Presidentes da Casa Legislativa pelo Tribunal de Contas, com status de regularidade e acórdãos.
+          </p>
+          <div class="module-meta">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Contas Regulares Aprovadas pelo TCE-RS
+          </div>
+        </div>
+        <div class="module-action">
+          <span>Ver Contas da Câmara</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+
+      <!-- 11. Contas do Executivo -->
+      <a href="julgamentos_executivo.html" class="module-card" data-category="contas" data-keywords="contas executivo prefeito parecer previo tce-rs julgamento plenario">
+        <div class="module-card-top">
+          <div class="module-header-row">
+            <div class="module-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l8-4 8 4v14"/></svg>
+            </div>
+            <span class="module-category">Executivo Municipal</span>
+          </div>
+          <h2 class="module-title">Contas do Poder Executivo</h2>
+          <p class="module-desc">
+            Pareceres prévios emitidos pelo TCE-RS sobre as contas de governo do Prefeito Municipal e respectivo julgamento pelo Plenário da Câmara.
+          </p>
+          <div class="module-meta">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Pareceres Prévios do TCE-RS
+          </div>
+        </div>
+        <div class="module-action">
+          <span>Ver Contas do Executivo</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+
+      <!-- 12. Imóveis -->
+      <a href="imoveis.html" class="module-card" data-category="patrimonio" data-keywords="imoveis patrimonio sede predio aluguel cessao atricon bens moveis">
+        <div class="module-card-top">
+          <div class="module-header-row">
+            <div class="module-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l8-4 8 4v14M9 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8-8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
+            </div>
+            <span class="module-category">Patrimônio / PNTP</span>
+          </div>
+          <h2 class="module-title">Bens Imóveis e Sede</h2>
+          <p class="module-desc">
+            Informações sobre o prédio da Sede Legislativa, regime de cessão gratuita de uso, acessibilidade e série histórica (2021-2026).
+          </p>
+          <div class="module-meta">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Custo Zero de Aluguel • Sede Cedida pelo Município
+          </div>
+        </div>
+        <div class="module-action">
+          <span>Consultar Imóveis</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+
+      <!-- 13. Veículos -->
+      <a href="veiculos.html" class="module-card" data-category="patrimonio" data-keywords="veiculos frota carros oficial frota zero combustivel manutencao atricon">
+        <div class="module-card-top">
+          <div class="module-header-row">
+            <div class="module-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            </div>
+            <span class="module-category">Patrimônio / PNTP</span>
+          </div>
+          <h2 class="module-title">Frota Oficial de Veículos</h2>
+          <p class="module-desc">
+            Declaração de Frota Zero, notas de economicidade (custo zero com combustível e seguro) e série histórica comprovada no TCE-RS.
+          </p>
+          <div class="module-meta">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Frota Zero (2021 a 2026) • Economia Total
+          </div>
+        </div>
+        <div class="module-action">
+          <span>Consultar Veículos</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+
+      <!-- 14. Obras -->
+      <a href="obras.html" class="module-card" data-category="patrimonio" data-keywords="obras servicos engenharia construcao reformas atricon fiscalizacao">
+        <div class="module-card-top">
+          <div class="module-header-row">
+            <div class="module-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M5 20V8l7-5 7 5v12M9 13h6M9 17h6"/></svg>
+            </div>
+            <span class="module-category">Infraestrutura / PNTP</span>
+          </div>
+          <h2 class="module-title">Obras e Serviços de Engenharia</h2>
+          <p class="module-desc">
+            Declaração Negativa de Obras da Câmara, divisão constitucional de competências e canal direto de fiscalização das obras da Prefeitura.
+          </p>
+          <div class="module-meta">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            Série Histórica (2021-2026) • 0 Obras em Andamento
+          </div>
+        </div>
+        <div class="module-action">
+          <span>Consultar Obras</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+      </a>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="hub-footer">
+      <div class="footer-info">
+        <strong>Câmara Municipal de Coronel Barros - RS</strong><br>
+        Travessa 20 de Março, nº 001, Centro — CEP 98735-000 • Atendimento: Segunda a Sexta, das 08h às 12h e 13h30 às 17h30.<br>
+        Dados abertos em conformidade com a <strong>Lei nº 12.527/2011 (LAI)</strong>, <strong>LC nº 101/2000 (LRF)</strong> e <strong>PNTP / Atricon</strong>.
       </div>
-      <div class="cb-footer-sync">
-        <span>Última homologação detectada: <strong id="lbl-data-homologacao">--</strong></span>
+      <div class="footer-links">
+        <a href="https://coronelbarros.rs.leg.br/" target="_blank" rel="noopener noreferrer" class="footer-btn footer-btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Portal Oficial CMCB
+        </a>
+        <a href="https://dados.tce.rs.gov.br/" target="_blank" rel="noopener noreferrer" class="footer-btn footer-btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Dados Abertos TCE-RS
+        </a>
       </div>
     </footer>
-
   </div>
 
-  <!-- SCRIPT DE PROCESSAMENTO E INTERAÇÃO -->
   <script>
-    (function () {
-      let dadosGlobais = null;
-      let periodoSelecionado = null;
+    (function() {
+      // Elementos DOM
+      const inputPesquisa = document.getElementById('inputPesquisa');
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.module-card');
 
-      // Elementos do DOM
-      const selectExercicio = document.getElementById('select-exercicio');
-      const selectPeriodo = document.getElementById('select-periodo');
-      const statusBanner = document.getElementById('status-banner');
-      const statusTitulo = document.getElementById('status-titulo');
-      const statusDesc = document.getElementById('status-desc');
-      const statusTag = document.getElementById('status-tag');
-      const valDtp = document.getElementById('val-dtp');
-      const badgeDtpPct = document.getElementById('badge-dtp-pct');
-      const valRcl = document.getElementById('val-rcl');
-      const valLimiteMax = document.getElementById('val-limite-max');
-      const valFolga = document.getElementById('val-folga');
-      const badgeFolgaPct = document.getElementById('badge-folga-pct');
-      const thermoPointer = document.getElementById('thermo-pointer');
-      const thermoPointerLabel = document.getElementById('thermo-pointer-label');
-      const tbodyLrf = document.getElementById('tbody-lrf');
-      const tbodyDetalhes = document.getElementById('tbody-detalhes');
-      const tbodyCaixa = document.getElementById('tbody-caixa');
-      const btnTabCaixa = document.getElementById('btn-tab-caixa');
-      const lblDataHomologacao = document.getElementById('lbl-data-homologacao');
+      let categoriaAtiva = 'todos';
 
-      // Formatação Monetária BR
-      function formatMoney(value) {
-        if (value === null || value === undefined || isNaN(value)) return 'R$ 0,00';
-        return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      function filtrar() {
+        const termo = (inputPesquisa.value || '').trim().toLowerCase();
+
+        cards.forEach(card => {
+          const cardCat = card.getAttribute('data-category');
+          const cardKw = (card.getAttribute('data-keywords') || '').toLowerCase();
+          const cardTitle = card.querySelector('.module-title').textContent.toLowerCase();
+          const cardDesc = card.querySelector('.module-desc').textContent.toLowerCase();
+
+          const matchCat = (categoriaAtiva === 'todos' || cardCat === categoriaAtiva);
+          const matchTermo = (!termo || cardTitle.includes(termo) || cardDesc.includes(termo) || cardKw.includes(termo));
+
+          if (matchCat && matchTermo) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        notificarAltura();
       }
 
-      function formatPct(value) {
-        if (value === null || value === undefined || isNaN(value)) return '0,00%';
-        return value.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '%';
+      // Eventos de filtro por botão
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          categoriaAtiva = btn.getAttribute('data-category');
+          filtrar();
+        });
+      });
+
+      // Evento de pesquisa por texto
+      inputPesquisa.addEventListener('input', filtrar);
+
+      // Trava matemática anti-loop de redimensionamento
+      let lastHeight = 0;
+      let resizeTimeout = null;
+
+      function notificarAltura() {
+        if (resizeTimeout) clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+          const app = document.getElementById('app');
+          if (!app) return;
+          const height = Math.ceil(app.getBoundingClientRect().height);
+          if (Math.abs(height - lastHeight) > 4) {
+            lastHeight = height;
+            if (window.parent && window.parent !== window) {
+              window.parent.postMessage({ type: 'cb-resize', height: height }, '*');
+            }
+          }
+        }, 50);
       }
 
-      function formatDate(isoStr) {
-        if (!isoStr) return 'Data não informada';
-        try {
-          const d = new Date(isoStr);
-          return d.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
-        } catch {
-          return isoStr;
-        }
+      if (window.ResizeObserver) {
+        const ro = new ResizeObserver(() => notificarAltura());
+        const appElem = document.getElementById('app');
+        if (appElem) ro.observe(appElem);
+      } else {
+        window.addEventListener('resize', notificarAltura);
       }
 
-      // Notificar altura ao iframe pai com proteção estrita contra loop de redimensionamento
-      let lastSentHeight = 0;
-      let resizeDebounceTimer = null;
-
-      
-      // Encaminhar eventos da roda do mouse para a janela mãe (quando em iframe)
+      // Repasse de eventos da roda do mouse para a janela mãe (se estiver em iframe)
       window.addEventListener('wheel', function(e) {
         if (window.parent && window.parent !== window) {
           window.parent.postMessage({
@@ -1023,265 +971,7 @@
         }
       }, { passive: true });
 
-      function notificarAltura() {
-        clearTimeout(resizeDebounceTimer);
-        resizeDebounceTimer = setTimeout(() => {
-          const app = document.getElementById('app');
-          if (!app) return;
-
-          // Mede o elemento container #app especificamente, nunca o body/documentElement
-          const rect = app.getBoundingClientRect();
-          const height = Math.ceil(rect.height);
-
-          // Corta loops infinitos: só dispara se a diferença real for maior que 4 pixels
-          if (Math.abs(height - lastSentHeight) > 4) {
-            lastSentHeight = height;
-            if (window.parent && window.parent !== window) {
-              window.parent.postMessage({ type: 'cb-resize', height: height }, '*');
-            }
-          }
-        }, 50);
-      }
-
-      // Observador de mutações no container de conteúdo (só dispara quando o conteúdo muda)
-      if (window.ResizeObserver) {
-        const ro = new ResizeObserver(() => notificarAltura());
-        const appElem = document.getElementById('app');
-        if (appElem) ro.observe(appElem);
-      } else {
-        window.addEventListener('resize', notificarAltura);
-      }
-
-      // Carregar os dados
-      async function carregarDados() {
-        try {
-          const resp = await fetch('./data/rgf.json?t=' + Date.now());
-          if (!resp.ok) throw new Error('Não foi possível ler o arquivo rgf.json');
-          dadosGlobais = await resp.json();
-          inicializarInterface();
-        } catch (err) {
-          console.error('Erro ao carregar dados:', err);
-          statusBanner.className = 'cb-status-banner status-alerta';
-          statusTitulo.textContent = 'Carregando dados fiscais...';
-          statusDesc.textContent = 'Aguarde um momento ou recarregue a página.';
-        }
-      }
-
-      function inicializarInterface() {
-        if (!dadosGlobais || !dadosGlobais.periodos || dadosGlobais.periodos.length === 0) return;
-
-        // Popula os Anos
-        const anos = dadosGlobais.metadata.exercicios_disponiveis || [];
-        selectExercicio.innerHTML = '';
-        anos.forEach(ano => {
-          const opt = document.createElement('option');
-          opt.value = ano;
-          opt.textContent = ano;
-          selectExercicio.appendChild(opt);
-        });
-
-        // Eventos
-        selectExercicio.addEventListener('change', () => atualizarOpcoesPeriodo());
-        selectPeriodo.addEventListener('change', () => renderizarPeriodo());
-
-        atualizarOpcoesPeriodo();
-      }
-
-      function atualizarOpcoesPeriodo() {
-        const ano = parseInt(selectExercicio.value, 10);
-        const periodosAno = dadosGlobais.periodos.filter(p => p.exercicio === ano);
-
-        selectPeriodo.innerHTML = '';
-        periodosAno.forEach(p => {
-          const opt = document.createElement('option');
-          opt.value = p.periodo;
-          opt.textContent = `${p.periodo}º Semestre`;
-          selectPeriodo.appendChild(opt);
-        });
-
-        renderizarPeriodo();
-      }
-
-      function renderizarPeriodo() {
-        const ano = parseInt(selectExercicio.value, 10);
-        const periodo = parseInt(selectPeriodo.value, 10);
-        const registro = dadosGlobais.periodos.find(p => p.exercicio === ano && p.periodo === periodo);
-
-        if (!registro) return;
-        periodoSelecionado = registro;
-
-        const lrf = registro.lrf;
-
-        // 1. Atualizar Métricas Centrais
-        valDtp.textContent = formatMoney(lrf.dtp_valor);
-        badgeDtpPct.textContent = formatPct(lrf.dtp_percentual);
-
-        valRcl.textContent = formatMoney(lrf.rcl_ajustada || lrf.rcl);
-        valLimiteMax.textContent = formatMoney(lrf.limite_maximo_valor);
-
-        valFolga.textContent = formatMoney(lrf.margem_maxima_valor);
-        const folgaPct = Math.max(0, 6.00 - lrf.dtp_percentual);
-        badgeFolgaPct.textContent = formatPct(folgaPct);
-
-        // 2. Banner de Situação
-        statusBanner.className = 'cb-status-banner ' + lrf.situacao_classe;
-        statusTitulo.textContent = `Situação Fiscal: ${lrf.situacao}`;
-        
-        if (lrf.dtp_percentual <= 5.40) {
-          statusDesc.textContent = `O Poder Legislativo utilizou apenas ${formatPct(lrf.dtp_percentual)} da receita, restando folga orçamentária expressiva de ${formatPct(folgaPct)} até o teto legal.`;
-          statusTag.className = 'cb-pill cb-pill-ok';
-          statusTag.textContent = 'Em Conformidade';
-        } else if (lrf.dtp_percentual <= 5.70) {
-          statusDesc.textContent = `Atenção: A despesa ultrapassou o Limite de Alerta (5,40%). Recomenda-se acompanhamento prudente.`;
-          statusTag.className = 'cb-pill';
-          statusTag.style.cssText = 'background:#FEF3C7; color:#92400E;';
-          statusTag.textContent = 'Alerta LRF';
-        } else if (lrf.dtp_percentual <= 6.00) {
-          statusDesc.textContent = `Aviso: A despesa ultrapassou o Limite Prudencial (5,70%). Vedações do art. 22 da LRF são aplicáveis.`;
-          statusTag.className = 'cb-pill';
-          statusTag.style.cssText = 'background:#FFEDD5; color:#9A3412;';
-          statusTag.textContent = 'Limite Prudencial';
-        } else {
-          statusDesc.textContent = `Crítico: A despesa superou o Limite Máximo da LRF (6,00%). Medidas do art. 23 da LRF devem ser adotadas.`;
-          statusTag.className = 'cb-pill';
-          statusTag.style.cssText = 'background:#FEE2E2; color:#991B1B;';
-          statusTag.textContent = 'Limite Ultrapassado';
-        }
-
-        // 3. Atualizar Termômetro
-        // Escala: 0 a 6.50%
-        const maxEscala = 6.50;
-        let posPct = (lrf.dtp_percentual / maxEscala) * 100;
-        posPct = Math.min(Math.max(posPct, 2), 98); // limites visuais
-        thermoPointer.style.left = posPct + '%';
-        thermoPointerLabel.textContent = `Câmara: ${formatPct(lrf.dtp_percentual)}`;
-
-        // 4. Preencher Tabela 1: Limites da LRF
-        tbodyLrf.innerHTML = `
-          <tr>
-            <td><strong>Receita Corrente Líquida - RCL</strong></td>
-            <td class="col-num">${formatMoney(lrf.rcl)}</td>
-            <td class="col-num">-</td>
-          </tr>
-          <tr>
-            <td><strong>Receita Corrente Líquida Ajustada</strong> (Base de Cálculo para Pessoal)</td>
-            <td class="col-num"><strong>${formatMoney(lrf.rcl_ajustada || lrf.rcl)}</strong></td>
-            <td class="col-num"><strong>100,00%</strong></td>
-          </tr>
-          <tr class="row-total">
-            <td><strong>DESPESA TOTAL COM PESSOAL - DTP</strong></td>
-            <td class="col-num"><strong>${formatMoney(lrf.dtp_valor)}</strong></td>
-            <td class="col-num"><strong>${formatPct(lrf.dtp_percentual)}</strong></td>
-          </tr>
-          <tr>
-            <td>Limite de Alerta (inciso II do §1º do art. 59 da LRF) - 90%</td>
-            <td class="col-num">${formatMoney(lrf.limite_alerta_valor)}</td>
-            <td class="col-num">5,40%</td>
-          </tr>
-          <tr>
-            <td>Limite Prudencial (parágrafo único do art. 22 da LRF) - 95%</td>
-            <td class="col-num">${formatMoney(lrf.limite_prudencial_valor)}</td>
-            <td class="col-num">5,70%</td>
-          </tr>
-          <tr style="background:#F0FDF4; font-weight:600;">
-            <td>Limite Máximo (incisos I, II e III do art. 20 da LRF) - 100%</td>
-            <td class="col-num">${formatMoney(lrf.limite_maximo_valor)}</td>
-            <td class="col-num">6,00%</td>
-          </tr>
-          <tr>
-            <td>Folga Orçamentária até o Limite Máximo</td>
-            <td class="col-num" style="color:var(--cb-green-primary);">${formatMoney(lrf.margem_maxima_valor)}</td>
-            <td class="col-num" style="color:var(--cb-green-primary);">${formatPct(folgaPct)}</td>
-          </tr>
-        `;
-
-        // 5. Preencher Tabela 2: Detalhamento de Pessoal
-        if (registro.detalhamento_pessoal && registro.detalhamento_pessoal.length > 0) {
-          tbodyDetalhes.innerHTML = registro.detalhamento_pessoal
-            .filter(item => item.coluna === 'Valor' || !item.coluna)
-            .map(item => `
-              <tr>
-                <td>${item.conta}</td>
-                <td class="col-num" style="font-size:0.78rem; color:var(--cb-text-muted);">${item.coluna || 'Valor'}</td>
-                <td class="col-num">${formatMoney(item.valor)}</td>
-              </tr>
-            `).join('');
-        } else {
-          tbodyDetalhes.innerHTML = '<tr><td colspan="3" style="text-align:center; padding:20px;">Nenhum detalhamento disponível para este período.</td></tr>';
-        }
-
-        // 6. Preencher Tabela 3: Disponibilidade de Caixa (se houver)
-        if (registro.disponibilidade_caixa && registro.disponibilidade_caixa.length > 0) {
-          btnTabCaixa.style.display = 'inline-block';
-          tbodyCaixa.innerHTML = registro.disponibilidade_caixa.map(item => `
-            <tr>
-              <td>${item.conta}</td>
-              <td class="col-num" style="font-size:0.78rem; color:var(--cb-text-muted);">${item.coluna || '-'}</td>
-              <td class="col-num">${formatMoney(item.valor)}</td>
-            </tr>
-          `).join('');
-        } else {
-          btnTabCaixa.style.display = 'none';
-        }
-
-        // 7. Rodapé de Homologação
-        lblDataHomologacao.textContent = formatDate(registro.data_status);
-
-        // Notificar altura
-        setTimeout(notificarAltura, 100);
-      }
-
-      // Abas
-      document.querySelectorAll('.cb-tab-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-          document.querySelectorAll('.cb-tab-btn').forEach(b => b.classList.remove('active'));
-          document.querySelectorAll('.cb-tab-content').forEach(c => c.classList.remove('active'));
-
-          btn.classList.add('active');
-          const target = document.getElementById(btn.dataset.tab);
-          if (target) target.classList.add('active');
-          notificarAltura();
-        });
-      });
-
-      // Exportar CSV
-      document.getElementById('btn-export-csv').addEventListener('click', () => {
-        if (!periodoSelecionado) return;
-        const lrf = periodoSelecionado.lrf;
-        const linhas = [
-          ['Demonstrativo da Despesa com Pessoal (RGF) - Câmara Municipal de Coronel Barros'],
-          ['Período:', periodoSelecionado.periodo_rotulo],
-          ['Data de Homologação:', formatDate(periodoSelecionado.data_status)],
-          [''],
-          ['Rubrica', 'Valor (R$)', '% RCL Ajustada'],
-          ['Receita Corrente Líquida (RCL)', lrf.rcl, ''],
-          ['Receita Corrente Líquida Ajustada', lrf.rcl_ajustada, '100%'],
-          ['Despesa Total com Pessoal (DTP)', lrf.dtp_valor, `${lrf.dtp_percentual}%`],
-          ['Limite de Alerta (5,40%)', lrf.limite_alerta_valor, '5.40%'],
-          ['Limite Prudencial (5,70%)', lrf.limite_prudencial_valor, '5.70%'],
-          ['Limite Máximo (6,00%)', lrf.limite_maximo_valor, '6.00%'],
-          ['Margem até Limite Máximo', lrf.margem_maxima_valor, `${Math.max(0, 6 - lrf.dtp_percentual).toFixed(2)}%`],
-          ['Situação:', lrf.situacao]
-        ];
-
-        const csvContent = '\uFEFF' + linhas.map(e => e.map(val => `"${val}"`).join(';')).join('\n');
-        const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-        const url = URL.createObjectURL(blob);
-        const link = document.createElement('a');
-        link.setAttribute('href', url);
-        link.setAttribute('download', `RGF_Camara_Coronel_Barros_${periodoSelecionado.exercicio}_S${periodoSelecionado.periodo}.csv`);
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      });
-
-      // Imprimir
-      document.getElementById('btn-imprimir').addEventListener('click', () => {
-        window.print();
-      });
-
-      // Inicia
-      carregarDados();
+      notificarAltura();
     })();
   </script>
 </body>
