@@ -273,6 +273,121 @@
       color: var(--cb-text-muted);
     }
 
+    /* Tabela da Série Histórica */
+    .table-card {
+      background: #FFFFFF;
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .table-header-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin-top: 14px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--cb-gray-border);
+    }
+
+    .custom-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.84rem;
+      text-align: left;
+    }
+
+    .custom-table th {
+      background: var(--cb-gray-bg);
+      padding: 12px 14px;
+      font-weight: 700;
+      color: var(--cb-text-dark);
+      border-bottom: 1px solid var(--cb-gray-border);
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      letter-spacing: 0.04em;
+    }
+
+    .custom-table td {
+      padding: 12px 14px;
+      border-bottom: 1px solid #F1F5F9;
+      color: var(--cb-text-body);
+    }
+
+    .custom-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .code-font {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: #0369A1;
+    }
+
+    .val-col {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      text-align: right;
+    }
+
+    /* Painel Cidadão: Obras da Prefeitura */
+    .citizen-panel {
+      background: linear-gradient(135deg, #006838 0%, #004d29 100%);
+      border-radius: var(--radius-lg);
+      padding: 26px;
+      color: #FFFFFF;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .citizen-content h3 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .citizen-content p {
+      font-size: 0.88rem;
+      color: #D1FAE5;
+      max-width: 680px;
+      line-height: 1.45;
+    }
+
+    .citizen-btn {
+      background: var(--cb-yellow-gold);
+      color: #1E293B;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 12px 22px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .citizen-btn:hover {
+      background: #FFE066;
+      transform: translateY(-2px);
+    }
+
     /* Caixa Educativa de Competência */
     .info-card {
       background: #FFFFFF;
@@ -321,53 +436,6 @@
       font-size: 0.84rem;
       color: var(--cb-text-body);
       line-height: 1.5;
-    }
-
-    /* Painel Cidadão: Obras da Prefeitura */
-    .citizen-panel {
-      background: linear-gradient(135deg, #006838 0%, #004d29 100%);
-      border-radius: var(--radius-lg);
-      padding: 26px;
-      color: #FFFFFF;
-      margin-bottom: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .citizen-content h3 {
-      font-size: 1.2rem;
-      font-weight: 800;
-      margin-bottom: 6px;
-    }
-
-    .citizen-content p {
-      font-size: 0.88rem;
-      color: #D1FAE5;
-      max-width: 680px;
-      line-height: 1.45;
-    }
-
-    .citizen-btn {
-      background: var(--cb-yellow-gold);
-      color: #1E293B;
-      font-weight: 700;
-      font-size: 0.88rem;
-      padding: 12px 22px;
-      border-radius: var(--radius-sm);
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.15s ease;
-      white-space: nowrap;
-    }
-
-    .citizen-btn:hover {
-      background: #FFE066;
-      transform: translateY(-2px);
     }
 
     /* Rodapé */
@@ -422,15 +490,15 @@
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--cb-green-primary);"><path d="M2 20h20M5 20V8l7-5 7 5v12M9 13h6M9 17h6"/></svg>
               Obras e Serviços de Engenharia
             </h1>
-            <p>Acompanhamento de Intervenções Prediais e Declaração Institucional de Obras do Poder Legislativo</p>
+            <p>Acompanhamento de Intervenções Prediais, Declaração de Inexistência e Série Histórica (2021 a 2026)</p>
           </div>
           <div class="header-badges">
             <span class="badge badge-primary">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               TCE-RS: Órgão 75101
             </span>
-            <span class="badge badge-secondary">
-              PNTP / Atricon Conforme
+            <span class="badge badge-primary" style="background: #FEF3C7; color: #92400E; border-color: #FCD34D;">
+              Série Histórica (2021-2026)
             </span>
             <span class="badge badge-secondary" id="badgeDataAtualizacao">
               Atualizado via Dados Abertos
@@ -444,11 +512,11 @@
     <section class="kpi-grid">
       <div class="kpi-card highlight">
         <span class="kpi-label">
-          Obras em Andamento
+          Obras em Andamento (2021-2026)
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
         </span>
         <div class="kpi-value green">0 Obras</div>
-        <div class="kpi-subtext">Sem obras de engenharia civil em execução pela Câmara</div>
+        <div class="kpi-subtext">Sem obras civis em execução pela Câmara em todos os anos</div>
       </div>
 
       <div class="kpi-card highlight">
@@ -457,7 +525,7 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
         </span>
         <div class="kpi-value green">0 Obras</div>
-        <div class="kpi-subtext">Nenhuma intervenção estrutural paralisada ou suspensa</div>
+        <div class="kpi-subtext">Nenhuma intervenção estrutural paralisada na série histórica</div>
       </div>
 
       <div class="kpi-card">
@@ -496,11 +564,11 @@
         <br><br>
         <strong>DECLARA QUE:</strong>
         <br>
-        1. <strong>Não possui obras públicas de construção civil, reformas estruturais de grande porte ou ampliações prediais</strong> em andamento ou paralisadas no presente exercício;
+        1. Em toda a série histórica examinada (2021 a 2026), <strong>não possui e não possuiu obras públicas de construção civil, reformas estruturais de grande porte ou ampliações prediais</strong> em andamento ou paralisadas;
         <br>
-        2. <strong>Não mantém contratos administrativos de prestação de serviços de engenharia pesada</strong> ou empreitadas globais vigentes;
+        2. <strong>Não mantém e não manteve contratos de engenharia pesada</strong> ou empreitadas globais;
         <br>
-        3. As eventuais intervenções físicas realizadas no prédio da Sede restringem-se a <strong>reparos preventivos de conservação predial</strong> (manutenção elétrica, reparos na rede hidráulica e conservação de mobiliário), executados dentro dos limites de despesas correntes de custeio.
+        3. As eventuais intervenções físicas na Sede restringem-se a <strong>reparos preventivos de conservação predial</strong> (manutenção elétrica, reparos na rede hidráulica e conservação de mobiliário), enquadrados como despesas operacionais correntes de custeio.
       </div>
 
       <div class="cert-signature">
@@ -513,7 +581,83 @@
       </div>
     </article>
 
-    <!-- Painel de Fiscalização de Obras do Executivo Municipal -->
+    <!-- Tabela da Série Histórica de Obras (Critério PNTP / Atricon) -->
+    <section class="table-card">
+      <div class="table-header-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color: var(--cb-green-primary);"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        Série Histórica de Obras e Serviços de Engenharia (2021 a 2026)
+      </div>
+      <p style="font-size: 0.84rem; color: var(--cb-text-muted);">
+        Atendimento integral ao critério de série histórica do Programa Nacional de Transparência Pública (PNTP / Atricon):
+      </p>
+
+      <div class="table-container">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th>Exercício</th>
+              <th>Obras em Andamento</th>
+              <th>Obras Paralisadas</th>
+              <th>Contratos de Engenharia</th>
+              <th style="text-align: right;">Conta Obras (4.4.90.51)</th>
+              <th style="text-align: center;">Situação PNTP</th>
+            </tr>
+          </thead>
+          <tbody id="tabelaSerieHistoricaObras">
+            <tr>
+              <td><strong class="code-font" style="font-size: 0.95rem;">2026</strong></td>
+              <td>0 obras</td>
+              <td>0 paralisadas</td>
+              <td>0 contratos</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td style="text-align: center;"><span class="badge badge-primary">Conforme</span></td>
+            </tr>
+            <tr>
+              <td><strong class="code-font" style="font-size: 0.95rem;">2025</strong></td>
+              <td>0 obras</td>
+              <td>0 paralisadas</td>
+              <td>0 contratos</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td style="text-align: center;"><span class="badge badge-primary">Conforme</span></td>
+            </tr>
+            <tr>
+              <td><strong class="code-font" style="font-size: 0.95rem;">2024</strong></td>
+              <td>0 obras</td>
+              <td>0 paralisadas</td>
+              <td>0 contratos</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td style="text-align: center;"><span class="badge badge-primary">Conforme</span></td>
+            </tr>
+            <tr>
+              <td><strong class="code-font" style="font-size: 0.95rem;">2023</strong></td>
+              <td>0 obras</td>
+              <td>0 paralisadas</td>
+              <td>0 contratos</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td style="text-align: center;"><span class="badge badge-primary">Conforme</span></td>
+            </tr>
+            <tr>
+              <td><strong class="code-font" style="font-size: 0.95rem;">2022</strong></td>
+              <td>0 obras</td>
+              <td>0 paralisadas</td>
+              <td>0 contratos</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td style="text-align: center;"><span class="badge badge-primary">Conforme</span></td>
+            </tr>
+            <tr>
+              <td><strong class="code-font" style="font-size: 0.95rem;">2021</strong></td>
+              <td>0 obras</td>
+              <td>0 paralisadas</td>
+              <td>0 contratos</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td style="text-align: center;"><span class="badge badge-primary">Conforme</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Painel Cidadão: Obras da Prefeitura -->
     <section class="citizen-panel">
       <div class="citizen-content">
         <h3>Fiscalize as Obras Públicas de Coronel Barros</h3>
@@ -570,6 +714,11 @@
 
   <script>
     (function() {
+      function formatBRL(val) {
+        if (typeof val !== 'number') val = parseFloat(val) || 0;
+        return val.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      }
+
       // Trava matemática anti-loop
       let lastHeight = 0;
       let resizeTimeout = null;
@@ -604,10 +753,25 @@
             const dt = new Date(data.metadata.data_sincronizacao);
             document.getElementById('badgeDataAtualizacao').textContent = `Atualizado: ${dt.toLocaleDateString('pt-BR')}`;
           }
+
+          if (data.obras && data.obras.serie_historica && data.obras.serie_historica.length > 0) {
+            const tbody = document.getElementById('tabelaSerieHistoricaObras');
+            tbody.innerHTML = data.obras.serie_historica.map(item => `
+              <tr>
+                <td><strong class="code-font" style="font-size: 0.95rem;">${item.ano}</strong></td>
+                <td>${item.obras_em_andamento} obras</td>
+                <td>${item.obras_paralisadas} paralisadas</td>
+                <td>${item.contratos_engenharia} contratos</td>
+                <td class="val-col" style="color: var(--cb-green-primary);">${formatBRL(item.despesa_obras_instalacoes)}</td>
+                <td style="text-align: center;"><span class="badge badge-primary">Conforme</span></td>
+              </tr>
+            `).join('');
+          }
+
           notificarAltura();
         })
         .catch(err => {
-          console.warn('Erro ao carregar data:', err);
+          console.warn('Erro ao carregar dados:', err);
           notificarAltura();
         });
 

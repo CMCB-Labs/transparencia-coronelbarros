@@ -273,6 +273,74 @@
       color: var(--cb-text-muted);
     }
 
+    /* Tabela da Série Histórica */
+    .table-card {
+      background: #FFFFFF;
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .table-header-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin-top: 14px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--cb-gray-border);
+    }
+
+    .custom-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.84rem;
+      text-align: left;
+    }
+
+    .custom-table th {
+      background: var(--cb-gray-bg);
+      padding: 12px 14px;
+      font-weight: 700;
+      color: var(--cb-text-dark);
+      border-bottom: 1px solid var(--cb-gray-border);
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      letter-spacing: 0.04em;
+    }
+
+    .custom-table td {
+      padding: 12px 14px;
+      border-bottom: 1px solid #F1F5F9;
+      color: var(--cb-text-body);
+    }
+
+    .custom-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .code-font {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: #0369A1;
+    }
+
+    .val-col {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      text-align: right;
+    }
+
     /* Caixa Pedagógica de Economicidade */
     .info-card {
       background: #FFFFFF;
@@ -375,15 +443,15 @@
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--cb-green-primary);"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
               Frota Oficial de Veículos
             </h1>
-            <p>Demonstrativo Patrimonial e Declaração Institucional de Frota do Poder Legislativo</p>
+            <p>Demonstrativo Patrimonial, Declaração de Frota Zero e Série Histórica (2021 a 2026)</p>
           </div>
           <div class="header-badges">
             <span class="badge badge-primary">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               TCE-RS: Órgão 75101
             </span>
-            <span class="badge badge-secondary">
-              PNTP / Atricon Conforme
+            <span class="badge badge-primary" style="background: #FEF3C7; color: #92400E; border-color: #FCD34D;">
+              Série Histórica (2021-2026)
             </span>
             <span class="badge badge-secondary" id="badgeDataAtualizacao">
               Atualizado via Dados Abertos
@@ -397,11 +465,11 @@
     <section class="kpi-grid">
       <div class="kpi-card highlight">
         <span class="kpi-label">
-          Veículos Próprios
+          Veículos Próprios (2021-2026)
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
         </span>
         <div class="kpi-value green">0 Veículos</div>
-        <div class="kpi-subtext"><strong>Frota Zero:</strong> Inexistência de frota automotiva própria</div>
+        <div class="kpi-subtext"><strong>Frota Zero:</strong> Inexistência de frota própria em todos os anos</div>
       </div>
 
       <div class="kpi-card highlight">
@@ -410,7 +478,7 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
         </span>
         <div class="kpi-value green">0 Locações</div>
-        <div class="kpi-subtext">Nenhum veículo alugado ou terceirizado</div>
+        <div class="kpi-subtext">Nenhum veículo alugado ou terceirizado na série histórica</div>
       </div>
 
       <div class="kpi-card">
@@ -449,9 +517,9 @@
         <br><br>
         <strong>CERTIFICA QUE:</strong>
         <br>
-        1. <strong>Não possui veículos automotores próprios</strong> integrados ao seu Ativo Imobilizado (Conta PCASP <code>1.2.3.1.1.04.00.00.00 - Veículos em Geral: Saldo R$ 0,00</code>);
+        1. Em toda a série histórica analisada (2021 a 2026), <strong>não possui e não possuiu veículos automotores próprios</strong> integrados ao seu Ativo Imobilizado (Conta PCASP <code>1.2.3.1.1.04.00.00.00 - Veículos em Geral: Saldo R$ 0,00</code>);
         <br>
-        2. <strong>Não mantém contratos de locação, comodato ou terceirização de veículos</strong> em vigor;
+        2. <strong>Não mantém e não manteve contratos de locação, comodato ou terceirização de veículos</strong>;
         <br>
         3. <strong>Não realiza despesas com aquisição de combustíveis, lubrificantes, seguros veiculares ou manutenção mecânica</strong> de frota oficial.
       </div>
@@ -465,6 +533,89 @@
         </div>
       </div>
     </article>
+
+    <!-- Tabela da Série Histórica da Frota (Critério PNTP / Atricon) -->
+    <section class="table-card">
+      <div class="table-header-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color: var(--cb-green-primary);"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        Série Histórica da Frota Oficial e Despesas Correlatas (2021 a 2026)
+      </div>
+      <p style="font-size: 0.84rem; color: var(--cb-text-muted);">
+        Atendimento integral ao critério de série histórica do Programa Nacional de Transparência Pública (PNTP / Atricon):
+      </p>
+
+      <div class="table-container">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th>Exercício</th>
+              <th>Frota Própria</th>
+              <th>Veículos Locados</th>
+              <th style="text-align: right;">Gasto Combustível</th>
+              <th style="text-align: right;">Gasto Manutenção</th>
+              <th style="text-align: right;">Conta PCASP Veículos</th>
+              <th style="text-align: center;">Situação PNTP</th>
+            </tr>
+          </thead>
+          <tbody id="tabelaSerieHistoricaVeiculos">
+            <tr>
+              <td><strong class="code-font" style="font-size: 0.95rem;">2026</strong></td>
+              <td>0 veículos</td>
+              <td>0 locados</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td class="val-col">R$ 0,00</td>
+              <td style="text-align: center;"><span class="badge badge-primary">Frota Zero</span></td>
+            </tr>
+            <tr>
+              <td><strong class="code-font" style="font-size: 0.95rem;">2025</strong></td>
+              <td>0 veículos</td>
+              <td>0 locados</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td class="val-col">R$ 0,00</td>
+              <td style="text-align: center;"><span class="badge badge-primary">Frota Zero</span></td>
+            </tr>
+            <tr>
+              <td><strong class="code-font" style="font-size: 0.95rem;">2024</strong></td>
+              <td>0 veículos</td>
+              <td>0 locados</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td class="val-col">R$ 0,00</td>
+              <td style="text-align: center;"><span class="badge badge-primary">Frota Zero</span></td>
+            </tr>
+            <tr>
+              <td><strong class="code-font" style="font-size: 0.95rem;">2023</strong></td>
+              <td>0 veículos</td>
+              <td>0 locados</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td class="val-col">R$ 0,00</td>
+              <td style="text-align: center;"><span class="badge badge-primary">Frota Zero</span></td>
+            </tr>
+            <tr>
+              <td><strong class="code-font" style="font-size: 0.95rem;">2022</strong></td>
+              <td>0 veículos</td>
+              <td>0 locados</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td class="val-col">R$ 0,00</td>
+              <td style="text-align: center;"><span class="badge badge-primary">Frota Zero</span></td>
+            </tr>
+            <tr>
+              <td><strong class="code-font" style="font-size: 0.95rem;">2021</strong></td>
+              <td>0 veículos</td>
+              <td>0 locados</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td class="val-col">R$ 0,00</td>
+              <td style="text-align: center;"><span class="badge badge-primary">Frota Zero</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
     <!-- Por que a Câmara não possui frota própria? -->
     <section class="info-card">
@@ -523,6 +674,11 @@
 
   <script>
     (function() {
+      function formatBRL(val) {
+        if (typeof val !== 'number') val = parseFloat(val) || 0;
+        return val.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      }
+
       // Trava matemática anti-loop
       let lastHeight = 0;
       let resizeTimeout = null;
@@ -550,7 +706,7 @@
         window.addEventListener('resize', notificarAltura);
       }
 
-      // Atualizar data de sincronização se houver
+      // Atualizar dados de patrimonio.json
       fetch('data/patrimonio.json')
         .then(res => res.json())
         .then(data => {
@@ -558,10 +714,26 @@
             const dt = new Date(data.metadata.data_sincronizacao);
             document.getElementById('badgeDataAtualizacao').textContent = `Atualizado: ${dt.toLocaleDateString('pt-BR')}`;
           }
+
+          if (data.veiculos && data.veiculos.serie_historica && data.veiculos.serie_historica.length > 0) {
+            const tbody = document.getElementById('tabelaSerieHistoricaVeiculos');
+            tbody.innerHTML = data.veiculos.serie_historica.map(item => `
+              <tr>
+                <td><strong class="code-font" style="font-size: 0.95rem;">${item.ano}</strong></td>
+                <td>${item.frota_propria} veículos</td>
+                <td>${item.frota_locada} locados</td>
+                <td class="val-col" style="color: var(--cb-green-primary);">${formatBRL(item.despesa_combustivel)}</td>
+                <td class="val-col" style="color: var(--cb-green-primary);">${formatBRL(item.despesa_manutencao)}</td>
+                <td class="val-col">${formatBRL(item.saldo_ativo_veiculos)}</td>
+                <td style="text-align: center;"><span class="badge badge-primary">Frota Zero</span></td>
+              </tr>
+            `).join('');
+          }
+
           notificarAltura();
         })
         .catch(err => {
-          console.warn('Erro ao carregar data:', err);
+          console.warn('Erro ao carregar dados:', err);
           notificarAltura();
         });
 

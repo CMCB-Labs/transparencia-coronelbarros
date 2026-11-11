@@ -310,7 +310,7 @@
       line-height: 1.45;
     }
 
-    /* Tabela de Inventário */
+    /* Tabela de Inventário e Série Histórica */
     .table-card {
       background: #FFFFFF;
       border: 1px solid var(--cb-gray-border);
@@ -430,15 +430,15 @@
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--cb-green-primary);"><path d="M3 21h18M5 21V7l8-4 8 4v14M9 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8-8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
               Bens Imóveis e Sede Legislativa
             </h1>
-            <p>Relação de Bens Imóveis sob Uso, Posse ou Propriedade da Câmara Municipal de Coronel Barros - RS</p>
+            <p>Relação de Bens Imóveis e Série Histórica Patrimonial (2021 a 2026) da Câmara Municipal de Coronel Barros</p>
           </div>
           <div class="header-badges">
             <span class="badge badge-primary">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               TCE-RS: Órgão 75101
             </span>
-            <span class="badge badge-secondary">
-              PNTP / Atricon Conforme
+            <span class="badge badge-primary" style="background: #FEF3C7; color: #92400E; border-color: #FCD34D;">
+              Série Histórica (2021-2026)
             </span>
             <span class="badge badge-secondary" id="badgeSincronizacao">
               Atualizado via Dados Abertos
@@ -461,11 +461,11 @@
 
       <div class="kpi-card highlight">
         <span class="kpi-label">
-          Custo com Locação
+          Custo com Locação (2021-2026)
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
         </span>
         <div class="kpi-value green">R$ 0,00</div>
-        <div class="kpi-subtext"><strong>100% de economia:</strong> Sem pagamento de aluguel a particulares</div>
+        <div class="kpi-subtext"><strong>100% de economia:</strong> Sem pagamento de aluguel em todos os anos</div>
       </div>
 
       <div class="kpi-card">
@@ -479,7 +479,7 @@
 
       <div class="kpi-card">
         <span class="kpi-label">
-          Bens Móveis na Sede
+          Bens Móveis Tombados (2026)
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
         </span>
         <div class="kpi-value" id="kpiBensMoveisTotal">R$ 128.612,44</div>
@@ -538,19 +538,102 @@
       <div class="cert-text">
         <h3>Declaração Institucional de Inexistência de Imóveis Alugados</h3>
         <p>
-          A Câmara Municipal de Coronel Barros declara formalmente que <strong>não possui imóveis particulares alugados</strong>, tampouco possui imóveis ou terrenos ociosos sob sua responsabilidade patrimonial. Toda a estrutura parlamentar opera no prédio público cedido pelo Município, assegurando a máxima eficiência dos recursos públicos.
+          A Câmara Municipal de Coronel Barros declara formalmente que em toda a série histórica (2021 a 2026) <strong>não possui imóveis particulares alugados</strong>, tampouco possui imóveis ou terrenos ociosos sob sua responsabilidade patrimonial. Toda a estrutura parlamentar opera no prédio público cedido pelo Município, assegurando a máxima eficiência dos recursos públicos.
         </p>
       </div>
     </div>
+
+    <!-- Tabela da Série Histórica (Critério Exigido Atricon / PNTP) -->
+    <section class="table-card">
+      <div class="table-header-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color: var(--cb-green-primary);"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        Série Histórica Patrimonial e de Locações (2021 a 2026)
+      </div>
+      <p style="font-size: 0.84rem; color: var(--cb-text-muted);">
+        Atendimento aos critérios de série histórica do Programa Nacional de Transparência Pública (PNTP / Atricon):
+      </p>
+
+      <div class="table-container">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th>Exercício</th>
+              <th>Imóvel em Uso</th>
+              <th>Regime Jurídico</th>
+              <th>Imóveis Alugados</th>
+              <th style="text-align: right;">Despesa Aluguel</th>
+              <th style="text-align: right;">Bens Móveis Tombados</th>
+              <th style="text-align: center;">Situação PNTP</th>
+            </tr>
+          </thead>
+          <tbody id="tabelaSerieHistoricaCorpo">
+            <tr>
+              <td><strong class="code-font" style="font-size: 0.95rem;">2026</strong></td>
+              <td>Sede da Câmara</td>
+              <td>Cessão de Uso Especial</td>
+              <td>0 alugados</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td class="val-col">R$ 128.612,44</td>
+              <td style="text-align: center;"><span class="badge badge-primary">Conforme</span></td>
+            </tr>
+            <tr>
+              <td><strong class="code-font" style="font-size: 0.95rem;">2025</strong></td>
+              <td>Sede da Câmara</td>
+              <td>Cessão de Uso Especial</td>
+              <td>0 alugados</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td class="val-col">R$ 96.647,44</td>
+              <td style="text-align: center;"><span class="badge badge-primary">Conforme</span></td>
+            </tr>
+            <tr>
+              <td><strong class="code-font" style="font-size: 0.95rem;">2024</strong></td>
+              <td>Sede da Câmara</td>
+              <td>Cessão de Uso Especial</td>
+              <td>0 alugados</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td class="val-col">R$ 95.407,44</td>
+              <td style="text-align: center;"><span class="badge badge-primary">Conforme</span></td>
+            </tr>
+            <tr>
+              <td><strong class="code-font" style="font-size: 0.95rem;">2023</strong></td>
+              <td>Sede da Câmara</td>
+              <td>Cessão de Uso Especial</td>
+              <td>0 alugados</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td class="val-col">R$ 87.928,44</td>
+              <td style="text-align: center;"><span class="badge badge-primary">Conforme</span></td>
+            </tr>
+            <tr>
+              <td><strong class="code-font" style="font-size: 0.95rem;">2022</strong></td>
+              <td>Sede da Câmara</td>
+              <td>Cessão de Uso Especial</td>
+              <td>0 alugados</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td class="val-col">R$ 87.928,44</td>
+              <td style="text-align: center;"><span class="badge badge-primary">Conforme</span></td>
+            </tr>
+            <tr>
+              <td><strong class="code-font" style="font-size: 0.95rem;">2021</strong></td>
+              <td>Sede da Câmara</td>
+              <td>Cessão de Uso Especial</td>
+              <td>0 alugados</td>
+              <td class="val-col" style="color: var(--cb-green-primary);">R$ 0,00</td>
+              <td class="val-col">R$ 84.527,34</td>
+              <td style="text-align: center;"><span class="badge badge-primary">Conforme</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
     <!-- Tabela de Inventário de Bens Móveis da Sede -->
     <section class="table-card">
       <div class="table-header-title">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color: var(--cb-green-primary);"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-        Inventário de Bens Móveis Instalados na Sede (PCASP - TCE-RS)
+        Detalhamento Contábil dos Bens Móveis em Uso na Sede (PCASP - TCE-RS)
       </div>
       <p style="font-size: 0.84rem; color: var(--cb-text-muted);">
-        Valores contábeis registrados no Ativo Não Circulante (Imobilizado) da Câmara Municipal junto ao Tribunal de Contas:
+        Valores registrados no Ativo Não Circulante (Imobilizado) da Câmara Municipal junto ao Tribunal de Contas:
       </p>
 
       <div class="table-container">
@@ -597,7 +680,7 @@
     <!-- Rodapé -->
     <footer class="footer-bar">
       <div class="footer-text">
-        Controle patrimonial em estrita conformidade com a <strong>Lei Federal nº 12.527/2011 (LAI)</strong> e as resoluções técnicas do <strong>TCE-RS</strong>.
+        Controle patrimonial em estrita conformidade com a <strong>Lei Federal nº 12.527/2011 (LAI)</strong>, <strong>PNTP / Atricon</strong> e resoluções do <strong>TCE-RS</strong>.
       </div>
       <a href="https://dados.tce.rs.gov.br/" target="_blank" rel="noopener noreferrer" class="footer-link">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -640,7 +723,7 @@
         window.addEventListener('resize', notificarAltura);
       }
 
-      // Carregar dados de patrimonio.json
+      // Carregar dados de data/patrimonio.json
       fetch('data/patrimonio.json')
         .then(res => res.json())
         .then(data => {
@@ -649,19 +732,37 @@
             document.getElementById('badgeSincronizacao').textContent = `Atualizado: ${dt.toLocaleDateString('pt-BR')}`;
           }
 
-          if (data.imoveis && data.imoveis.inventario_bens_moveis_sede) {
-            const total = data.imoveis.inventario_bens_moveis_sede.total_tombado;
-            document.getElementById('kpiBensMoveisTotal').textContent = formatBRL(total);
-            document.getElementById('totalGeralTombado').textContent = formatBRL(total);
+          if (data.imoveis) {
+            if (data.imoveis.inventario_bens_moveis_sede) {
+              const total = data.imoveis.inventario_bens_moveis_sede.total_tombado;
+              document.getElementById('kpiBensMoveisTotal').textContent = formatBRL(total);
+              document.getElementById('totalGeralTombado').textContent = formatBRL(total);
 
-            const cats = data.imoveis.inventario_bens_moveis_sede.categorias;
-            if (cats && cats.length > 0) {
-              const tbody = document.getElementById('tabelaBensCorpo');
-              tbody.innerHTML = cats.map(c => `
+              const cats = data.imoveis.inventario_bens_moveis_sede.categorias;
+              if (cats && cats.length > 0) {
+                const tbody = document.getElementById('tabelaBensCorpo');
+                tbody.innerHTML = cats.map(c => `
+                  <tr>
+                    <td class="code-font">${c.codigo}</td>
+                    <td><strong>${c.categoria}</strong></td>
+                    <td class="val-col">${formatBRL(c.valor_tombado)}</td>
+                  </tr>
+                `).join('');
+              }
+            }
+
+            // Renderizar Série Histórica se disponível
+            if (data.imoveis.serie_historica && data.imoveis.serie_historica.length > 0) {
+              const tbodySerie = document.getElementById('tabelaSerieHistoricaCorpo');
+              tbodySerie.innerHTML = data.imoveis.serie_historica.map(item => `
                 <tr>
-                  <td class="code-font">${c.codigo}</td>
-                  <td><strong>${c.categoria}</strong></td>
-                  <td class="val-col">${formatBRL(c.valor_tombado)}</td>
+                  <td><strong class="code-font" style="font-size: 0.95rem;">${item.ano}</strong></td>
+                  <td>Sede da Câmara</td>
+                  <td>${item.regime_juridico}</td>
+                  <td>${item.imoveis_alugados} alugados</td>
+                  <td class="val-col" style="color: var(--cb-green-primary);">${formatBRL(item.despesa_aluguel)}</td>
+                  <td class="val-col">${formatBRL(item.bens_moveis_tombados)}</td>
+                  <td style="text-align: center;"><span class="badge badge-primary">Conforme</span></td>
                 </tr>
               `).join('');
             }
