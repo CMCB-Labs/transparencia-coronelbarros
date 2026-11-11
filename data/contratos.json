@@ -1,0 +1,1246 @@
+{
+  "ente": "Câmara Municipal de Coronel Barros - RS",
+  "orgao_tce": 75101,
+  "fonte": "Tribunal de Contas do Estado do Rio Grande do Sul (TCE-RS) / LicitaCon",
+  "url_origem": "https://dados.tce.rs.gov.br/dados/licitacon/contrato/orgao/75101.csv.zip",
+  "data_atualizacao": "2026-11-11T00:01:40.619528+00:00",
+  "total_contratos": 24,
+  "vigentes": 1,
+  "encerrados": 23,
+  "valor_total": 183510.33,
+  "contratos": [
+    {
+      "id": "2025_10",
+      "numero": "10",
+      "ano": 2025,
+      "licitacao_origem": "3/2025",
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "69",
+      "ano_processo": "2025",
+      "objeto": "contratação de empresa para atender às demandas do Poder Legislativo, dada a complexidade e a multidisciplinaridade dos temas em pauta, que exigem conhecimentos especializados em áreas como Direito Público, Economia e Contabilidade Pública. Essa escolha possibilita aos agentes públicos acesso a dados, estudos, modelos, orientações e análises técnicas especializadas e atualizadas sobre os assuntos em discussão, proporcionando suporte técnico de alta qualidade. Além disso, a atuação da Inlegis con",
+      "fornecedor_doc": "30.050.141/0001-80",
+      "fornecedor_nome": "INLEGIS CONSULTORIA E TREINAMENTOS",
+      "valor_contrato": 15600.0,
+      "data_assinatura": "2025-01-24",
+      "inicio_vigencia": "2025-01-24",
+      "fim_vigencia": "2027-01-24",
+      "dias_prazo": "365",
+      "situacao": "Vigente",
+      "situacao_classe": "badge-success",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:1166092,25,75101&cs=1pP_eUbmiF5CPUTsd6FOyzjwY3LE",
+      "documentos": [
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Sumula Contratual 10_2025.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/4387403"
+        },
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "Contrato n 10 - Inlegis (Camara).pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/4387404"
+        },
+        {
+          "tipo_codigo": "APO",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Termo de Apostilamento Inlegis (Camara) Contrato 10-2025.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/4901093"
+        },
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "Termo Aditivo n 01 - Inlegis Camara Cont n 10-2025.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/4901094"
+        }
+      ],
+      "aditivos": [
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 0.0,
+          "justificativa": "Alteração da dotação orçamentária do contrato."
+        },
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 16264.56,
+          "justificativa": "A vigência do Contrato nº 10/2025 fica prorrogada por mais 12 (doze) meses, passando a vigorar até 24 de janeiro de 2027.  O preço contratual fica reajustado em 4,26% (quatro inteiros e vinte e seis c"
+        }
+      ]
+    },
+    {
+      "id": "2023_101",
+      "numero": "101",
+      "ano": 2023,
+      "licitacao_origem": "3/2023",
+      "modalidade_codigo": "TMP",
+      "modalidade": "Tomada de Preços",
+      "processo": "988",
+      "ano_processo": "2023",
+      "objeto": "Prestação de serviços para realização de concurso público de provas objetivas, bem como comprovação de experiência para provimento de cargos do quadro de servidores do Poder Legislativo de Coronel Barros – RS.",
+      "fornecedor_doc": "20.951.635/0001-81",
+      "fornecedor_nome": "LEGALLE CONCURSOS E SOLUCOES INTEGRADAS LTDA",
+      "valor_contrato": 1072.26,
+      "data_assinatura": "2023-06-06",
+      "inicio_vigencia": null,
+      "fim_vigencia": null,
+      "dias_prazo": "180",
+      "situacao": "Concluído",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:999903,25,75101&cs=1OdoMaqq5WjOe3tCH6xppb2EoknM",
+      "documentos": [
+        {
+          "tipo_codigo": "ECP",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "TP Nº 003 - 2023 - CONCURSO PÚBLICO.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/3541823"
+        },
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "Contrato nº 101 - Legalle Câmara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/3541817"
+        },
+        {
+          "tipo_codigo": "ODC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Sumula Contratual 101_2023.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/3541824"
+        },
+        {
+          "tipo_codigo": "ODC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Termo Aditivo 01 C 101_2023.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/5050867"
+        },
+        {
+          "tipo_codigo": "RES",
+          "tipo_rotulo": "Termo de Rescisão",
+          "nome_arquivo": "Contrato nº 101 - Legalle Câmara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/5050884"
+        }
+      ],
+      "aditivos": []
+    },
+    {
+      "id": "2023_34",
+      "numero": "34",
+      "ano": 2023,
+      "licitacao_origem": "392/2023",
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "407",
+      "ano_processo": "2023",
+      "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA NA GRAVAÇÃO E TRANSMISSÃO DAS SESSÕES LEGISLATIVAS",
+      "fornecedor_doc": "33.262.018/0001-10",
+      "fornecedor_nome": "ADRIANA CRISTINA MILANI 68195648053",
+      "valor_contrato": 26600.0,
+      "data_assinatura": "2023-02-28",
+      "inicio_vigencia": "2023-03-06",
+      "fim_vigencia": "2024-01-31",
+      "dias_prazo": "331",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:974421,21,75101&cs=1xPSFyxx3MtuyVolXQWMp6EiHjn0",
+      "documentos": [
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "Contrato n 34 - Adriana Milani (transmissoes Camara).pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/3384761"
+        },
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Sumula Contratual 34_2023.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/3384762"
+        }
+      ],
+      "aditivos": []
+    },
+    {
+      "id": "2022_194",
+      "numero": "194",
+      "ano": 2022,
+      "licitacao_origem": "23/2021",
+      "modalidade_codigo": "RPO",
+      "modalidade": "Registro de Preços",
+      "processo": "2884",
+      "ano_processo": "2021",
+      "objeto": "AQUISIÇÃO DE EQUIPAMENTOS DE HARDWARE, SOFTWARE, PERIFÉRICOS E CLIMATIZADORES.",
+      "fornecedor_doc": "10.894.828/0003-56",
+      "fornecedor_nome": "Verlin Tecnologia da Informacao Ltda",
+      "valor_contrato": 6547.0,
+      "data_assinatura": "2022-11-08",
+      "inicio_vigencia": "2022-11-08",
+      "fim_vigencia": "2022-12-08",
+      "dias_prazo": "30",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:932360,21,75101&cs=1rrOq6U2SElWIWX6SFGhSUdUlne8",
+      "documentos": [
+        {
+          "tipo_codigo": "ODC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Contrato nº 194 - Verlin Câmara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/3158846"
+        },
+        {
+          "tipo_codigo": "ARG",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "ATA RP 023-2021.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/3158847"
+        },
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Sumula Contratual 194_2022.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/3158850"
+        },
+        {
+          "tipo_codigo": "RES",
+          "tipo_rotulo": "Termo de Rescisão",
+          "nome_arquivo": "Contrato nº 194 - Verlin Câmara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/5050878"
+        }
+      ],
+      "aditivos": []
+    },
+    {
+      "id": "2022_30",
+      "numero": "30",
+      "ano": 2022,
+      "licitacao_origem": "461/2022",
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "475",
+      "ano_processo": "2022",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADES DA CASA LEGISLATIVA",
+      "fornecedor_doc": "33.262.018/0001-10",
+      "fornecedor_nome": "ADRIANA CRISTINA MILANI 68195648053",
+      "valor_contrato": 26600.0,
+      "data_assinatura": "2022-03-04",
+      "inicio_vigencia": "2022-03-07",
+      "fim_vigencia": "2023-01-31",
+      "dias_prazo": "330",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:870064,21,75101&cs=11WnpMGW6GfDiJ_nb-pDCswdHZWo",
+      "documentos": [
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "Contrato n 30 - Transmissao sessoes Camara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/2818795"
+        },
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Sumula Contratual 30_2022.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/2818796"
+        }
+      ],
+      "aditivos": []
+    },
+    {
+      "id": "2022_7",
+      "numero": "7",
+      "ano": 2022,
+      "licitacao_origem": "4/2022",
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "100",
+      "ano_processo": "2022",
+      "objeto": "DESTINADO A PRESTAÇÃO DE SERVIÇOS TECNICOS ESPECIALIZADOS DE ASSESSORIA E CONSULTORIA CONTABIL,DE GESTAO E JURIDICA,ATRAVES DE CONSULTAS POR ESCRITO,POR TELEFONE, INTERNET E PESSOALMENTE A CAMARA DE VEREADORES.",
+      "fornecedor_doc": "01.484.706/0001-39",
+      "fornecedor_nome": "IGAM - INSTITUTO GAMMA DE ASSESSORIA ORGÃOS PÚBLICOS",
+      "valor_contrato": 14844.0,
+      "data_assinatura": "2022-01-20",
+      "inicio_vigencia": "2022-01-20",
+      "fim_vigencia": "2025-01-20",
+      "dias_prazo": "365",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:857720,21,75101&cs=18r1rAK81j7aEOBm-Wg6OQdGI6gs",
+      "documentos": [
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "1 TA - CM CORONEL BARROS (2) - 2023 IGAM.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/3938272"
+        },
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Sumula Contratual 07_2022.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/2770836"
+        },
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "Contrato n 07 - IGAM.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/2770837"
+        },
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "Termo Aditivo n 02 - Igam Camara Contrato 07-2022.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/3938273"
+        }
+      ],
+      "aditivos": [
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 15655.92,
+          "justificativa": "O prazo de vigência do contrato, fica prorrogado por mais 12(doze) meses, a contar de 20/01/2023, nos termos do artigo 57, II, da Lei de Licitações. Fica acrescido o reajuste previsto pelo índice indi"
+        },
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 16468.44,
+          "justificativa": "O prazo de vigência do contrato, fica prorrogado por mais 12(doze) meses. Fica acrescido o reajuste previsto pelo índice indicado no contrato, que deverão ser pagos em 12 parcelas no valor de R$ 1.372"
+        }
+      ]
+    },
+    {
+      "id": "2021_19",
+      "numero": "19",
+      "ano": 2021,
+      "licitacao_origem": "570/2021",
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "587",
+      "ano_processo": "2021",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADES LEGISLATIVAS DE MARÇO A DEZEMBRO DE 2021 - REEMISSÃO/ACERTO DO EMPENHO N°1478/2021",
+      "fornecedor_doc": "02.558.157/0001-62",
+      "fornecedor_nome": "TELEFONICA BRASIL S.A.",
+      "valor_contrato": 195.31,
+      "data_assinatura": "2021-03-26",
+      "inicio_vigencia": "2021-03-26",
+      "fim_vigencia": "2021-04-26",
+      "dias_prazo": "31",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:801209,21,75101&cs=1gcYTVzBlLbkTRJMsigMUkAHZ1Yw",
+      "documentos": [
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "Contrato n 19 - Vivo Camara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/2478798"
+        },
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Sumula Contratual 19_2021.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/2478799"
+        }
+      ],
+      "aditivos": []
+    },
+    {
+      "id": "2021_15",
+      "numero": "15",
+      "ano": 2021,
+      "licitacao_origem": "525/2021",
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "540",
+      "ano_processo": "2021",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADES LEGISLATIVAS DE MARÇO A DEZEMBRO DE 2021 - REEMISSÃO/ACERTO DO EMPENHO N°128/2021",
+      "fornecedor_doc": "02.449.992/0121-70",
+      "fornecedor_nome": "VIVO S/A",
+      "valor_contrato": 195.31,
+      "data_assinatura": "2021-03-19",
+      "inicio_vigencia": "2021-03-19",
+      "fim_vigencia": "2021-12-31",
+      "dias_prazo": "287",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:789972,21,75101&cs=1picTPWSME_UFJ-iqGZJMBEQYbF4",
+      "documentos": [
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "Contrato n 15 - Vivo Camara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/2426379"
+        },
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Sumula Contratual 15_2021.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/2426378"
+        }
+      ],
+      "aditivos": []
+    },
+    {
+      "id": "2021_8",
+      "numero": "8",
+      "ano": 2021,
+      "licitacao_origem": "6/2021",
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "28",
+      "ano_processo": "2021",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADES LEGISLATIVAS DE JANEIRO A DEZEMBRO DE 2021",
+      "fornecedor_doc": "02.449.992/0121-70",
+      "fornecedor_nome": "VIVO S/A",
+      "valor_contrato": 229.08,
+      "data_assinatura": "2021-01-04",
+      "inicio_vigencia": "2021-01-04",
+      "fim_vigencia": "2021-12-31",
+      "dias_prazo": "361",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:782471,21,75101&cs=14Je1QPsff9FPDssVbWZay-D70JQ",
+      "documentos": [
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Sumula Contratual 08_2021.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/2391490"
+        },
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "Contrato n 08 - Vivo Camara.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/2391489"
+        }
+      ],
+      "aditivos": []
+    },
+    {
+      "id": "2021_5",
+      "numero": "5",
+      "ano": 2021,
+      "licitacao_origem": "4/2021",
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "21",
+      "ano_processo": "2021",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADES DO PODER LEGISLATIVO NO ANO DE 2021 - REEMISSÃO/ACERTO DO EMPENHO Nº95/2021",
+      "fornecedor_doc": "76.535.764/0001-43",
+      "fornecedor_nome": "BRASIL TELECOM",
+      "valor_contrato": 733.99,
+      "data_assinatura": "2021-01-04",
+      "inicio_vigencia": "2021-01-04",
+      "fim_vigencia": "2021-12-31",
+      "dias_prazo": "361",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:782470,21,75101&cs=13QQo6IUnJk0pHsVX5t4LCCI6nxM",
+      "documentos": [
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "Contrato n 05 - Brasil Telecom.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/2391487"
+        },
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Sumula Contratual 05_2021.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/2391488"
+        }
+      ],
+      "aditivos": []
+    },
+    {
+      "id": "2020_3",
+      "numero": "3",
+      "ano": 2020,
+      "licitacao_origem": "2374/2020",
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "2400",
+      "ano_processo": "2020",
+      "objeto": "SERVIÇO DE DESENVOLVIMENTO, IMPORTAÇÃO E TREINAMENTO DE WEBSITE",
+      "fornecedor_doc": "20.214.712/0001-10",
+      "fornecedor_nome": "RORATO & MOLERO LTDA",
+      "valor_contrato": 1984.44,
+      "data_assinatura": "2022-10-31",
+      "inicio_vigencia": "2022-10-31",
+      "fim_vigencia": "2023-11-03",
+      "dias_prazo": "368",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:934553,21,75101&cs=1Nflp_XgANhpUzvLSZGhFXWGVpQk",
+      "documentos": [
+        {
+          "tipo_codigo": "ODC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Termo Aditivo nº 03 -  King Page Cont 54-2020 Câmara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/3169067"
+        },
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "Contrato nº 54 - 2020 - King Page.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/3169069"
+        },
+        {
+          "tipo_codigo": "RES",
+          "tipo_rotulo": "Termo de Rescisão",
+          "nome_arquivo": "Contrato nº 54 - 2020 - King Page.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/5050880"
+        }
+      ],
+      "aditivos": []
+    },
+    {
+      "id": "2020_54",
+      "numero": "54",
+      "ano": 2020,
+      "licitacao_origem": "2374/2020",
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "2400",
+      "ano_processo": "2020",
+      "objeto": "DESTINADO A CAMARA DE VEREADORES, ACERTO/REEMISSÃO DO EMPENHO Nº 5932/2020",
+      "fornecedor_doc": "20.214.712/0001-10",
+      "fornecedor_nome": "RORATO & MOLERO LTDA",
+      "valor_contrato": 300.0,
+      "data_assinatura": "2020-12-28",
+      "inicio_vigencia": "2020-12-28",
+      "fim_vigencia": "2025-12-28",
+      "dias_prazo": "310",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:776389,21,75101&cs=1luWC2Codm6RJvAOTgWbx5hU1ia0",
+      "documentos": [
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "Termo Aditivo n 01 -  King Page Cont 54-2020 Camara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/2835581"
+        },
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "Termo Aditivo n 02 -  King Page Cont 54-2020 Camara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/2835582"
+        },
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "Termo Aditivo n 04 -  King Page Cont 54-2020 Camara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/3938271"
+        },
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "Termo Aditivo n 03 -  King Page Cont 54-2020 Camara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/3938270"
+        },
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "Contrato n 54 - 2020 - King Page.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/2361695"
+        },
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Sumula Contratual 54_2020.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/2361696"
+        },
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "Termo Aditivo n 05 -  King Page Cont 54-2020 Camara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/4289381"
+        }
+      ],
+      "aditivos": [
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 2100.0,
+          "justificativa": "É aditado o Contrato de Prestação de Serviços nº54/2020, tendo em vista a necessidade de manutenção do website da Câmara de Vereadores do município de Coronel Barros."
+        },
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 184.44,
+          "justificativa": "É aditado o Contrato de Prestação de Serviços nº 54/2020 tendo em vista a necessidade de reequilíbrio financeiro, conforme artigo 65, Inciso II, alínea d, da Lei Federal nº 8.666/93. Em decorrência "
+        },
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 1984.44,
+          "justificativa": "É aditado o Contrato de Prestação de Serviços nº 54/2020, tendo em vista a necessidade de manutenção do website da Câmara de Vereadores do município de Coronel Barros."
+        },
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 2070.6,
+          "justificativa": "É aditado o Contrato de Prestação de Serviços nº 54/2020, tendo em vista a necessidade de manutenção do website da Câmara de Vereadores do município de Coronel Barros. Os valores contratados são corri"
+        },
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 2162.16,
+          "justificativa": "É aditado o Contrato de Prestação de Serviços nº 54/2020, tendo em vista a necessidade de manutenção do website da Câmara de Vereadores do município de Coronel Barros. Assim, com a prorrogação, o praz"
+        }
+      ]
+    },
+    {
+      "id": "2019_65",
+      "numero": "65",
+      "ano": 2019,
+      "licitacao_origem": "1669/2019",
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "1704",
+      "ano_processo": "2019",
+      "objeto": "CONSIDERANDO A NECESSIDADE DE MODERNIZAR A ESTRUTRA DA CAMARA DE VEREADORES, CONSIDERANDO QUE O MOBILIÁRIO ATUAL NÃO COMPORTA O ARQUIVAMENTO DE  DOCUMENTOS; CONSIDERANDO AINDA QUE NÃO EXISTEM, MÓVEIS NO MERCADO QUE SUPORTEM O PESO E USO CONTINUO, REEMISSÃO/ACERTO DO EMPENHO Nº 4917/2019",
+      "fornecedor_doc": "04.505.109/0001-31",
+      "fornecedor_nome": "MOVEIS WEIMER DE RAFAEL WEIMER",
+      "valor_contrato": 13800.0,
+      "data_assinatura": "2019-09-12",
+      "inicio_vigencia": "2019-09-12",
+      "fim_vigencia": "2019-10-26",
+      "dias_prazo": "44",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:691268,21,75101&cs=1RzYhS1JqYNjReaHHir_aWxlIdRs",
+      "documentos": [
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "EXTRATO DE DISPENSA POR JUSTIFICATIVA 1669.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1975771"
+        },
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "Contrato n 65 - Camara - FORNECIMENTO DE MATERIAIS.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1975772"
+        }
+      ],
+      "aditivos": []
+    },
+    {
+      "id": "2019_55",
+      "numero": "55",
+      "ano": 2019,
+      "licitacao_origem": "1367/2019",
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "1394",
+      "ano_processo": "2019",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADES LEGISLATIVAS",
+      "fornecedor_doc": "04.505.109/0001-31",
+      "fornecedor_nome": "MOVEIS WEIMER DE RAFAEL WEIMER",
+      "valor_contrato": 13800.0,
+      "data_assinatura": "2019-07-26",
+      "inicio_vigencia": "2019-07-26",
+      "fim_vigencia": "2019-10-26",
+      "dias_prazo": "62",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:691267,21,75101&cs=1XRziB9UlQyd45Wj4Xjqx4cpLJ3I",
+      "documentos": [
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "EXTRATO DE DISPENSA POR JUSTIFICATIVA 1367.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1975768"
+        },
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "Contrato n 55 - Camara - FORNECIMENTO DE MATERIAIS.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1975769"
+        },
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "Termo Aditivo 01 - Cont 55-2019.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1975770"
+        }
+      ],
+      "aditivos": [
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 0.0,
+          "justificativa": "É AMPLIADO/ADITIVADO O CONTRATO Nº 55/2019 A PEDIDO DA EMPRESA CONTRATADA VISTO QUE ALEGOU PROBLEMAS TÉCNICOS EM UMA DAS MAQUINAS DA SUA LINHA DE PRODUÇÃO EM 30 (TRINTA) DIAS FINDANDO EM 26 DE OUTUBRO"
+        }
+      ]
+    },
+    {
+      "id": "2019_1",
+      "numero": "1",
+      "ano": 2019,
+      "licitacao_origem": "10/2019",
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "23",
+      "ano_processo": "2019",
+      "objeto": "DESTINADO A PRESTAÇÃO DE SERVIÇOS TECNICOS ESPECIALIZADOS DE ASSESSORIA E CONSULTORIA CONTABIL,DE GESTAO E JURIDICA,ATRAVES DE CONSULTAS POR ESCRITO,POR TELEFONE, INTERNET E PESSOALMENTE A CAMARA DE VEREADORES.",
+      "fornecedor_doc": "01.484.706/0001-39",
+      "fornecedor_nome": "IGAM - INSTITUTO GAMMA DE ASSESSORIA ORGÃOS PÚBLICOS",
+      "valor_contrato": 14948.4,
+      "data_assinatura": "2019-01-02",
+      "inicio_vigencia": "2019-01-02",
+      "fim_vigencia": "2020-12-31",
+      "dias_prazo": "365",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:636512,21,75101&cs=1b1O4wCPfm3fyWW19OTyU_jlMQus",
+      "documentos": [
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "Termo Aditivo 01 - Cont 23-2019 IGAM Camara.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/2067585"
+        },
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "Contrato n 1-2019  IGAM.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1790453"
+        },
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Sumula Contratual 01_2019.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1790454"
+        }
+      ],
+      "aditivos": [
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 0.0,
+          "justificativa": "É aditivado o Contrato de Prestação de Serviços nº 023/2019 referente à prestação de  Aquisição de Informativos Técnicos nas seguintes áreas de Informação:1. Servidor Público 2. Estrutura Organizacion"
+        }
+      ]
+    },
+    {
+      "id": "2018_77",
+      "numero": "77",
+      "ano": 2018,
+      "licitacao_origem": "2049/2018",
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "2134",
+      "ano_processo": "2018",
+      "objeto": "MANTER ATIVIDADES DA CAMARA DE VEREADORES - REEMISSÃO/ACERTO DO EMPENHO Nº 6663/2018 - DESTINADO A DIVULGAÇÃO DOS ATOS DO PODER LESGISLATIVO EM 2018 E MANUTENÇÃO DO PORTAL",
+      "fornecedor_doc": "09.102.792/0001-80",
+      "fornecedor_nome": "13 BITS SOLUÇÕES EM TECNOLOGIA DA INFORMAÇÃO LTDA - ME",
+      "valor_contrato": 480.0,
+      "data_assinatura": "2018-10-31",
+      "inicio_vigencia": "2018-10-31",
+      "fim_vigencia": "2020-11-30",
+      "dias_prazo": "334",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:622631,21,75101&cs=1gnVU1cOSumv-Q2gtOQeAebJRQw0",
+      "documentos": [
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "Termo Aditivo n 03-2020 - Cont 77-2018 - 13 BITS - CAMARA.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/2262467"
+        },
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "Contrato 13 BITS - 01.10.18.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1730403"
+        },
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "EXTRATO DE SuMULA CONTRATUAL - 2018.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1730404"
+        },
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "Termo Aditivo n 02-2019 - Cont 77-2018 - 13 BITS - NOVO CAMARA.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1998939"
+        },
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "Termo Aditivo n 01-2019 - Cont 77-2018 - 13 BITS.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1975767"
+        }
+      ],
+      "aditivos": [
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 661.95,
+          "justificativa": "REAJUSTE ANUAL BASEADO NA VARIAÇÃO DO IPCA CONFORME CLÁUSULA TERCEIRA DO CONTRATO Nº 77/2018, INCLUSÃO DE CLÁUSULA XX - \"A CONTRATADA MANTERÁ CÓPIA DE SEGURANÇA (BACKUP) DE TODOS OS DADOS RELATIVOS A "
+        },
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 0.0,
+          "justificativa": "ALTERA PARÁGRAFO UNICO  E ACRESCENTA PARÁGRAFOS 1º E 2º NO TERMO ADITIVO 01/2019 DO CONTRATO 77/2018"
+        },
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 1472.93,
+          "justificativa": "Prorrogação do contrato pelo perído de 2 (dois) meses."
+        }
+      ]
+    },
+    {
+      "id": "2018_64",
+      "numero": "64",
+      "ano": 2018,
+      "licitacao_origem": "46/2018",
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "1756",
+      "ano_processo": "2018",
+      "objeto": "DESTINADO  A PRESTAÇÃO DE SERVIÇOS TÉCNICOS ESPECIALIZADOS DE ASSESSORIA E CONSULTORIA CONTÁBIL, DE GESTÃO E JURÍDICA, ATRAVÉS DE CONSULTAS POR ESCRITO, POR TELEFONE, INTERNET E PESSOALMENTE, DISPONIBILIZAÇÃO DE TEXTOS TÉCNICOS DE INTERESSE DA ADMINISTRAÇÃO E REMESSA DE INFORMAÇÕES TÉCNICAS DURANTE O ANO DE 2018. (REEMISSÃO/ACERTO DO EMPENHO Nº 1739/2018)",
+      "fornecedor_doc": "07.675.477/0001-16",
+      "fornecedor_nome": "IGAM CORPORATIVO CURSOS E ASSESSORIA S/S LTDA",
+      "valor_contrato": 14400.0,
+      "data_assinatura": "2018-08-31",
+      "inicio_vigencia": "2018-08-31",
+      "fim_vigencia": "2019-01-11",
+      "dias_prazo": "133",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:616169,21,75101&cs=1j-gFtqQm-HTuhFkQU5qS7DT5IaU",
+      "documentos": [
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "Contrato n 64 - Igam.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1702123"
+        },
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Sumula Contratual 64_2018.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1702122"
+        }
+      ],
+      "aditivos": []
+    },
+    {
+      "id": "2018_5",
+      "numero": "5",
+      "ano": 2018,
+      "licitacao_origem": "139/2018",
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "156",
+      "ano_processo": "2018",
+      "objeto": "REEMISSÃO DO EMPENHO 158/2018- DESTINADO A MANUTENÇÃO PREVENTIVA E CORRETIVA DOS EQUIPAMENTOS DE INFORMATICA DOS EQUIPAMENTOS DE INFORMATICA DE USO DO PODER LEGISLATIVO.",
+      "fornecedor_doc": "14.629.734/0001-49",
+      "fornecedor_nome": "BRE INFORMATICA - Regis Backes",
+      "valor_contrato": 792.12,
+      "data_assinatura": "2018-01-02",
+      "inicio_vigencia": "2018-01-02",
+      "fim_vigencia": "2018-12-31",
+      "dias_prazo": "363",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:561890,21,75101&cs=1xL8ELX3_nncUEWohDb_3lPtwPvw",
+      "documentos": [
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Sumula Contratual 05-2018.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1526713"
+        },
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "Contrato n 1 - IGAM 2018.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1526714"
+        }
+      ],
+      "aditivos": []
+    },
+    {
+      "id": "2018_1",
+      "numero": "1",
+      "ano": 2018,
+      "licitacao_origem": "1/2018",
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "2",
+      "ano_processo": "2018",
+      "objeto": "DESTINADO  A PRESTAÇÃO DE SERVIÇOS TÉCNICOS ESPECIALIZADOS DE ASSESSORIA E CONSULTORIA CONTÁBIL, DE GESTÃO E JURÍDICA, ATRAVÉS DE CONSULTAS POR ESCRITO, POR TELEFONE, INTERNET E PESSOALMENTE, DISPONIBILIZAÇÃO DE TEXTOS TÉCNICOS DE INTERESSE DA ADMINISTRAÇÃO E REMESSA DE INFORMAÇÕES TÉCNICAS DURANTE O ANO DE 2018.",
+      "fornecedor_doc": "01.484.706/0001-39",
+      "fornecedor_nome": "IGAM - INSTITUTO GAMMA DE ASSESSORIA ORGÃOS PÚBLICOS",
+      "valor_contrato": 14400.0,
+      "data_assinatura": "2018-01-02",
+      "inicio_vigencia": "2018-01-12",
+      "fim_vigencia": "2019-01-12",
+      "dias_prazo": "365",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:561889,21,75101&cs=1Q0giPwkn4gPnMz1y8acttxJnHS8",
+      "documentos": [
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "Contrato n 1 - IGAM 2018.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1526716"
+        },
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Sumula Contratual 01-2018.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1526715"
+        }
+      ],
+      "aditivos": []
+    },
+    {
+      "id": "2017_33",
+      "numero": "33",
+      "ano": 2017,
+      "licitacao_origem": "1219/2017",
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "1245",
+      "ano_processo": "2017",
+      "objeto": "DESTINADO A MANUTENÇÃO DOS SERVIÇOS ESSENCIAIS QUE NECESSITEM DE ACESSO A INTERNET NOS MESES DE JUNHO A DEZEMBRO DE 2017",
+      "fornecedor_doc": "15.420.705/0001-35",
+      "fornecedor_nome": "CERILUZ PROVEDORES DE INTERNET LTDA",
+      "valor_contrato": 275.06,
+      "data_assinatura": "2017-05-25",
+      "inicio_vigencia": "2017-06-01",
+      "fim_vigencia": "2017-12-31",
+      "dias_prazo": "213",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:523781,21,75101&cs=19zDtcp-6lXOHaUjZeRiJY5AcaZk",
+      "documentos": [
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Sumula Contratual 33 -2017.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1416083"
+        },
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "Contrato n 033 - Internet Ceriluz Legislativo 2017.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1416084"
+        }
+      ],
+      "aditivos": []
+    },
+    {
+      "id": "2016_29",
+      "numero": "29",
+      "ano": 2016,
+      "licitacao_origem": "41/2016",
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "41",
+      "ano_processo": "2016",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADE DA CAMARA DE VEREADORES",
+      "fornecedor_doc": "01.484.706/0001-39",
+      "fornecedor_nome": "IGAM - INSTITUTO GAMMA DE ASSESSORIA ORGÃOS PÚBLICOS",
+      "valor_contrato": 11268.84,
+      "data_assinatura": "2016-01-04",
+      "inicio_vigencia": "2016-01-04",
+      "fim_vigencia": "2018-01-11",
+      "dias_prazo": "372",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:515914,21,75101&cs=1SXSyHvlCj5ZWANY5mQvcnrczycs",
+      "documentos": [
+        {
+          "tipo_codigo": "ODC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "CPS 29-2016 - IGAM - TERMO ADITIVO N 03-2016.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1395664"
+        },
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "IGAM CAMARA.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1395665"
+        },
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Contrato 29-2016.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1395667"
+        },
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "Termo aditivo 04.17 - IGAM.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1395668"
+        },
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "IGAM - TERMO ADITIVO N 03.2016.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1395666"
+        }
+      ],
+      "aditivos": [
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 0.0,
+          "justificativa": "TERMO ADITIVO 03/2016"
+        },
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 0.0,
+          "justificativa": "ADITIVO IGAM PERIODO DE 12 MESES."
+        }
+      ]
+    },
+    {
+      "id": "2016_3",
+      "numero": "3",
+      "ano": 2016,
+      "licitacao_origem": "12/2016",
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "12",
+      "ano_processo": "2016",
+      "objeto": "DESTINADO A MANUTENÇÃO DO ÓRGÃO",
+      "fornecedor_doc": "14.629.734/0001-49",
+      "fornecedor_nome": "BRE INFORMATICA - Regis Backes",
+      "valor_contrato": 792.12,
+      "data_assinatura": "2016-01-04",
+      "inicio_vigencia": "2016-01-04",
+      "fim_vigencia": "2017-12-31",
+      "dias_prazo": "362",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:515913,21,75101&cs=1IV8M8t3TDYb_cbS2hRK2qPTeHCw",
+      "documentos": [
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Contrato 03-2016.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1395661"
+        },
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "CPS 03-2016 - BRE Informatica Regis - Camara de Vereadores.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1395662"
+        },
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "TERMO ADITIVO CONTRATO 03-2016 N 01.2017  - BRE REGIS BACKES - CAMARA.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1395663"
+        },
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "Termo Aditivo n 01-2017 - BRE- Camara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1465636"
+        },
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "Termo Aditivo 02-2017 BRE CAM.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1465635"
+        }
+      ],
+      "aditivos": [
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 0.0,
+          "justificativa": "Contrato de Prestação de Serviços de Assistência  Técnica local em computadores e periféricos nº 003/2016, firmado em 04 de janeiro de 2016.prorrogração de prazo por 6 meses"
+        },
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 1188.18,
+          "justificativa": "Contrato de Prestação de Serviços de Assistência  Técnica local em computadores e periféricos nº 003/2016, firmado em 04 de janeiro de 2016. prorrogração de prazo por 6 meses"
+        }
+      ]
+    },
+    {
+      "id": "2016_1",
+      "numero": "1",
+      "ano": 2016,
+      "licitacao_origem": "10/2016",
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "10",
+      "ano_processo": "2016",
+      "objeto": "DESTINADO A MANUTENÇÃO DO PORTAL DA CAMARA MUNICIPAL DE VEREADORES NOS MESES DE JANEIRO A DEZEMBRO DE 2016",
+      "fornecedor_doc": "09.102.792/0001-80",
+      "fornecedor_nome": "13 BITS SOLUÇÕES EM TECNOLOGIA DA INFORMAÇÃO LTDA - ME",
+      "valor_contrato": 1652.4,
+      "data_assinatura": "2016-01-04",
+      "inicio_vigencia": "2016-01-04",
+      "fim_vigencia": "2017-12-31",
+      "dias_prazo": "362",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:515912,21,75101&cs=1EKQ4sbQyV8RlCvcRH2L0iKmtGLA",
+      "documentos": [
+        {
+          "tipo_codigo": "ODC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "13 BITZ CAMARA.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1395658"
+        },
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "Contrato 01-2016.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1395659"
+        },
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "Termo Aditivo n 04-2017 13 Bits - Camara de Vereadores.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1395660"
+        },
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "CPS 01-2016  - Termo Aditivo n 03-2016 13 Bits - Camara de Vereadores.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1395657"
+        }
+      ],
+      "aditivos": [
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 0.0,
+          "justificativa": "ADITIVO 13 BITS. ADITIVO PARA MAIS UM PERIODO DE 12 MESES COM REAJUSTRE INFLACIONÁRIO."
+        }
+      ]
+    },
+    {
+      "id": "2013_25",
+      "numero": "25",
+      "ano": 2013,
+      "licitacao_origem": "1115/2013",
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "1115",
+      "ano_processo": "2013",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADES LEGISLATIVAS",
+      "fornecedor_doc": "09.102.792/0001-80",
+      "fornecedor_nome": "13 BITS SOLUÇÕES EM TECNOLOGIA DA INFORMAÇÃO LTDA - ME",
+      "valor_contrato": 2000.0,
+      "data_assinatura": "2013-06-18",
+      "inicio_vigencia": "2013-09-01",
+      "fim_vigencia": "2017-12-31",
+      "dias_prazo": "121",
+      "situacao": "Encerrado",
+      "situacao_classe": "badge-neutral",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:23:::NO:23:P23_ID_CONTRATO,P23_PAG_RETORNO,F50500_CD_ORGAO:515911,21,75101&cs=1pJ-kAfwUEmUlXNuWaqS4rNdXQVw",
+      "documentos": [
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "13 Bits Termo Aditivo n 001-2014 - Camara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1395652"
+        },
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "CPS 01-2016  - Termo Aditivo n 03-2016 13 Bits - Camara de Vereadores.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1395653"
+        },
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "TERMO ADITIVO 02-2015-CONTRATO DE SERVICOS - CAMARA -  13 bits.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1395655"
+        },
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "Termo Aditivo n 04-2017 13 Bits - Camara de Vereadores.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1395656"
+        },
+        {
+          "tipo_codigo": "TAD",
+          "tipo_rotulo": "Termo Aditivo",
+          "nome_arquivo": "Termo Aditivo - 13 bits - 2014.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1416082"
+        },
+        {
+          "tipo_codigo": "CTR",
+          "tipo_rotulo": "Contrato",
+          "nome_arquivo": "13 BITZ CAMARA.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1395651"
+        },
+        {
+          "tipo_codigo": "PUC",
+          "tipo_rotulo": "Contrato/Aditivo",
+          "nome_arquivo": "13 BITZ CAMARA.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_contrato/1395654"
+        }
+      ],
+      "aditivos": [
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 0.0,
+          "justificativa": "TERMO ADITIVO 1/2014"
+        },
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 3492.8,
+          "justificativa": "termo aditivo 2/2015"
+        },
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 0.0,
+          "justificativa": "termo aditivo 3/2016"
+        },
+        {
+          "tipo_alteracao": null,
+          "data": null,
+          "novo_fim_vigencia": null,
+          "valor_acrescimo": 0.0,
+          "justificativa": "manutenção do portal"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contratos Administrativos - Câmara Municipal de Coronel Barros</title>
+  
+  <!-- Tipografia Oficial Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       RESET E EMBED TRANSPARENTE
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      background-color: transparent !important;
+      background: transparent !important;
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #334155;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      height: auto !important;
+      min-height: 0 !important;
+      overflow: hidden !important;
+    }
+
+    :root {
+      --cb-green-primary: #006838;
+      --cb-green-hover: #004d29;
+      --cb-green-action: #009739;
+      --cb-green-soft: #EAF6EE;
+      --cb-yellow-gold: #FFCC00;
+      --cb-yellow-soft: #FFFBEB;
+      --cb-gray-bg: #F8FAFC;
+      --cb-gray-border: #E2E8F0;
+      --cb-text-dark: #1E293B;
+      --cb-text-body: #334155;
+      --cb-text-muted: #64748B;
+      --cb-white: #FFFFFF;
+
+      --badge-vigente-bg: #EAF6EE;
+      --badge-vigente-text: #006838;
+      --badge-vigente-border: #A7F3D0;
+
+      --badge-encerrado-bg: #F1F5F9;
+      --badge-encerrado-text: #475569;
+      --badge-encerrado-border: #CBD5E1;
+
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+      --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .cb-widget {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 4px;
+    }
+
+    /* Topbar */
+    .cb-topbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-lg);
+      padding: 18px 22px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 20px;
+    }
+
+    .cb-topbar-title {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .cb-badge-tce {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--cb-green-soft);
+      color: var(--cb-green-primary);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      width: fit-content;
+      border: 1px solid rgba(0, 104, 56, 0.15);
+    }
+
+    .cb-badge-tce svg {
+      width: 12px;
+      height: 12px;
+      fill: currentColor;
+    }
+
+    .cb-topbar-heading {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      letter-spacing: -0.01em;
+    }
+
+    .cb-topbar-subtitle {
+      font-size: 0.85rem;
+      color: var(--cb-text-muted);
+    }
+
+    /* KPIs */
+    .cb-kpis {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .cb-kpi-card {
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .cb-kpi-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: #CBD5E1;
+    }
+
+    .cb-kpi-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .cb-kpi-icon svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .cb-kpi-icon.total {
+      background: var(--cb-green-soft);
+      color: var(--cb-green-primary);
+      border: 1px solid rgba(0, 104, 56, 0.2);
+    }
+
+    .cb-kpi-icon.vigente {
+      background: var(--badge-vigente-bg);
+      color: var(--badge-vigente-text);
+      border: 1px solid var(--badge-vigente-border);
+    }
+
+    .cb-kpi-icon.encerrado {
+      background: var(--badge-encerrado-bg);
+      color: var(--badge-encerrado-text);
+      border: 1px solid var(--badge-encerrado-border);
+    }
+
+    .cb-kpi-icon.valor {
+      background: var(--cb-yellow-soft);
+      color: #92400E;
+      border: 1px solid var(--cb-yellow-gold);
+    }
+
+    .cb-kpi-val {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+      line-height: 1.1;
+    }
+
+    .cb-kpi-label {
+      font-size: 0.78rem;
+      color: var(--cb-text-muted);
+      font-weight: 600;
+      margin-top: 3px;
+    }
+
+    /* Filtros */
+    .cb-filter-panel {
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-lg);
+      padding: 16px 20px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 20px;
+    }
+
+    .cb-filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .cb-search-wrapper {
+      flex: 1 1 280px;
+      position: relative;
+    }
+
+    .cb-search-icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      color: var(--cb-text-muted);
+      pointer-events: none;
+    }
+
+    .cb-search-input {
+      width: 100%;
+      padding: 9px 12px 9px 36px;
+      font-family: inherit;
+      font-size: 0.85rem;
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-sm);
+      outline: none;
+      transition: var(--transition);
+      background: var(--cb-white);
+      color: var(--cb-text-dark);
+    }
+
+    .cb-search-input:focus {
+      border-color: var(--cb-green-action);
+      box-shadow: 0 0 0 3px rgba(0, 151, 57, 0.12);
+    }
+
+    .cb-select-wrapper {
+      flex: 0 1 180px;
+    }
+
+    .cb-select {
+      width: 100%;
+      padding: 9px 12px;
+      font-family: inherit;
+      font-size: 0.85rem;
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-sm);
+      outline: none;
+      background: var(--cb-white);
+      color: var(--cb-text-dark);
+      cursor: pointer;
+    }
+
+    .cb-select:focus {
+      border-color: var(--cb-green-action);
+      box-shadow: 0 0 0 3px rgba(0, 151, 57, 0.12);
+    }
+
+    /* Listagem */
+    .cb-items-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .cb-con-card {
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      border-left: 5px solid var(--cb-green-primary);
+    }
+
+    .cb-con-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: #CBD5E1;
+      border-left-color: var(--cb-green-action);
+    }
+
+    .cb-card-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #F1F5F9;
+    }
+
+    .cb-card-badges {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      letter-spacing: 0.02em;
+    }
+
+    .badge-vigente {
+      background: var(--badge-vigente-bg);
+      color: var(--badge-vigente-text);
+      border: 1px solid var(--badge-vigente-border);
+    }
+
+    .badge-encerrado {
+      background: var(--badge-encerrado-bg);
+      color: var(--badge-encerrado-text);
+      border: 1px solid var(--badge-encerrado-border);
+    }
+
+    .badge-mod {
+      background: #EFF6FF;
+      color: #1D4ED8;
+      border: 1px solid #BFDBFE;
+    }
+
+    .cb-card-num {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--cb-text-dark);
+    }
+
+    .cb-card-num span {
+      color: var(--cb-green-primary);
+    }
+
+    .cb-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin-bottom: 14px;
+      background: #F8FAFC;
+      padding: 12px 14px;
+      border-radius: var(--radius-sm);
+      border: 1px solid #F1F5F9;
+    }
+
+    .cb-grid-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .cb-grid-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--cb-text-muted);
+      letter-spacing: 0.04em;
+    }
+
+    .cb-grid-value {
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: var(--cb-text-dark);
+    }
+
+    .cb-grid-value.val {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--cb-green-primary);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .cb-card-text {
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: #334155;
+      margin-bottom: 16px;
+      background: #FFFFFF;
+      border-left: 3px solid #CBD5E1;
+      padding: 10px 14px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    }
+
+    /* Anexos e Aditivos */
+    .cb-anexos-box {
+      margin-bottom: 16px;
+      padding-top: 10px;
+      border-top: 1px dashed #E2E8F0;
+    }
+
+    .cb-anexos-title {
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--cb-text-muted);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cb-anexos-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .cb-btn-anexo {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #F8FAFC;
+      color: #334155;
+      border: 1px solid var(--cb-gray-border);
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+    }
+
+    .cb-btn-anexo:hover {
+      background: #FFFFFF;
+      color: var(--cb-green-primary);
+      border-color: var(--cb-green-action);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+      transform: translateY(-1px);
+    }
+
+    .cb-btn-anexo svg {
+      width: 13px;
+      height: 13px;
+      fill: currentColor;
+      color: #EF4444; /* Ícone de PDF */
+    }
+
+    .cb-card-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cb-btn-licitacon {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--cb-green-primary);
+      color: var(--cb-white);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+    }
+
+    .cb-btn-licitacon:hover {
+      background: var(--cb-green-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgba(0, 104, 56, 0.2);
+    }
+
+    .cb-btn-licitacon svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+    }
+
+    /* Paginação */
+    .cb-pagination-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      padding: 12px 18px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 20px;
+    }
+
+    .cb-pagination-info {
+      font-size: 0.82rem;
+      color: var(--cb-text-muted);
+      font-weight: 500;
+    }
+
+    .cb-pagination-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cb-btn-page {
+      padding: 6px 14px;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border: 1px solid var(--cb-gray-border);
+      background: var(--cb-white);
+      color: var(--cb-text-body);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .cb-btn-page:hover:not(:disabled) {
+      background: #F1F5F9;
+      color: var(--cb-text-dark);
+    }
+
+    .cb-btn-page:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .cb-empty-state {
+      background: var(--cb-white);
+      border: 1px dashed var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--cb-text-muted);
+    }
+
+    .cb-empty-state svg {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 12px;
+      color: #94A3B8;
+    }
+
+    .cb-empty-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--cb-text-dark);
+      margin-bottom: 4px;
+    }
+
+    .cb-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 0.78rem;
+      color: var(--cb-text-muted);
+      padding: 14px 18px;
+      background: var(--cb-white);
+      border: 1px solid var(--cb-gray-border);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .cb-footer strong {
+      color: var(--cb-text-dark);
+    }
+
+    @media (max-width: 768px) {
+      .cb-topbar { padding: 14px; }
+      .cb-topbar-heading { font-size: 1.1rem; }
+      .cb-card-grid { grid-template-columns: 1fr; }
+      .cb-pagination-bar { flex-direction: column; align-items: stretch; }
+      .cb-pagination-controls { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="app" class="cb-widget">
+
+    <!-- Topbar Header -->
+    <header class="cb-topbar">
+      <div class="cb-topbar-title">
+        <div class="cb-badge-tce">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+          LICITACON • TCE-RS (CÓD. 75101)
+        </div>
+        <h1 class="cb-topbar-heading">Contratos e Termos Aditivos</h1>
+        <p class="cb-topbar-subtitle">
+          Contratos administrativos celebrados pela Câmara Municipal de Coronel Barros com empresas e prestadores de serviços
+        </p>
+      </div>
+    </header>
+
+    <!-- KPIs -->
+    <section class="cb-kpis" aria-label="Resumo dos Contratos">
+      <div class="cb-kpi-card">
+        <div class="cb-kpi-icon total">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <div>
+          <div class="cb-kpi-val" id="kpi-total">--</div>
+          <div class="cb-kpi-label">Total de Contratos</div>
+        </div>
+      </div>
+
+      <div class="cb-kpi-card">
+        <div class="cb-kpi-icon vigente">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <div class="cb-kpi-val" id="kpi-vigentes">--</div>
+          <div class="cb-kpi-label">Contratos Vigentes</div>
+        </div>
+      </div>
+
+      <div class="cb-kpi-card">
+        <div class="cb-kpi-icon encerrado">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <div class="cb-kpi-val" id="kpi-encerrados">--</div>
+          <div class="cb-kpi-label">Contratos Concluídos</div>
+        </div>
+      </div>
+
+      <div class="cb-kpi-card">
+        <div class="cb-kpi-icon valor">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <div>
+          <div class="cb-kpi-val" id="kpi-valor" style="font-size:1.15rem;">--</div>
+          <div class="cb-kpi-label">Total Contratado Histórico</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="cb-filter-panel" aria-label="Filtros de Pesquisa">
+      <div class="cb-filter-row">
+        <div class="cb-search-wrapper">
+          <svg class="cb-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="input-busca" class="cb-search-input" placeholder="Buscar por objeto, empresa contratada, CNPJ ou número do contrato..." aria-label="Buscar contrato">
+        </div>
+
+        <div class="cb-select-wrapper">
+          <select id="select-ano" class="cb-select" aria-label="Filtrar por ano">
+            <option value="">Todos os Anos</option>
+          </select>
+        </div>
+
+        <div class="cb-select-wrapper">
+          <select id="select-situacao" class="cb-select" aria-label="Filtrar por situação">
+            <option value="">Todas as Situações</option>
+            <option value="Vigente">Apenas Vigentes</option>
+            <option value="Encerrado">Apenas Encerrados</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Listagem -->
+    <main id="container-contratos" class="cb-items-container" aria-live="polite">
+      <div class="cb-empty-state">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <div class="cb-empty-title">Carregando contratos do LicitaCon...</div>
+        <p>Aguarde um momento enquanto os registros oficiais são carregados.</p>
+      </div>
+    </main>
+
+    <!-- Paginação -->
+    <nav class="cb-pagination-bar" aria-label="Paginação">
+      <div class="cb-pagination-info" id="pagination-info">Exibindo 0 contratos</div>
+      <div class="cb-pagination-controls">
+        <button id="btn-prev-page" class="cb-btn-page" disabled>Anterior</button>
+        <span id="lbl-page-cur" style="font-size:0.82rem; font-weight:700; color:var(--cb-text-dark); margin:0 4px;">1</span>
+        <button id="btn-next-page" class="cb-btn-page" disabled>Próxima</button>
+      </div>
+    </nav>
+
+    <!-- Rodapé -->
+    <footer class="cb-footer">
+      <div>
+        <strong>Fonte Oficial:</strong> Sistema LicitaCon • Tribunal de Contas do Estado do Rio Grande do Sul (TCE-RS)
+      </div>
+      <div>
+        Última sincronização: <strong id="lbl-data-sincronizacao">--/--/----</strong>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    (function() {
+      'use strict';
+
+      let dadosCon = [];
+      let filtroBusca = '';
+      let filtroAno = '';
+      let filtroSituacao = '';
+      let paginaAtual = 1;
+      const ITENS_POR_PAGINA = 8;
+
+      const containerContratos = document.getElementById('container-contratos');
+      const inputBusca = document.getElementById('input-busca');
+      const selectAno = document.getElementById('select-ano');
+      const selectSituacao = document.getElementById('select-situacao');
+      const kpiTotal = document.getElementById('kpi-total');
+      const kpiVigentes = document.getElementById('kpi-vigentes');
+      const kpiEncerrados = document.getElementById('kpi-encerrados');
+      const kpiValor = document.getElementById('kpi-valor');
+      const paginationInfo = document.getElementById('pagination-info');
+      const lblPageCur = document.getElementById('lbl-page-cur');
+      const btnPrevPage = document.getElementById('btn-prev-page');
+      const btnNextPage = document.getElementById('btn-next-page');
+      const lblDataSincronizacao = document.getElementById('lbl-data-sincronizacao');
+
+      // Notificação de altura anti-loop
+      let lastSentHeight = 0;
+      let resizeDebounceTimer = null;
+
+      function notificarAltura() {
+        clearTimeout(resizeDebounceTimer);
+        resizeDebounceTimer = setTimeout(() => {
+          const app = document.getElementById('app');
+          if (!app) return;
+          const rect = app.getBoundingClientRect();
+          const height = Math.ceil(rect.height);
+          if (Math.abs(height - lastSentHeight) > 4) {
+            lastSentHeight = height;
+            if (window.parent && window.parent !== window) {
+              window.parent.postMessage({ type: 'cb-resize', height: height }, '*');
+            }
+          }
+        }, 50);
+      }
+
+      if (window.ResizeObserver) {
+        const ro = new ResizeObserver(() => notificarAltura());
+        const appElem = document.getElementById('app');
+        if (appElem) ro.observe(appElem);
+      } else {
+        window.addEventListener('resize', notificarAltura);
+      }
+
+      function formatarMoeda(val) {
+        return (val || 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      }
+
+      function formatarDataBR(dataStr) {
+        if (!dataStr) return 'Não informada';
+        try {
+          const partes = dataStr.split('-');
+          if (partes.length === 3) return `${partes[2]}/${partes[1]}/${partes[0]}`;
+          const d = new Date(dataStr);
+          return d.toLocaleDateString('pt-BR');
+        } catch {
+          return dataStr;
+        }
+      }
+
+      async function carregarDados() {
+        try {
+          const resp = await fetch('./data/contratos.json?t=' + Date.now());
+          if (!resp.ok) throw new Error('Falha ao carregar dados de contratos.');
+          const global = await resp.json();
+          dadosCon = global.contratos || [];
+
+          kpiTotal.textContent = global.total_contratos ?? dadosCon.length;
+          kpiVigentes.textContent = global.vigentes ?? 0;
+          kpiEncerrados.textContent = global.encerrados ?? 0;
+          kpiValor.textContent = formatarMoeda(global.valor_total);
+
+          if (global.data_atualizacao) {
+            try {
+              const dt = new Date(global.data_atualizacao);
+              lblDataSincronizacao.textContent = dt.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+            } catch {
+              lblDataSincronizacao.textContent = global.data_atualizacao.slice(0, 10);
+            }
+          }
+
+          // Select de Anos
+          const anosSet = new Set();
+          dadosCon.forEach(item => { if (item.ano) anosSet.add(item.ano); });
+          const anosOrdenados = Array.from(anosSet).sort((a, b) => b - a);
+          selectAno.innerHTML = '<option value="">Todos os Anos</option>' +
+            anosOrdenados.map(ano => `<option value="${ano}">Ano ${ano}</option>`).join('');
+
+          inicializarEventos();
+          renderizar();
+        } catch (err) {
+          console.error(err);
+          containerContratos.innerHTML = `
+            <div class="cb-empty-state">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <div class="cb-empty-title">Erro ao carregar contratos</div>
+              <p>Ocorreu uma falha ao consultar os registros do TCE-RS. Tente novamente mais tarde.</p>
+            </div>
+          `;
+          notificarAltura();
+        }
+      }
+
+      function inicializarEventos() {
+        inputBusca.addEventListener('input', (e) => {
+          filtroBusca = e.target.value.toLowerCase().trim();
+          paginaAtual = 1;
+          renderizar();
+        });
+
+        selectAno.addEventListener('change', (e) => {
+          filtroAno = e.target.value;
+          paginaAtual = 1;
+          renderizar();
+        });
+
+        selectSituacao.addEventListener('change', (e) => {
+          filtroSituacao = e.target.value;
+          paginaAtual = 1;
+          renderizar();
+        });
+
+        btnPrevPage.addEventListener('click', () => {
+          if (paginaAtual > 1) {
+            paginaAtual--;
+            renderizar();
+          }
+        });
+
+        btnNextPage.addEventListener('click', () => {
+          paginaAtual++;
+          renderizar();
+        });
+      }
+
+      function filtrar() {
+        return dadosCon.filter(item => {
+          if (filtroAno && String(item.ano) !== String(filtroAno)) return false;
+          if (filtroSituacao && item.situacao !== filtroSituacao) return false;
+
+          if (filtroBusca) {
+            const haystack = [
+              item.numero || '',
+              String(item.ano || ''),
+              item.processo || '',
+              item.objeto || '',
+              item.fornecedor_nome || '',
+              item.fornecedor_doc || '',
+              item.licitacao_origem || ''
+            ].join(' ').toLowerCase();
+
+            if (!haystack.includes(filtroBusca)) return false;
+          }
+          return true;
+        });
+      }
+
+      function renderizar() {
+        const filtrados = filtrar();
+        const total = filtrados.length;
+        const totalPaginas = Math.ceil(total / ITENS_POR_PAGINA) || 1;
+
+        if (paginaAtual > totalPaginas) paginaAtual = totalPaginas;
+        if (paginaAtual < 1) paginaAtual = 1;
+
+        const inicio = (paginaAtual - 1) * ITENS_POR_PAGINA;
+        const fim = Math.min(inicio + ITENS_POR_PAGINA, total);
+        const itensPagina = filtrados.slice(inicio, fim);
+
+        if (total === 0) {
+          paginationInfo.textContent = 'Nenhum contrato encontrado para os filtros selecionados';
+        } else {
+          paginationInfo.textContent = `Exibindo ${inicio + 1} a ${fim} de ${total} contrato${total > 1 ? 's' : ''}`;
+        }
+        lblPageCur.textContent = `${paginaAtual} / ${totalPaginas}`;
+        btnPrevPage.disabled = paginaAtual <= 1;
+        btnNextPage.disabled = paginaAtual >= totalPaginas;
+
+        if (total === 0) {
+          containerContratos.innerHTML = `
+            <div class="cb-empty-state">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <div class="cb-empty-title">Nenhum contrato encontrado</div>
+              <p>Tente ajustar os termos da busca ou redefinir os filtros de ano e situação.</p>
+            </div>
+          `;
+          notificarAltura();
+          return;
+        }
+
+        containerContratos.innerHTML = itensPagina.map(item => {
+          const badgeSitClasse = item.situacao === 'Vigente' ? 'badge-vigente' : 'badge-encerrado';
+          const temAnexos = item.documentos && item.documentos.length > 0;
+
+          return `
+            <article class="cb-con-card">
+              <div class="cb-card-header">
+                <div class="cb-card-badges">
+                  <span class="badge-pill ${badgeSitClasse}">${item.situacao}</span>
+                  <span class="badge-pill badge-mod">${item.modalidade}</span>
+                </div>
+                <div class="cb-card-num">
+                  Contrato nº <span>${item.numero}/${item.ano}</span>
+                </div>
+              </div>
+
+              <div class="cb-card-grid">
+                <div class="cb-grid-item">
+                  <span class="cb-grid-label">Valor do Contrato</span>
+                  <span class="cb-grid-value val">${formatarMoeda(item.valor_contrato)}</span>
+                </div>
+                <div class="cb-grid-item">
+                  <span class="cb-grid-label">Vigência</span>
+                  <span class="cb-grid-value">
+                    ${formatarDataBR(item.inicio_vigencia)} a ${formatarDataBR(item.fim_vigencia)}
+                  </span>
+                </div>
+                <div class="cb-grid-item">
+                  <span class="cb-grid-label">Contratada / Fornecedor</span>
+                  <span class="cb-grid-value" title="${item.fornecedor_doc ? item.fornecedor_doc : ''}">
+                    ${item.fornecedor_nome}
+                    ${item.fornecedor_doc ? `<br><small style="color:var(--cb-text-muted); font-size:0.75rem;">CNPJ/CPF: ${item.fornecedor_doc}</small>` : ''}
+                  </span>
+                </div>
+                <div class="cb-grid-item">
+                  <span class="cb-grid-label">Licitação / Processo Origem</span>
+                  <span class="cb-grid-value">${item.licitacao_origem !== 'Não vinculada' ? `Licitação ${item.licitacao_origem}` : `Processo ${item.processo}/${item.ano_processo || item.ano}`}</span>
+                </div>
+              </div>
+
+              <div class="cb-card-text">
+                <strong style="color:var(--cb-text-dark); display:block; margin-bottom:4px; font-size:0.8rem; text-transform:uppercase;">Objeto Contratual:</strong>
+                ${item.objeto || 'Não detalhado no cadastro do TCE-RS.'}
+              </div>
+
+              ${temAnexos ? `
+                <div class="cb-anexos-box">
+                  <div class="cb-anexos-title">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    Arquivos do Contrato e Aditivos (${item.documentos.length}):
+                  </div>
+                  <div class="cb-anexos-list">
+                    ${item.documentos.map(doc => `
+                      <a href="${doc.url}" target="_blank" rel="noopener noreferrer" class="cb-btn-anexo" title="Baixar documento em PDF">
+                        <svg viewBox="0 0 24 24"><path d="M19 13v5a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-5"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        ${doc.tipo_rotulo}: ${doc.nome_arquivo}
+                      </a>
+                    `).join('')}
+                  </div>
+                </div>
+              ` : ''}
+
+              <div class="cb-card-actions">
+                ${item.link_licitacon ? `
+                  <a href="${item.link_licitacon}" target="_blank" rel="noopener noreferrer" class="cb-btn-licitacon" title="Abre a ficha completa do contrato no LicitaCon Cidadão TCE-RS">
+                    <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                    Acessar no LicitaCon TCE-RS
+                  </a>
+                ` : ''}
+              </div>
+            </article>
+          `;
+        }).join('');
+
+        notificarAltura();
+      }
+
+      carregarDados();
+    })();
+  </script>
+</body>
+</html>

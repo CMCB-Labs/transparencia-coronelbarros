@@ -1,0 +1,1535 @@
+{
+  "ente": "Câmara Municipal de Coronel Barros - RS",
+  "orgao_tce": 75101,
+  "fonte": "Tribunal de Contas do Estado do Rio Grande do Sul (TCE-RS) / LicitaCon",
+  "url_origem": "https://dados.tce.rs.gov.br/dados/licitacon/licitacao/orgao/75101.csv.zip",
+  "data_atualizacao": "2026-11-11T00:01:40.411121+00:00",
+  "total_licitacoes": 32,
+  "total_dispensas": 11,
+  "total_inexigibilidades": 17,
+  "total_outras": 4,
+  "licitacoes": [
+    {
+      "id": "2025_3_PRI",
+      "numero": "3",
+      "ano": 2025,
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "69",
+      "ano_processo": "2025",
+      "objeto": "contratação de empresa para atender às demandas do Poder Legislativo, dada a complexidade e a multidisciplinaridade dos temas em pauta, que exigem conhecimentos especializados em áreas como Direito Público, Economia e Contabilidade Pública. Essa escolha possibilita aos agentes públicos acesso a dados, estudos, modelos, orientações e análises técnicas especializadas e atualizadas sobre os assuntos em discussão, proporcionando suporte técnico de alta qualidade. Além disso, a atuação da Inlegis contribui para a tomada de decisões fundamentadas e transparentes, promovendo a prestação de contas e a accountability, pilares essenciais para a eficiência e responsabilidade do Poder Legislativo perante a sociedade.",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2025-01-24",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 15600.0,
+      "valor_homologado": 0.0,
+      "valor_final": 15600.0,
+      "fornecedor_doc": "30.050.141/0001-80",
+      "fornecedor_nome": "INLEGIS CONSULTORIA E TREINAMENTOS",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:1303461,14,75101&cs=16VCauLFbWz8R3ZWTevDGufgz4sg",
+      "documentos": [
+        {
+          "tipo_codigo": "CNE",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "Atestados Capacidade Tecnica.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/7582765"
+        },
+        {
+          "tipo_codigo": "EXI",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "eXTRATO iNLEGIS.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/7563368"
+        },
+        {
+          "tipo_codigo": "TFI",
+          "tipo_rotulo": "Termo de Inexigibilidade",
+          "nome_arquivo": "Inex.Inlegis.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/7563369"
+        },
+        {
+          "tipo_codigo": "TFI",
+          "tipo_rotulo": "Termo de Inexigibilidade",
+          "nome_arquivo": "ETP Inlegis.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/7563370"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "Proposta Inlegis.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/7563371"
+        }
+      ]
+    },
+    {
+      "id": "2023_34_RPO",
+      "numero": "34",
+      "ano": 2023,
+      "modalidade_codigo": "RPO",
+      "modalidade": "Registro de Preços",
+      "processo": "2002",
+      "ano_processo": "2023",
+      "objeto": "REEMISSÃO/ACERTO DO EMPENHO Mº 4190/2023 - CONTRATAÇÃO DE EMPRESA PARA PRESTAÇÃO DE SERVIÇOS DE REALIZAÇÃO DE CONCURSO PÚBLICO",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2023-08-17",
+      "data_homologacao": "2023-08-17",
+      "data_adjudicacao": null,
+      "valor_estimado": 1072.26,
+      "valor_homologado": 0.0,
+      "valor_final": 1072.26,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:1094893,14,75101&cs=1XwZVCKCqJHIBzT76pIA9ATzekA8",
+      "documentos": [
+        {
+          "tipo_codigo": "EXA",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "extrato INEXIGIBILIDADE 43-2023.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/6087943"
+        },
+        {
+          "tipo_codigo": "ELO",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "TP N 003 - 2023 - CONCURSO PuBLICO.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/6087944"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "proposta legalle.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/6087945"
+        },
+        {
+          "tipo_codigo": "AOG",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "iNEXIGIBILIDADE 43-2023.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/6087946"
+        },
+        {
+          "tipo_codigo": "PMV",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "proposta legalle.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/6087948"
+        },
+        {
+          "tipo_codigo": "ARP",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "ata tp 003-2023.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/6087947"
+        }
+      ]
+    },
+    {
+      "id": "2023_3_TMP",
+      "numero": "3",
+      "ano": 2023,
+      "modalidade_codigo": "TMP",
+      "modalidade": "Tomada de Preços",
+      "processo": "988",
+      "ano_processo": "2023",
+      "objeto": "EDITAL DE TOMADA DE PREÇOS PARA CONTRATAÇÃO DE EMPRESA ESPECIALIZADA NA PRESTAÇÃO DE SERVIÇOS PARA REALIZAÇÃO DE CONCURSO PÚBLICO DE PROVAS OBJETIVAS E PROVAS PRÁTICAS E TÍTULOS, BEM COMO COMPROVAÇÃO DE EXPERIÊNCIA PARA PROVIMENTO DE CARGOS DO QUADRO DE SERVIDORES DOS PODERES EXECUTIVO E LEGISLATIVO DE CORONEL BARROS – RS",
+      "fase_codigo": "ADH",
+      "fase": "Publicado",
+      "data_abertura": "2023-05-29",
+      "data_homologacao": "2023-06-02",
+      "data_adjudicacao": "2023-05-29",
+      "valor_estimado": 1072.26,
+      "valor_homologado": 38600.0,
+      "valor_final": 38600.0,
+      "fornecedor_doc": "20.951.635/0001-81",
+      "fornecedor_nome": "LEGALLE CONCURSOS E SOLUCOES INTEGRADAS LTDA",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:1086940,14,75101&cs=1nf1y0b4E153wNX67OYJUUZnOyxI",
+      "documentos": [
+        {
+          "tipo_codigo": "AHP",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "ata tp 003-2023.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/6048661"
+        },
+        {
+          "tipo_codigo": "OUT",
+          "tipo_rotulo": "Outros Documentos",
+          "nome_arquivo": "proposta legalle.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/6048572"
+        },
+        {
+          "tipo_codigo": "OUT",
+          "tipo_rotulo": "Outros Documentos",
+          "nome_arquivo": "Homologação TP 003-2023.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/6048570"
+        },
+        {
+          "tipo_codigo": "PUE",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "11-JCD004.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/6048587"
+        },
+        {
+          "tipo_codigo": "PRO",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "Proposta Objetivas.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/6048723"
+        },
+        {
+          "tipo_codigo": "OUT",
+          "tipo_rotulo": "Outros Documentos",
+          "nome_arquivo": "ata tp 003-2023.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/6048573"
+        },
+        {
+          "tipo_codigo": "PRO",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "proposta legalle.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/6048592"
+        },
+        {
+          "tipo_codigo": "EDI",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "TP Nº 003 - 2023 - CONCURSO PÚBLICO (1).pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/6021554"
+        },
+        {
+          "tipo_codigo": "HOM",
+          "tipo_rotulo": "Termo de Homologação",
+          "nome_arquivo": "Homologação TP 003-2023.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/6051690"
+        }
+      ]
+    },
+    {
+      "id": "2023_392_PRD",
+      "numero": "392",
+      "ano": 2023,
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "407",
+      "ano_processo": "2023",
+      "objeto": "CONTRATAÇÃO DE EMPRESA ESPECIALIZADA NA GRAVAÇÃO E TRANSMISSÃO DAS SESSÕES LEGISLATIVAS",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2023-02-28",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 26600.0,
+      "valor_homologado": 0.0,
+      "valor_final": 26600.0,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:1045829,5,75101&cs=1qDlXLa3f1ZaCQjEBCm1TSgJrLhs",
+      "documentos": [
+        {
+          "tipo_codigo": "TFD",
+          "tipo_rotulo": "Termo de Dispensa",
+          "nome_arquivo": "TERMO DE AUTORIZACAO E RATIFICACAO DE PROCESSO 407-2023.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/5714343"
+        },
+        {
+          "tipo_codigo": "OUP",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "Orcamento Fabio.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/5714339"
+        },
+        {
+          "tipo_codigo": "EXD",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO DA DISPENSA POR LIMITE n 392.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/5714342"
+        },
+        {
+          "tipo_codigo": "OUP",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "Orcamento Guilber.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/5714340"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "Orcamento Zalmir.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/5714341"
+        }
+      ]
+    },
+    {
+      "id": "2023_1_PRI",
+      "numero": "1",
+      "ano": 2023,
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "8",
+      "ano_processo": "2023",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADES DO PODER LEGISLATIVO NO ANO DE 2023",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2023-01-02",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 717.12,
+      "valor_homologado": 0.0,
+      "valor_final": 717.12,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:1031810,5,75101&cs=1vZ0maKVubHjE9u7YGwd9zImUqZw",
+      "documentos": [
+        {
+          "tipo_codigo": "EXI",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "Extrato Inexigibilidade 001_2023.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/5619632"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "Proposta OI.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/5619635"
+        },
+        {
+          "tipo_codigo": "TFI",
+          "tipo_rotulo": "Termo de Inexigibilidade",
+          "nome_arquivo": "formalizacao Inexigibilidade 001_2023.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/5619633"
+        },
+        {
+          "tipo_codigo": "CEX",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "A  notoria especializacao na inexigibilidade de licitacao.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/5619634"
+        }
+      ]
+    },
+    {
+      "id": "2022_15_RPO",
+      "numero": "15",
+      "ano": 2022,
+      "modalidade_codigo": "RPO",
+      "modalidade": "Registro de Preços",
+      "processo": "3121",
+      "ano_processo": "2022",
+      "objeto": "AQUISIÇÃO EM FORMA DE CARONA DE ATA DE REGISTRO DE PREÇOS DO MUNICIPIO DE CORONEL BARROS - PREGÃO PRESENCIAL Nº 023-2021, PROCESSO 2884/2021.",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2022-12-08",
+      "data_homologacao": "2022-12-08",
+      "data_adjudicacao": null,
+      "valor_estimado": 1257.0,
+      "valor_homologado": 0.0,
+      "valor_final": 1257.0,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:1006708,5,75101&cs=1-IHaUr5XRlsQlDfH_h6xU-BaiME",
+      "documentos": [
+        {
+          "tipo_codigo": "EXA",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "Adesao Carona Camara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/5437895"
+        },
+        {
+          "tipo_codigo": "ARP",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "ATA RP 023-2021.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/5437896"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "Preco Final RP Por item.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/5437898"
+        },
+        {
+          "tipo_codigo": "PMV",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "Media Precos Equipamentos Informatica e climatizadores.xlsx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/5437899"
+        },
+        {
+          "tipo_codigo": "ELO",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "PP N 023 - SRP_EQUIPAMENTOS_DE_INFOR_RETIF.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/5437897"
+        },
+        {
+          "tipo_codigo": "AOG",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "Autorizacao Adesao II.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/5437900"
+        }
+      ]
+    },
+    {
+      "id": "2022_1_RPO",
+      "numero": "1",
+      "ano": 2022,
+      "modalidade_codigo": "RPO",
+      "modalidade": "Registro de Preços",
+      "processo": "1147",
+      "ano_processo": "2022",
+      "objeto": "AQUISIÇÃO EM MFORMA DE CARONA DE ATA DE REGISTRO DE PREÇOS DO MUNICIPIO DE CORONEL BARROS - PREGÃO PRESENCIAL Nº 023-2021, PROCESSO 2884",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2022-04-29",
+      "data_homologacao": "2022-04-29",
+      "data_adjudicacao": null,
+      "valor_estimado": 10150.0,
+      "valor_homologado": 0.0,
+      "valor_final": 10150.0,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:939967,5,75101&cs=13sQ2VAQW0dMo29H-2dCOj1jmeEs",
+      "documentos": [
+        {
+          "tipo_codigo": "AOG",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "Autorizacao Adesao.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4944811"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "Proposta Cossetin.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4944812"
+        },
+        {
+          "tipo_codigo": "ELO",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "INEXIGIBILIDADE DE LICITACAO N 7-2022.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4944814"
+        },
+        {
+          "tipo_codigo": "EXA",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO DE JUSTIFICATIVA DE INEXIGIBILIDADE DE LICITACAO.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4944815"
+        },
+        {
+          "tipo_codigo": "PMV",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "Licitacao_480_5.PDF",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4944817"
+        },
+        {
+          "tipo_codigo": "PMV",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "220523124926.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4944818"
+        },
+        {
+          "tipo_codigo": "ARP",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "ATA RP 023-2021.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4944810"
+        },
+        {
+          "tipo_codigo": "ELO",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "PP N 023 - SRP_EQUIPAMENTOS_DE_INFOR_RETIF.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4944813"
+        },
+        {
+          "tipo_codigo": "PMV",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "ata climatizadores.PDF",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4944816"
+        }
+      ]
+    },
+    {
+      "id": "2022_614_PRD",
+      "numero": "614",
+      "ano": 2022,
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "631",
+      "ano_processo": "2022",
+      "objeto": "GENEROS DE ALIMENTAÇÃO DESTINBADA A CAMARA DE VEREADORES",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2022-03-21",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 21.6,
+      "valor_homologado": 0.0,
+      "valor_final": 21.6,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:978341,5,75101&cs=1FGFB55BhympXF9NgyddLeBAUJk0",
+      "documentos": [
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "Proposta Dobler Proc 631.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/5230754"
+        },
+        {
+          "tipo_codigo": "TFD",
+          "tipo_rotulo": "Termo de Dispensa",
+          "nome_arquivo": "termo de Formalizacao.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/5230756"
+        },
+        {
+          "tipo_codigo": "EXD",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "Extrato Processo 631.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/5230755"
+        }
+      ]
+    },
+    {
+      "id": "2022_461_PRD",
+      "numero": "461",
+      "ano": 2022,
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "475",
+      "ano_processo": "2022",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADES DA CASA LEGISLATIVA",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2022-03-04",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 26600.0,
+      "valor_homologado": 0.0,
+      "valor_final": 26600.0,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:915974,5,75101&cs=1b5wiyI6p4gvZL6K9IHu_3bfc5bs",
+      "documentos": [
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "Proposta Contratado.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4779586"
+        },
+        {
+          "tipo_codigo": "OUP",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "Proposta Schmalz.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4779588"
+        },
+        {
+          "tipo_codigo": "EXD",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO DA DISPENSA POR LIMITE n 461.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4779591"
+        },
+        {
+          "tipo_codigo": "OUP",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "Proposta Fuzz.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4779587"
+        },
+        {
+          "tipo_codigo": "OUP",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "Proposta Zug.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4779589"
+        },
+        {
+          "tipo_codigo": "TFD",
+          "tipo_rotulo": "Termo de Dispensa",
+          "nome_arquivo": "Termo   de formalizacao de dispensa.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4779590"
+        }
+      ]
+    },
+    {
+      "id": "2022_4_PRI",
+      "numero": "4",
+      "ano": 2022,
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "100",
+      "ano_processo": "2022",
+      "objeto": "DESTINADO A PRESTAÇÃO DE SERVIÇOS TECNICOS ESPECIALIZADOS DE ASSESSORIA E CONSULTORIA CONTABIL,DE GESTAO E JURIDICA,ATRAVES DE CONSULTAS POR ESCRITO,POR TELEFONE, INTERNET E PESSOALMENTE A CAMARA DE VEREADORES.",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2022-01-20",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 14844.0,
+      "valor_homologado": 0.0,
+      "valor_final": 14844.0,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:901262,5,75101&cs=1TI0pQBj59qMgJT8L91EYyHtUAb0",
+      "documentos": [
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "Proposta.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4684339"
+        },
+        {
+          "tipo_codigo": "EXI",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO DE JUSTIFICATIVA DE INEXIGIBILIDADE DE LICITACAO n4.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4684337"
+        },
+        {
+          "tipo_codigo": "TFI",
+          "tipo_rotulo": "Termo de Inexigibilidade",
+          "nome_arquivo": "PROCESSO N100 INEXIGIBILIDADE.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4684338"
+        }
+      ]
+    },
+    {
+      "id": "2022_2_PRI",
+      "numero": "2",
+      "ano": 2022,
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "27",
+      "ano_processo": "2022",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADES DO PODER LEGISLATIVO NO ANO DE 2022",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2022-01-03",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 820.0,
+      "valor_homologado": 0.0,
+      "valor_final": 820.0,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:915973,5,75101&cs=1etrcc4LMKZcehT-7W2WDRZfIDco",
+      "documentos": [
+        {
+          "tipo_codigo": "CEX",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "NOTORIA ESPECIALIZACAO.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4779583"
+        },
+        {
+          "tipo_codigo": "TFI",
+          "tipo_rotulo": "Termo de Inexigibilidade",
+          "nome_arquivo": "Termo Inexibilidade oi Camara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4779582"
+        },
+        {
+          "tipo_codigo": "EXI",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "Extrato Inexibilidade oi Camara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4779584"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "Proposta Oi Legislativo.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4779585"
+        }
+      ]
+    },
+    {
+      "id": "2021_570_PRD",
+      "numero": "570",
+      "ano": 2021,
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "587",
+      "ano_processo": "2021",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADES LEGISLATIVAS DE MARÇO A DEZEMBRO DE 2021 - REEMISSÃO/ACERTO DO EMPENHO N°1478/2021",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2021-03-26",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 195.31,
+      "valor_homologado": 0.0,
+      "valor_final": 195.31,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:823387,5,75101&cs=1DtfWa45ap8Uq60HV90ieVLbDdhc",
+      "documentos": [
+        {
+          "tipo_codigo": "EXD",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO DA DISPENSA POR LIMITE n 570.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4142206"
+        },
+        {
+          "tipo_codigo": "TFD",
+          "tipo_rotulo": "Termo de Dispensa",
+          "nome_arquivo": "Termo de justificativa.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4142207"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "Proposta.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4142208"
+        }
+      ]
+    },
+    {
+      "id": "2021_525_PRD",
+      "numero": "525",
+      "ano": 2021,
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "540",
+      "ano_processo": "2021",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADES LEGISLATIVAS DE MARÇO A DEZEMBRO DE 2021 - REEMISSÃO/ACERTO DO EMPENHO N°128/2021",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2021-03-19",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 195.31,
+      "valor_homologado": 0.0,
+      "valor_final": 195.31,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:814640,5,75101&cs=1S3UKa7bkSyEXuLqBzgEHjF6op3Y",
+      "documentos": [
+        {
+          "tipo_codigo": "EXD",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO DA DISPENSA POR LIMITE n 525.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4082435"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "Proposta Vivo Camara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4082436"
+        },
+        {
+          "tipo_codigo": "TFD",
+          "tipo_rotulo": "Termo de Dispensa",
+          "nome_arquivo": "TERMO DE JUSTIFICATIVA.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4082437"
+        }
+      ]
+    },
+    {
+      "id": "2021_6_PRI",
+      "numero": "6",
+      "ano": 2021,
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "28",
+      "ano_processo": "2021",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADES LEGISLATIVAS DE JANEIRO A DEZEMBRO DE 2021",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2021-01-04",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 229.08,
+      "valor_homologado": 0.0,
+      "valor_final": 229.08,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:805173,5,75101&cs=1hJ5zzmRCW_-DlRZ_LxLzbkOJvpU",
+      "documentos": [
+        {
+          "tipo_codigo": "EXI",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO DE JUSTIFICATIVA DE INEXIGIBILIDADE DE LICITACAO n 6.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4021004"
+        },
+        {
+          "tipo_codigo": "TFI",
+          "tipo_rotulo": "Termo de Inexigibilidade",
+          "nome_arquivo": "PROCESSO N 28.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4021000"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "proposta vivo camara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4021006"
+        },
+        {
+          "tipo_codigo": "CEX",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "NOTORIA ESPECIALIZACAO.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4021007"
+        }
+      ]
+    },
+    {
+      "id": "2021_4_PRI",
+      "numero": "4",
+      "ano": 2021,
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "21",
+      "ano_processo": "2021",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADES DO PODER LEGISLATIVO NO ANO DE 2021 - REEMISSÃO/ACERTO DO EMPENHO Nº95/2021",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2021-01-04",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 733.99,
+      "valor_homologado": 0.0,
+      "valor_final": 733.99,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:805172,5,75101&cs=1j4JRJC02OW2NLdsNpYrBbM30XgE",
+      "documentos": [
+        {
+          "tipo_codigo": "CEX",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "NOTORIA ESPECIALIZACAO.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4021002"
+        },
+        {
+          "tipo_codigo": "EXI",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO DE JUSTIFICATIVA DE INEXIGIBILIDADE DE LICITACAO n 5.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4021001"
+        },
+        {
+          "tipo_codigo": "TFI",
+          "tipo_rotulo": "Termo de Inexigibilidade",
+          "nome_arquivo": "PROCESSO N 21.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4021003"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "Proposta Oi Camara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/4021005"
+        }
+      ]
+    },
+    {
+      "id": "2020_2374_PRD",
+      "numero": "2374",
+      "ano": 2020,
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "2400",
+      "ano_processo": "2020",
+      "objeto": "DESTINADO A CAMARA DE VEREADORES, ACERTO/REEMISSÃO DO EMPENHO Nº 5932/2020",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2020-12-28",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 300.0,
+      "valor_homologado": 0.0,
+      "valor_final": 300.0,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:796831,5,75101&cs=1g0VKDH0eznEiRqbjTf2V_cpwmnM",
+      "documentos": [
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "PROPOSTA KING CAMARA.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/3970767"
+        },
+        {
+          "tipo_codigo": "EXD",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "Sumula Contratual 54_2020.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/3970768"
+        },
+        {
+          "tipo_codigo": "TFD",
+          "tipo_rotulo": "Termo de Dispensa",
+          "nome_arquivo": "DISPENSA DE LICITACAO POR JUSTIFICATIVA N 2400.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/3970766"
+        }
+      ]
+    },
+    {
+      "id": "2019_1669_PRD",
+      "numero": "1669",
+      "ano": 2019,
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "1704",
+      "ano_processo": "2019",
+      "objeto": "CONSIDERANDO A NECESSIDADE DE MODERNIZAR A ESTRUTRA DA CAMARA DE VEREADORES, CONSIDERANDO QUE O MOBILIÁRIO ATUAL NÃO COMPORTA O ARQUIVAMENTO DE  DOCUMENTOS; CONSIDERANDO AINDA QUE NÃO EXISTEM, MÓVEIS NO MERCADO QUE SUPORTEM O PESO E USO CONTINUO, REEMISSÃO/ACERTO DO EMPENHO Nº 4917/2019",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2019-09-12",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 13800.0,
+      "valor_homologado": 0.0,
+      "valor_final": 13800.0,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:684991,5,75101&cs=1YTpB_Bs3l4T9UXAHQCdb3mp19Ng",
+      "documentos": [
+        {
+          "tipo_codigo": "TFD",
+          "tipo_rotulo": "Termo de Dispensa",
+          "nome_arquivo": "DISPENSA DE LICITACAO POR JUSTIFICATIVA N 1669.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/3188777"
+        },
+        {
+          "tipo_codigo": "EXD",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO DE DISPENSA POR JUSTIFICATIVA 1669.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/3188783"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "Proposta Weimer 2.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/3188782"
+        }
+      ]
+    },
+    {
+      "id": "2019_1367_PRD",
+      "numero": "1367",
+      "ano": 2019,
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "1394",
+      "ano_processo": "2019",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADES LEGISLATIVAS",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2019-07-26",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 13800.0,
+      "valor_homologado": 0.0,
+      "valor_final": 13800.0,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:684990,5,75101&cs=1B7hWZxC3Q5W3TjtfTo5zzpqhVSc",
+      "documentos": [
+        {
+          "tipo_codigo": "TFD",
+          "tipo_rotulo": "Termo de Dispensa",
+          "nome_arquivo": "DISPENSA DE LICITACAO POR JUSTIFICATIVA N 1367.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/3188780"
+        },
+        {
+          "tipo_codigo": "EXD",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO DE DISPENSA POR JUSTIFICATIVA 1367.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/3188778"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "Proposta Weimer.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/3188779"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "Proposta Weimer 2.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/3188781"
+        }
+      ]
+    },
+    {
+      "id": "2019_10_PRI",
+      "numero": "10",
+      "ano": 2019,
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "23",
+      "ano_processo": "2019",
+      "objeto": "DESTINADO A PRESTAÇÃO DE SERVIÇOS TECNICOS ESPECIALIZADOS DE ASSESSORIA E CONSULTORIA CONTABIL,DE GESTAO E JURIDICA,ATRAVES DE CONSULTAS POR ESCRITO,POR TELEFONE, INTERNET E PESSOALMENTE A CAMARA DE VEREADORES.",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2019-01-02",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 14948.4,
+      "valor_homologado": 0.0,
+      "valor_final": 14948.4,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:626696,5,75101&cs=1rY6xTVNpK7BqnnPwh_OZP9Wbz18",
+      "documentos": [
+        {
+          "tipo_codigo": "TFI",
+          "tipo_rotulo": "Termo de Inexigibilidade",
+          "nome_arquivo": "Termo_Formalizacao 2019 - IGAM.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2770659"
+        },
+        {
+          "tipo_codigo": "EXI",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO_DISPENSA_2019 - IGAM.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2770658"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "CM CORONEL BARROS  - RENOVACAO.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2770660"
+        }
+      ]
+    },
+    {
+      "id": "2019_7_PRI",
+      "numero": "7",
+      "ano": 2019,
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "12",
+      "ano_processo": "2019",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADES LEGISLATIVAS DE JANEIRO A DEZEMBRO DE 2018.",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2019-01-02",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 200.0,
+      "valor_homologado": 0.0,
+      "valor_final": 200.0,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:626695,5,75101&cs=1PdTPh-aDymDudJ3hfPg9CTrAfhU",
+      "documentos": [
+        {
+          "tipo_codigo": "EXI",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO DE JUSTIFICATIVA DE INEXIGIBILIDADE DE LICITACAO n 7.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2770656"
+        },
+        {
+          "tipo_codigo": "TFI",
+          "tipo_rotulo": "Termo de Inexigibilidade",
+          "nome_arquivo": "PROCESSO N 12.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2770655"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "vivo camara.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2770657"
+        }
+      ]
+    },
+    {
+      "id": "2019_3_PRI",
+      "numero": "3",
+      "ano": 2019,
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "4",
+      "ano_processo": "2019",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADES DO PODER LEGISLATIVO NO ANO DE 2019.",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2019-01-02",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 750.0,
+      "valor_homologado": 0.0,
+      "valor_final": 750.0,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:626694,5,75101&cs=1rbsic-7XBrplKr8M4I7vC_D6qTo",
+      "documentos": [
+        {
+          "tipo_codigo": "TFI",
+          "tipo_rotulo": "Termo de Inexigibilidade",
+          "nome_arquivo": "PROCESSO INEXIGIBILIDADE  N 4.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2770653"
+        },
+        {
+          "tipo_codigo": "EXI",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO DE  INEXIGIBILIDADE DE LICITACAO_ n 3.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2770652"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "OI PROPROSTA.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2770654"
+        }
+      ]
+    },
+    {
+      "id": "2018_2049_PRD",
+      "numero": "2049",
+      "ano": 2018,
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "2134",
+      "ano_processo": "2018",
+      "objeto": "MANTER ATIVIDADES DA CAMARA DE VEREADORES - REEMISSÃO/ACERTO DO EMPENHO Nº 6663/2018 - DESTINADO A DIVULGAÇÃO DOS ATOS DO PODER LESGISLATIVO EM 2018 E MANUTENÇÃO DO PORTAL",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2018-10-31",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 480.0,
+      "valor_homologado": 0.0,
+      "valor_final": 480.0,
+      "fornecedor_doc": "",
+      "fornecedor_nome": "Não informado / Em andamento",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:611155,5,75101&cs=1PUxyaPEGKB3ZPPlgxMnxEYRf_U8",
+      "documentos": [
+        {
+          "tipo_codigo": "EXD",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO DA DISPENSA POR LIMITE n 2049.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2655337"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "2018 - Camara Coronel Barros - Orcamento manutencao portal e email.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2655338"
+        },
+        {
+          "tipo_codigo": "TFD",
+          "tipo_rotulo": "Termo de Dispensa",
+          "nome_arquivo": "Termo_Formalizacao_Dispensa_308.1_Camara - 13 BITS(1).pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2655339"
+        }
+      ]
+    },
+    {
+      "id": "2018_46_PRI",
+      "numero": "46",
+      "ano": 2018,
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "1756",
+      "ano_processo": "2018",
+      "objeto": "DESTINADO  A PRESTAÇÃO DE SERVIÇOS TÉCNICOS ESPECIALIZADOS DE ASSESSORIA E CONSULTORIA CONTÁBIL, DE GESTÃO E JURÍDICA, ATRAVÉS DE CONSULTAS POR ESCRITO, POR TELEFONE, INTERNET E PESSOALMENTE, DISPONIBILIZAÇÃO DE TEXTOS TÉCNICOS DE INTERESSE DA ADMINISTRAÇÃO E REMESSA DE INFORMAÇÕES TÉCNICAS DURANTE O ANO DE 2018. (REEMISSÃO/ACERTO DO EMPENHO Nº 1739/2018)",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2018-08-31",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 14400.0,
+      "valor_homologado": 0.0,
+      "valor_final": 14400.0,
+      "fornecedor_doc": "07.675.477/0001-16",
+      "fornecedor_nome": "IGAM CORPORATIVO CURSOS E ASSESSORIA S/S LTDA",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:598718,5,75101&cs=1jXr8B7LKVc4YcqqVuedGXkPK1TQ",
+      "documentos": [
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "PROPROSTA IGAM.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2551884"
+        },
+        {
+          "tipo_codigo": "TFI",
+          "tipo_rotulo": "Termo de Inexigibilidade",
+          "nome_arquivo": "EXTRATO_INEXIBILIDADE_IGAM_2018 .docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2551885"
+        },
+        {
+          "tipo_codigo": "EXI",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO_JUSTIFICATIVA_1756.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2551886"
+        }
+      ]
+    },
+    {
+      "id": "2018_25_PRI",
+      "numero": "25",
+      "ano": 2018,
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "512",
+      "ano_processo": "2018",
+      "objeto": "DESTINADO  A PRESTAÇÃO DE SERVIÇOS TÉCNICOS ESPECIALIZADOS DE ASSESSORIA E CONSULTORIA CONTÁBIL, DE GESTÃO E JURÍDICA, ATRAVÉS DE CONSULTAS POR ESCRITO, POR TELEFONE, INTERNET E PESSOALMENTE, DISPONIBILIZAÇÃO DE TEXTOS TÉCNICOS DE INTERESSE DA ADMINISTRAÇÃO E REMESSA DE INFORMAÇÕES TÉCNICAS DURANTE O ANO DE 2018. (REEMISSÃO/ACERTO DO EMPENHO Nº 40/2018)",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2018-03-14",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 14400.0,
+      "valor_homologado": 0.0,
+      "valor_final": 14400.0,
+      "fornecedor_doc": "07.675.477/0001-16",
+      "fornecedor_nome": "IGAM CORPORATIVO CURSOS E ASSESSORIA S/S LTDA",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:561004,5,75101&cs=1OL7n11mts0aMjQ8hou_0f2lclHE",
+      "documentos": [
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "IGAM_PROPOSTA.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2471656"
+        },
+        {
+          "tipo_codigo": "EXI",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO_IGAM.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2471659"
+        },
+        {
+          "tipo_codigo": "TFI",
+          "tipo_rotulo": "Termo de Inexigibilidade",
+          "nome_arquivo": "PROCESSO N 512.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2471655"
+        },
+        {
+          "tipo_codigo": "CNE",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "NOTORIA_IGAM.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2471657"
+        },
+        {
+          "tipo_codigo": "CEX",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXCLUSIVIDADE_IGAM.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2471658"
+        }
+      ]
+    },
+    {
+      "id": "2018_139_PRD",
+      "numero": "139",
+      "ano": 2018,
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "156",
+      "ano_processo": "2018",
+      "objeto": "REEMISSÃO DO EMPENHO 158/2018- DESTINADO A MANUTENÇÃO PREVENTIVA E CORRETIVA DOS EQUIPAMENTOS DE INFORMATICA DOS EQUIPAMENTOS DE INFORMATICA DE USO DO PODER LEGISLATIVO.",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2018-01-02",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 792.12,
+      "valor_homologado": 0.0,
+      "valor_final": 792.12,
+      "fornecedor_doc": "14.629.734/0001-49",
+      "fornecedor_nome": "BRE INFORMATICA - Regis Backes",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:549639,5,75101&cs=1qdtOeyxPgmasu77Ac9FQ2FOwquo",
+      "documentos": [
+        {
+          "tipo_codigo": "TFD",
+          "tipo_rotulo": "Termo de Dispensa",
+          "nome_arquivo": "Termo_Formalizacao_Dispensa_156_2018_LEG.doc",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2471653"
+        },
+        {
+          "tipo_codigo": "EXD",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO DISPENSA BRE CAMARA VEREADORES 2018 .docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2471652"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "orcamento camara bre.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2471654"
+        }
+      ]
+    },
+    {
+      "id": "2018_13_PRI",
+      "numero": "13",
+      "ano": 2018,
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "38",
+      "ano_processo": "2018",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADES LEGISLATIVAS DE JANEIRO A DEZEMBRO DE 2018.",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2018-01-02",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 670.08,
+      "valor_homologado": 0.0,
+      "valor_final": 670.08,
+      "fornecedor_doc": "02.449.992/0121-70",
+      "fornecedor_nome": "VIVO S/A",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:603521,5,75101&cs=1bLq8FOQs_N5Sx64cH2z12V-8vxo",
+      "documentos": [
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "PROPOSTA INEXIGIBILIDADE CERILUZ_13.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2592150"
+        },
+        {
+          "tipo_codigo": "TFI",
+          "tipo_rotulo": "Termo de Inexigibilidade",
+          "nome_arquivo": "PROCESSO N 38 INEXIGIBILIDADE 13.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2592149"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "PROPOSTA INEXIGIBILIDADE VIVO_13.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2592151"
+        },
+        {
+          "tipo_codigo": "EXI",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO  INEXIGIBILIDADE DE LICITACAO n 13.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2592152"
+        }
+      ]
+    },
+    {
+      "id": "2018_11_PRI",
+      "numero": "11",
+      "ano": 2018,
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "32",
+      "ano_processo": "2018",
+      "objeto": "DESTINADO A MANUTENÇÃO DO PODER LEGISLATIVO DE JANEIRO A DEZEMBRO DE 2018.",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2018-01-02",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 100.0,
+      "valor_homologado": 0.0,
+      "valor_final": 100.0,
+      "fornecedor_doc": "34.028.316/0026-61",
+      "fornecedor_nome": "EMP.BRAS.DE CORREIOS E TELEGRAFOS",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:603520,5,75101&cs=1JledEIu19w6JFPCCknsr_zeMhlc",
+      "documentos": [
+        {
+          "tipo_codigo": "TFI",
+          "tipo_rotulo": "Termo de Inexigibilidade",
+          "nome_arquivo": "PROCESSO N 32 inexigibilidade 11.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2592147"
+        },
+        {
+          "tipo_codigo": "EXI",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO DE  INEXIGIBILIDADE DE LICITACAO n 11.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2592146"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "PROPOSTA INEXIGIBILIDADE 11.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2592148"
+        }
+      ]
+    },
+    {
+      "id": "2018_9_PRI",
+      "numero": "9",
+      "ano": 2018,
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "20",
+      "ano_processo": "2018",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADES DO PODER LEGISLATIVO NO ANO DE 2018.",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2018-01-02",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 750.0,
+      "valor_homologado": 0.0,
+      "valor_final": 750.0,
+      "fornecedor_doc": "76.535.764/0001-43",
+      "fornecedor_nome": "BRASIL TELECOM",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:603519,5,75101&cs=1NjExFnJrG8iux3E__dB1I0JR9qg",
+      "documentos": [
+        {
+          "tipo_codigo": "TFI",
+          "tipo_rotulo": "Termo de Inexigibilidade",
+          "nome_arquivo": "PROCESSO N 20 INEXIGIBILIDADE_9.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2592145"
+        },
+        {
+          "tipo_codigo": "EXI",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO DE JUSTIFICATIVA DE INEXIGIBILIDADE DE LICITACAO n_ 9.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2592143"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "orcamento camara telefone.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2592144"
+        }
+      ]
+    },
+    {
+      "id": "2018_3_PRI",
+      "numero": "3",
+      "ano": 2018,
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "11",
+      "ano_processo": "2018",
+      "objeto": "DESTINADO A MANUTENÇÃO DA SECRETARIA - FORNECIMENTO DE ENERGIA ELETRICA DE JANEIRO A DEZEMBRO DE 2018.",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2018-01-02",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 2700.0,
+      "valor_homologado": 0.0,
+      "valor_final": 2700.0,
+      "fornecedor_doc": "87.656.989/0001-74",
+      "fornecedor_nome": "CERILUZ. COOP ELET RURAL DE IJUI LTDA",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:603518,5,75101&cs=1a2uLH2cY_EdhiCJmdmMZSZ4PQkQ",
+      "documentos": [
+        {
+          "tipo_codigo": "TFI",
+          "tipo_rotulo": "Termo de Inexigibilidade",
+          "nome_arquivo": "PROCESSO N 11 INEXIGIVILIDADE N 3.docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2592142"
+        },
+        {
+          "tipo_codigo": "EXI",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO DE JUSTIFICATIVA DE INEXIGIBILIDADE DE LICITACAO n_ 3.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2592140"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "PROPROSTA CERILUZ.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2592141"
+        }
+      ]
+    },
+    {
+      "id": "2018_1_PRI",
+      "numero": "1",
+      "ano": 2018,
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "2",
+      "ano_processo": "2018",
+      "objeto": "DESTINADO  A PRESTAÇÃO DE SERVIÇOS TÉCNICOS ESPECIALIZADOS DE ASSESSORIA E CONSULTORIA CONTÁBIL, DE GESTÃO E JURÍDICA, ATRAVÉS DE CONSULTAS POR ESCRITO, POR TELEFONE, INTERNET E PESSOALMENTE, DISPONIBILIZAÇÃO DE TEXTOS TÉCNICOS DE INTERESSE DA ADMINISTRAÇÃO E REMESSA DE INFORMAÇÕES TÉCNICAS DURANTE O ANO DE 2018.",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2018-01-02",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 14400.0,
+      "valor_homologado": 0.0,
+      "valor_final": 14400.0,
+      "fornecedor_doc": "01.484.706/0001-39",
+      "fornecedor_nome": "IGAM - INSTITUTO GAMMA DE ASSESSORIA ORGÃOS PÚBLICOS",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:549638,5,75101&cs=1GHo-I_pK09nMJ9xYv2rqgQsuYcU",
+      "documentos": [
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "Proposta financeira IGAM - 2018.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2471647"
+        },
+        {
+          "tipo_codigo": "CEX",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "Inexgibilidade IGAM 2018.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2471650"
+        },
+        {
+          "tipo_codigo": "TFI",
+          "tipo_rotulo": "Termo de Inexigibilidade",
+          "nome_arquivo": "Inexgibilidade IGAM 2018.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2471648"
+        },
+        {
+          "tipo_codigo": "EXI",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "Inexgibilidade IGAM 2018.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2471649"
+        },
+        {
+          "tipo_codigo": "CNE",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "Inexgibilidade IGAM 2018.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2471651"
+        }
+      ]
+    },
+    {
+      "id": "2017_1219_PRD",
+      "numero": "1219",
+      "ano": 2017,
+      "modalidade_codigo": "PRD",
+      "modalidade": "Dispensa de Licitação",
+      "processo": "1245",
+      "ano_processo": "2017",
+      "objeto": "DESTINADO A MANUTENÇÃO DOS SERVIÇOS ESSENCIAIS QUE NECESSITEM DE ACESSO A INTERNET NOS MESES DE JUNHO A DEZEMBRO DE 2017",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2017-05-25",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 11002.4,
+      "valor_homologado": 0.0,
+      "valor_final": 11002.4,
+      "fornecedor_doc": "15.420.705/0001-35",
+      "fornecedor_nome": "CERILUZ PROVEDORES DE INTERNET LTDA",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:509688,5,75101&cs=1EnENKST2lWZ7NTk7Khr2qlvd9Ww",
+      "documentos": [
+        {
+          "tipo_codigo": "EXD",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO DISPENSA JUSTIFICATIVA CERILUZ NET CAMARA .docx",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/1841450"
+        },
+        {
+          "tipo_codigo": "TFD",
+          "tipo_rotulo": "Termo de Dispensa",
+          "nome_arquivo": "Termo de Formalizacao Dispensa 1245-2017.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/1841451"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "Orcamento_net_Ceriluz.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/1841452"
+        }
+      ]
+    },
+    {
+      "id": "2017_7_PRI",
+      "numero": "7",
+      "ano": 2017,
+      "modalidade_codigo": "PRI",
+      "modalidade": "Inexigibilidade",
+      "processo": "230",
+      "ano_processo": "2017",
+      "objeto": "DESTINADO A MANUTENÇÃO DAS ATIVIDADE DA CAMARA DE VEREADORES",
+      "fase_codigo": "PUB",
+      "fase": "Publicado / Homologado",
+      "data_abertura": "2017-01-27",
+      "data_homologacao": null,
+      "data_adjudicacao": null,
+      "valor_estimado": 11977.44,
+      "valor_homologado": 0.0,
+      "valor_final": 11977.44,
+      "fornecedor_doc": "01.484.706/0001-39",
+      "fornecedor_nome": "IGAM - INSTITUTO GAMMA DE ASSESSORIA ORGÃOS PÚBLICOS",
+      "link_licitacon": "https://portal.tce.rs.gov.br/aplicprod/f?p=50500:10:::NO:10:P10_ID_LICITACAO,P10_PAG_RETORNO,F50500_CD_ORGAO:603517,5,75101&cs=1m-YwKiXKz6Vp7RwSH0ujmjKG6Ro",
+      "documentos": [
+        {
+          "tipo_codigo": "EXI",
+          "tipo_rotulo": "Documento",
+          "nome_arquivo": "EXTRATO DE JUSTIFICATIVA DE INEXIGIBILIDADE DE LICITACAO n_7.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2592137"
+        },
+        {
+          "tipo_codigo": "PFC",
+          "tipo_rotulo": "Proposta Comercial",
+          "nome_arquivo": "PROPOSTA INEXIGIBILIDADE 07.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2592138"
+        },
+        {
+          "tipo_codigo": "TFI",
+          "tipo_rotulo": "Termo de Inexigibilidade",
+          "nome_arquivo": "PROCESSO N 230 INEXIGIBILIDADE_7.pdf",
+          "url": "https://portal.tce.rs.gov.br/app/silicon-download/documento_licitacao/2592139"
+        }
+      ]
+    }
+  ]
+}

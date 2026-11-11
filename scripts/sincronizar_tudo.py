@@ -7,6 +7,7 @@ Câmara Municipal de Coronel Barros - RS
 Executa em sequência:
 1. Siconfi / STN: RGF, DCA (Balanços) e RREO
 2. TCE-RS: Jurisprudência, Pareceres Prévios e Julgamentos de Contas
+3. TCE-RS / LicitaCon: Licitações e Contratos
 """
 
 import subprocess
@@ -34,6 +35,9 @@ def main():
 
     # 2. TCE-RS (Julgamentos e Pareceres Prévios)
     run_script("atualizar_tce.py")
+
+    # 3. TCE-RS / LicitaCon (Licitações e Contratos)
+    run_script("atualizar_licitacon.py")
 
     print("\n" + "=" * 70)
     print("TODOS OS DADOS FORAM ATUALIZADOS!")
